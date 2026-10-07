@@ -1,0 +1,182 @@
+[
+  {
+    "file": "raw-teams-2016.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20152016+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.824020+00:00",
+    "sha256": "8217cf8ee757699d4c4f68f366db05576a9520c7561a0892562130d202e41cc3"
+  },
+  {
+    "file": "raw-games-2016.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20152016",
+    "retrievedAtUTC": "2026-10-06T03:43:40.654739+00:00",
+    "sha256": "eef3e1d3e966a192e98cf2e64fd929eac34457914358da8e1bbc297c7cb10037"
+  },
+  {
+    "file": "raw-bracket-2016.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2016",
+    "retrievedAtUTC": "2026-10-06T03:43:40.644744+00:00",
+    "sha256": "0d473549e035224659d709772bb6780a575687d7a02eda5d2f83e7ee7bf2b0ac"
+  },
+  {
+    "file": "raw-teams-2017.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20162017+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.834003+00:00",
+    "sha256": "7847e39e6e4dedcd2a525d6d5046b4b82d7f00e36de87c4d488e3d3bef6c60ef"
+  },
+  {
+    "file": "raw-games-2017.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20162017",
+    "retrievedAtUTC": "2026-10-06T03:43:40.663401+00:00",
+    "sha256": "9028bb73386c690012080aa7c9dbc29943a2111c76aba770db93942aa04f03b7"
+  },
+  {
+    "file": "raw-bracket-2017.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2017",
+    "retrievedAtUTC": "2026-10-06T03:43:40.663448+00:00",
+    "sha256": "9c577b9c13aedcb4a7570fe4de28ee1624a809a1453e2dc501b1a464f5968449"
+  },
+  {
+    "file": "raw-teams-2018.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20172018+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.815323+00:00",
+    "sha256": "644f0575f57f08c531027bee1a95f2982d5cedf8aa0a338e267bb4ef940910bd"
+  },
+  {
+    "file": "raw-games-2018.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20172018",
+    "retrievedAtUTC": "2026-10-06T03:43:40.675032+00:00",
+    "sha256": "071af8bf243f45256d0b762b619136543669b52dd94f29da4ddf1e64cd2face2"
+  },
+  {
+    "file": "raw-bracket-2018.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2018",
+    "retrievedAtUTC": "2026-10-06T03:43:40.677393+00:00",
+    "sha256": "625e1e154b1cac1dc158a345021ad270ce927c11a9fa1180a6062d59b374a443"
+  },
+  {
+    "file": "raw-teams-2019.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20182019+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.846787+00:00",
+    "sha256": "2db87722b71256e38968a67e58920576c0cf73818cc348f83ff781d6c55400f6"
+  },
+  {
+    "file": "raw-games-2019.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20182019",
+    "retrievedAtUTC": "2026-10-06T03:43:40.822987+00:00",
+    "sha256": "9b94af50353f73109e9ddfce2b3ce570dc41d826111d0a69e6a1011fa763b1c7"
+  },
+  {
+    "file": "raw-bracket-2019.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2019",
+    "retrievedAtUTC": "2026-10-06T03:43:40.826337+00:00",
+    "sha256": "ed96ef61a3d2455bb9df3b18fcb2979fa03ad6c336ccaa6f6079cd21ec1e1762"
+  },
+  {
+    "file": "raw-teams-2020.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20192020+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.005165+00:00",
+    "sha256": "b93553b1eba8afd369abbc723405a78a194fb513e9b80310851bb37082856181"
+  },
+  {
+    "file": "raw-games-2020.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20192020",
+    "retrievedAtUTC": "2026-10-06T03:43:40.833674+00:00",
+    "sha256": "ea34b0f785d37bfacb25326b36f0faa1c828c0a4d88afd201fd010a130c9a833"
+  },
+  {
+    "file": "raw-bracket-2020.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2020",
+    "retrievedAtUTC": "2026-10-06T03:43:40.836991+00:00",
+    "sha256": "50dacbe27c604787f97e727515a4dc5f57f60e8525b1a4dab6994262dbb51486"
+  },
+  {
+    "file": "raw-teams-2021.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20202021+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.980881+00:00",
+    "sha256": "3f1b04757daab32e1c2b58e2883c2dec4e2e57ccd7af3ba2c1295b857f8dc726"
+  },
+  {
+    "file": "raw-games-2021.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20202021",
+    "retrievedAtUTC": "2026-10-06T03:43:40.842245+00:00",
+    "sha256": "3227b08b2549835f719e238b74f1f0a9d595b80863df8149fccd851c4d361b91"
+  },
+  {
+    "file": "raw-bracket-2021.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2021",
+    "retrievedAtUTC": "2026-10-06T03:43:40.843617+00:00",
+    "sha256": "855330bdc6f320e3a58fa6af50e35214813dc62baa633b69a7fd2f1454fde518"
+  },
+  {
+    "file": "raw-teams-2022.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20212022+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.020451+00:00",
+    "sha256": "6e659799c9cbb57a560003a93adb6323abcfae90d95469b340169b6236a08ce9"
+  },
+  {
+    "file": "raw-games-2022.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20212022",
+    "retrievedAtUTC": "2026-10-06T03:43:40.855064+00:00",
+    "sha256": "ad1557ce526ca8656a51d34827487e0bf6d1a5a15a4b1f8f38bf810abec8c3b0"
+  },
+  {
+    "file": "raw-bracket-2022.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2022",
+    "retrievedAtUTC": "2026-10-06T03:43:40.856745+00:00",
+    "sha256": "a43e5223fe826bb8c01ddac4145ae82cc2067d74f4dd643320cd560f1f7a38b8"
+  },
+  {
+    "file": "raw-teams-2023.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20222023+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.051296+00:00",
+    "sha256": "274e2b9e73bc651708a087ac309e9d8a3794304cd4ab829e4804d17b2fe04bac"
+  },
+  {
+    "file": "raw-games-2023.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20222023",
+    "retrievedAtUTC": "2026-10-06T03:43:40.991679+00:00",
+    "sha256": "4ab20a022d9cf46b59c29dd56ac76d82ea5c284a99acbcbeab8db5d9ab33b369"
+  },
+  {
+    "file": "raw-bracket-2023.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2023",
+    "retrievedAtUTC": "2026-10-06T03:43:40.993635+00:00",
+    "sha256": "ed48eb7cc6f076555b0255af3652354b2bc74b330ccbb67c91e6cda4609dbecf"
+  },
+  {
+    "file": "raw-teams-2024.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20232024+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.163947+00:00",
+    "sha256": "af8159c9bd910a366c6d6fce2099065f2f481753fb989600c34f87f73126b92c"
+  },
+  {
+    "file": "raw-games-2024.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20232024",
+    "retrievedAtUTC": "2026-10-06T03:43:41.013693+00:00",
+    "sha256": "8e8f65726837489f71e7170f5d30a5737eeb5c8316a0f0396da9a3008a85d08a"
+  },
+  {
+    "file": "raw-bracket-2024.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2024",
+    "retrievedAtUTC": "2026-10-06T03:43:41.015638+00:00",
+    "sha256": "f723562b7fe91d2bb49e29b7ee0196b8ab024559f20e20950920852892707dda"
+  },
+  {
+    "file": "raw-teams-2025.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20242025+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.193316+00:00",
+    "sha256": "11d7729e88ec215dec00d17445c720950ffddb01184aed8a0624f1ed31b52389"
+  },
+  {
+    "file": "raw-games-2025.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20242025",
+    "retrievedAtUTC": "2026-10-06T03:43:41.029230+00:00",
+    "sha256": "404fcc09b7bd1515a454fcc57862cdbbe2905e3e337e4699239024fc1d442abe"
+  },
+  {
+    "file": "raw-bracket-2025.json",
+    "url": "https://api-web.nhle.com/v1/playoff-bracket/2025",
+    "retrievedAtUTC": "2026-10-06T03:43:41.031400+00:00",
+    "sha256": "46feab8c8e4f7e25d786e8eaeea05a7df95fc86c8f2c7d76e6ee6f0a928929ac"
+  }
+]

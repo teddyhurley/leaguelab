@@ -1,0 +1,117 @@
+{
+  "retrievedDate": "2026-10-05",
+  "publisher": "SportsDataverse",
+  "upstream": "ESPN NBA APIs",
+  "rows": [
+    {
+      "seasonEnd": 2016,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2016.json",
+        "gitBlobSha": "3fd97fd69a1479c55ccd79e4b4235f0ec53b63b0"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2016.rds",
+        "gitBlobSha": "520880df5972299713d554340ee85d74fba28cd1"
+      }
+    },
+    {
+      "seasonEnd": 2017,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2017.json",
+        "gitBlobSha": "4b02121f48725444c249166c672e7b73432d0666"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2017.rds",
+        "gitBlobSha": "90377a7d35f25762fe3d5880dbb90861e09c9fd0"
+      }
+    },
+    {
+      "seasonEnd": 2018,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2018.json",
+        "gitBlobSha": "ef2af1d05c4bf518d7c4558833c23a5ef22af49e"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2018.rds",
+        "gitBlobSha": "b35b4948e8f9b5b0a62f42f88bf5dc584cd36cb6"
+      }
+    },
+    {
+      "seasonEnd": 2019,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2019.json",
+        "gitBlobSha": "ac27ddb0f507e4b5494455f9b4ae22c82ede43ad"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2019.rds",
+        "gitBlobSha": "e4e3bbb7d63eff430996f392c61ef0704c5f7d26"
+      }
+    },
+    {
+      "seasonEnd": 2020,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2020.json",
+        "gitBlobSha": "e5b0e46e4ca7dcac1b2df3f399750efddbba5471"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2020.rds",
+        "gitBlobSha": "ef2295ad1ba7ac119bc253805d25a6fa134c71a3"
+      }
+    },
+    {
+      "seasonEnd": 2021,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2021.json",
+        "gitBlobSha": "ac3f7b146877257044bb61d65857d831499504fb"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2021.rds",
+        "gitBlobSha": "4222058e091d6e3a964f22838b07c6e3e2e6de80"
+      }
+    },
+    {
+      "seasonEnd": 2022,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2022.json",
+        "gitBlobSha": "29a1db3aa9beb1d8be06f050dc73f809cad880e6"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2022.rds",
+        "gitBlobSha": "6aca6d973a5c30502b73e4f6a8469ee73533873f"
+      }
+    },
+    {
+      "seasonEnd": 2023,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2023.json",
+        "gitBlobSha": "826b10fa07cc442d1f3094a9d8e3bf8a95b2cb12"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2023.rds",
+        "gitBlobSha": "19dfa547fdd1096a03f713ce768eb73514e25d10"
+      }
+    },
+    {
+      "seasonEnd": 2024,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2024.json",
+        "gitBlobSha": "cc916868df0d0cb06d61b61baca691149533a302"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2024.rds",
+        "gitBlobSha": "5e02f261509a0799442ac99d86cb6a647ed86a37"
+      }
+    },
+    {
+      "seasonEnd": 2025,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2025.json",
+        "gitBlobSha": "a867aaebcefd02bff970d9e8500afddd3fcb6bc2"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2025.rds",
+        "gitBlobSha": "596d0866c449b0acdf20681e92eafd25428edb52"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1502 @@
+[
+  {
+    "seasonEnd": 2016,
+    "team1": "Indiana Pacers",
+    "team2": "Toronto Raptors",
+    "games": 7,
+    "winnerId": "28",
+    "betterId": "28",
+    "betterWin": true,
+    "gapWins82": 11.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Houston Rockets",
+    "team2": "Golden State Warriors",
+    "games": 5,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 32.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Atlanta Hawks",
+    "team2": "Boston Celtics",
+    "games": 6,
+    "winnerId": "1",
+    "betterId": null,
+    "betterWin": null,
+    "gapWins82": 0.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Oklahoma City Thunder",
+    "team2": "Dallas Mavericks",
+    "games": 5,
+    "winnerId": "25",
+    "betterId": "25",
+    "betterWin": true,
+    "gapWins82": 13.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Cleveland Cavaliers",
+    "team2": "Detroit Pistons",
+    "games": 4,
+    "winnerId": "5",
+    "betterId": "5",
+    "betterWin": true,
+    "gapWins82": 13.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Miami Heat",
+    "team2": "Charlotte Hornets",
+    "games": 7,
+    "winnerId": "14",
+    "betterId": null,
+    "betterWin": null,
+    "gapWins82": 0.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "San Antonio Spurs",
+    "team2": "Memphis Grizzlies",
+    "games": 4,
+    "winnerId": "24",
+    "betterId": "24",
+    "betterWin": true,
+    "gapWins82": 25.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "LA Clippers",
+    "team2": "Portland Trail Blazers",
+    "games": 6,
+    "winnerId": "22",
+    "betterId": "12",
+    "betterWin": false,
+    "gapWins82": 9.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "San Antonio Spurs",
+    "team2": "Oklahoma City Thunder",
+    "games": 6,
+    "winnerId": "25",
+    "betterId": "24",
+    "betterWin": false,
+    "gapWins82": 12.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Portland Trail Blazers",
+    "team2": "Golden State Warriors",
+    "games": 5,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 29.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Atlanta Hawks",
+    "team2": "Cleveland Cavaliers",
+    "games": 4,
+    "winnerId": "5",
+    "betterId": "5",
+    "betterWin": true,
+    "gapWins82": 9.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Miami Heat",
+    "team2": "Toronto Raptors",
+    "games": 7,
+    "winnerId": "28",
+    "betterId": "28",
+    "betterWin": true,
+    "gapWins82": 8.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Oklahoma City Thunder",
+    "team2": "Golden State Warriors",
+    "games": 7,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 18.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Toronto Raptors",
+    "team2": "Cleveland Cavaliers",
+    "games": 6,
+    "winnerId": "5",
+    "betterId": "5",
+    "betterWin": true,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2016,
+    "team1": "Cleveland Cavaliers",
+    "team2": "Golden State Warriors",
+    "games": 7,
+    "winnerId": "5",
+    "betterId": "9",
+    "betterWin": false,
+    "gapWins82": 16.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Indiana Pacers",
+    "team2": "Cleveland Cavaliers",
+    "games": 4,
+    "winnerId": "5",
+    "betterId": "5",
+    "betterWin": true,
+    "gapWins82": 9.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Milwaukee Bucks",
+    "team2": "Toronto Raptors",
+    "games": 6,
+    "winnerId": "28",
+    "betterId": "28",
+    "betterWin": true,
+    "gapWins82": 9.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "San Antonio Spurs",
+    "team2": "Memphis Grizzlies",
+    "games": 6,
+    "winnerId": "24",
+    "betterId": "24",
+    "betterWin": true,
+    "gapWins82": 18.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "LA Clippers",
+    "team2": "Utah Jazz",
+    "games": 7,
+    "winnerId": "26",
+    "betterId": null,
+    "betterWin": null,
+    "gapWins82": 0.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Atlanta Hawks",
+    "team2": "Washington Wizards",
+    "games": 6,
+    "winnerId": "27",
+    "betterId": "27",
+    "betterWin": true,
+    "gapWins82": 6.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Portland Trail Blazers",
+    "team2": "Golden State Warriors",
+    "games": 4,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 26.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Boston Celtics",
+    "team2": "Chicago Bulls",
+    "games": 6,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 12.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Houston Rockets",
+    "team2": "Oklahoma City Thunder",
+    "games": 5,
+    "winnerId": "10",
+    "betterId": "10",
+    "betterWin": true,
+    "gapWins82": 8.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Boston Celtics",
+    "team2": "Washington Wizards",
+    "games": 7,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 4.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Toronto Raptors",
+    "team2": "Cleveland Cavaliers",
+    "games": 4,
+    "winnerId": "5",
+    "betterId": null,
+    "betterWin": null,
+    "gapWins82": 0.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Houston Rockets",
+    "team2": "San Antonio Spurs",
+    "games": 6,
+    "winnerId": "24",
+    "betterId": "24",
+    "betterWin": true,
+    "gapWins82": 6.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Utah Jazz",
+    "team2": "Golden State Warriors",
+    "games": 4,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 16.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "San Antonio Spurs",
+    "team2": "Golden State Warriors",
+    "games": 4,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 6.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Boston Celtics",
+    "team2": "Cleveland Cavaliers",
+    "games": 5,
+    "winnerId": "5",
+    "betterId": "2",
+    "betterWin": false,
+    "gapWins82": 2.0
+  },
+  {
+    "seasonEnd": 2017,
+    "team1": "Cleveland Cavaliers",
+    "team2": "Golden State Warriors",
+    "games": 5,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 16.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "San Antonio Spurs",
+    "team2": "Golden State Warriors",
+    "games": 5,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 11.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Washington Wizards",
+    "team2": "Toronto Raptors",
+    "games": 6,
+    "winnerId": "28",
+    "betterId": "28",
+    "betterWin": true,
+    "gapWins82": 16.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Miami Heat",
+    "team2": "Philadelphia 76ers",
+    "games": 5,
+    "winnerId": "20",
+    "betterId": "20",
+    "betterWin": true,
+    "gapWins82": 8.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Portland Trail Blazers",
+    "team2": "New Orleans Pelicans",
+    "games": 4,
+    "winnerId": "3",
+    "betterId": "22",
+    "betterWin": false,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Milwaukee Bucks",
+    "team2": "Boston Celtics",
+    "games": 7,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 11.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Indiana Pacers",
+    "team2": "Cleveland Cavaliers",
+    "games": 7,
+    "winnerId": "5",
+    "betterId": "5",
+    "betterWin": true,
+    "gapWins82": 2.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Oklahoma City Thunder",
+    "team2": "Utah Jazz",
+    "games": 6,
+    "winnerId": "26",
+    "betterId": null,
+    "betterWin": null,
+    "gapWins82": 0.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Houston Rockets",
+    "team2": "Minnesota Timberwolves",
+    "games": 5,
+    "winnerId": "10",
+    "betterId": "10",
+    "betterWin": true,
+    "gapWins82": 18.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "New Orleans Pelicans",
+    "team2": "Golden State Warriors",
+    "games": 5,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 10.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Houston Rockets",
+    "team2": "Utah Jazz",
+    "games": 5,
+    "winnerId": "10",
+    "betterId": "10",
+    "betterWin": true,
+    "gapWins82": 17.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Boston Celtics",
+    "team2": "Philadelphia 76ers",
+    "games": 5,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 3.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Toronto Raptors",
+    "team2": "Cleveland Cavaliers",
+    "games": 4,
+    "winnerId": "5",
+    "betterId": "28",
+    "betterWin": false,
+    "gapWins82": 9.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Boston Celtics",
+    "team2": "Cleveland Cavaliers",
+    "games": 7,
+    "winnerId": "5",
+    "betterId": "2",
+    "betterWin": false,
+    "gapWins82": 5.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Houston Rockets",
+    "team2": "Golden State Warriors",
+    "games": 7,
+    "winnerId": "9",
+    "betterId": "10",
+    "betterWin": false,
+    "gapWins82": 7.0
+  },
+  {
+    "seasonEnd": 2018,
+    "team1": "Cleveland Cavaliers",
+    "team2": "Golden State Warriors",
+    "games": 4,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 8.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Brooklyn Nets",
+    "team2": "Philadelphia 76ers",
+    "games": 5,
+    "winnerId": "20",
+    "betterId": "20",
+    "betterWin": true,
+    "gapWins82": 9.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Orlando Magic",
+    "team2": "Toronto Raptors",
+    "games": 5,
+    "winnerId": "28",
+    "betterId": "28",
+    "betterWin": true,
+    "gapWins82": 16.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "LA Clippers",
+    "team2": "Golden State Warriors",
+    "games": 6,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 9.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "San Antonio Spurs",
+    "team2": "Denver Nuggets",
+    "games": 7,
+    "winnerId": "7",
+    "betterId": "7",
+    "betterWin": true,
+    "gapWins82": 6.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Indiana Pacers",
+    "team2": "Boston Celtics",
+    "games": 4,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Portland Trail Blazers",
+    "team2": "Oklahoma City Thunder",
+    "games": 5,
+    "winnerId": "22",
+    "betterId": "22",
+    "betterWin": true,
+    "gapWins82": 4.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Milwaukee Bucks",
+    "team2": "Detroit Pistons",
+    "games": 4,
+    "winnerId": "15",
+    "betterId": "15",
+    "betterWin": true,
+    "gapWins82": 19.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Houston Rockets",
+    "team2": "Utah Jazz",
+    "games": 5,
+    "winnerId": "10",
+    "betterId": "10",
+    "betterWin": true,
+    "gapWins82": 3.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Philadelphia 76ers",
+    "team2": "Toronto Raptors",
+    "games": 7,
+    "winnerId": "28",
+    "betterId": "28",
+    "betterWin": true,
+    "gapWins82": 7.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Milwaukee Bucks",
+    "team2": "Boston Celtics",
+    "games": 5,
+    "winnerId": "15",
+    "betterId": "15",
+    "betterWin": true,
+    "gapWins82": 11.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Houston Rockets",
+    "team2": "Golden State Warriors",
+    "games": 6,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 4.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Portland Trail Blazers",
+    "team2": "Denver Nuggets",
+    "games": 7,
+    "winnerId": "22",
+    "betterId": "7",
+    "betterWin": false,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Portland Trail Blazers",
+    "team2": "Golden State Warriors",
+    "games": 4,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 4.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Milwaukee Bucks",
+    "team2": "Toronto Raptors",
+    "games": 6,
+    "winnerId": "28",
+    "betterId": "15",
+    "betterWin": false,
+    "gapWins82": 2.0
+  },
+  {
+    "seasonEnd": 2019,
+    "team1": "Toronto Raptors",
+    "team2": "Golden State Warriors",
+    "games": 6,
+    "winnerId": "28",
+    "betterId": "28",
+    "betterWin": true,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Utah Jazz",
+    "team2": "Denver Nuggets",
+    "games": 7,
+    "winnerId": "7",
+    "betterId": "7",
+    "betterWin": true,
+    "gapWins82": 1.5601217656
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Brooklyn Nets",
+    "team2": "Toronto Raptors",
+    "games": 4,
+    "winnerId": "28",
+    "betterId": "28",
+    "betterWin": true,
+    "gapWins82": 20.5
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Boston Celtics",
+    "team2": "Philadelphia 76ers",
+    "games": 4,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 6.3652968037
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "LA Clippers",
+    "team2": "Dallas Mavericks",
+    "games": 6,
+    "winnerId": "12",
+    "betterId": "12",
+    "betterWin": true,
+    "gapWins82": 8.7922222222
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Milwaukee Bucks",
+    "team2": "Orlando Magic",
+    "games": 5,
+    "winnerId": "15",
+    "betterId": "15",
+    "betterWin": true,
+    "gapWins82": 25.8356164384
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Indiana Pacers",
+    "team2": "Miami Heat",
+    "games": 4,
+    "winnerId": "14",
+    "betterId": "11",
+    "betterWin": false,
+    "gapWins82": 1.1232876712
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Houston Rockets",
+    "team2": "Oklahoma City Thunder",
+    "games": 7,
+    "winnerId": "10",
+    "betterId": null,
+    "betterWin": null,
+    "gapWins82": 0.0
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Los Angeles Lakers",
+    "team2": "Portland Trail Blazers",
+    "games": 5,
+    "winnerId": "13",
+    "betterId": "13",
+    "betterWin": true,
+    "gapWins82": 21.2725542444
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Boston Celtics",
+    "team2": "Toronto Raptors",
+    "games": 7,
+    "winnerId": "2",
+    "betterId": "28",
+    "betterWin": false,
+    "gapWins82": 5.6944444444
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Miami Heat",
+    "team2": "Milwaukee Bucks",
+    "games": 5,
+    "winnerId": "14",
+    "betterId": "15",
+    "betterWin": false,
+    "gapWins82": 13.4794520548
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "LA Clippers",
+    "team2": "Denver Nuggets",
+    "games": 7,
+    "winnerId": "7",
+    "betterId": "12",
+    "betterWin": false,
+    "gapWins82": 4.1343226788
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Houston Rockets",
+    "team2": "Los Angeles Lakers",
+    "games": 5,
+    "winnerId": "13",
+    "betterId": "13",
+    "betterWin": true,
+    "gapWins82": 9.9452269171
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Miami Heat",
+    "team2": "Boston Celtics",
+    "games": 6,
+    "winnerId": "14",
+    "betterId": "2",
+    "betterWin": false,
+    "gapWins82": 5.2420091324
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Los Angeles Lakers",
+    "team2": "Denver Nuggets",
+    "games": 5,
+    "winnerId": "13",
+    "betterId": "13",
+    "betterWin": true,
+    "gapWins82": 8.3851051515
+  },
+  {
+    "seasonEnd": 2020,
+    "team1": "Los Angeles Lakers",
+    "team2": "Miami Heat",
+    "games": 6,
+    "winnerId": "13",
+    "betterId": "13",
+    "betterWin": true,
+    "gapWins82": 10.6316804939
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Miami Heat",
+    "team2": "Milwaukee Bucks",
+    "games": 4,
+    "winnerId": "15",
+    "betterId": "15",
+    "betterWin": true,
+    "gapWins82": 6.8333333333
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "LA Clippers",
+    "team2": "Dallas Mavericks",
+    "games": 7,
+    "winnerId": "12",
+    "betterId": "12",
+    "betterWin": true,
+    "gapWins82": 5.6944444444
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Brooklyn Nets",
+    "team2": "Boston Celtics",
+    "games": 5,
+    "winnerId": "17",
+    "betterId": "17",
+    "betterWin": true,
+    "gapWins82": 13.6666666667
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Portland Trail Blazers",
+    "team2": "Denver Nuggets",
+    "games": 6,
+    "winnerId": "7",
+    "betterId": "7",
+    "betterWin": true,
+    "gapWins82": 5.6944444444
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Philadelphia 76ers",
+    "team2": "Washington Wizards",
+    "games": 5,
+    "winnerId": "20",
+    "betterId": "20",
+    "betterWin": true,
+    "gapWins82": 17.0833333333
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Los Angeles Lakers",
+    "team2": "Phoenix Suns",
+    "games": 6,
+    "winnerId": "21",
+    "betterId": "21",
+    "betterWin": true,
+    "gapWins82": 10.25
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Atlanta Hawks",
+    "team2": "New York Knicks",
+    "games": 5,
+    "winnerId": "1",
+    "betterId": null,
+    "betterWin": null,
+    "gapWins82": 0.0
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Utah Jazz",
+    "team2": "Memphis Grizzlies",
+    "games": 5,
+    "winnerId": "26",
+    "betterId": "26",
+    "betterWin": true,
+    "gapWins82": 15.9444444444
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Milwaukee Bucks",
+    "team2": "Brooklyn Nets",
+    "games": 7,
+    "winnerId": "15",
+    "betterId": "17",
+    "betterWin": false,
+    "gapWins82": 2.2777777778
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Atlanta Hawks",
+    "team2": "Philadelphia 76ers",
+    "games": 7,
+    "winnerId": "1",
+    "betterId": "20",
+    "betterWin": false,
+    "gapWins82": 9.1111111111
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Phoenix Suns",
+    "team2": "Denver Nuggets",
+    "games": 4,
+    "winnerId": "21",
+    "betterId": "21",
+    "betterWin": true,
+    "gapWins82": 4.5555555556
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "LA Clippers",
+    "team2": "Utah Jazz",
+    "games": 6,
+    "winnerId": "12",
+    "betterId": "26",
+    "betterWin": false,
+    "gapWins82": 5.6944444444
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "LA Clippers",
+    "team2": "Phoenix Suns",
+    "games": 6,
+    "winnerId": "21",
+    "betterId": "21",
+    "betterWin": true,
+    "gapWins82": 4.5555555556
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Atlanta Hawks",
+    "team2": "Milwaukee Bucks",
+    "games": 6,
+    "winnerId": "15",
+    "betterId": "15",
+    "betterWin": true,
+    "gapWins82": 5.6944444444
+  },
+  {
+    "seasonEnd": 2021,
+    "team1": "Milwaukee Bucks",
+    "team2": "Phoenix Suns",
+    "games": 6,
+    "winnerId": "15",
+    "betterId": "21",
+    "betterWin": false,
+    "gapWins82": 5.6944444444
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Utah Jazz",
+    "team2": "Dallas Mavericks",
+    "games": 6,
+    "winnerId": "6",
+    "betterId": "6",
+    "betterWin": true,
+    "gapWins82": 3.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Minnesota Timberwolves",
+    "team2": "Memphis Grizzlies",
+    "games": 6,
+    "winnerId": "29",
+    "betterId": "29",
+    "betterWin": true,
+    "gapWins82": 10.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Philadelphia 76ers",
+    "team2": "Toronto Raptors",
+    "games": 6,
+    "winnerId": "20",
+    "betterId": "20",
+    "betterWin": true,
+    "gapWins82": 3.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Denver Nuggets",
+    "team2": "Golden State Warriors",
+    "games": 5,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 5.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Atlanta Hawks",
+    "team2": "Miami Heat",
+    "games": 5,
+    "winnerId": "14",
+    "betterId": "14",
+    "betterWin": true,
+    "gapWins82": 10.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Brooklyn Nets",
+    "team2": "Boston Celtics",
+    "games": 4,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 7.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Milwaukee Bucks",
+    "team2": "Chicago Bulls",
+    "games": 5,
+    "winnerId": "15",
+    "betterId": "15",
+    "betterWin": true,
+    "gapWins82": 5.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Phoenix Suns",
+    "team2": "New Orleans Pelicans",
+    "games": 6,
+    "winnerId": "21",
+    "betterId": "21",
+    "betterWin": true,
+    "gapWins82": 28.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Milwaukee Bucks",
+    "team2": "Boston Celtics",
+    "games": 7,
+    "winnerId": "2",
+    "betterId": null,
+    "betterWin": null,
+    "gapWins82": 0.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Memphis Grizzlies",
+    "team2": "Golden State Warriors",
+    "games": 6,
+    "winnerId": "9",
+    "betterId": "29",
+    "betterWin": false,
+    "gapWins82": 3.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Miami Heat",
+    "team2": "Philadelphia 76ers",
+    "games": 6,
+    "winnerId": "14",
+    "betterId": "14",
+    "betterWin": true,
+    "gapWins82": 2.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Phoenix Suns",
+    "team2": "Dallas Mavericks",
+    "games": 7,
+    "winnerId": "6",
+    "betterId": "21",
+    "betterWin": false,
+    "gapWins82": 12.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Miami Heat",
+    "team2": "Boston Celtics",
+    "games": 7,
+    "winnerId": "2",
+    "betterId": "14",
+    "betterWin": false,
+    "gapWins82": 2.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Dallas Mavericks",
+    "team2": "Golden State Warriors",
+    "games": 5,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2022,
+    "team1": "Boston Celtics",
+    "team2": "Golden State Warriors",
+    "games": 6,
+    "winnerId": "9",
+    "betterId": "9",
+    "betterWin": true,
+    "gapWins82": 2.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Brooklyn Nets",
+    "team2": "Philadelphia 76ers",
+    "games": 4,
+    "winnerId": "20",
+    "betterId": "20",
+    "betterWin": true,
+    "gapWins82": 9.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Atlanta Hawks",
+    "team2": "Boston Celtics",
+    "games": 6,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 16.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "New York Knicks",
+    "team2": "Cleveland Cavaliers",
+    "games": 5,
+    "winnerId": "18",
+    "betterId": "5",
+    "betterWin": false,
+    "gapWins82": 4.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Sacramento Kings",
+    "team2": "Golden State Warriors",
+    "games": 7,
+    "winnerId": "9",
+    "betterId": "23",
+    "betterWin": false,
+    "gapWins82": 4.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Los Angeles Lakers",
+    "team2": "Memphis Grizzlies",
+    "games": 6,
+    "winnerId": "13",
+    "betterId": "29",
+    "betterWin": false,
+    "gapWins82": 8.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Miami Heat",
+    "team2": "Milwaukee Bucks",
+    "games": 5,
+    "winnerId": "14",
+    "betterId": "15",
+    "betterWin": false,
+    "gapWins82": 14.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "LA Clippers",
+    "team2": "Phoenix Suns",
+    "games": 5,
+    "winnerId": "21",
+    "betterId": "21",
+    "betterWin": true,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Minnesota Timberwolves",
+    "team2": "Denver Nuggets",
+    "games": 5,
+    "winnerId": "7",
+    "betterId": "7",
+    "betterWin": true,
+    "gapWins82": 11.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Phoenix Suns",
+    "team2": "Denver Nuggets",
+    "games": 6,
+    "winnerId": "7",
+    "betterId": "7",
+    "betterWin": true,
+    "gapWins82": 8.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Miami Heat",
+    "team2": "New York Knicks",
+    "games": 6,
+    "winnerId": "14",
+    "betterId": "18",
+    "betterWin": false,
+    "gapWins82": 3.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Boston Celtics",
+    "team2": "Philadelphia 76ers",
+    "games": 7,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 3.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Los Angeles Lakers",
+    "team2": "Golden State Warriors",
+    "games": 6,
+    "winnerId": "13",
+    "betterId": "9",
+    "betterWin": false,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Los Angeles Lakers",
+    "team2": "Denver Nuggets",
+    "games": 4,
+    "winnerId": "7",
+    "betterId": "7",
+    "betterWin": true,
+    "gapWins82": 10.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Miami Heat",
+    "team2": "Boston Celtics",
+    "games": 7,
+    "winnerId": "14",
+    "betterId": "2",
+    "betterWin": false,
+    "gapWins82": 13.0
+  },
+  {
+    "seasonEnd": 2023,
+    "team1": "Miami Heat",
+    "team2": "Denver Nuggets",
+    "games": 5,
+    "winnerId": "7",
+    "betterId": "7",
+    "betterWin": true,
+    "gapWins82": 9.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Orlando Magic",
+    "team2": "Cleveland Cavaliers",
+    "games": 7,
+    "winnerId": "5",
+    "betterId": "5",
+    "betterWin": true,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Minnesota Timberwolves",
+    "team2": "Phoenix Suns",
+    "games": 4,
+    "winnerId": "16",
+    "betterId": "16",
+    "betterWin": true,
+    "gapWins82": 7.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "New York Knicks",
+    "team2": "Philadelphia 76ers",
+    "games": 6,
+    "winnerId": "18",
+    "betterId": "18",
+    "betterWin": true,
+    "gapWins82": 3.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Los Angeles Lakers",
+    "team2": "Denver Nuggets",
+    "games": 5,
+    "winnerId": "7",
+    "betterId": "7",
+    "betterWin": true,
+    "gapWins82": 10.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Miami Heat",
+    "team2": "Boston Celtics",
+    "games": 5,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 18.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "LA Clippers",
+    "team2": "Dallas Mavericks",
+    "games": 6,
+    "winnerId": "6",
+    "betterId": "12",
+    "betterWin": false,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Indiana Pacers",
+    "team2": "Milwaukee Bucks",
+    "games": 6,
+    "winnerId": "11",
+    "betterId": "15",
+    "betterWin": false,
+    "gapWins82": 2.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Oklahoma City Thunder",
+    "team2": "New Orleans Pelicans",
+    "games": 4,
+    "winnerId": "25",
+    "betterId": "25",
+    "betterWin": true,
+    "gapWins82": 8.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Minnesota Timberwolves",
+    "team2": "Denver Nuggets",
+    "games": 7,
+    "winnerId": "16",
+    "betterId": "7",
+    "betterWin": false,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Indiana Pacers",
+    "team2": "New York Knicks",
+    "games": 7,
+    "winnerId": "11",
+    "betterId": "18",
+    "betterWin": false,
+    "gapWins82": 3.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Boston Celtics",
+    "team2": "Cleveland Cavaliers",
+    "games": 5,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 16.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Oklahoma City Thunder",
+    "team2": "Dallas Mavericks",
+    "games": 6,
+    "winnerId": "6",
+    "betterId": "25",
+    "betterWin": false,
+    "gapWins82": 7.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Indiana Pacers",
+    "team2": "Boston Celtics",
+    "games": 4,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 17.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Minnesota Timberwolves",
+    "team2": "Dallas Mavericks",
+    "games": 5,
+    "winnerId": "6",
+    "betterId": "16",
+    "betterWin": false,
+    "gapWins82": 6.0
+  },
+  {
+    "seasonEnd": 2024,
+    "team1": "Boston Celtics",
+    "team2": "Dallas Mavericks",
+    "games": 5,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 14.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Indiana Pacers",
+    "team2": "Milwaukee Bucks",
+    "games": 5,
+    "winnerId": "11",
+    "betterId": "11",
+    "betterWin": true,
+    "gapWins82": 2.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "LA Clippers",
+    "team2": "Denver Nuggets",
+    "games": 7,
+    "winnerId": "7",
+    "betterId": null,
+    "betterWin": null,
+    "gapWins82": 0.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "New York Knicks",
+    "team2": "Detroit Pistons",
+    "games": 6,
+    "winnerId": "18",
+    "betterId": "18",
+    "betterWin": true,
+    "gapWins82": 7.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Los Angeles Lakers",
+    "team2": "Minnesota Timberwolves",
+    "games": 5,
+    "winnerId": "16",
+    "betterId": "13",
+    "betterWin": false,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Oklahoma City Thunder",
+    "team2": "Memphis Grizzlies",
+    "games": 4,
+    "winnerId": "25",
+    "betterId": "25",
+    "betterWin": true,
+    "gapWins82": 20.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Orlando Magic",
+    "team2": "Boston Celtics",
+    "games": 5,
+    "winnerId": "2",
+    "betterId": "2",
+    "betterWin": true,
+    "gapWins82": 20.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Miami Heat",
+    "team2": "Cleveland Cavaliers",
+    "games": 4,
+    "winnerId": "5",
+    "betterId": "5",
+    "betterWin": true,
+    "gapWins82": 27.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Houston Rockets",
+    "team2": "Golden State Warriors",
+    "games": 7,
+    "winnerId": "9",
+    "betterId": "10",
+    "betterWin": false,
+    "gapWins82": 4.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Indiana Pacers",
+    "team2": "Cleveland Cavaliers",
+    "games": 5,
+    "winnerId": "11",
+    "betterId": "5",
+    "betterWin": false,
+    "gapWins82": 14.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "New York Knicks",
+    "team2": "Boston Celtics",
+    "games": 6,
+    "winnerId": "18",
+    "betterId": "2",
+    "betterWin": false,
+    "gapWins82": 10.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Oklahoma City Thunder",
+    "team2": "Denver Nuggets",
+    "games": 7,
+    "winnerId": "25",
+    "betterId": "25",
+    "betterWin": true,
+    "gapWins82": 18.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Minnesota Timberwolves",
+    "team2": "Golden State Warriors",
+    "games": 5,
+    "winnerId": "16",
+    "betterId": "16",
+    "betterWin": true,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Minnesota Timberwolves",
+    "team2": "Oklahoma City Thunder",
+    "games": 5,
+    "winnerId": "25",
+    "betterId": "25",
+    "betterWin": true,
+    "gapWins82": 19.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Indiana Pacers",
+    "team2": "New York Knicks",
+    "games": 6,
+    "winnerId": "11",
+    "betterId": "18",
+    "betterWin": false,
+    "gapWins82": 1.0
+  },
+  {
+    "seasonEnd": 2025,
+    "team1": "Indiana Pacers",
+    "team2": "Oklahoma City Thunder",
+    "games": 7,
+    "winnerId": "25",
+    "betterId": "25",
+    "betterWin": true,
+    "gapWins82": 18.0
+  }
+]

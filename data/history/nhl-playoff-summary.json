@@ -1,0 +1,438 @@
+{
+  "coverage": "2015-16 through 2024-25",
+  "definition": "Better = higher final regular-season wins/games; exact tied win rates excluded. NHL wins include regulation, overtime and shootout wins. Stanley Cup best-of-seven rounds only; 2020 qualifying series and round robin excluded.",
+  "games": {
+    "total": 870,
+    "tiedRecordExcluded": 37,
+    "n": 833,
+    "wins": 442,
+    "rate": 0.5306122448979592,
+    "wilson95": [
+      0.496658639512082,
+      0.5642848037918278
+    ]
+  },
+  "series": {
+    "total": 150,
+    "tiedRecordExcluded": 7,
+    "n": 143,
+    "wins": 84,
+    "rate": 0.5874125874125874,
+    "wilson95": [
+      0.5054672756247354,
+      0.6647843699308098
+    ]
+  },
+  "byPointsPct": {
+    "games": {
+      "total": 870,
+      "tiedRecordExcluded": 18,
+      "n": 852,
+      "wins": 443,
+      "rate": 0.5199530516431925,
+      "wilson95": [
+        0.48639185853101397,
+        0.5533351255377997
+      ]
+    },
+    "series": {
+      "total": 150,
+      "tiedRecordExcluded": 3,
+      "n": 147,
+      "wins": 84,
+      "rate": 0.5714285714285714,
+      "wilson95": [
+        0.4906152577613192,
+        0.6486037617587901
+      ]
+    }
+  },
+  "excluding2020Bubble": {
+    "games": {
+      "total": 784,
+      "tiedRecordExcluded": 37,
+      "n": 747,
+      "wins": 395,
+      "rate": 0.5287817938420348,
+      "wilson95": [
+        0.4929297127347287,
+        0.5643393678346071
+      ]
+    },
+    "series": {
+      "total": 135,
+      "tiedRecordExcluded": 7,
+      "n": 128,
+      "wins": 75,
+      "rate": 0.5859375,
+      "wilson95": [
+        0.4993185914156349,
+        0.6675484942248558
+      ]
+    }
+  },
+  "bySeason": [
+    {
+      "seasonEnd": 2016,
+      "games": {
+        "total": 91,
+        "tiedRecordExcluded": 0,
+        "n": 91,
+        "wins": 49,
+        "rate": 0.5384615384615384,
+        "wilson95": [
+          0.43656172336109367,
+          0.6372456609520694
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 0,
+        "n": 15,
+        "wins": 9,
+        "rate": 0.6,
+        "wilson95": [
+          0.357468301206246,
+          0.8017550385865841
+        ]
+      }
+    },
+    {
+      "seasonEnd": 2017,
+      "games": {
+        "total": 87,
+        "tiedRecordExcluded": 11,
+        "n": 76,
+        "wins": 37,
+        "rate": 0.4868421052631579,
+        "wilson95": [
+          0.3778372877915117,
+          0.5971130697102026
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 2,
+        "n": 13,
+        "wins": 6,
+        "rate": 0.46153846153846156,
+        "wilson95": [
+          0.23206067809538303,
+          0.7085620428549398
+        ]
+      }
+    },
+    {
+      "seasonEnd": 2018,
+      "games": {
+        "total": 84,
+        "tiedRecordExcluded": 0,
+        "n": 84,
+        "wins": 52,
+        "rate": 0.6190476190476191,
+        "wilson95": [
+          0.5121544142609232,
+          0.7155285075451102
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 0,
+        "n": 15,
+        "wins": 11,
+        "rate": 0.7333333333333333,
+        "wilson95": [
+          0.4804956594401943,
+          0.8910254667430761
+        ]
+      }
+    },
+    {
+      "seasonEnd": 2019,
+      "games": {
+        "total": 87,
+        "tiedRecordExcluded": 0,
+        "n": 87,
+        "wins": 41,
+        "rate": 0.47126436781609193,
+        "wilson95": [
+          0.36982264609147514,
+          0.5751364060317501
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 0,
+        "n": 15,
+        "wins": 7,
+        "rate": 0.4666666666666667,
+        "wilson95": [
+          0.24809535365737387,
+          0.698830199745016
+        ]
+      }
+    },
+    {
+      "seasonEnd": 2020,
+      "games": {
+        "total": 86,
+        "tiedRecordExcluded": 0,
+        "n": 86,
+        "wins": 47,
+        "rate": 0.5465116279069767,
+        "wilson95": [
+          0.4415616959142949,
+          0.6474840531754034
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 0,
+        "n": 15,
+        "wins": 9,
+        "rate": 0.6,
+        "wilson95": [
+          0.357468301206246,
+          0.8017550385865841
+        ]
+      }
+    },
+    {
+      "seasonEnd": 2021,
+      "games": {
+        "total": 84,
+        "tiedRecordExcluded": 5,
+        "n": 79,
+        "wins": 36,
+        "rate": 0.45569620253164556,
+        "wilson95": [
+          0.3504845759399334,
+          0.565016670662313
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 1,
+        "n": 14,
+        "wins": 6,
+        "rate": 0.42857142857142855,
+        "wilson95": [
+          0.21380798904474121,
+          0.6740935542034926
+        ]
+      }
+    },
+    {
+      "seasonEnd": 2022,
+      "games": {
+        "total": 89,
+        "tiedRecordExcluded": 0,
+        "n": 89,
+        "wins": 47,
+        "rate": 0.5280898876404494,
+        "wilson95": [
+          0.4253754742950576,
+          0.6284797759725685
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 0,
+        "n": 15,
+        "wins": 9,
+        "rate": 0.6,
+        "wilson95": [
+          0.357468301206246,
+          0.8017550385865841
+        ]
+      }
+    },
+    {
+      "seasonEnd": 2023,
+      "games": {
+        "total": 88,
+        "tiedRecordExcluded": 5,
+        "n": 83,
+        "wins": 47,
+        "rate": 0.5662650602409639,
+        "wilson95": [
+          0.4590592640283887,
+          0.667608345537133
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 1,
+        "n": 14,
+        "wins": 10,
+        "rate": 0.7142857142857143,
+        "wilson95": [
+          0.4535091567010681,
+          0.8827862135542308
+        ]
+      }
+    },
+    {
+      "seasonEnd": 2024,
+      "games": {
+        "total": 88,
+        "tiedRecordExcluded": 0,
+        "n": 88,
+        "wins": 52,
+        "rate": 0.5909090909090909,
+        "wilson95": [
+          0.4864808526118738,
+          0.6877324079945095
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 0,
+        "n": 15,
+        "wins": 11,
+        "rate": 0.7333333333333333,
+        "wilson95": [
+          0.4804956594401943,
+          0.8910254667430761
+        ]
+      }
+    },
+    {
+      "seasonEnd": 2025,
+      "games": {
+        "total": 86,
+        "tiedRecordExcluded": 16,
+        "n": 70,
+        "wins": 34,
+        "rate": 0.4857142857142857,
+        "wilson95": [
+          0.37245878383038566,
+          0.6004561608099076
+        ]
+      },
+      "series": {
+        "total": 15,
+        "tiedRecordExcluded": 3,
+        "n": 12,
+        "wins": 6,
+        "rate": 0.5,
+        "wilson95": [
+          0.2537815976337061,
+          0.7462184023662939
+        ]
+      }
+    }
+  ],
+  "byGapWins82": [
+    {
+      "label": "0\u20135",
+      "minExclusive": 0,
+      "maxInclusive": 5,
+      "games": {
+        "total": 528,
+        "tiedRecordExcluded": 0,
+        "n": 528,
+        "wins": 269,
+        "rate": 0.509469696969697,
+        "wilson95": [
+          0.466914924797938,
+          0.5518876710398782
+        ]
+      },
+      "series": {
+        "total": 88,
+        "tiedRecordExcluded": 0,
+        "n": 88,
+        "wins": 47,
+        "rate": 0.5340909090909091,
+        "wilson95": [
+          0.43063465303197157,
+          0.6346953196954221
+        ]
+      }
+    },
+    {
+      "label": "5\u201310",
+      "minExclusive": 5,
+      "maxInclusive": 10,
+      "games": {
+        "total": 202,
+        "tiedRecordExcluded": 0,
+        "n": 202,
+        "wins": 108,
+        "rate": 0.5346534653465347,
+        "wilson95": [
+          0.46586306277687073,
+          0.6021504466502814
+        ]
+      },
+      "series": {
+        "total": 36,
+        "tiedRecordExcluded": 0,
+        "n": 36,
+        "wins": 23,
+        "rate": 0.6388888888888888,
+        "wilson95": [
+          0.4757507548555804,
+          0.7752440705348462
+        ]
+      }
+    },
+    {
+      "label": "10\u201320",
+      "minExclusive": 10,
+      "maxInclusive": 20,
+      "games": {
+        "total": 90,
+        "tiedRecordExcluded": 0,
+        "n": 90,
+        "wins": 60,
+        "rate": 0.6666666666666666,
+        "wilson95": [
+          0.5642231776063374,
+          0.7554649472055536
+        ]
+      },
+      "series": {
+        "total": 17,
+        "tiedRecordExcluded": 0,
+        "n": 17,
+        "wins": 14,
+        "rate": 0.8235294117647058,
+        "wilson95": [
+          0.5897054143116588,
+          0.9380887336237901
+        ]
+      }
+    },
+    {
+      "label": "20+",
+      "minExclusive": 20,
+      "maxInclusive": 82,
+      "games": {
+        "total": 13,
+        "tiedRecordExcluded": 0,
+        "n": 13,
+        "wins": 5,
+        "rate": 0.38461538461538464,
+        "wilson95": [
+          0.17709707797762575,
+          0.6447710848733431
+        ]
+      },
+      "series": {
+        "total": 2,
+        "tiedRecordExcluded": 0,
+        "n": 2,
+        "wins": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.6576197724933469
+        ]
+      }
+    }
+  ],
+  "excluded2020PreliminaryGames": 44,
+  "confidenceNote": "Wilson intervals are nominal binomial intervals; playoff games within a series are correlated and team-seasons are not independent. These intervals are descriptive and do not represent causal attribution."
+}

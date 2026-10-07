@@ -1,0 +1,66 @@
+{
+  "nba": {
+    "recordMetric": "win percentage",
+    "training": "2016\u20132022 postseasons",
+    "test": "2023\u20132025 postseasons",
+    "trainingGames": 584,
+    "trainingFit": {
+      "slope": 0.3784488364322442,
+      "homeLogOdds": 0.4357958989491094,
+      "ridgePenalty": 4.0
+    },
+    "model": {
+      "games": 250,
+      "brier": 0.23135523014905243,
+      "logLoss": 0.6549550995493931,
+      "meanPredictedHomeWin": 0.6104976686273934,
+      "observedHomeWin": 0.584
+    },
+    "homeOnly": {
+      "games": 250,
+      "brier": 0.24358050058458855,
+      "logLoss": 0.68029521704022,
+      "meanPredictedHomeWin": 0.609228963208762,
+      "observedHomeWin": 0.584
+    },
+    "coinFlip": {
+      "games": 250,
+      "brier": 0.25,
+      "logLoss": 0.6931471805599466,
+      "meanPredictedHomeWin": 0.5,
+      "observedHomeWin": 0.584
+    }
+  },
+  "nhl": {
+    "recordMetric": "points percentage",
+    "training": "2016\u20132022 postseasons",
+    "test": "2023\u20132025 postseasons",
+    "trainingGames": 608,
+    "trainingFit": {
+      "slope": 0.08321025285291973,
+      "homeLogOdds": 0.1204824687701893,
+      "ridgePenalty": 4.0
+    },
+    "model": {
+      "games": 262,
+      "brier": 0.24850489129330253,
+      "logLoss": 0.6901839078884798,
+      "meanPredictedHomeWin": 0.5329817755694921,
+      "observedHomeWin": 0.5152671755725191
+    },
+    "homeOnly": {
+      "games": 262,
+      "brier": 0.25003358497802763,
+      "logLoss": 0.6932157734409383,
+      "meanPredictedHomeWin": 0.5315972590992405,
+      "observedHomeWin": 0.5152671755725191
+    },
+    "coinFlip": {
+      "games": 262,
+      "brier": 0.25,
+      "logLoss": 0.6931471805599466,
+      "meanPredictedHomeWin": 0.5,
+      "observedHomeWin": 0.5152671755725191
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "leaguelab",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Explore how sport mechanics and competition formats shape an upset.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "check:history": "node scripts/check-history.mjs",
+    "build": "node scripts/check.mjs",
+    "standalone": "node scripts/standalone.mjs"
+  },
+  "license": "MIT"
+}

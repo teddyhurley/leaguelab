@@ -1,0 +1,30 @@
+{
+  "coverage": "2015-16 through 2024-25 (ten completed NBA seasons, ending-year key 2016–2025).",
+  "publisher": "SportsDataverse, original collection pipeline of ESPN NBA APIs; not an official NBA-published dataset.",
+  "sourceDocumentation": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/python/espn_nba_03_standings_scrape.py",
+  "standingsUrlPattern": "https://raw.githubusercontent.com/sportsdataverse/hoopR-nba-raw/main/nba/standings/json/{endingYear}.json",
+  "scheduleUrlPattern": "https://raw.githubusercontent.com/sportsdataverse/hoopR-nba-raw/main/nba/schedules/rds/nba_schedule_{endingYear}.rds",
+  "usedManifest": "source-manifest-used.json",
+  "rebuild": "python3 rebuild.py (cached); python3 rebuild.py --fetch (public source refresh); requires Python standard library and base R/Rscript.",
+  "rarityDefinition": "Use games==82 team-seasons only for actual-win rarity: 240 rows, excluding 2019-20 and 2020-21. Empirical CDF or midrank can compare league-relative rarity; rarity is not latent ability. Sample maximum is not an absolute historical limit.",
+  "normalizedWinsDefinition": "wins82 = 82*wins/(wins+losses). Retain actual wins and games. Pandemic seasons may be used as pace references but not treated as actual 82-game wins.",
+  "playoffDefinition": "Higher final regular-season win percentage known before playoffs; exactly tied records excluded. Season_type==3, completed games only. Play-in (type5), incomplete/postponed entries excluded. Series grouped by season and unordered team IDs.",
+  "validations": [
+    "300 unique team-seasons,30/year",
+    "11,979 cleaned regular-season games; every team’s game count and wins exactly matches the standings snapshot",
+    "834 completed playoff games and150 series; exactly15/year; every winner has4wins and series length4–7"
+  ],
+  "regularSeasonCleaning": "Filter completed type2 records to official 30 team IDs for the season; exclude NBA Cup Championship finals (2024 and2025 ending-year seasons). Other Cup rounds count as regular-season games. All-Star games and incomplete rescheduling placeholders removed.",
+  "caveats": [
+    "Record is an observed noisy proxy, not proof of underlying team quality.",
+    "Raw playoff rates combine actual matchup strength distributions,home advantage,injuries,rosters,and format; they do not identify causal effects of scoring frequency.",
+    "Postseason games within a series are dependent. Wilson intervals in summary are simple descriptive binomial intervals and should not be presented as fully cluster-adjusted uncertainty.",
+    "2020 NBA bubble has no real home court; ESPN neutral_site does not reliably mark these games. Explicit season/date override needed in any home-effect regression.",
+    "Home-split aggregate has11,974 classified home games versus11,979 actual regular-season games; avoid using the home-split count as total games.",
+    "Do not use final-season records to evaluate predictions of games within that same regular season: that introduces future information leakage. Final records are available for the subsequent playoffs."
+  ],
+  "covidSources": [
+    "https://www.nba.com/news/nba-board-of-governors-approves-adjustments-to-collective-bargaining-agreement",
+    "https://www.nba.com/nba-returns-2020-faq"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "cohort": "2015-16 through 2024-25; ten completed seasons, 312 team-seasons. Frozen cohort chosen for NBA comparability, not all currently completed seasons.",
+  "rarityCohort": "250 team-seasons with exactly 82 regular-season games; exclude all 2019-20 and 2020-21 team-seasons because shortened schedules and different sampling variance change tail rarity.",
+  "rarityDefinition": "Empirical midrank CDF = (# fewer wins + 0.5 * # equal wins)/N. Upper-tail frequency = # at least as many wins/N. Current 84-game inputs normalized using W/84 against historical W/82. Tail outside observed history is extrapolation; do not report 0% as impossible.",
+  "betterTeam": "Use exact rational comparisons of regular-season wins/games (cross-products) to avoid floating-point tie errors. Also provide points/(2*games) alternative because NHL official standings use points and OT/shootout losers receive one point.",
+  "playoffDefinition": "Only 150 completed best-of-seven series, rounds 1\u20134. Every winner and pair cross-checked against official playoff bracket JSON. Exclude 2020 qualifying best-of-five and round-robin games. 2020 main bracket remains and is identified as neutral bubble.",
+  "validations": [
+    "312 expected team-seasons, 250 full 82-game team-seasons.",
+    "Raw response data count equals reported total.",
+    "Regular-season games reproduce every team GP, wins and overtime/shootout losses; summed final scores exceed official goalsFor by exactly shootout wins.",
+    "Every retained playoff series reaches exactly four wins and matches official bracket.",
+    "All source responses cached with URL, retrieval time and SHA256."
+  ],
+  "limits": [
+    "Final season records summarize whole regular season. Not an in-season prospective predictor.",
+    "Observed playoff rates confound regular-season strength gaps, home advantage, seed selection, injuries and roster changes; differences between sports cannot be attributed solely to scoring frequency.",
+    "NHL total wins include overtime and shootouts; playoffs use continuous overtime and no shootouts.",
+    "Wins-only inputs lose information from NHL overtime-loss points; points-percentage comparison is a sensitivity check.",
+    "Regular-season scores include shootout deciding goals; official goalsFor summary excludes deciding shootout tallies. Scoring frequency comes from official team goalsFor, not summing final scores.",
+    "Identically rare records across leagues do not imply identical playoff win probabilities; empirical rarity is a league-relative input, separate from sport and format mechanics."
+  ],
+  "verifiedOvertimePointException": {
+    "gameId": "2023021166",
+    "team": "Minnesota Wild",
+    "date": "2024-03-30",
+    "detail": "Official record counts this empty-net overtime loss as a loss without an overtime standings point.",
+    "source": "https://www.nhl.com/news/vegas-golden-knights-minnesota-wild-game-recap-march-30-x7051"
+  }
+}

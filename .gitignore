@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+coverage/
+*.log
+.sites-runtime/
+.sites-local/
+.env*
+LeagueLab.html
+.openai/
+__pycache__/
+*.py[cod]
