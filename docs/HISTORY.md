@@ -51,7 +51,7 @@ python3 scripts/history/build.py
 npm test
 ```
 
-`check:history` rebuilds in a temporary directory and checks that the shipped results match. The Python script consumes the included clean snapshots, rebuilds wins/points empirical rank knots, retains legacy win knots only for old-link conversion, performs the regularized two-parameter fits (NBA wins, NHL points), runs the temporal validation and writes `dist/src/history-data.js` and `data/history/validation.json`. No API keys or network are needed. The generation is deterministic. The application performs no network data retrieval.
+`check:history` rebuilds in a temporary directory and checks that the shipped results match. The Python script consumes the included clean snapshots, rebuilds wins/points empirical rank knots, retains legacy win knots only for old-link conversion, performs the regularized two-parameter fits (NBA/MLB/NFL wins, NHL points, Premier League pre-match points), runs the temporal validation and writes `dist/src/history-data.js` , `data/history/validation.json` and `data/history/feature-audit.json`. No API keys or network are needed. The generation is deterministic. The application performs no network data retrieval.
 
 [MODEL.md](MODEL.md) specifies equations, training/test separation, regularization, endpoint caps, fitted-to-event-model translation and limitations. Clean snapshots allow the exact shipped result to be reproduced even if mutable upstream URLs later change. A future refresh should update snapshots, record hashes and sample audit before rebuilding; it must not silently replace the data behind a model version.
 
@@ -61,3 +61,11 @@ npm test
 - [Premier League explanation](https://www.premierleague.com/en/news/58905): three points per win and one per draw. LeagueLab computes earned points from match results and explicitly excludes administrative deductions.
 
 Model v3.0 refits NHL using points rarity. Its slope is 0.079859, home coefficient 0.097185, and held-out Brier score 0.248505 versus 0.250034 for home alone. This is a small improvement on one temporal split, not evidence that switching inputs makes the model generally more accurate. NBA coefficients and validation are unchanged.
+
+## Outcome extension · October 7, 2026
+
+Model v4 adds all completed MLB/NFL games for 2015–2024 and Premier League matches for 2015–16 through 2024–25. NBA/NHL playoff fits retain their original samples and coefficients. New files are `{mlb,nfl,soccer}-games.json`, `*-game-sources.json`, `*-games-audit.json`, and `*-games-methodology.md`. The Premier League correction audit is `soccer-date-corrections.json`. Raw retrieval caches are development files; the release includes normalized outcomes and provenance sufficient to reproduce the shipped fitting pipeline offline.
+
+MLB: 22,763 regular-season games plus 393 playoff games from official StatsAPI schedules; 300 team-season win/loss totals reconcile with independent official standings. NFL: 2,623 regular-season games plus 120 playoffs from a hash-verified nflverse snapshot. Premier League: 3,800 matches, 380 per season, 886 draws; 2,795 meet the pre-match ten-game threshold. Sixty-six July 2020 dates in generated JSON were incorrectly in 2019 and are corrected using pinned upstream text plus official revised schedules.
+
+`feature-audit.json` records every new predictor, source game ID and pregame through-date. Playoff predictors use final regular-season wins/games, including shortened/incomplete records excluded from the rarity cohort. Soccer predictors use prior earned points only. These different inclusion rules serve different purposes; the 1,278-row rarity cohort remains unchanged. See [EVIDENCE.md](EVIDENCE.md) for coefficients, split counts, source links and the failed MLB holdout comparison.

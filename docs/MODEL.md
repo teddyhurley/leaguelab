@@ -1,8 +1,8 @@
-# Model specification · v3.0.0
+# Model specification · v4.0.0
 
 ## Evidence and scope
 
-League-specific wins/points inputs use 1,278 team-seasons across five leagues. NBA and NHL baseline game probabilities use exploratory regularized postseason fits. Counterfactual scoring mechanisms remain assumptions; MLB/NFL/Premier League game probabilities are illustrative. This is not a calibrated real-team forecast or a causal explanation of league differences.
+League-specific wins/points inputs use 1,278 team-seasons across five leagues. Baseline game probabilities in all five sports use historical outcome fits: four postseason models and a pre-match Premier League model. MLB failed to improve on the simple holdout baselines. Counterfactual scoring mechanisms remain assumptions. This is not a calibrated real-team forecast or a causal explanation of league differences.
 
 ## Plain-language walkthrough of the numbers
 
@@ -10,22 +10,22 @@ The app has no remote simulation backend or live odds feed. It bundles a fixed h
 
 1. **Record → normalized rate.** NBA/MLB/NFL use wins/games; NHL uses standings points/(2×games); Premier League uses earned points/(3×matches), before administrative deductions. Historical rows use actual games; the UI translates to 82 NBA / 84 NHL / 162 MLB / 17 NFL / 38 Premier League games.
 2. **Record rate → historical rank → strength.** Compare the record with its league’s included team-seasons; smooth and interpolate its percentile, then apply a logit transform. Choosing rarity as a strength proxy is an assumption. It retains luck, schedule and era effects embedded in the record.
-3. **Strength gap → one-game probability.** NBA/NHL use fitted playoff-outcome relationships. Other sports use chosen event-model constants. Baseline NBA/NHL mean scoring is measured; their event count and reward mixtures remain assumed. The baseline fitted edge is held fixed for counterfactuals.
+3. **Strength gap → one-game probability.** NBA/NHL/MLB/NFL use fitted playoff-outcome relationships. Premier League uses pre-match records and a fair-decider win-credit target. All five baseline mean scoring levels are measured; their event count and reward mixtures remain assumed. The baseline fitted edge is held fixed for counterfactuals.
 4. **Game odds → format → simulated outcomes.** Exact score/series calculations provide the headline odds. Seeded sampling produces illustrative wins, losses and squares. It does not add new evidence.
 
 **Worked example:** 50 NBA wins gives smoothed rank 0.773859 and internal strength 1.230231. Ten NFL wins gives rank 0.673981 and strength 0.726247. Under neutral NBA rules, the fitted coefficient is 0.328775. Apply logistic(0.328775 × (1.230231 − 0.726247)) to get about 54.13% for A, and 45.87% for B. These are hypothetical cross-sport odds conditional on rarity matching, not a measured history of NBA teams playing NFL teams.
 
-**Provenance:** the record counts and NBA/NHL score means come from the bundled sources in [HISTORY.md](HISTORY.md). The fit uses 834 NBA games and 870 NHL games; its slopes are 0.328775 and 0.079859. Separate home coefficients are 0.394797 and 0.097185. The regularization penalty of 4, nonnegative slope restriction, percentile smoothing, 0.12 controlled-mechanics strength response, opportunity counts, reward mixtures, game-day shock distribution, home/rest adjustments, tie decider and independent-game assumption are design choices. No claim is made that all of these were measured.
+**Provenance:** the record counts and all five score means come from the bundled sources in [HISTORY.md](HISTORY.md). The fits use 834 NBA, 870 NHL, 393 MLB, 120 NFL and 2,795 Premier League games. All coefficients and holdout results are in [EVIDENCE.md](EVIDENCE.md). The regularization penalty of 4, nonnegative slope restriction, percentile smoothing, 0.12 controlled-mechanics strength response, opportunity counts, reward mixtures, game-day shock distribution, home/rest adjustments, tie decider and independent-game assumption are design choices. No claim is made that all of these were measured.
 
 **Default controls:** scoring/opportunity/skill/form multipliers are 1, added reward volatility and home/rest adjustments are 0. Trial count 10,000 and random seed 42 are convenience defaults. The base event-rate cap at 0.95 is a numerical/modeling guardrail. The 95% simulation interval is a standard Wilson binomial interval using z≈1.96; it is not a confidence interval for real-world accuracy. The sections below give the complete formulas, presets, schedules, validation and computational tolerances.
 
 ## Record inputs, rarity and latent strength
 
-Config v4 stores independent `recordSportA`, `recordSportB`, `recordA`, `recordB`; a `comparison` mode; `opponentRank`; `matching` (`rarity` or `recordRate`); and `basis` (`history` or `mechanics`). Record values carry the selected sport’s unit: wins for NBA/MLB/NFL, points for NHL/Premier League. `history.js` returns explicit `value`, `unit`, `games`, `max`, `rate` and `rank` fields for translated records. CSV also includes units beside the reference totals and translated paces.
+Config v5 stores independent `recordSportA`, `recordSportB`, `recordA`, `recordB`; a `comparison` mode; `opponentRank`; `matching` (`rarity` or `recordRate`); and `basis` (`history` or `mechanics`). Record values carry the selected sport’s unit: wins for NBA/MLB/NFL, points for NHL/Premier League. `history.js` returns explicit `value`, `unit`, `games`, `max`, `rate` and `rank` fields for translated records. CSV also includes units beside the reference totals and translated paces.
 
 Equivalent paces may be fractional after switching leagues; direct slider edits choose whole wins or points. Bounds are NBA 82 wins, NHL 168 points (84 games in 2026–27), MLB 162 wins, NFL 17 wins, Premier League 114 points (38 matches). NHL uses actual API points, checked against 2×wins + overtime/shootout losses. Premier League points are 3×wins + draws. Administrative deductions are excluded because this input describes on-field results, not disciplinary penalties. The app labels that distinction. Neither points scale changes game-score charts, which remain in goals.
 
-Config v2 first retains its original same-league A-vs-B semantics; v3 retains its explicit comparison mode. Both migrate to v4: win-based NHL/Premier League source values are mapped from retained legacy win-percentile knots into equivalent points percentiles. Zero/perfect legacy records map to the bounds; other out-of-sample records cap at the empirical endpoints. This does not recover actual points from wins alone. A visible notice states the conversion and that the new NHL fit may change prior odds. The legacy `winRate` option becomes `recordRate` with its new denominator semantics. NBA/MLB/NFL source values stay unchanged. Abstract-rating v1 remains unsupported.
+Config v2 first retains its original same-league A-vs-B semantics; v3 retains its explicit comparison mode. Both migrate to v5: win-based NHL/Premier League source values are mapped from retained legacy win-percentile knots into equivalent points percentiles. Zero/perfect legacy records map to the bounds; other out-of-sample records cap at the empirical endpoints. This does not recover actual points from wins alone. A visible notice states the conversion and that the new NHL fit may change prior odds. The legacy `winRate` option becomes `recordRate` with its new denominator semantics. NBA/MLB/NFL source values stay unchanged. Version 4 preserves its records and settings when migrating to v5; a notice explains that the new MLB/NFL/Premier League fits can change prior odds. Abstract-rating v1 remains unsupported.
 
 ### Head-to-head (default)
 
@@ -37,7 +37,7 @@ The left scenario supplies the primary matchup rules. The right scenario supplie
 
 Comparison options retains benchmark mode, and existing configuration-v3 links preserve their explicit mode. In this mode A plays in its source league on the left and B in its source league on the right, each against the same opponent percentile. Default q=.5 is the middle of each league’s historical distribution, not necessarily a .500 record. Options are .25/.5/.75/.9. Changing B cannot change A’s result in this mode, and these independent probabilities need not sum to 100%.
 
-Scenario `a` internally means the focal team in benchmark mode; scenario `b` means its opponent. The `subject` field identifies the user-facing A/B team and `headToHead` is null. NBA/NHL fits remain exploratory postseason associations; median-opponent and cross-sport applications are not independently validated forecasts.
+Scenario `a` internally means the focal team in benchmark mode; scenario `b` means its opponent. The `subject` field identifies the user-facing A/B team and `headToHead` is null. The four playoff fits and Premier League pre-match fit remain historical associations; median-opponent and cross-sport applications are not independently validated forecasts.
 
 For rate r = record / maximumAvailable, the rarity readout is the exact share of included historical records at or above r. Maximum available is games for wins, 2×games for NHL points, or 3×matches for Premier League points, using a 1e-10 equality tolerance. The latent proxy uses each unique observed rate's smoothed midrank:
 
@@ -56,38 +56,40 @@ Rarity matching holds q exactly across sports and displays an inverse-interpolat
 | --- | --- | ---: | --- |
 | NBA | 2015–16 to 2024–25 | 240 | Full 82-game records; excludes 2019–20 / 2020–21 |
 | NHL | 2015–16 to 2024–25 | 250 | Full 82-game records, normalized to 84-game current pace |
-| MLB | 2015–2024 | 270 | Excludes 2020; actual 161–163 games normalize cancellations/tiebreakers |
-| NFL | 2015–2024 | 318 | Full 16/17-game schedules; excludes incomplete BUF/CIN 2022 |
+| MLB | 38 | 4.503273 / 54.150 | 1/.70, 2/.20, 3/.075, 4/.025 | 4.503273 runs |
+| NFL | 11 | 22.770301 / 59.620 | 3/.40, 7/.58, 8/.02 | 22.770301 points |
 | Premier League | 2015–16 to 2024–25 | 200 | All 38-match records; 3×wins + draws before deductions |
 
 See [data provenance and reproduction](HISTORY.md). The reference is a fixed ten-season window, not all-time league history or the latest completed season.
 
-## Exploratory playoff baseline fit
+## Historical game baseline fits
 
-NBA/NHL postseason game outcomes are subsequent to the regular-season records used as features. NBA features use wins percentage; NHL features use standings points percentage, joined by season and team ID to each playoff game. Shortened regular seasons use their actual games played. Include every game in the 150 best-of-seven series per league (834 NBA, 870 NHL), including equal-record matchups. Exclude NBA play-ins, NHL 2020 qualifiers and round robin. All 2020 bubble games have home indicator zero, overriding inaccurate upstream neutral flags.
+NBA/NHL use the retained postseason games after their regular-season records: 834 NBA games and 870 NHL games. NBA features use win percentage; NHL uses standings points percentage. Shortened seasons use actual games. NBA play-ins and NHL 2020 preliminary/round-robin games are excluded; 2020 NBA/NHL bubble games are neutral.
+
+MLB/NFL aggregate every completed regular-season game by season and stable team ID, then join that record to every postseason game. The predictor never includes postseason results. MLB retains the 2016 tied game in games played but not wins, and marks the documented 2020 Division Series onward as neutral. NFL uses literal wins/game, including actual 16-game records for BUF/CIN 2022. Source-marked neutral games and Super Bowls are neutral. The samples are 393 MLB and 120 NFL playoff games.
+
+Premier League has no postseason. Its 2,795 eligible matches use earned points divided by three times games played **before that match date**, after both clubs have played at least ten matches. All fixtures on a date use the same pre-day snapshot. Current/future match results cannot enter their own features. Sixty-six erroneous July 2020 dates in the upstream JSON were corrected using pinned upstream text and official fixture evidence, with a per-game audit. The ten-match threshold was fixed before checking holdout performance. Applying a partial-season form relationship to a full-season-equivalent input remains a transport assumption.
 
 ```text
-P(home win) = logistic(beta * (theta_home - theta_away) + h * home_indicator)
-objective = summed game negative log likelihood + 0.5 * 4 * (beta^2 + h^2)
+Expected home win credit = logistic(beta * (theta_home - theta_away) + h * home_indicator)
+y = 1 for a home win, 0 for a loss, 0.5 for a draw
+objective = summed binary cross entropy(y, p) + 0.5 * 4 * (beta^2 + h^2)
 beta >= 0
 ```
 
-The fixed ridge penalty 4 is an explicit regularization choice, not a hyperparameter optimized on the holdout. A two-variable Newton solver reproduces the fit using only Python's standard library. Production coefficients are NBA beta 0.328775 / h 0.394797; NHL beta 0.079859 / h 0.097185. Games receive equal weight; longer series contribute more observations. We make no independent-game confidence claim about these coefficients.
+All retained playoff games are decisive. Premier League's fractional draw target represents a hypothetical fair decider: `P(win) + 0.5 * P(draw)`. It does not estimate separate regulation win/draw/loss probabilities or actual shootout success. The simulator's displayed tie and scoring-margin distributions still come from its event model and have not been validated against historical margins.
 
-The neutral simulator target is logistic(beta * delta). Numerically invert the baseline event model (25 bisection steps on edge [-8,8]) to find the event edge yielding this probability. Hold that edge fixed across scoring/opportunity/variance counterfactuals. Apply the user sensitivity multiplier to it. The fitted h adjusts beta during fitting but is removed for the default neutral simulation; home/rest sliders remain hypothetical event-odds controls. For sports without a fit and in controlled-mechanics mode, baseline edge is 0.12 * delta, an explicitly illustrative common coefficient.
+The fixed ridge penalty of 4, logistic form, nonnegative slope and percentile translation are modeling choices. The app's neutral target is `logistic(beta * delta)`. A separate fitted home coefficient prevents confounding during fitting but is removed in neutral simulation. Home/rest controls remain hypothetical event-odds adjustments.
+
+Numerically invert the baseline event model (25 bisection steps on edge [-8,8]) to reproduce the neutral target, then hold that edge fixed during counterfactuals. Historical mode now requires a fitted coefficient for every supported sport; there is no silent fallback to an assumed coefficient. Optional controlled-mechanics mode deliberately uses `0.12 * delta`. Fitted-game badges change to what-if badges when mechanics, home or rest change. Series odds remain calculated under independent-game assumptions. The interface flags strength gaps exceeding the maximum gap in the fit, as well as records outside the rarity reference.
 
 ### Temporal validation
 
-Fit only on 2016–2022 playoffs and construct the rank distribution only from their eligible regular seasons. Evaluate on 2023–2025 playoffs without updating either. Final app coefficients are then refit on all ten postseasons; these are distinct from the held-out training coefficients stored in the validation artifact.
+Each model trains on the earliest seven seasons and tests on the final three. Training percentile knots use training seasons only. NBA/NHL train on 2016–2022 postseasons and test on 2023–2025; MLB/NFL train on 2015–2021 and test on 2022–2024; Premier League trains on 2015–16 through 2021–22 and tests on 2022–23 through 2024–25. No cutoff, penalty or threshold is tuned against the test outcomes. Final app coefficients refit on all ten seasons after that check.
 
-| League | Train/test games | Holdout Brier | Home-only Brier | Holdout log loss | Home-only log loss |
-| --- | --- | ---: | ---: | ---: | ---: |
-| NBA | 584 / 250 | .231355 | .243581 | .654955 | .680295 |
-| NHL | 608 / 262 | .248505 | .250034 | .690184 | .693216 |
+Brier is the mean expected binary error. For a fractional draw target, use `(p-y)^2 + y*(1-y)`, not just squared error against 0.5; log loss uses fractional binary cross entropy. Thus a 50–50 forecast scores 0.25 even on draws. These are fair-decider metrics, not three-category soccer metrics. Calibration bins report observed **win credit**, not raw home-win rate. Feature rows and holdout calculations rebuild offline.
 
-A constant 50–50 model scores Brier .25 / log loss .693147. NHL improvement is small. One temporal split, season changes, series dependence, and limited extreme-record matchups constrain this evidence. No coefficient intervals, series-cluster bootstrap, schedule adjustment or real-team forecasting claim is made.
-
-Displayed descriptive better-record rates exclude equal NBA win percentages and equal NHL points percentages: NBA 486/778 games and 101/141 series; NHL 443/852 games and 84/147 series. These aggregate different matchups and contexts, so they are benchmarks, not targets to impose on every selected matchup. The older NHL win-percentage summary remains in the source audit (442/833 games, 84/143 series), demonstrating sensitivity to the definition of better.
+See [EVIDENCE.md](EVIDENCE.md) for all coefficients, sample sizes and exact validation scores. MLB performs worse than home-only and 50–50 on its holdout; it stays explicitly marked as weak evidence, not presented as an established predictive improvement. NFL's small improvement is based on 39 games. One split, playoff selection, within-series dependence and limited extreme records constrain every fit. No parameter confidence intervals or validated real-team forecast claim is made. NBA/NHL descriptive better-record rates remain in the source audit and [HISTORY.md](HISTORY.md); they are not imposed on every selected matchup.
 
 ## Event model
 
@@ -111,7 +113,7 @@ The game-day shock `F` equals `0.12 * noise_multiplier * Z`, where:
 
 This finite mixture has E[Z] = 0 and Var(Z) = 1. Conditional on form, events and team scores are independent; marginally, the common form shock induces dependence. A new independent shock is drawn conceptually each game. We integrate it exactly before sampling winners, which has the same distribution for independent games.
 
-Noise defaults are common. History mode has league-specific baseline fits for NBA/NHL; controlled-mechanics mode uses a common illustrative strength coefficient. All parameters can materially alter the ranking.
+Noise defaults are common. History mode has league-specific game fits for all five sports; controlled-mechanics mode uses a common illustrative strength coefficient. All parameters can materially alter the ranking.
 
 ## Presets (per team)
 
@@ -119,13 +121,13 @@ Noise defaults are common. History mode has league-specific baseline fits for NB
 | --- | ---: | ---: | --- | ---: |
 | NBA | 100 | 110.259538 / 228 | 1/.06, 2/.60, 3/.34 | 110.259538 points |
 | NHL | 31 | mean historical goals / 31 | 1/1.00 | about 2.96 goals |
-| MLB | 38 | 0.082 | 1/.70, 2/.20, 3/.075, 4/.025 | 4.4403 runs |
-| NFL | 11 | 0.40 | 3/.40, 7/.58, 8/.02 | 23.848 points |
-| Soccer | 12 | 0.12 | 1/1.00 | 1.44 goals |
+| MLB | 38 | 4.503273 / 54.150 | 1/.70, 2/.20, 3/.075, 4/.025 | 4.503273 runs |
+| NFL | 11 | 22.770301 / 59.620 | 3/.40, 7/.58, 8/.02 | 22.770301 points |
+| Soccer | 12 | 1.415000 / 12.000 | 1/1.00 | 1.415000 goals |
 
-The notation `value/weight` describes event reward values and probabilities. These are rounded stylized assumptions. NBA events abstract full scoring possessions, including free throws. MLB events do not reconstruct innings, base/out state, or plate-appearance dependence. NFL events abstract scoring drives. Premier League chances are not an xG feed; only its record distribution is empirical.
+The notation `value/weight` describes event reward values and probabilities. These are rounded stylized assumptions. NBA events abstract full scoring possessions, including free throws. MLB events do not reconstruct innings, base/out state, or plate-appearance dependence. NFL events abstract scoring drives. Premier League chances are not an xG feed; its record distribution and game-odds fit are empirical, but its chance mechanics remain simplified.
 
-NBA/NHL mean scores are weighted by actual team-games across all ten regular seasons; NHL totals exclude the artificial shootout-winning goal. Their baseline event probabilities reproduce those means before form noise. Opportunity counts, reward mixtures, form and home/rest scenario controls remain assumptions. The clean source snapshots and provenance are bundled in data/history; app history-data.js contains compact distributions and fit results.
+All five mean scores are weighted by actual team-games across ten regular seasons; NHL totals exclude the artificial shootout-winning goal. NBA/MLB/NFL means include overtime or extra innings where played. Baseline event probabilities reproduce those means before form noise. Opportunity counts, reward mixtures, form and home/rest scenario controls remain assumptions. The clean source snapshots and provenance are bundled in data/history; app history-data.js contains compact distributions and fit results.
 
 ## Independent counterfactuals
 

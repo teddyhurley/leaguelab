@@ -13,22 +13,22 @@
       "games": 250,
       "brier": 0.23135523014905243,
       "logLoss": 0.6549550995493931,
-      "meanPredictedHomeWin": 0.6104976686273934,
-      "observedHomeWin": 0.584
+      "meanPredictedHomeWinCredit": 0.6104976686273934,
+      "observedHomeWinCredit": 0.584
     },
     "homeOnly": {
       "games": 250,
       "brier": 0.24358050058458855,
       "logLoss": 0.68029521704022,
-      "meanPredictedHomeWin": 0.609228963208762,
-      "observedHomeWin": 0.584
+      "meanPredictedHomeWinCredit": 0.609228963208762,
+      "observedHomeWinCredit": 0.584
     },
     "coinFlip": {
       "games": 250,
       "brier": 0.25,
       "logLoss": 0.6931471805599466,
-      "meanPredictedHomeWin": 0.5,
-      "observedHomeWin": 0.584
+      "meanPredictedHomeWinCredit": 0.5,
+      "observedHomeWinCredit": 0.584
     }
   },
   "nhl": {
@@ -45,22 +45,207 @@
       "games": 262,
       "brier": 0.24850489129330253,
       "logLoss": 0.6901839078884798,
-      "meanPredictedHomeWin": 0.5329817755694921,
-      "observedHomeWin": 0.5152671755725191
+      "meanPredictedHomeWinCredit": 0.5329817755694921,
+      "observedHomeWinCredit": 0.5152671755725191
     },
     "homeOnly": {
       "games": 262,
       "brier": 0.25003358497802763,
       "logLoss": 0.6932157734409383,
-      "meanPredictedHomeWin": 0.5315972590992405,
-      "observedHomeWin": 0.5152671755725191
+      "meanPredictedHomeWinCredit": 0.5315972590992405,
+      "observedHomeWinCredit": 0.5152671755725191
     },
     "coinFlip": {
       "games": 262,
       "brier": 0.25,
       "logLoss": 0.6931471805599466,
-      "meanPredictedHomeWin": 0.5,
-      "observedHomeWin": 0.5152671755725191
+      "meanPredictedHomeWinCredit": 0.5,
+      "observedHomeWinCredit": 0.5152671755725191
     }
+  },
+  "mlb": {
+    "recordMetric": "pre-playoff win percentage",
+    "training": "2015\u20132021 postseasons",
+    "test": "2022\u20132024 postseasons",
+    "trainingGames": 269,
+    "trainingFit": {
+      "slope": 0.14827776381233318,
+      "homeLogOdds": 0.1933901927853692,
+      "ridgePenalty": 4.0
+    },
+    "model": {
+      "games": 124,
+      "brier": 0.2599926364385419,
+      "logLoss": 0.7134956241367865,
+      "meanPredictedHomeWinCredit": 0.5560626540827711,
+      "observedHomeWinCredit": 0.4838709677419355
+    },
+    "homeOnly": {
+      "games": 124,
+      "brier": 0.2549402753547577,
+      "logLoss": 0.7030825675547311,
+      "meanPredictedHomeWinCredit": 0.5559849125538726,
+      "observedHomeWinCredit": 0.4838709677419355
+    },
+    "coinFlip": {
+      "games": 124,
+      "brier": 0.25,
+      "logLoss": 0.6931471805599462,
+      "meanPredictedHomeWinCredit": 0.5,
+      "observedHomeWinCredit": 0.4838709677419355
+    },
+    "calibration": [
+      {
+        "from": 0.2,
+        "to": 0.4,
+        "games": 2,
+        "predicted": 0.3880238183531564,
+        "observedWinCredit": 1.0
+      },
+      {
+        "from": 0.4,
+        "to": 0.6,
+        "games": 99,
+        "predicted": 0.5421425674494271,
+        "observedWinCredit": 0.48484848484848486
+      },
+      {
+        "from": 0.6,
+        "to": 0.8,
+        "games": 23,
+        "predicted": 0.630591621394087,
+        "observedWinCredit": 0.43478260869565216
+      }
+    ],
+    "drawGames": 0,
+    "tieScoring": "Expected binary Brier/log loss under a fair decider; not three-way soccer scoring"
+  },
+  "nfl": {
+    "recordMetric": "pre-playoff win percentage",
+    "training": "2015\u20132021 postseasons",
+    "test": "2022\u20132024 postseasons",
+    "trainingGames": 81,
+    "trainingFit": {
+      "slope": 0.18657956900249778,
+      "homeLogOdds": 0.20477876395824698,
+      "ridgePenalty": 4.0
+    },
+    "model": {
+      "games": 39,
+      "brier": 0.21083873676730647,
+      "logLoss": 0.6129898530873936,
+      "meanPredictedHomeWinCredit": 0.5851792465886162,
+      "observedHomeWinCredit": 0.7692307692307693
+    },
+    "homeOnly": {
+      "games": 39,
+      "brier": 0.21384131621851324,
+      "logLoss": 0.6201322245693569,
+      "meanPredictedHomeWinCredit": 0.5796206539643577,
+      "observedHomeWinCredit": 0.7692307692307693
+    },
+    "coinFlip": {
+      "games": 39,
+      "brier": 0.25,
+      "logLoss": 0.6931471805599446,
+      "meanPredictedHomeWinCredit": 0.5,
+      "observedHomeWinCredit": 0.7692307692307693
+    },
+    "calibration": [
+      {
+        "from": 0.2,
+        "to": 0.4,
+        "games": 1,
+        "predicted": 0.3886064005390245,
+        "observedWinCredit": 1.0
+      },
+      {
+        "from": 0.4,
+        "to": 0.6,
+        "games": 19,
+        "predicted": 0.5390783264666649,
+        "observedWinCredit": 0.7368421052631579
+      },
+      {
+        "from": 0.6,
+        "to": 0.8,
+        "games": 19,
+        "predicted": 0.6416261059763358,
+        "observedWinCredit": 0.7894736842105263
+      }
+    ],
+    "drawGames": 0,
+    "tieScoring": "Expected binary Brier/log loss under a fair decider; not three-way soccer scoring"
+  },
+  "soccer": {
+    "recordMetric": "pre-match earned points percentage",
+    "training": "2015\u201316 to 2021\u201322 league matches",
+    "test": "2022\u201323 to 2024\u201325 league matches",
+    "trainingGames": 1958,
+    "trainingFit": {
+      "slope": 0.2656932705530943,
+      "homeLogOdds": 0.33681397911587063,
+      "ridgePenalty": 4.0
+    },
+    "model": {
+      "games": 837,
+      "brier": 0.21843103272810308,
+      "logLoss": 0.6273942485274657,
+      "meanPredictedHomeWinCredit": 0.5723942112776094,
+      "observedHomeWinCredit": 0.5579450418160096
+    },
+    "homeOnly": {
+      "games": 837,
+      "brier": 0.24685240586127777,
+      "logLoss": 0.6868447241928335,
+      "meanPredictedHomeWinCredit": 0.5724375823916724,
+      "observedHomeWinCredit": 0.5579450418160096
+    },
+    "coinFlip": {
+      "games": 837,
+      "brier": 0.25,
+      "logLoss": 0.6931471805599403,
+      "meanPredictedHomeWinCredit": 0.5,
+      "observedHomeWinCredit": 0.5579450418160096
+    },
+    "calibration": [
+      {
+        "from": 0.0,
+        "to": 0.2,
+        "games": 9,
+        "predicted": 0.17493033697228894,
+        "observedWinCredit": 0.16666666666666666
+      },
+      {
+        "from": 0.2,
+        "to": 0.4,
+        "games": 129,
+        "predicted": 0.3298135019431681,
+        "observedWinCredit": 0.3062015503875969
+      },
+      {
+        "from": 0.4,
+        "to": 0.6,
+        "games": 316,
+        "predicted": 0.5088116246418922,
+        "observedWinCredit": 0.49841772151898733
+      },
+      {
+        "from": 0.6,
+        "to": 0.8,
+        "games": 321,
+        "predicted": 0.6914610058839831,
+        "observedWinCredit": 0.6838006230529595
+      },
+      {
+        "from": 0.8,
+        "to": 1.0,
+        "games": 62,
+        "predicted": 0.8424223190378063,
+        "observedWinCredit": 0.7903225806451613
+      }
+    ],
+    "drawGames": 184,
+    "tieScoring": "Expected binary Brier/log loss under a fair decider; not three-way soccer scoring"
   }
 }

@@ -26,7 +26,7 @@ function compare(expected, actual, location = 'root') {
 try {
   await mkdir(path.join(scratch, 'scripts/history'), { recursive: true });
   await mkdir(path.join(scratch, 'dist/src'), { recursive: true });
-  await cp(path.join(root, 'scripts/history/build.py'), path.join(scratch, 'scripts/history/build.py'));
+  await cp(path.join(root, 'scripts/history'), path.join(scratch, 'scripts/history'), { recursive: true });
   await cp(path.join(root, 'data/history'), path.join(scratch, 'data/history'), { recursive: true });
   const build = spawnSync('python3', [path.join(scratch, 'scripts/history/build.py')], { encoding: 'utf8', timeout: 60_000 });
   if (build.error) throw new Error('Historical verification requires Python 3 on PATH.', { cause: build.error });
@@ -38,7 +38,8 @@ try {
   const expected = JSON.parse(await readFile(path.join(root, 'data/history/validation.json'), 'utf8'));
   const actual = JSON.parse(await readFile(path.join(scratch, 'data/history/validation.json'), 'utf8'));
   compare(expected, actual, 'validation');
-  console.log('Offline snapshots reproduce all five record scales, NBA/NHL fits and holdout results. Source files unchanged.');
+  compare(JSON.parse(await readFile(path.join(root, 'data/history/feature-audit.json'), 'utf8')), JSON.parse(await readFile(path.join(scratch, 'data/history/feature-audit.json'), 'utf8')), 'feature-audit');
+  console.log('Offline snapshots reproduce all five record scales, game fits, pregame features and holdout results. Source files unchanged.');
 } finally {
   await rm(scratch, { recursive: true, force: true });
 }

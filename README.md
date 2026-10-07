@@ -8,7 +8,7 @@ Compare NBA, NHL, MLB, NFL and Premier League soccer. Explore questions such as 
 
 ![LeagueLab showing independent NBA and NFL season records and hypothetical head-to-head odds](docs/preview.jpg)
 
-**Status:** working local prototype, prepared for GitHub. No public launch or completed independent usability study is claimed. Historical records ground all five input scales; NBA/NHL have exploratory playoff fits. Cross-sport matchups and rule changes are explanatory experiments, not forecasts of real teams.
+**Status:** working local prototype, prepared for GitHub. No public launch or completed independent usability study is claimed. Historical records ground all five input scales; All five sports have historical game fits, with a held-out test for each. MLB did not beat the simple baseline. Cross-sport matchups and rule changes are explanatory experiments, not forecasts of real teams.
 
 ## Run locally
 
@@ -65,15 +65,15 @@ The engine has no DOM or network dependencies. Dynamic programming computes scor
 
 ## Evidence and boundaries
 
-The fixed reference includes **1,278 team-seasons** from 2015–16 through 2024–25, or 2015–2024 for MLB/NFL. NBA uses the SportsDataverse ESPN collection; NHL/MLB use official APIs; NFL uses nflverse; Premier League uses OpenFootball. [Historical evidence and provenance](docs/HISTORY.md) documents exact sources, exclusions and normalization.
+The fixed reference includes **1,278 team-seasons** and **5,012 games used in outcome fits** from 2015–16 through 2024–25, or 2015–2024 for MLB/NFL. NBA uses the SportsDataverse ESPN collection; NHL/MLB use official APIs; NFL uses nflverse; Premier League uses OpenFootball. [Historical evidence and provenance](docs/HISTORY.md) documents exact sources, exclusions and normalization.
 
 - **Familiar inputs:** NBA 0–82 wins, NHL 0–168 points over the current 84-game schedule, MLB 0–162 wins, NFL 0–17 wins, Premier League 0–114 earned points. Premier League points exclude administrative deductions. Historical NHL records are normalized from 82-game seasons.
 - **Disclosed translation:** historical rarity supplies a latent strength proxy. It is not true ability or a next-game probability. Records beyond the reference range are flagged and capped for modeling.
-- **Limited fitting:** NBA/NHL baseline odds use regularized playoff fits with a 2016–2022 training / 2023–2025 holdout check. The other sports and counterfactual scoring mechanisms remain illustrative.
+- **Five fitted baselines:** NBA/NHL/MLB/NFL use playoff games; Premier League uses pre-match records after both clubs have played ten matches. Each model trains on the first seven seasons and tests on the last three. **MLB failed to beat the home-only and 50–50 baselines**; the app flags this alongside its odds. NFL has only 39 held-out games. [Evidence and validation report](docs/EVIDENCE.md).
 - **Simplified competition:** ties use a fair decider; soccer regulation draws are also reported. The model does not recreate athletes changing sports, detailed tactics or full playoff brackets.
 - **Model uncertainty:** the ordered explanation depends on the order of changes. It is not a measured causal decomposition of real league differences. Sampling intervals cover Monte Carlo error only.
 
-The in-app methodology explains the starting numbers. [MODEL.md](docs/MODEL.md) gives the equations, coefficients and limitations. Model v3 uses configuration schema v4. Older win-based NHL/Premier League links migrate to points by historical rarity with a visible notice; old NHL odds are not guaranteed to stay unchanged.
+The in-app methodology explains the starting numbers. [MODEL.md](docs/MODEL.md) gives the equations, coefficients and limitations. Model v4 uses configuration schema v5. Older win-based NHL/Premier League links migrate to points by historical rarity with a visible notice; old NHL odds are not guaranteed to stay unchanged. Version 4 links preserve records/settings and show a notice that the new MLB/NFL/Premier League fits can change the odds.
 
 ## Verify and reproduce
 
@@ -83,7 +83,7 @@ npm run check
 npm run check:history
 ```
 
-The historical check additionally requires **Python 3**. It rebuilds the five record distributions and NBA/NHL fits in a temporary directory, compares them with the shipped evidence, and leaves source files unchanged. No network is required.
+The historical check additionally requires **Python 3**. It rebuilds the five record distributions and all five game fits and pre-match features in a temporary directory, compares them with the shipped evidence, and leaves source files unchanged. No network is required.
 
 To intentionally regenerate the evidence after reviewing source changes:
 

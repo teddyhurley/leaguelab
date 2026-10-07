@@ -115,7 +115,7 @@ const edgeCache = new Map();
 // keep this event edge fixed, so changing scoring does not recalibrate it away.
 export function calibratedEdge(sport, a, b) {
   const delta = logit(a / 100) - logit(b / 100), fit = HISTORY[sport].fit;
-  if (!fit) return .12 * delta;
+  if (!fit) throw new Error(`Missing historical game fit for ${sport}.`);
   const key = JSON.stringify([sport, delta]);
   if (edgeCache.has(key)) return edgeCache.get(key);
   const target = logistic(fit.slope * delta), base = SPORTS[sport];
@@ -202,12 +202,24 @@ export function scorePreviewGroups(config) {
   }
   return [...groups.values()];
 }
+export function modelEvidence(s, a, b, basis = 'history') {
+  const h = HISTORY[s.sport], defaults = scenario(s.sport);
+  const changed = ['scoring', 'opportunities', 'sensitivity', 'volatility', 'noise', 'home', 'rest'].some(key => s[key] !== defaults[key]);
+  const counterfactual = basis !== 'history' || changed;
+  const weakValidation = h.validation.model.brier >= h.validation.homeOnly.brier;
+  return { kind: basis !== 'history' ? 'controlled' : changed ? 'counterfactual' : 'historical',
+    counterfactual, fitGames: h.fit.games, scope: h.fit.scope, window: h.fit.window,
+    weakValidation, outsideFit: Math.abs(logit(a / 100) - logit(b / 100)) > h.fit.maxAbsStrengthGap + 1e-10,
+    seriesDerived: s.series > 1, scoreModel: 'Mechanistic score distribution; not validated against historical margins',
+    label: basis !== 'history' ? 'Controlled mechanics' : changed ? 'What-if from historical fit' : `${s.sport === 'soccer' ? 'League-match' : 'Playoff'} fit${weakValidation ? ' · weak validation' : ''}` };
+}
 export function runExperiment(input, progress = () => {}) {
   const config = validateConfig(input), { trials, seed } = config;
   const resolve = (s, team = 'A') => {
     const matchup = comparisonMatchup(config, s.sport, team);
     return { ...evaluate(s, matchup.a.strength, matchup.b.strength, config.basis), matchup, subject: config.comparison === 'benchmark' ? team : 'A',
-      baseline: config.basis === 'history' && HISTORY[s.sport].fit ? 'Postseason fit' : 'Illustrative mechanics' };
+      evidence: modelEvidence(s, matchup.a.strength, matchup.b.strength, config.basis),
+      baseline: modelEvidence(s, matchup.a.strength, matchup.b.strength, config.basis).label };
   };
   progress(.05, 'Calculating event distributions');
   const left = resolve(config.left); progress(.25, 'Resolving the comparison');

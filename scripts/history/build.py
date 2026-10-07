@@ -1,4 +1,4 @@
-"""Rebuild browser history and exploratory NBA/NHL fits from audited snapshots.
+"""Rebuild browser history and historical game fits for all five sports from audited snapshots.
 Python standard library only. No network; exact source manifests are in data/history.
 """
 import bisect
@@ -6,6 +6,7 @@ import collections
 import json
 import math
 from pathlib import Path
+from empirical import audit_games, record_rows, design_records, calibration, score_summary
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / 'data/history'
@@ -86,9 +87,9 @@ def fit(rows, home_only=False):
 def metrics(rows, model):
     ps = [logistic(model['slope'] * x + model['homeLogOdds'] * z) for x, z, _ in rows]
     n = len(rows)
-    return {'games': n, 'brier': sum((p - r[2]) ** 2 for p, r in zip(ps, rows)) / n,
+    return {'games': n, 'brier': sum((p - r[2]) ** 2 + r[2] * (1 - r[2]) for p, r in zip(ps, rows)) / n,
             'logLoss': -sum(r[2] * math.log(p) + (1-r[2]) * math.log(1-p) for p, r in zip(ps, rows)) / n,
-            'meanPredictedHomeWin': sum(ps) / n, 'observedHomeWin': sum(r[2] for r in rows) / n}
+            'meanPredictedHomeWinCredit': sum(ps) / n, 'observedHomeWinCredit': sum(r[2] for r in rows) / n}
 
 
 records = {s: read(s + '-team-seasons.json') for s in ['nba', 'nhl']}
@@ -102,7 +103,7 @@ meta = {
     'nfl': (17, '2015 to 2024', '318 team-seasons; 16/17 games normalized; incomplete BUF/CIN 2022 excluded.', 'nflverse game records', 'https://github.com/nflverse/nfldata/blob/master/data/games.csv'),
     'soccer': (38, '2015–16 to 2024–25', '200 Premier League team-seasons, each 38 matches; earned points before deductions.', 'OpenFootball (CC0)', 'https://github.com/openfootball/football.json')
 }
-history, validation = {}, {}
+history, validation, feature_audit = {}, {}, {}
 for sport, rows in records.items():
     cohort = [r for r in rows if r['games'] == 82] if sport in ['nba', 'nhl'] else rows
     games, window, note, publisher, url = meta[sport]
@@ -131,8 +132,43 @@ for sport, rows in records.items():
                                'model': metrics(test, trained), 'homeOnly': metrics(test, home),
                                'coinFlip': metrics(test, {'slope': 0, 'homeLogOdds': 0})}
         validation[sport] = entry['validation']
+    if sport in ['mlb', 'nfl', 'soccer']:
+        outcome_games = read(sport + '-games.json')
+        game_counts = audit_games(outcome_games, sport)
+        features, excluded = record_rows(outcome_games, sport)
+        cutoff = 2022 if sport == 'soccer' else 2021
+        scope = 'Regular season, both clubs after 10 prior matches' if sport == 'soccer' else 'All postseason rounds'
+        train_knots = knots([r for r in cohort if int(str(r['season'])[:4]) + (1 if sport == 'soccer' else 0) <= cutoff], sport)
+        all_rows = design_records(features, entry['knots'], rank, logit)
+        train_features = [r for r in features if r['season'] <= cutoff]
+        test_features = [r for r in features if r['season'] > cutoff]
+        train = design_records(train_features, train_knots, rank, logit)
+        test = design_records(test_features, train_knots, rank, logit)
+        entry['fit'] = fit(all_rows)
+        entry['fit'].update({'recordMetric': 'pre-match earned points percentage' if sport == 'soccer' else 'pre-playoff win percentage',
+                             'games': len(all_rows)})
+        trained, home = fit(train), fit(train, True)
+        entry['validation'] = {'recordMetric': entry['fit']['recordMetric'],
+            'training': '2015–16 to 2021–22 league matches' if sport == 'soccer' else '2015–2021 postseasons',
+            'test': '2022–23 to 2024–25 league matches' if sport == 'soccer' else '2022–2024 postseasons',
+            'trainingGames': len(train), 'trainingFit': trained,
+            'model': metrics(test, trained), 'homeOnly': metrics(test, home),
+            'coinFlip': metrics(test, {'slope': 0, 'homeLogOdds': 0}),
+            'calibration': calibration(test, trained, logistic),
+            'drawGames': sum(r[2] == .5 for r in test),
+            'tieScoring': 'Expected binary Brier/log loss under a fair decider; not three-way soccer scoring'}
+        summary = score_summary(outcome_games)
+        entry['meanScore'], entry['scoringEvidence'] = summary['meanPerTeam'], summary
+        feature_audit[sport] = {'scope': scope, 'inputGameCounts': game_counts, 'excluded': excluded, 'rows': features}
+        validation[sport] = entry['validation']
+    entry['fit']['scope'] = ('League matches after 10 prior matches' if sport == 'soccer' else 'Postseason games')
+    entry['fit']['window'] = ('2015–16 to 2024–25' if sport in ['nba', 'nhl', 'soccer'] else '2015 to 2024')
+    entry['fit']['drawGames'] = sum(r['outcome'] == .5 for r in features) if sport in ['mlb', 'nfl', 'soccer'] else 0
+    entry['fit']['featureTiming'] = ('Before match day; at least 10 prior matches for each club' if sport == 'soccer' else 'Final regular-season record, before the postseason')
+    entry['fit']['maxAbsStrengthGap'] = max(abs(r[0]) for r in (all_rows if sport in ['mlb', 'nfl', 'soccer'] else design(playoff, entry['knots'], sport, seasons)))
     history[sport] = entry
 assert [history[s]['sampleSize'] for s in history] == [240, 250, 270, 318, 200]
-(ROOT / 'dist/src/history-data.js').write_text('/** Generated by scripts/history/build.py; audited snapshot 2026-10-05. */\nexport const HISTORY = ' + json.dumps(history, separators=(',', ':')) + ';\n')
+(ROOT / 'dist/src/history-data.js').write_text('/** Generated by scripts/history/build.py; record snapshot 2026-10-05; outcome extension 2026-10-07. */\nexport const HISTORY = ' + json.dumps(history, separators=(',', ':')) + ';\n')
+(DATA / 'feature-audit.json').write_text(json.dumps(feature_audit, separators=(',', ':')) + '\n')
 (DATA / 'validation.json').write_text(json.dumps(validation, indent=2) + '\n')
 print(json.dumps({s: {'fit': history[s]['fit'], 'validation': validation[s]} for s in validation}, indent=2))

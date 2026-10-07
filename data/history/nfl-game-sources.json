@@ -1,0 +1,33 @@
+{
+  "sport": "nfl",
+  "schemaVersion": 1,
+  "sourceSnapshotRetrievedOn": "2026-10-05",
+  "verifiedOn": "2026-10-07",
+  "seasons": [
+    2015,
+    2024
+  ],
+  "publisher": "nflverse / Lee Sharpe; community-maintained game data",
+  "url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+  "repositoryPath": "nflverse/nfldata:data/games.csv",
+  "blobSha1": "b12039baced608536036a307343706293a2b7ecd",
+  "immutableBlobUrl": "https://api.github.com/repos/nflverse/nfldata/git/blobs/b12039baced608536036a307343706293a2b7ecd",
+  "sha256": "55fba77115761381052fd7aa0218294a31596c3e476744c24074ba52367ccf17",
+  "bytes": 2182715,
+  "blobVerification": "GitHub blob API bytes decoded from base64 match cached CSV exactly; normal TLS.",
+  "normalizedSha256": "8e3d641872cd01b9d558ae9803e87b0be01ec13dbf480c8928e8d77e3f6456ae",
+  "selection": "Completed scored REG/WC/DIV/CON/SB games in NFL seasons 2015 through 2024.",
+  "neutralDefinition": "Source location Neutral, or source game_type SB. Designated home is retained.",
+  "gameCount": 2743,
+  "regularGames": 2623,
+  "playoffGames": 120,
+  "tieGames": 9,
+  "neutralGames": 53,
+  "documentation": {
+    "dictionaryUrl": "https://raw.githubusercontent.com/nflverse/nflreadr/main/data-raw/dictionary_schedules.csv",
+    "dictionarySha256": "f07a07a0b569b2526c2e3944d6da4f0d0b479cd1ead22fcff7a2fc164e0cf0f4",
+    "dictionaryBlobSha1": "42d1f5c4fe3485d3ee0910be1db51f168d3e179f",
+    "loaderUrl": "https://nflreadr.nflverse.com/reference/load_schedules.html",
+    "cancellationUrl": "https://www.nfl.com/news/week-17-buffalo-cincinnati-game-will-not-be-resumed-neutral-afc-championship-gam"
+  }
+}

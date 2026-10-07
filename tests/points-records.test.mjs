@@ -50,7 +50,7 @@ test('older point-sport links migrate wins by rarity with a notice', () => {
   const old = { ...defaultConfig(), version: 3, recordSportA: 'nhl', recordSportB: 'soccer', winsA: 50, winsB: 25, matching: 'winRate' };
   delete old.recordA; delete old.recordB;
   const messages = [], c = configFromLink('https://example.org/?experiment='+encodeURIComponent(btoa(JSON.stringify(old))), m => messages.push(m));
-  assert.equal(c.version, 4); assert.equal(c.matching, 'recordRate');
+  assert.equal(c.version, 5); assert.equal(c.matching, 'recordRate');
   assert.ok(c.recordA>100 && c.recordA<130); assert.ok(c.recordB>75 && c.recordB<95);
   assert.equal(messages.length, 1); assert.match(messages[0], /earlier odds may change/);
   assert.ok(!Object.hasOwn(c, 'winsA'));

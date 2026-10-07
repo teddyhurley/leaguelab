@@ -1,0 +1,208 @@
+{
+  "provider": "MLB StatsAPI / MLB Advanced Media",
+  "seasons": [
+    2015,
+    2024
+  ],
+  "sources": [
+    {
+      "kind": "schedule",
+      "season": 2015,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2015-01-01&endDate=2015-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2015.json",
+      "sha256": "73a2e30fe0c962a7c67bbb50091d2d4bc278409aed70c8ab3e5f2a02d10e84e6",
+      "retrievedAt": "2026-10-07T22:44:41.860342+00:00",
+      "responseTotalGames": 2507,
+      "enumeratedRows": 2507,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2015,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2015&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2015.json",
+      "sha256": "b8ab04de82e5717ed5c37b76532575f71e90d3cc27841baa4f51e65b451bb3ec",
+      "retrievedAt": "2026-10-06T03:41:10.808824+00:00"
+    },
+    {
+      "kind": "schedule",
+      "season": 2016,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2016-01-01&endDate=2016-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2016.json",
+      "sha256": "cbc867043c0820385d5846c831d06d4f4a8e6b2ec5ccee12e7934de53d41f26e",
+      "retrievedAt": "2026-10-07T22:44:44.751796+00:00",
+      "responseTotalGames": 2493,
+      "enumeratedRows": 2493,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2016,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2016&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2016.json",
+      "sha256": "b327b2b7f7689638da375ee1eb9419e6f8261cb61970ef7dc69f527de287d922",
+      "retrievedAt": "2026-10-06T03:41:10.785049+00:00"
+    },
+    {
+      "kind": "schedule",
+      "season": 2017,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2017-01-01&endDate=2017-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2017.json",
+      "sha256": "8a714e90d7831758e152943bdd7e1d56306394a8b112287537d006f16a9b60a2",
+      "retrievedAt": "2026-10-07T22:44:44.779403+00:00",
+      "responseTotalGames": 2508,
+      "enumeratedRows": 2508,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2017,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2017&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2017.json",
+      "sha256": "f538ee40639e71bb8b611db59c9a6f72043889d1cb4fdc119391d34473b315c9",
+      "retrievedAt": "2026-10-06T03:41:10.773833+00:00"
+    },
+    {
+      "kind": "schedule",
+      "season": 2018,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2018-01-01&endDate=2018-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2018.json",
+      "sha256": "156d309d68df065c55cf5aebb6912dc2ebec8fbccf1bbb245adc94c5b84c3b46",
+      "retrievedAt": "2026-10-07T22:44:45.675871+00:00",
+      "responseTotalGames": 2520,
+      "enumeratedRows": 2520,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2018,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2018&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2018.json",
+      "sha256": "ee8d20a69546566428caa1c5236030bbba2d1f3595bffb5ca4eb7b5371d1a7fc",
+      "retrievedAt": "2026-10-06T03:41:10.778893+00:00"
+    },
+    {
+      "kind": "schedule",
+      "season": 2019,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2019-01-01&endDate=2019-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2019.json",
+      "sha256": "43f5116af28f6fedf21e8b93b4f9d6ac3b18579306dfd26399cc57c462f4f7c5",
+      "retrievedAt": "2026-10-07T22:44:43.859478+00:00",
+      "responseTotalGames": 2510,
+      "enumeratedRows": 2510,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2019,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2019&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2019.json",
+      "sha256": "b16791b9627b51c55327aea5ccb74a530c349782f745f49fc0064cb0d63df33e",
+      "retrievedAt": "2026-10-06T03:41:10.770751+00:00"
+    },
+    {
+      "kind": "schedule",
+      "season": 2020,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2020-01-01&endDate=2020-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2020.json",
+      "sha256": "0d2f4ba2a6a259f1624359c2c100aabd5f11940898a71a29957a0e1912075a4c",
+      "retrievedAt": "2026-10-07T22:44:43.209031+00:00",
+      "responseTotalGames": 1027,
+      "enumeratedRows": 1027,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2020,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2020&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2020.json",
+      "sha256": "b855f8ff07e7615402f00883b9f3610c003c5b05aafa321b55031fac186f4235",
+      "retrievedAt": "2026-10-06T03:41:10.912550+00:00"
+    },
+    {
+      "kind": "schedule",
+      "season": 2021,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2021-01-01&endDate=2021-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2021.json",
+      "sha256": "48e81e55efa61bdb898d3e4b815ca928a6a55bd439742400202db36f038037bd",
+      "retrievedAt": "2026-10-07T22:44:45.943960+00:00",
+      "responseTotalGames": 2550,
+      "enumeratedRows": 2550,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2021,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2021&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2021.json",
+      "sha256": "1ae6054e7d1469f716d7b2adf98fef4b246c81c34fd0b2f7a9916c12049bcee7",
+      "retrievedAt": "2026-10-06T03:41:10.978118+00:00"
+    },
+    {
+      "kind": "schedule",
+      "season": 2022,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2022-01-01&endDate=2022-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2022.json",
+      "sha256": "4b72ff9f69273809166b43c759bd669fa6412364dc13dd4e98e245888e81a69a",
+      "retrievedAt": "2026-10-07T22:44:53.085072+00:00",
+      "responseTotalGames": 2522,
+      "enumeratedRows": 2522,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2022,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2022&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2022.json",
+      "sha256": "19d34e37df6ff9662773f5b16e8048e1e07e57a07196c32be1109d668cce37e3",
+      "retrievedAt": "2026-10-06T03:41:10.973031+00:00"
+    },
+    {
+      "kind": "schedule",
+      "season": 2023,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2023-01-01&endDate=2023-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2023.json",
+      "sha256": "a99e56abb5318b268aa4754b096509b373b9c4db705d423ffcf066020fe4bd2e",
+      "retrievedAt": "2026-10-07T22:44:51.920139+00:00",
+      "responseTotalGames": 2517,
+      "enumeratedRows": 2517,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2023,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2023&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2023.json",
+      "sha256": "c2163f0d48c48d670d89b441dea4e58e2a03fbe07ba312921ef3627401693eda",
+      "retrievedAt": "2026-10-06T03:41:10.968081+00:00"
+    },
+    {
+      "kind": "schedule",
+      "season": 2024,
+      "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2024-01-01&endDate=2024-12-31&gameTypes=R,F,D,L,W",
+      "localPath": "raw/2024.json",
+      "sha256": "c50996cf37533e3210a9d17f0179f53e7e73d4a37c81736d251872c59555a73e",
+      "retrievedAt": "2026-10-07T22:44:04.582813+00:00",
+      "responseTotalGames": 2512,
+      "enumeratedRows": 2512,
+      "pagination": "Complete date range in one response; enumerated rows match totalGames and per-date totals."
+    },
+    {
+      "kind": "standings independent cross-check",
+      "season": 2024,
+      "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2024&standingsTypes=regularSeason",
+      "localPath": "../other-leagues-history/raw/mlb-2024.json",
+      "sha256": "1e70de5f50c3a3372b9dd4f059db204d962196dbca2148617f5584c48b50f624",
+      "retrievedAt": "2026-10-06T03:41:10.998595+00:00"
+    },
+    {
+      "kind": "neutral-site evidence",
+      "url": "https://www.mlb.com/press-release/press-release-2020-postseason-schedule-announced",
+      "localPath": "raw/2020-neutral-sites.html",
+      "sha256": "a95a42b1efcf6ed6bd054bfb79cd97d9e62e7ce60b80b86c79483cd5321dffde",
+      "retrievedAt": "2026-10-07T22:44:56.676935+00:00"
+    }
+  ],
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "normalizedSha256": "216bb2b92872d29f02a345e7cbd8b9aef742d75f04e16a12c897b79d7517b2dd"
+}

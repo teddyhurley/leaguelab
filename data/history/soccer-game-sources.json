@@ -1,0 +1,202 @@
+{
+  "sources": [
+    {
+      "id": "openfootball-json-2015-2016",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2016,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2015-16/en.1.json",
+      "localFile": "raw/epl-2015-2016.json",
+      "sha256": "4d8ab70f5d2c29231320be7404310bc1b0fbc6e6be0284e5ee667f581406fead",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-json-2016-2017",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2017,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2016-17/en.1.json",
+      "localFile": "raw/epl-2016-2017.json",
+      "sha256": "9c8cdb27355678ab81aacbbabc34a08d00b399aacc28ef4b733da4954a344f17",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-json-2017-2018",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2018,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2017-18/en.1.json",
+      "localFile": "raw/epl-2017-2018.json",
+      "sha256": "b635f2442a94aa91d85f282fc5e8f7f5dc4f0d04e3e30c4472102f5708d7548c",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-json-2018-2019",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2019,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2018-19/en.1.json",
+      "localFile": "raw/epl-2018-2019.json",
+      "sha256": "e2224d86f0605a5a1b5b019c845cdecb13aca1d88035686d4159b875250d4730",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-json-2019-2020",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2020,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2019-20/en.1.json",
+      "localFile": "raw/epl-2019-2020.json",
+      "sha256": "9e1695f85ce5553f762e809dea357ec0a95838939be89569060a83c4e98a302d",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-json-2020-2021",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2021,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2020-21/en.1.json",
+      "localFile": "raw/epl-2020-2021.json",
+      "sha256": "21ddf26b48469da530c51ccc4857bf1a534bda3aed08766b55185efb142e9a20",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-json-2021-2022",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2022,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2021-22/en.1.json",
+      "localFile": "raw/epl-2021-2022.json",
+      "sha256": "fbdfd426fa18fa2f8630b77de87c082734da495ac4668d6d72f29f76b73b9564",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-json-2022-2023",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2023,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2022-23/en.1.json",
+      "localFile": "raw/epl-2022-2023.json",
+      "sha256": "8d09f0f9846981626cdfec48903e1f21e7c79aabe6f92535c9e092e8e79b808b",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-json-2023-2024",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2024,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2023-24/en.1.json",
+      "localFile": "raw/epl-2023-2024.json",
+      "sha256": "03e13eafbf78dfe00d7e89dd3bf6643986eb6e8fd86c7664aeb8c5bc0bed88d0",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-json-2024-2025",
+      "publisher": "OpenFootball community",
+      "league": "English Premier League",
+      "season": 2025,
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/2024-25/en.1.json",
+      "localFile": "raw/epl-2024-2025.json",
+      "sha256": "c3d18f552d83382cd4b6b21127adbbfe38e7f8618ddc979fb5404f2df07d0a75",
+      "matches": 380,
+      "identicalTo2026Oct05Cache": true
+    },
+    {
+      "id": "openfootball-england-2019-20",
+      "publisher": "OpenFootball community",
+      "retrieved": "2026-10-07",
+      "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825",
+      "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2019-20/1-premierleague.txt",
+      "localFile": "raw/2019-20-premierleague.txt",
+      "sha256": "fdc8300c09e0700faa0c517ff408bc630b8b6a77b6f1aa68e5858f9adae6f72d",
+      "purpose": "Verify 66 July 2020 full-time scores and dates against upstream source, including weekdays and season-end date."
+    },
+    {
+      "id": "premierleague-1676010",
+      "publisher": "Premier League",
+      "retrieved": "2026-10-07",
+      "url": "https://www.premierleague.com/en/news/1676010",
+      "localFile": "raw/premierleague-1676010.html",
+      "sha256": "c602ef825378568265c1ff2212397fa128e4a2b7b3cac2c940fe9dfea7290526",
+      "purpose": "Official revised 2019/20 fixture dates; 1678153 final-day pairings only (earlier rounds superseded by 1702418)."
+    },
+    {
+      "id": "premierleague-1682467",
+      "publisher": "Premier League",
+      "retrieved": "2026-10-07",
+      "url": "https://www.premierleague.com/en/news/1682467",
+      "localFile": "raw/premierleague-1682467.html",
+      "sha256": "12dc3091e872ed22cda79691c6f1e9817efec10685bde0667e041fbd9381deff",
+      "purpose": "Official revised 2019/20 fixture dates; 1678153 final-day pairings only (earlier rounds superseded by 1702418)."
+    },
+    {
+      "id": "premierleague-1702418",
+      "publisher": "Premier League",
+      "retrieved": "2026-10-07",
+      "url": "https://www.premierleague.com/en/news/1702418",
+      "localFile": "raw/premierleague-1702418.html",
+      "sha256": "97a8327efb044cf47a33059e2251f4f8c2a7f3d11ebf95d1f0b29ad7a2770d72",
+      "purpose": "Official revised 2019/20 fixture dates; 1678153 final-day pairings only (earlier rounds superseded by 1702418)."
+    },
+    {
+      "id": "premierleague-1678153",
+      "publisher": "Premier League",
+      "retrieved": "2026-10-07",
+      "url": "https://www.premierleague.com/en/news/1678153",
+      "localFile": "raw/premierleague-1678153.html",
+      "sha256": "b27777f49dfd50471803ce5c37ce7a21bffdea8e54ad4035faa2ccf930ed45bc",
+      "purpose": "Official revised 2019/20 fixture dates; 1678153 final-day pairings only (earlier rounds superseded by 1702418)."
+    },
+    {
+      "id": "openfootball-readme",
+      "publisher": "OpenFootball community",
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/README.md",
+      "localFile": "raw/football-json-README.md",
+      "sha256": "aadc464ae476ba4d5467785f6f2be435d1a583f589f4b2b0617fdf86fc18e29c"
+    },
+    {
+      "id": "openfootball-license",
+      "publisher": "OpenFootball community",
+      "retrieved": "2026-10-07",
+      "commit": "e6744429ee395bc86f247348c6184bb08d4eb361",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/e6744429ee395bc86f247348c6184bb08d4eb361/LICENSE.md",
+      "localFile": "raw/football-json-LICENSE.md",
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+    }
+  ],
+  "dataLicense": "CC0-1.0 (OpenFootball result data)",
+  "dateCorrections": 66,
+  "outputSha256": "e38612c37d8f3bf43d3033caa2782d6285b2f8d759652e025a8dca9a899d9f1b",
+  "originalSnapshotsPreserved": true
+}

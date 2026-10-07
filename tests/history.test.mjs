@@ -52,8 +52,8 @@ test('unseen records cap the proxy but preserve the selected record and zero obs
   close(extreme.rank, perfect.rank);
   assert.equal(perfect.value, 168);
 });
-test('fitted neutral game probabilities reproduce the regularized outcome model', () => {
-  for (const sport of ['nba', 'nhl']) {
+test('all five fitted neutral game probabilities reproduce the historical outcome model', () => {
+  for (const sport of Object.keys(HISTORY)) {
     for (const [a, b] of [[75, 55], [50, 50], [30, 80], [99, 20]]) {
       const target = logistic(HISTORY[sport].fit.slope * (logit(a / 100) - logit(b / 100)));
       close(evaluate(scenario(sport), a, b, 'history').single, target, 1e-6);
@@ -102,7 +102,7 @@ test('changing Team B cannot change Team A odds in benchmark mode', () => {
 test('v2 links retain A-vs-B meaning and unchanged NBA source strengths', () => {
   const old = { version: 2, recordSport: 'nba', winsA: 60, winsB: 45, matching: 'rarity', basis: 'history', trials: 1000, seed: 42, left: scenario('nba'), right: scenario('nhl') };
   const c = validateConfig(old);
-  assert.equal(c.version, 4); assert.equal(c.comparison, 'matchup');
+  assert.equal(c.version, 5); assert.equal(c.comparison, 'matchup');
   assert.equal(c.recordSportA, 'nba'); assert.equal(c.recordSportB, 'nba');
   for (const side of ['left', 'right']) {
     const m = comparisonMatchup(c, c[side].sport, side === 'left' ? 'A' : 'B');

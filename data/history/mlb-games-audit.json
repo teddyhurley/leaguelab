@@ -1,0 +1,554 @@
+{
+  "retainedGames": 23156,
+  "phaseCounts": {
+    "regular": 22763,
+    "playoff": 393
+  },
+  "ties": 1,
+  "seasons": [
+    {
+      "season": 2015,
+      "rawRows": 2507,
+      "uniqueRawGameIds": 2466,
+      "rawRepeatedIds": 41,
+      "excludedRowsByStatus": {
+        "Postponed": 37,
+        "Cancelled": 1
+      },
+      "duplicateCompletedRowsRemoved": 4,
+      "duplicateCompletedGames": [
+        {
+          "gameId": "413890",
+          "removedRows": 1,
+          "calendarDates": [
+            "2015-04-24",
+            "2015-04-26"
+          ]
+        },
+        {
+          "gameId": "414771",
+          "removedRows": 1,
+          "calendarDates": [
+            "2015-06-27",
+            "2015-06-28"
+          ]
+        },
+        {
+          "gameId": "414995",
+          "removedRows": 1,
+          "calendarDates": [
+            "2015-07-17",
+            "2015-07-18"
+          ]
+        },
+        {
+          "gameId": "415760",
+          "removedRows": 1,
+          "calendarDates": [
+            "2015-09-11",
+            "2015-09-12"
+          ]
+        }
+      ],
+      "retainedCounts": {
+        "regular": 2429,
+        "playoff": 36
+      },
+      "retainedTypes": {
+        "R": 2429,
+        "F": 2,
+        "D": 19,
+        "L": 10,
+        "W": 5
+      },
+      "ties": [],
+      "confirmedNeutralGames": 0,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "b8ab04de82e5717ed5c37b76532575f71e90d3cc27841baa4f51e65b451bb3ec",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2015&standingsTypes=regularSeason"
+    },
+    {
+      "season": 2016,
+      "rawRows": 2493,
+      "uniqueRawGameIds": 2465,
+      "rawRepeatedIds": 28,
+      "excludedRowsByStatus": {
+        "Postponed": 27,
+        "Cancelled": 2
+      },
+      "duplicateCompletedRowsRemoved": 1,
+      "duplicateCompletedGames": [
+        {
+          "gameId": "448318",
+          "removedRows": 1,
+          "calendarDates": [
+            "2016-07-23",
+            "2016-07-24"
+          ]
+        }
+      ],
+      "retainedCounts": {
+        "regular": 2428,
+        "playoff": 35
+      },
+      "retainedTypes": {
+        "R": 2428,
+        "F": 2,
+        "D": 15,
+        "L": 11,
+        "W": 7
+      },
+      "ties": [
+        "449244"
+      ],
+      "confirmedNeutralGames": 0,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "b327b2b7f7689638da375ee1eb9419e6f8261cb61970ef7dc69f527de287d922",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2016&standingsTypes=regularSeason"
+    },
+    {
+      "season": 2017,
+      "rawRows": 2508,
+      "uniqueRawGameIds": 2468,
+      "rawRepeatedIds": 39,
+      "excludedRowsByStatus": {
+        "Postponed": 40
+      },
+      "duplicateCompletedRowsRemoved": 0,
+      "duplicateCompletedGames": [],
+      "retainedCounts": {
+        "regular": 2430,
+        "playoff": 38
+      },
+      "retainedTypes": {
+        "R": 2430,
+        "F": 2,
+        "D": 17,
+        "L": 12,
+        "W": 7
+      },
+      "ties": [],
+      "confirmedNeutralGames": 0,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "f538ee40639e71bb8b611db59c9a6f72043889d1cb4fdc119391d34473b315c9",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2017&standingsTypes=regularSeason"
+    },
+    {
+      "season": 2018,
+      "rawRows": 2520,
+      "uniqueRawGameIds": 2465,
+      "rawRepeatedIds": 53,
+      "excludedRowsByStatus": {
+        "Postponed": 53,
+        "Cancelled": 1
+      },
+      "duplicateCompletedRowsRemoved": 2,
+      "duplicateCompletedGames": [
+        {
+          "gameId": "530032",
+          "removedRows": 1,
+          "calendarDates": [
+            "2018-05-15",
+            "2018-06-18"
+          ]
+        },
+        {
+          "gameId": "531387",
+          "removedRows": 1,
+          "calendarDates": [
+            "2018-08-28",
+            "2018-08-29"
+          ]
+        }
+      ],
+      "retainedCounts": {
+        "regular": 2431,
+        "playoff": 33
+      },
+      "retainedTypes": {
+        "R": 2431,
+        "F": 2,
+        "D": 14,
+        "L": 12,
+        "W": 5
+      },
+      "ties": [],
+      "confirmedNeutralGames": 0,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "ee8d20a69546566428caa1c5236030bbba2d1f3595bffb5ca4eb7b5371d1a7fc",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2018&standingsTypes=regularSeason"
+    },
+    {
+      "season": 2019,
+      "rawRows": 2510,
+      "uniqueRawGameIds": 2467,
+      "rawRepeatedIds": 43,
+      "excludedRowsByStatus": {
+        "Postponed": 39,
+        "Cancelled": 1
+      },
+      "duplicateCompletedRowsRemoved": 4,
+      "duplicateCompletedGames": [
+        {
+          "gameId": "565534",
+          "removedRows": 1,
+          "calendarDates": [
+            "2019-05-19",
+            "2019-09-06"
+          ]
+        },
+        {
+          "gameId": "567288",
+          "removedRows": 1,
+          "calendarDates": [
+            "2019-05-27",
+            "2019-05-28"
+          ]
+        },
+        {
+          "gameId": "566021",
+          "removedRows": 1,
+          "calendarDates": [
+            "2019-06-13",
+            "2019-06-14"
+          ]
+        },
+        {
+          "gameId": "565085",
+          "removedRows": 1,
+          "calendarDates": [
+            "2019-08-07",
+            "2019-08-22"
+          ]
+        }
+      ],
+      "retainedCounts": {
+        "regular": 2429,
+        "playoff": 37
+      },
+      "retainedTypes": {
+        "R": 2429,
+        "F": 2,
+        "D": 18,
+        "L": 10,
+        "W": 7
+      },
+      "ties": [],
+      "confirmedNeutralGames": 0,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "b16791b9627b51c55327aea5ccb74a530c349782f745f49fc0064cb0d63df33e",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2019&standingsTypes=regularSeason"
+    },
+    {
+      "season": 2020,
+      "rawRows": 1027,
+      "uniqueRawGameIds": 953,
+      "rawRepeatedIds": 72,
+      "excludedRowsByStatus": {
+        "Postponed": 72,
+        "Cancelled": 2
+      },
+      "duplicateCompletedRowsRemoved": 2,
+      "duplicateCompletedGames": [
+        {
+          "gameId": "630882",
+          "removedRows": 1,
+          "calendarDates": [
+            "2020-08-09",
+            "2020-08-14"
+          ]
+        },
+        {
+          "gameId": "630905",
+          "removedRows": 1,
+          "calendarDates": [
+            "2020-08-15",
+            "2020-08-16"
+          ]
+        }
+      ],
+      "retainedCounts": {
+        "regular": 898,
+        "playoff": 53
+      },
+      "retainedTypes": {
+        "R": 898,
+        "F": 18,
+        "D": 15,
+        "L": 14,
+        "W": 6
+      },
+      "ties": [],
+      "confirmedNeutralGames": 35,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "b855f8ff07e7615402f00883b9f3610c003c5b05aafa321b55031fac186f4235",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2020&standingsTypes=regularSeason"
+    },
+    {
+      "season": 2021,
+      "rawRows": 2550,
+      "uniqueRawGameIds": 2467,
+      "rawRepeatedIds": 81,
+      "excludedRowsByStatus": {
+        "Postponed": 75,
+        "Cancelled": 1
+      },
+      "duplicateCompletedRowsRemoved": 8,
+      "duplicateCompletedGames": [
+        {
+          "gameId": "632192",
+          "removedRows": 1,
+          "calendarDates": [
+            "2021-04-11",
+            "2021-08-31"
+          ]
+        },
+        {
+          "gameId": "634408",
+          "removedRows": 1,
+          "calendarDates": [
+            "2021-04-20",
+            "2021-04-21"
+          ]
+        },
+        {
+          "gameId": "633890",
+          "removedRows": 1,
+          "calendarDates": [
+            "2021-05-26",
+            "2021-05-27"
+          ]
+        },
+        {
+          "gameId": "633501",
+          "removedRows": 1,
+          "calendarDates": [
+            "2021-06-26",
+            "2021-06-27"
+          ]
+        },
+        {
+          "gameId": "633299",
+          "removedRows": 1,
+          "calendarDates": [
+            "2021-07-17",
+            "2021-07-18"
+          ]
+        },
+        {
+          "gameId": "633267",
+          "removedRows": 1,
+          "calendarDates": [
+            "2021-07-17",
+            "2021-07-18"
+          ]
+        },
+        {
+          "gameId": "633224",
+          "removedRows": 1,
+          "calendarDates": [
+            "2021-07-21",
+            "2021-09-24"
+          ]
+        },
+        {
+          "gameId": "632966",
+          "removedRows": 1,
+          "calendarDates": [
+            "2021-08-10",
+            "2021-08-11"
+          ]
+        }
+      ],
+      "retainedCounts": {
+        "regular": 2429,
+        "playoff": 37
+      },
+      "retainedTypes": {
+        "R": 2429,
+        "F": 2,
+        "D": 17,
+        "L": 12,
+        "W": 6
+      },
+      "ties": [],
+      "confirmedNeutralGames": 0,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "1ae6054e7d1469f716d7b2adf98fef4b246c81c34fd0b2f7a9916c12049bcee7",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2021&standingsTypes=regularSeason"
+    },
+    {
+      "season": 2022,
+      "rawRows": 2522,
+      "uniqueRawGameIds": 2470,
+      "rawRepeatedIds": 52,
+      "excludedRowsByStatus": {
+        "Postponed": 51
+      },
+      "duplicateCompletedRowsRemoved": 1,
+      "duplicateCompletedGames": [
+        {
+          "gameId": "661702",
+          "removedRows": 1,
+          "calendarDates": [
+            "2022-05-11",
+            "2022-05-12"
+          ]
+        }
+      ],
+      "retainedCounts": {
+        "regular": 2430,
+        "playoff": 40
+      },
+      "retainedTypes": {
+        "R": 2430,
+        "F": 9,
+        "D": 16,
+        "L": 9,
+        "W": 6
+      },
+      "ties": [],
+      "confirmedNeutralGames": 0,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "19d34e37df6ff9662773f5b16e8048e1e07e57a07196c32be1109d668cce37e3",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2022&standingsTypes=regularSeason"
+    },
+    {
+      "season": 2023,
+      "rawRows": 2517,
+      "uniqueRawGameIds": 2471,
+      "rawRepeatedIds": 46,
+      "excludedRowsByStatus": {
+        "Postponed": 39
+      },
+      "duplicateCompletedRowsRemoved": 7,
+      "duplicateCompletedGames": [
+        {
+          "gameId": "718203",
+          "removedRows": 1,
+          "calendarDates": [
+            "2023-05-13",
+            "2023-05-14"
+          ]
+        },
+        {
+          "gameId": "717407",
+          "removedRows": 1,
+          "calendarDates": [
+            "2023-07-14",
+            "2023-07-15"
+          ]
+        },
+        {
+          "gameId": "717375",
+          "removedRows": 1,
+          "calendarDates": [
+            "2023-07-17",
+            "2023-07-18"
+          ]
+        },
+        {
+          "gameId": "717324",
+          "removedRows": 1,
+          "calendarDates": [
+            "2023-07-21",
+            "2023-07-22"
+          ]
+        },
+        {
+          "gameId": "716875",
+          "removedRows": 1,
+          "calendarDates": [
+            "2023-08-23",
+            "2023-08-24"
+          ]
+        },
+        {
+          "gameId": "716414",
+          "removedRows": 1,
+          "calendarDates": [
+            "2023-09-27",
+            "2023-09-28"
+          ]
+        },
+        {
+          "gameId": "716404",
+          "removedRows": 1,
+          "calendarDates": [
+            "2023-09-28",
+            "2023-10-02"
+          ]
+        }
+      ],
+      "retainedCounts": {
+        "regular": 2430,
+        "playoff": 41
+      },
+      "retainedTypes": {
+        "R": 2430,
+        "F": 8,
+        "D": 14,
+        "L": 14,
+        "W": 5
+      },
+      "ties": [],
+      "confirmedNeutralGames": 0,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "c2163f0d48c48d670d89b441dea4e58e2a03fbe07ba312921ef3627401693eda",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2023&standingsTypes=regularSeason"
+    },
+    {
+      "season": 2024,
+      "rawRows": 2512,
+      "uniqueRawGameIds": 2473,
+      "rawRepeatedIds": 37,
+      "excludedRowsByStatus": {
+        "Postponed": 36,
+        "Cancelled": 1
+      },
+      "duplicateCompletedRowsRemoved": 3,
+      "duplicateCompletedGames": [
+        {
+          "gameId": "745180",
+          "removedRows": 1,
+          "calendarDates": [
+            "2024-05-21",
+            "2024-05-22"
+          ]
+        },
+        {
+          "gameId": "746942",
+          "removedRows": 1,
+          "calendarDates": [
+            "2024-06-26",
+            "2024-08-26"
+          ]
+        },
+        {
+          "gameId": "746755",
+          "removedRows": 1,
+          "calendarDates": [
+            "2024-08-27",
+            "2024-08-28"
+          ]
+        }
+      ],
+      "retainedCounts": {
+        "regular": 2429,
+        "playoff": 43
+      },
+      "retainedTypes": {
+        "R": 2429,
+        "F": 9,
+        "D": 18,
+        "L": 11,
+        "W": 5
+      },
+      "ties": [],
+      "confirmedNeutralGames": 0,
+      "standingsWinsLossesMatchedTeams": 30,
+      "standingsCrossCheckSha256": "1e70de5f50c3a3372b9dd4f059db204d962196dbca2148617f5584c48b50f624",
+      "standingsCrossCheckSource": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2024&standingsTypes=regularSeason"
+    }
+  ]
+}

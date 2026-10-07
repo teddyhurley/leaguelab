@@ -1,6 +1,6 @@
 # LeagueLab — product case study
 
-**Author:** Teddy Hurley · **Release:** v3.0 · **Stage:** local prototype prepared for GitHub
+**Author:** Teddy Hurley · **Release:** v4.0 · **Stage:** local prototype prepared for GitHub
 
 ## Problem and audience
 
@@ -52,9 +52,11 @@ Source-league changes rerun automatically. Other simulation-setting edits mark r
 
 ## Technical and analytical judgment
 
+**Validate the claimed improvement.** Replacing the three illustrative game baselines required collecting actual outcomes and preventing future information from entering predictors. The soccer source contained 66 misdated fixtures that needed correction. MLB’s held-out result was worse than a simple baseline; the product exposes that failure alongside its probabilities. This is a measured limitation, not a reason to tune against the test set.
+
 **Records are evidence, not ability.** Season records include schedule strength, injuries and randomness. Historical rarity provides a disclosed proxy, not an estimate of pure skill. The interface supports comparing rarity or record percentage and flags extrapolation beyond the sample.
 
-**Fitting is deliberately limited.** NBA/NHL use exploratory regularized playoff fits and a temporal holdout check. The event model translates baseline odds into controllable scoring conditions. Other sports and the counterfactual event mechanisms remain assumptions. A small holdout improvement is not broad predictive validation.
+**Fitting is deliberately limited.** All five leagues now use historical game fits and temporal holdout checks. Four use playoff results; Premier League uses records available before league matches. The event model translates baseline odds into controllable scoring conditions. The MLB fit fails to beat the simple holdout baseline and is explicitly flagged. Counterfactual event mechanisms, cross-sport translation and independent series games remain assumptions. A small holdout improvement is not broad predictive validation.
 
 **The explanatory bridge is order dependent.** Changing opportunities, event mechanics and format can interact. The bridge reconciles the modeled change in a stated order; it does not assign measured causal shares to real-world differences.
 

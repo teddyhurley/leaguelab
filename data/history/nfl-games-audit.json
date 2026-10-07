@@ -1,0 +1,102 @@
+{
+  "games": 2743,
+  "regular": 2623,
+  "playoff": 120,
+  "neutral": 53,
+  "overtime": 160,
+  "ties": 9,
+  "tieGameIds": [
+    "2016_07_SEA_ARI",
+    "2016_08_WAS_CIN",
+    "2018_01_PIT_CLE",
+    "2018_02_MIN_GB",
+    "2019_01_DET_ARI",
+    "2020_03_CIN_PHI",
+    "2021_10_DET_PIT",
+    "2022_01_IND_HOU",
+    "2022_13_WAS_NYG"
+  ],
+  "bySeason": {
+    "2015": {
+      "regular": 256,
+      "playoff": 11,
+      "ties": 0,
+      "overtime": 22,
+      "neutral": 4
+    },
+    "2016": {
+      "regular": 256,
+      "playoff": 11,
+      "ties": 2,
+      "overtime": 14,
+      "neutral": 5
+    },
+    "2017": {
+      "regular": 256,
+      "playoff": 11,
+      "ties": 0,
+      "overtime": 14,
+      "neutral": 6
+    },
+    "2018": {
+      "regular": 256,
+      "playoff": 11,
+      "ties": 2,
+      "overtime": 17,
+      "neutral": 4
+    },
+    "2019": {
+      "regular": 256,
+      "playoff": 11,
+      "ties": 1,
+      "overtime": 11,
+      "neutral": 6
+    },
+    "2020": {
+      "regular": 256,
+      "playoff": 13,
+      "ties": 1,
+      "overtime": 10,
+      "neutral": 4
+    },
+    "2021": {
+      "regular": 272,
+      "playoff": 13,
+      "ties": 1,
+      "overtime": 22,
+      "neutral": 4
+    },
+    "2022": {
+      "regular": 271,
+      "playoff": 13,
+      "ties": 2,
+      "overtime": 20,
+      "neutral": 7
+    },
+    "2023": {
+      "regular": 272,
+      "playoff": 13,
+      "ties": 0,
+      "overtime": 14,
+      "neutral": 6
+    },
+    "2024": {
+      "regular": 272,
+      "playoff": 13,
+      "ties": 0,
+      "overtime": 16,
+      "neutral": 7
+    }
+  },
+  "excludedRows": [],
+  "canceledGame": {
+    "gameId": "2022_17_BUF_CIN",
+    "presentInRaw": false,
+    "retainedAsCompleted": false
+  },
+  "franchiseAliases": {
+    "STL": "LA",
+    "SD": "LAC",
+    "OAK": "LV"
+  }
+}

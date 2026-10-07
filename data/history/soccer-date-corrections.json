@@ -1,0 +1,662 @@
+[
+  {
+    "season": 2020,
+    "homeId": "AFC Bournemouth",
+    "awayId": "Newcastle United",
+    "originalDate": "2019-07-01",
+    "correctedDate": "2020-07-01",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1676010"
+  },
+  {
+    "season": 2020,
+    "homeId": "Arsenal",
+    "awayId": "Norwich City",
+    "originalDate": "2019-07-01",
+    "correctedDate": "2020-07-01",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1676010"
+  },
+  {
+    "season": 2020,
+    "homeId": "Everton",
+    "awayId": "Leicester City",
+    "originalDate": "2019-07-01",
+    "correctedDate": "2020-07-01",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1676010"
+  },
+  {
+    "season": 2020,
+    "homeId": "West Ham United",
+    "awayId": "Chelsea",
+    "originalDate": "2019-07-01",
+    "correctedDate": "2020-07-01",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1676010"
+  },
+  {
+    "season": 2020,
+    "homeId": "Manchester City",
+    "awayId": "Liverpool",
+    "originalDate": "2019-07-02",
+    "correctedDate": "2020-07-02",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1676010"
+  },
+  {
+    "season": 2020,
+    "homeId": "Sheffield United",
+    "awayId": "Tottenham Hotspur",
+    "originalDate": "2019-07-02",
+    "correctedDate": "2020-07-02",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1676010"
+  },
+  {
+    "season": 2020,
+    "homeId": "Norwich City",
+    "awayId": "Brighton & Hove Albion",
+    "originalDate": "2019-07-04",
+    "correctedDate": "2020-07-04",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Leicester City",
+    "awayId": "Crystal Palace",
+    "originalDate": "2019-07-04",
+    "correctedDate": "2020-07-04",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Manchester United",
+    "awayId": "AFC Bournemouth",
+    "originalDate": "2019-07-04",
+    "correctedDate": "2020-07-04",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Wolverhampton Wanderers",
+    "awayId": "Arsenal",
+    "originalDate": "2019-07-04",
+    "correctedDate": "2020-07-04",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Chelsea",
+    "awayId": "Watford",
+    "originalDate": "2019-07-04",
+    "correctedDate": "2020-07-04",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Newcastle United",
+    "awayId": "West Ham United",
+    "originalDate": "2019-07-05",
+    "correctedDate": "2020-07-05",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Liverpool",
+    "awayId": "Aston Villa",
+    "originalDate": "2019-07-05",
+    "correctedDate": "2020-07-05",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Southampton",
+    "awayId": "Manchester City",
+    "originalDate": "2019-07-05",
+    "correctedDate": "2020-07-05",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Burnley",
+    "awayId": "Sheffield United",
+    "originalDate": "2019-07-05",
+    "correctedDate": "2020-07-05",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Tottenham Hotspur",
+    "awayId": "Everton",
+    "originalDate": "2019-07-06",
+    "correctedDate": "2020-07-06",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Watford",
+    "awayId": "Norwich City",
+    "originalDate": "2019-07-07",
+    "correctedDate": "2020-07-07",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Arsenal",
+    "awayId": "Leicester City",
+    "originalDate": "2019-07-07",
+    "correctedDate": "2020-07-07",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Crystal Palace",
+    "awayId": "Chelsea",
+    "originalDate": "2019-07-07",
+    "correctedDate": "2020-07-07",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Manchester City",
+    "awayId": "Newcastle United",
+    "originalDate": "2019-07-08",
+    "correctedDate": "2020-07-08",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Sheffield United",
+    "awayId": "Wolverhampton Wanderers",
+    "originalDate": "2019-07-08",
+    "correctedDate": "2020-07-08",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "West Ham United",
+    "awayId": "Burnley",
+    "originalDate": "2019-07-08",
+    "correctedDate": "2020-07-08",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Brighton & Hove Albion",
+    "awayId": "Liverpool",
+    "originalDate": "2019-07-08",
+    "correctedDate": "2020-07-08",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Everton",
+    "awayId": "Southampton",
+    "originalDate": "2019-07-09",
+    "correctedDate": "2020-07-09",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Aston Villa",
+    "awayId": "Manchester United",
+    "originalDate": "2019-07-09",
+    "correctedDate": "2020-07-09",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "AFC Bournemouth",
+    "awayId": "Tottenham Hotspur",
+    "originalDate": "2019-07-09",
+    "correctedDate": "2020-07-09",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Watford",
+    "awayId": "Newcastle United",
+    "originalDate": "2019-07-11",
+    "correctedDate": "2020-07-11",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Liverpool",
+    "awayId": "Burnley",
+    "originalDate": "2019-07-11",
+    "correctedDate": "2020-07-11",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Sheffield United",
+    "awayId": "Chelsea",
+    "originalDate": "2019-07-11",
+    "correctedDate": "2020-07-11",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Brighton & Hove Albion",
+    "awayId": "Manchester City",
+    "originalDate": "2019-07-11",
+    "correctedDate": "2020-07-11",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Norwich City",
+    "awayId": "West Ham United",
+    "originalDate": "2019-07-11",
+    "correctedDate": "2020-07-11",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Wolverhampton Wanderers",
+    "awayId": "Everton",
+    "originalDate": "2019-07-12",
+    "correctedDate": "2020-07-12",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Aston Villa",
+    "awayId": "Crystal Palace",
+    "originalDate": "2019-07-12",
+    "correctedDate": "2020-07-12",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Tottenham Hotspur",
+    "awayId": "Arsenal",
+    "originalDate": "2019-07-12",
+    "correctedDate": "2020-07-12",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "AFC Bournemouth",
+    "awayId": "Leicester City",
+    "originalDate": "2019-07-12",
+    "correctedDate": "2020-07-12",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Manchester United",
+    "awayId": "Southampton",
+    "originalDate": "2019-07-13",
+    "correctedDate": "2020-07-13",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1682467"
+  },
+  {
+    "season": 2020,
+    "homeId": "Chelsea",
+    "awayId": "Norwich City",
+    "originalDate": "2019-07-14",
+    "correctedDate": "2020-07-14",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Manchester City",
+    "awayId": "AFC Bournemouth",
+    "originalDate": "2019-07-15",
+    "correctedDate": "2020-07-15",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Newcastle United",
+    "awayId": "Tottenham Hotspur",
+    "originalDate": "2019-07-15",
+    "correctedDate": "2020-07-15",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Arsenal",
+    "awayId": "Liverpool",
+    "originalDate": "2019-07-15",
+    "correctedDate": "2020-07-15",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Burnley",
+    "awayId": "Wolverhampton Wanderers",
+    "originalDate": "2019-07-15",
+    "correctedDate": "2020-07-15",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Everton",
+    "awayId": "Aston Villa",
+    "originalDate": "2019-07-16",
+    "correctedDate": "2020-07-16",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Leicester City",
+    "awayId": "Sheffield United",
+    "originalDate": "2019-07-16",
+    "correctedDate": "2020-07-16",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Crystal Palace",
+    "awayId": "Manchester United",
+    "originalDate": "2019-07-16",
+    "correctedDate": "2020-07-16",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Southampton",
+    "awayId": "Brighton & Hove Albion",
+    "originalDate": "2019-07-16",
+    "correctedDate": "2020-07-16",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "West Ham United",
+    "awayId": "Watford",
+    "originalDate": "2019-07-17",
+    "correctedDate": "2020-07-17",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Norwich City",
+    "awayId": "Burnley",
+    "originalDate": "2019-07-18",
+    "correctedDate": "2020-07-18",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Tottenham Hotspur",
+    "awayId": "Leicester City",
+    "originalDate": "2019-07-19",
+    "correctedDate": "2020-07-19",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "AFC Bournemouth",
+    "awayId": "Southampton",
+    "originalDate": "2019-07-19",
+    "correctedDate": "2020-07-19",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Brighton & Hove Albion",
+    "awayId": "Newcastle United",
+    "originalDate": "2019-07-20",
+    "correctedDate": "2020-07-20",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Sheffield United",
+    "awayId": "Everton",
+    "originalDate": "2019-07-20",
+    "correctedDate": "2020-07-20",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Wolverhampton Wanderers",
+    "awayId": "Crystal Palace",
+    "originalDate": "2019-07-20",
+    "correctedDate": "2020-07-20",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Aston Villa",
+    "awayId": "Arsenal",
+    "originalDate": "2019-07-21",
+    "correctedDate": "2020-07-21",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Watford",
+    "awayId": "Manchester City",
+    "originalDate": "2019-07-21",
+    "correctedDate": "2020-07-21",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Manchester United",
+    "awayId": "West Ham United",
+    "originalDate": "2019-07-22",
+    "correctedDate": "2020-07-22",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Liverpool",
+    "awayId": "Chelsea",
+    "originalDate": "2019-07-22",
+    "correctedDate": "2020-07-22",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Arsenal",
+    "awayId": "Watford",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Burnley",
+    "awayId": "Brighton & Hove Albion",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Chelsea",
+    "awayId": "Wolverhampton Wanderers",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Crystal Palace",
+    "awayId": "Tottenham Hotspur",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Everton",
+    "awayId": "AFC Bournemouth",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Leicester City",
+    "awayId": "Manchester United",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Manchester City",
+    "awayId": "Norwich City",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Newcastle United",
+    "awayId": "Liverpool",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "Southampton",
+    "awayId": "Sheffield United",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  },
+  {
+    "season": 2020,
+    "homeId": "West Ham United",
+    "awayId": "Aston Villa",
+    "originalDate": "2019-07-26",
+    "correctedDate": "2020-07-26",
+    "reason": "football.json assigns July restart matches to 2019; upstream TXT season end, weekdays, and official revised fixtures establish July 2020.",
+    "source": "openfootball-england-2019-20",
+    "officialFixtureSource": "premierleague-1702418"
+  }
+]
