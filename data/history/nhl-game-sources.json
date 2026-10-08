@@ -1,0 +1,2948 @@
+[
+  {
+    "file": "work/nhl-history/raw-teams-2016.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20152016+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.824020+00:00",
+    "sha256": "8217cf8ee757699d4c4f68f366db05576a9520c7561a0892562130d202e41cc3"
+  },
+  {
+    "file": "work/nhl-history/raw-teams-2017.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20162017+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.834003+00:00",
+    "sha256": "7847e39e6e4dedcd2a525d6d5046b4b82d7f00e36de87c4d488e3d3bef6c60ef"
+  },
+  {
+    "file": "work/nhl-history/raw-teams-2018.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20172018+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.815323+00:00",
+    "sha256": "644f0575f57f08c531027bee1a95f2982d5cedf8aa0a338e267bb4ef940910bd"
+  },
+  {
+    "file": "work/nhl-history/raw-teams-2019.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20182019+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.846787+00:00",
+    "sha256": "2db87722b71256e38968a67e58920576c0cf73818cc348f83ff781d6c55400f6"
+  },
+  {
+    "file": "work/nhl-history/raw-teams-2020.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20192020+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.005165+00:00",
+    "sha256": "b93553b1eba8afd369abbc723405a78a194fb513e9b80310851bb37082856181"
+  },
+  {
+    "file": "work/nhl-history/raw-teams-2021.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20202021+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:40.980881+00:00",
+    "sha256": "3f1b04757daab32e1c2b58e2883c2dec4e2e57ccd7af3ba2c1295b857f8dc726"
+  },
+  {
+    "file": "work/nhl-history/raw-teams-2022.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20212022+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.020451+00:00",
+    "sha256": "6e659799c9cbb57a560003a93adb6323abcfae90d95469b340169b6236a08ce9"
+  },
+  {
+    "file": "work/nhl-history/raw-teams-2023.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20222023+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.051296+00:00",
+    "sha256": "274e2b9e73bc651708a087ac309e9d8a3794304cd4ab829e4804d17b2fe04bac"
+  },
+  {
+    "file": "work/nhl-history/raw-teams-2024.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20232024+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.163947+00:00",
+    "sha256": "af8159c9bd910a366c6d6fce2099065f2f481753fb989600c34f87f73126b92c"
+  },
+  {
+    "file": "work/nhl-history/raw-teams-2025.json",
+    "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20242025+and+gameTypeId%3D2",
+    "retrievedAtUTC": "2026-10-06T03:43:41.193316+00:00",
+    "sha256": "11d7729e88ec215dec00d17445c720950ffddb01184aed8a0624f1ed31b52389"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2016.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20152016",
+    "retrievedAtUTC": "2026-10-06T03:43:40.654739+00:00",
+    "sha256": "eef3e1d3e966a192e98cf2e64fd929eac34457914358da8e1bbc297c7cb10037"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2017.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20162017",
+    "retrievedAtUTC": "2026-10-06T03:43:40.663401+00:00",
+    "sha256": "9028bb73386c690012080aa7c9dbc29943a2111c76aba770db93942aa04f03b7"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2018.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20172018",
+    "retrievedAtUTC": "2026-10-06T03:43:40.675032+00:00",
+    "sha256": "071af8bf243f45256d0b762b619136543669b52dd94f29da4ddf1e64cd2face2"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2019.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20182019",
+    "retrievedAtUTC": "2026-10-06T03:43:40.822987+00:00",
+    "sha256": "9b94af50353f73109e9ddfce2b3ce570dc41d826111d0a69e6a1011fa763b1c7"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2020.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20192020",
+    "retrievedAtUTC": "2026-10-06T03:43:40.833674+00:00",
+    "sha256": "ea34b0f785d37bfacb25326b36f0faa1c828c0a4d88afd201fd010a130c9a833"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2021.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20202021",
+    "retrievedAtUTC": "2026-10-06T03:43:40.842245+00:00",
+    "sha256": "3227b08b2549835f719e238b74f1f0a9d595b80863df8149fccd851c4d361b91"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2022.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20212022",
+    "retrievedAtUTC": "2026-10-06T03:43:40.855064+00:00",
+    "sha256": "ad1557ce526ca8656a51d34827487e0bf6d1a5a15a4b1f8f38bf810abec8c3b0"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2023.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20222023",
+    "retrievedAtUTC": "2026-10-06T03:43:40.991679+00:00",
+    "sha256": "4ab20a022d9cf46b59c29dd56ac76d82ea5c284a99acbcbeab8db5d9ab33b369"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2024.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20232024",
+    "retrievedAtUTC": "2026-10-06T03:43:41.013693+00:00",
+    "sha256": "8e8f65726837489f71e7170f5d30a5737eeb5c8316a0f0396da9a3008a85d08a"
+  },
+  {
+    "file": "work/nhl-history/raw-games-2025.json",
+    "url": "https://api.nhle.com/stats/rest/en/game?cayenneExp=season%3D20242025",
+    "retrievedAtUTC": "2026-10-06T03:43:41.029230+00:00",
+    "sha256": "404fcc09b7bd1515a454fcc57862cdbbe2905e3e337e4699239024fc1d442abe"
+  },
+  {
+    "file": "work/nhl-history/nhl-playoff-games.json",
+    "url": null,
+    "sha256": "dfbb987f5139834f52e62dd70ee5ee2460b5a021ae68b94df9cb58921b80373a",
+    "note": "Previously audited playoff set used for exact membership and score cross-check."
+  },
+  {
+    "file": "outputs/leaguelab/data/history/nhl-team-seasons.json",
+    "url": null,
+    "sha256": "776ebbc7ad820435442c23c83ecd5269b4c28dd2d8bc1e69a92c42a73b796167",
+    "note": "Canonical standings used only to validate exact ID and standings alignment."
+  },
+  {
+    "file": "work/regular-nhl/neutral-map.json",
+    "url": null,
+    "sha256": "e1810cf7996afa3ce4f04e57b41e56c3ebdfa3c8b838332dca8203c43aaf2834",
+    "note": "Derived official schedule neutralSite metadata. See neutral-sources.json."
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20152016",
+    "sha256": "1f497dbd9fc45d3aa91920c3949dc71b84dd98186d5eddad72f4ddef741fb9ab",
+    "retrievedAtUTC": "2026-10-08T00:14:58.262990+00:00",
+    "teamId": "1",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20152016",
+    "sha256": "525422e5e379442976f549665ec44d0e5bb6224755af65df8f93332966ba95cd",
+    "retrievedAtUTC": "2026-10-08T00:14:58.226879+00:00",
+    "teamId": "10",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20152016",
+    "sha256": "e6afca1db123b0be357e1fc868c2153a37111d4cc5901ba15c01254cb7f92d76",
+    "retrievedAtUTC": "2026-10-08T00:14:58.229173+00:00",
+    "teamId": "12",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20152016",
+    "sha256": "adfe1ace0224c62a42ef8c06337bc3148fca7e5ba41edc113b360cadc9ca255a",
+    "retrievedAtUTC": "2026-10-08T00:14:58.224937+00:00",
+    "teamId": "13",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20152016",
+    "sha256": "56d438595e126437da1b7223759c932681d1d155d2b5f76c0358feafc2c51c4d",
+    "retrievedAtUTC": "2026-10-08T00:14:58.621027+00:00",
+    "teamId": "14",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20152016",
+    "sha256": "4cf6f1b88c3d97997cbfff7ab982f4b4aeb2e8d797aead1c8c7335dea5fe02b9",
+    "retrievedAtUTC": "2026-10-08T00:14:58.599850+00:00",
+    "teamId": "15",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20152016",
+    "sha256": "27b56b1bf392d6b36e55999cf0939ed86a3a1796d4e857bac957af62c1b21a45",
+    "retrievedAtUTC": "2026-10-08T00:14:58.621058+00:00",
+    "teamId": "16",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20152016",
+    "sha256": "f14f3f7265effc60d23f7bc2447c31125fc47e2ce05677a3cea85263b4c9997a",
+    "retrievedAtUTC": "2026-10-08T00:14:58.634271+00:00",
+    "teamId": "17",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20152016",
+    "sha256": "55aac89ed18abf6c498fcc555d7f086a3e7012a079225680edec70e05065c546",
+    "retrievedAtUTC": "2026-10-08T00:14:58.938636+00:00",
+    "teamId": "18",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20152016",
+    "sha256": "669b00ef2688862e6bbb3b7b9d18120faba17d38e429a39d69d5d2c1d4c5304b",
+    "retrievedAtUTC": "2026-10-08T00:14:58.996285+00:00",
+    "teamId": "19",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20152016",
+    "sha256": "eece10207f17db799f5728a50985ab22f9876673d4a1ddf1f0e0a7db2243d226",
+    "retrievedAtUTC": "2026-10-08T00:14:58.961992+00:00",
+    "teamId": "2",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20152016",
+    "sha256": "e8e007601c5ca604ab4f8c27d78109f62c33c826fea7fe6a1b396f0d20b844c7",
+    "retrievedAtUTC": "2026-10-08T00:14:58.981099+00:00",
+    "teamId": "20",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20152016",
+    "sha256": "12e4df40db8de54dd84fd32b5b0e826ef2f74186d1f87944d78516f0e8953847",
+    "retrievedAtUTC": "2026-10-08T00:14:59.229706+00:00",
+    "teamId": "21",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20152016",
+    "sha256": "fd80fd399b99d249e8260fdef99e8b52c5e318bc2632b59c4ddf299410805478",
+    "retrievedAtUTC": "2026-10-08T00:14:59.111904+00:00",
+    "teamId": "22",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20152016",
+    "sha256": "d4c3041e4d9fd8cb5bc9f03a4f4a784b4750551d9ee14c608219f30c1d0098e5",
+    "retrievedAtUTC": "2026-10-08T00:14:59.288936+00:00",
+    "teamId": "23",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20152016",
+    "sha256": "89e030a350e5a5f0c0f24ca4ff3178652f0674ca2e1b72e6aeb72bd11c4b911d",
+    "retrievedAtUTC": "2026-10-08T00:14:59.260440+00:00",
+    "teamId": "24",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20152016",
+    "sha256": "68d5a1fdf8e9954b16b532a7ee47bd667d71c5d1da1a98f8ae933646f51af502",
+    "retrievedAtUTC": "2026-10-08T00:14:59.390989+00:00",
+    "teamId": "25",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20152016",
+    "sha256": "77003db4f1d41b6b41c12db1cc6a961045cbea86278388f804bf9a3c97cd1f55",
+    "retrievedAtUTC": "2026-10-08T00:14:59.603733+00:00",
+    "teamId": "26",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20152016",
+    "sha256": "693ebc1c162996a0f8f7353e7ab2c9c895c96b04ae52c047eef59954df186041",
+    "retrievedAtUTC": "2026-10-08T00:14:59.648711+00:00",
+    "teamId": "28",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20152016",
+    "sha256": "4bb34d03a40a560ebf12eed2c3e23fd21d46387c07dbcb55685ff78b20b85294",
+    "retrievedAtUTC": "2026-10-08T00:14:59.642494+00:00",
+    "teamId": "29",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20152016",
+    "sha256": "4cb0f89b4660f798da68f08c1035733eafa081e0ffba09cc9c43d62f8ca359b2",
+    "retrievedAtUTC": "2026-10-08T00:14:59.745068+00:00",
+    "teamId": "3",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20152016",
+    "sha256": "14ce0f220feb15088e135eec3f273c33e60a093768c77042379dfc3e06ed2646",
+    "retrievedAtUTC": "2026-10-08T00:15:00.113311+00:00",
+    "teamId": "30",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20152016",
+    "sha256": "02437a43d8274f1a84162c1d1e1d000156b0a15959a2b9320ed7ff11d5f55788",
+    "retrievedAtUTC": "2026-10-08T00:15:00.131906+00:00",
+    "teamId": "4",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20152016",
+    "sha256": "d32d44cd76a524f7ffcd8ca42de9451564781c9ad68986e3802e3964834f9535",
+    "retrievedAtUTC": "2026-10-08T00:15:00.081596+00:00",
+    "teamId": "5",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20152016",
+    "sha256": "e16861c3ac948baf8aad7ffa104af1b4cdeaed30403bb2e03345e4af060fd0f2",
+    "retrievedAtUTC": "2026-10-08T00:15:00.161508+00:00",
+    "teamId": "52",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ARI-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ARI/20152016",
+    "sha256": "9c0a60930848f44dfe0a8ed029c6b53207524d4efc8100e4cf3da2728e8ab870",
+    "retrievedAtUTC": "2026-10-08T00:15:00.424759+00:00",
+    "teamId": "53",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20152016",
+    "sha256": "a7e0016f37dc8ca8aeb0fb27423615f73816e76dbc664ccd9f87615b1f798307",
+    "retrievedAtUTC": "2026-10-08T00:15:00.428761+00:00",
+    "teamId": "6",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20152016",
+    "sha256": "931fca5ddbe11c4be59d1da9ba1439be2d51ebf2dc7c2c62b4705ba4e777fd83",
+    "retrievedAtUTC": "2026-10-08T00:15:00.485555+00:00",
+    "teamId": "7",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20152016",
+    "sha256": "075bc4f5bbb17773d0e70df22e984b8038bf576e8b1542d756a4bd8f40e6c498",
+    "retrievedAtUTC": "2026-10-08T00:15:00.467808+00:00",
+    "teamId": "8",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20152016.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20152016",
+    "sha256": "c681505717a9a0583d0fcb57bdb97e0053a737127f679c0002793d09f8c86581",
+    "retrievedAtUTC": "2026-10-08T00:15:00.775317+00:00",
+    "teamId": "9",
+    "season": 2016,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20162017",
+    "sha256": "c6db35bc7104a0a60ee4a19b5d544ef2ec49575b737eb909f3e00e35ddb3b7e6",
+    "retrievedAtUTC": "2026-10-08T00:15:00.784382+00:00",
+    "teamId": "1",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20162017",
+    "sha256": "6179c92d65f3f4646d6a2ab5e1dccf73139736f2797dbb92e3a3ba91dc8d3614",
+    "retrievedAtUTC": "2026-10-08T00:15:00.883744+00:00",
+    "teamId": "10",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20162017",
+    "sha256": "a0d8cedbf21e54629ca0e15d3512ba5034c0c7fe3c88ca6c9c0e94b140f74be3",
+    "retrievedAtUTC": "2026-10-08T00:15:00.831070+00:00",
+    "teamId": "12",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20162017",
+    "sha256": "003631459c0b6ecfbd896f266ecec5a52e040dbde3f431b8976166b515aa0b41",
+    "retrievedAtUTC": "2026-10-08T00:15:01.087726+00:00",
+    "teamId": "13",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20162017",
+    "sha256": "68780c7a2c08a8e19e5b244d93c83903dea439c00b769c2a15f210214187709f",
+    "retrievedAtUTC": "2026-10-08T00:15:01.100629+00:00",
+    "teamId": "14",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20162017",
+    "sha256": "b99554e077d807305e4273c345fcdfd0c7f4cc71212393735a269c1a7e978c46",
+    "retrievedAtUTC": "2026-10-08T00:15:01.135259+00:00",
+    "teamId": "15",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20162017",
+    "sha256": "2ff394c9f1d4109d7ed489029d56ec3155fcff52e9fde3ce25d1390e52cac976",
+    "retrievedAtUTC": "2026-10-08T00:15:01.270908+00:00",
+    "teamId": "16",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20162017",
+    "sha256": "c37eb22eddc1ba72f76c0ea36daefd7a347b5e1328eb0d8936f0cb422e62607b",
+    "retrievedAtUTC": "2026-10-08T00:15:01.426797+00:00",
+    "teamId": "17",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20162017",
+    "sha256": "b48808044b2595a87e2d9df3944ea62197a67bb3e8b22cfa2509071eae29a7b6",
+    "retrievedAtUTC": "2026-10-08T00:15:01.467935+00:00",
+    "teamId": "18",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20162017",
+    "sha256": "1931ff09a1b1279e82b026859699ede8f3d47f509a069e7393b9285365866612",
+    "retrievedAtUTC": "2026-10-08T00:15:01.483524+00:00",
+    "teamId": "19",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20162017",
+    "sha256": "e586d551a9731fde29657c57ca52639485e7d4cbf4c3c9cedf655344c392d542",
+    "retrievedAtUTC": "2026-10-08T00:15:01.550763+00:00",
+    "teamId": "2",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20162017",
+    "sha256": "5a80083a6709a00d2c419b0f2ea5968ee01ac018c4b9d730c6817756a3ca4812",
+    "retrievedAtUTC": "2026-10-08T00:15:01.792809+00:00",
+    "teamId": "20",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20162017",
+    "sha256": "cca099a6da72cff96e8ea9844efbeb164d56681a5868ab6ec65baa1ca6a1f8c4",
+    "retrievedAtUTC": "2026-10-08T00:15:01.782680+00:00",
+    "teamId": "21",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20162017",
+    "sha256": "04e81f57d83f6c69d860c5c12a44bd31f1ba5291ff5c32a31289f9b2907c0dc4",
+    "retrievedAtUTC": "2026-10-08T00:15:01.801507+00:00",
+    "teamId": "22",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20162017",
+    "sha256": "c9d6a3ffc9afe52af9e975fca7cdf3b8cb0ac86da03fed212969294794c7e84f",
+    "retrievedAtUTC": "2026-10-08T00:15:01.838109+00:00",
+    "teamId": "23",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20162017",
+    "sha256": "2a4f0c996abe4fa5f10673146a97f468605a63e4cb72a8f6f24677a73e13043b",
+    "retrievedAtUTC": "2026-10-08T00:15:02.147999+00:00",
+    "teamId": "24",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20162017",
+    "sha256": "2fb199c1747bdafbfe6ba124404613a165d664cc3752951d09ed18a63b86f315",
+    "retrievedAtUTC": "2026-10-08T00:15:02.134229+00:00",
+    "teamId": "25",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20162017",
+    "sha256": "2c8ba9cf20bfb29c19a69f01f7c69882cc482a0b5da2b56e06140dd3e4c904b0",
+    "retrievedAtUTC": "2026-10-08T00:15:02.124174+00:00",
+    "teamId": "26",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20162017",
+    "sha256": "91f7a8af18867f57ba813e3256ac6a74f6a3f106e110e625f37add85796f8a99",
+    "retrievedAtUTC": "2026-10-08T00:15:02.147819+00:00",
+    "teamId": "28",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20162017",
+    "sha256": "0f181edbce6844ee204e3835431fc9f695c080380fd1965868dfe6728d0c739c",
+    "retrievedAtUTC": "2026-10-08T00:15:02.422270+00:00",
+    "teamId": "29",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20162017",
+    "sha256": "5a7398c18b82803b45a50c0f87c49251f16dc1d0213807dc3a6c5232efb52802",
+    "retrievedAtUTC": "2026-10-08T00:15:02.434726+00:00",
+    "teamId": "3",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20162017",
+    "sha256": "8352e6221b085fb9823e88d55240ee400d76f932bdc8ca51cee05f7c5400cb8c",
+    "retrievedAtUTC": "2026-10-08T00:15:02.471912+00:00",
+    "teamId": "30",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20162017",
+    "sha256": "a0f7a10e358afdd089c6807cf6ca88d04fb20111c4fee51cd339551775e3346b",
+    "retrievedAtUTC": "2026-10-08T00:15:02.447598+00:00",
+    "teamId": "4",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20162017",
+    "sha256": "7e11860adbef4488a86c73358296850b2be0df68232a2d422cfd6aace63f7d7a",
+    "retrievedAtUTC": "2026-10-08T00:15:02.702649+00:00",
+    "teamId": "5",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20162017",
+    "sha256": "3aba5e265b71b96bf1bade97b79b35bb492c3eaef52af7bc3bf9a367b2529b2d",
+    "retrievedAtUTC": "2026-10-08T00:15:02.723031+00:00",
+    "teamId": "52",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ARI-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ARI/20162017",
+    "sha256": "494102e5a0b97ef32cc8eb9ff33f60d1874952a0e7e40ec2f5326ff490251c15",
+    "retrievedAtUTC": "2026-10-08T00:15:02.731081+00:00",
+    "teamId": "53",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20162017",
+    "sha256": "6d6df7133b712b58be42b1159c5878b6034e8ba5e25ac11cc8e23497ae0275bd",
+    "retrievedAtUTC": "2026-10-08T00:15:02.745608+00:00",
+    "teamId": "6",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20162017",
+    "sha256": "9e72d42bc4e4fc7fd7735a8ce22c8041ab7bf98519d21ca57873e2e7461fe9bd",
+    "retrievedAtUTC": "2026-10-08T00:15:02.989378+00:00",
+    "teamId": "7",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20162017",
+    "sha256": "ae7007957c9b4d83962154de78ca5a898cb8e66f8d8c978d3ee1fc716b1ebe34",
+    "retrievedAtUTC": "2026-10-08T00:15:03.008668+00:00",
+    "teamId": "8",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20162017.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20162017",
+    "sha256": "26027a1e498f068f7dacd19ef14e26e2cec79aad9d10c129130560f6102e4e6c",
+    "retrievedAtUTC": "2026-10-08T00:15:03.059542+00:00",
+    "teamId": "9",
+    "season": 2017,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20172018",
+    "sha256": "d40f841a25f1540016698d973c59e39e3d81a7f2ed30a54a5d80731ef325a5df",
+    "retrievedAtUTC": "2026-10-08T00:15:03.039995+00:00",
+    "teamId": "1",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20172018",
+    "sha256": "7229ab556adcf741f9650957659bdaf52008cdbf99e758daca25a1cebd75b0ce",
+    "retrievedAtUTC": "2026-10-08T00:15:03.292169+00:00",
+    "teamId": "10",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20172018",
+    "sha256": "385242f1f083fe442a6a9e20400292f1c34776c50ef6065f957f1215b7447ef6",
+    "retrievedAtUTC": "2026-10-08T00:15:03.270150+00:00",
+    "teamId": "12",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20172018",
+    "sha256": "4da598661ac40faa3c9e6493ac990a96c1ee3449758f16c86468363811b93d37",
+    "retrievedAtUTC": "2026-10-08T00:15:03.327176+00:00",
+    "teamId": "13",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20172018",
+    "sha256": "095d6faa068774a3399cc8cb578e8e374b1c39dfcc9c4f9db071aaa1aa8a2de4",
+    "retrievedAtUTC": "2026-10-08T00:15:03.350854+00:00",
+    "teamId": "14",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20172018",
+    "sha256": "57f216d28cef4ce412073dc61e8a169c40525d273aeeeaf620215a4f4299540b",
+    "retrievedAtUTC": "2026-10-08T00:15:03.576566+00:00",
+    "teamId": "15",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20172018",
+    "sha256": "8fdba8c21e0ad1fc08ec417cdb7d45177e6e41c710b712c96e0406d26eb6f925",
+    "retrievedAtUTC": "2026-10-08T00:15:03.586261+00:00",
+    "teamId": "16",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20172018",
+    "sha256": "54b3b648037b0453f8e516165e55c10bf743e8123fec1dae8837c07d8ecea06b",
+    "retrievedAtUTC": "2026-10-08T00:15:03.601966+00:00",
+    "teamId": "17",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20172018",
+    "sha256": "a4ddb588a4cf70dd68deff410c198261ca9a080aa04ec89b44d32ca6c2e98608",
+    "retrievedAtUTC": "2026-10-08T00:15:03.655735+00:00",
+    "teamId": "18",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20172018",
+    "sha256": "5f75d21ffae77a3f983513010f5906f60ac0a8821b06173530c26688762b50f5",
+    "retrievedAtUTC": "2026-10-08T00:15:03.870442+00:00",
+    "teamId": "19",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20172018",
+    "sha256": "3c879032b6f4ef2ca4caa1a1e25c43e4c0b8318776fbdc5ce6ef74a81478a69c",
+    "retrievedAtUTC": "2026-10-08T00:15:03.862654+00:00",
+    "teamId": "2",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20172018",
+    "sha256": "3309bc88a99744583ab3044223ef303372f267e1869134f13829884750ac59c6",
+    "retrievedAtUTC": "2026-10-08T00:15:03.920662+00:00",
+    "teamId": "20",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20172018",
+    "sha256": "ecc2f1eae796b022533cd42ea1b21a4226b21c4347b21b23f7b96ad2b4923c9c",
+    "retrievedAtUTC": "2026-10-08T00:15:03.962884+00:00",
+    "teamId": "21",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20172018",
+    "sha256": "098721ca6c0b36f23a4e0099e5ab04130d0211fe8fd4e18a6859728ab6927088",
+    "retrievedAtUTC": "2026-10-08T00:15:04.126616+00:00",
+    "teamId": "22",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20172018",
+    "sha256": "6d58eb4faffeaf4eeb0086e0da2c28a9d11ba4d08f7b1f26cc9119f13b9b69df",
+    "retrievedAtUTC": "2026-10-08T00:15:04.161091+00:00",
+    "teamId": "23",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20172018",
+    "sha256": "bb3634a7f3f936839e560599be12de5f1330a4726e3324f52f1df03a41e69778",
+    "retrievedAtUTC": "2026-10-08T00:15:04.225410+00:00",
+    "teamId": "24",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20172018",
+    "sha256": "c970299b0a4cc86da9ac047baa5e401a0ab1ee0e769fb18f44d6ae0ac9f4ca6f",
+    "retrievedAtUTC": "2026-10-08T00:15:04.266551+00:00",
+    "teamId": "25",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20172018",
+    "sha256": "6814d1dfcec0152460d8fc4d483ea85e74f546cb973bbd8fdef86e88170c0898",
+    "retrievedAtUTC": "2026-10-08T00:15:04.409075+00:00",
+    "teamId": "26",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20172018",
+    "sha256": "19eda4150df9fa51fcd905d6e85ecdad23720c14516806305a38f507fb39ce44",
+    "retrievedAtUTC": "2026-10-08T00:15:04.452038+00:00",
+    "teamId": "28",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20172018",
+    "sha256": "0dd18ca96b45bdd7dd124cce9ad1388e9c310fb8bd659d886f26bf8f1551d637",
+    "retrievedAtUTC": "2026-10-08T00:15:04.512881+00:00",
+    "teamId": "29",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20172018",
+    "sha256": "1964551cf9bd546e63029715c2d525d0b6a88a895dad25771c58c70abf9866e9",
+    "retrievedAtUTC": "2026-10-08T00:15:04.539586+00:00",
+    "teamId": "3",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20172018",
+    "sha256": "67731ab601b4877da686949d76026b30f48b8700af6b0803fe78e2901043f9b1",
+    "retrievedAtUTC": "2026-10-08T00:15:04.685814+00:00",
+    "teamId": "30",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20172018",
+    "sha256": "ff0f03d590915e8edf4f6c10b5e185a13f4dd7d813c86c5034f08a885ab1e915",
+    "retrievedAtUTC": "2026-10-08T00:15:04.734493+00:00",
+    "teamId": "4",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20172018",
+    "sha256": "7b37e353685fae19b5e573cef19260616d5e18c9df45f65c6b12cfebb3ec3202",
+    "retrievedAtUTC": "2026-10-08T00:15:04.850400+00:00",
+    "teamId": "5",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20172018",
+    "sha256": "5d2f2e843b8bd6230679ebd962abdebf633201485e9480ba017f2b221424b0ef",
+    "retrievedAtUTC": "2026-10-08T00:15:04.877184+00:00",
+    "teamId": "52",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ARI-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ARI/20172018",
+    "sha256": "285eb0126d736646d095f1335fffd86e7a78d92a1965b789074f29de2ffc839e",
+    "retrievedAtUTC": "2026-10-08T00:15:04.977839+00:00",
+    "teamId": "53",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VGK-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VGK/20172018",
+    "sha256": "7a0964bc6d3ad264e7a6ec46e893855b29e969c65b9b922291395c0aff61c58f",
+    "retrievedAtUTC": "2026-10-08T00:15:05.063522+00:00",
+    "teamId": "54",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20172018",
+    "sha256": "8b3991e0d414480b66411c250aa761bdef886fcd767b0bf28ca615b7622908e6",
+    "retrievedAtUTC": "2026-10-08T00:15:05.178923+00:00",
+    "teamId": "6",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20172018",
+    "sha256": "fd08f0d3e4373958f9c727d52446bb4818c6f5d766553ce0e2dbeaeff89663af",
+    "retrievedAtUTC": "2026-10-08T00:15:05.278032+00:00",
+    "teamId": "7",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20172018",
+    "sha256": "d3241a0210b2b9c3c498bce16222a388968f1fa32e76689c4d5bb18eb11088ef",
+    "retrievedAtUTC": "2026-10-08T00:15:05.362473+00:00",
+    "teamId": "8",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20172018.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20172018",
+    "sha256": "5c04db2a76e9ce8f0f125bff41971d18f129171c1f120aa712d06020e97f6826",
+    "retrievedAtUTC": "2026-10-08T00:15:05.428576+00:00",
+    "teamId": "9",
+    "season": 2018,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20182019",
+    "sha256": "6ef656c281a0997040480d527fc7f5fb783deb97d9e0b02107417dc8c9b2c18b",
+    "retrievedAtUTC": "2026-10-08T00:15:05.580328+00:00",
+    "teamId": "1",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20182019",
+    "sha256": "1be27b0c29e210ef0e049d05516bc5e8e981e578c2656dea463d77be46140d74",
+    "retrievedAtUTC": "2026-10-08T00:15:05.694038+00:00",
+    "teamId": "10",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20182019",
+    "sha256": "0b5396156b258cec961da9c05d26064037518af8f76bd660c9e8c1da0a9222a0",
+    "retrievedAtUTC": "2026-10-08T00:15:05.719177+00:00",
+    "teamId": "12",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20182019",
+    "sha256": "ab09f327de90f01e07a077c0223f99440890079eaf4ca8dc9a04273337b5899a",
+    "retrievedAtUTC": "2026-10-08T00:15:05.743091+00:00",
+    "teamId": "13",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20182019",
+    "sha256": "7b7c76a078147f4a7c9dc921275eb034ace0aa1039c96549ac8e572c4f8c4894",
+    "retrievedAtUTC": "2026-10-08T00:15:05.912861+00:00",
+    "teamId": "14",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20182019",
+    "sha256": "cf4631f6f79b8a71ec31ffe776911d03a2ad45f92bf392c3fcd209b2c8374abd",
+    "retrievedAtUTC": "2026-10-08T00:15:06.013183+00:00",
+    "teamId": "15",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20182019",
+    "sha256": "afe6a8332ee583903625a2adb5776425972539a253ea85287e5e69cf24a4eacf",
+    "retrievedAtUTC": "2026-10-08T00:15:06.183892+00:00",
+    "teamId": "16",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20182019",
+    "sha256": "e68dd7dd6a41760e928b8bef6611fa7256bfe307493c4f26a1c2d476575cfaf2",
+    "retrievedAtUTC": "2026-10-08T00:15:06.025115+00:00",
+    "teamId": "17",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20182019",
+    "sha256": "d4630aedf09b8b213b3528a59ef0f2bd91c66c50f609be6b5a20d7c65ed59560",
+    "retrievedAtUTC": "2026-10-08T00:15:06.214707+00:00",
+    "teamId": "18",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20182019",
+    "sha256": "fd9232fbe04b6575e97436f61053d111fdfb0540c2f3fad59218cc4b292ab84f",
+    "retrievedAtUTC": "2026-10-08T00:15:06.339036+00:00",
+    "teamId": "19",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20182019",
+    "sha256": "db4a77f4bbd774ac34d562ecbe42cf93ffeb445deebffefdc0eb93f6c9d0b707",
+    "retrievedAtUTC": "2026-10-08T00:15:06.339141+00:00",
+    "teamId": "2",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20182019",
+    "sha256": "ddcbbb828b63164d6967e7a1f3a4db2eddea6e090f1a7774bc4414fafbfb6220",
+    "retrievedAtUTC": "2026-10-08T00:15:06.513225+00:00",
+    "teamId": "20",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20182019",
+    "sha256": "bedfe95772232cc2c1e161c327a07479e04b7b63e3007308b86003678df3b782",
+    "retrievedAtUTC": "2026-10-08T00:15:06.525079+00:00",
+    "teamId": "21",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20182019",
+    "sha256": "d62485d1245a7dd3a764fa96071a0860b5787ffe93d722e19a85e2f4a2337b7e",
+    "retrievedAtUTC": "2026-10-08T00:15:06.639843+00:00",
+    "teamId": "22",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20182019",
+    "sha256": "019abc168732537199ba1af8802c24972bd33b4cdea39832c3a7a7cee2296fc5",
+    "retrievedAtUTC": "2026-10-08T00:15:06.652336+00:00",
+    "teamId": "23",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20182019",
+    "sha256": "4e18ed5e1f386fbaf68988a639f32d3aee57b652ecda9a70b2808a7fd779e9a9",
+    "retrievedAtUTC": "2026-10-08T00:15:06.808566+00:00",
+    "teamId": "24",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20182019",
+    "sha256": "488a4b7d23698215dcbe71231281caeb83795d66d2884ae74f0358686f7c062e",
+    "retrievedAtUTC": "2026-10-08T00:15:06.822558+00:00",
+    "teamId": "25",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20182019",
+    "sha256": "1d44fcf8285ea6ba8356d9befb54ba55d330e58103cb18e97608b93651a12d06",
+    "retrievedAtUTC": "2026-10-08T00:15:06.945041+00:00",
+    "teamId": "26",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20182019",
+    "sha256": "6169db3152a862af02870660e236b00ca311a59029a50004f145403ec3c4fdbd",
+    "retrievedAtUTC": "2026-10-08T00:15:06.983542+00:00",
+    "teamId": "28",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20182019",
+    "sha256": "60ae53e61886135b934150873850babeede2779b92bbf4b80450b08f3c48b02f",
+    "retrievedAtUTC": "2026-10-08T00:15:07.116582+00:00",
+    "teamId": "29",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20182019",
+    "sha256": "e976fb0b7304e14f3692e9a17f5f1ed09c6f6a46ffc590407c5a84a3d31564a1",
+    "retrievedAtUTC": "2026-10-08T00:15:07.127329+00:00",
+    "teamId": "3",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20182019",
+    "sha256": "6ce105d8fbbc4410f66bc03c8475af9046d89e8fb780d744869d7d4cd0330f03",
+    "retrievedAtUTC": "2026-10-08T00:15:07.234510+00:00",
+    "teamId": "30",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20182019",
+    "sha256": "ee744cbcbf2641b8f249da25e6563872312bf08527bf77204fe15587b4ecb698",
+    "retrievedAtUTC": "2026-10-08T00:15:07.276170+00:00",
+    "teamId": "4",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20182019",
+    "sha256": "8289fa2384a9358ac2224bad82ae51652e31f6daecf0a5f509ed3baa1d0c714e",
+    "retrievedAtUTC": "2026-10-08T00:15:07.416399+00:00",
+    "teamId": "5",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20182019",
+    "sha256": "41c56a9d1339ebfdf7fa4e00242834028c4b3d3b1aa63367cd1715056147c27a",
+    "retrievedAtUTC": "2026-10-08T00:15:07.416216+00:00",
+    "teamId": "52",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ARI-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ARI/20182019",
+    "sha256": "636f5e90562b6fd3027d07aff93aabdf19054790760d4aa3c0855e6686184ed3",
+    "retrievedAtUTC": "2026-10-08T00:15:07.547545+00:00",
+    "teamId": "53",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VGK-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VGK/20182019",
+    "sha256": "14dd3691beb47fc1ee1da9d86e68a9c9736d8097110c1b4d79b2e1d6335606e0",
+    "retrievedAtUTC": "2026-10-08T00:15:07.559614+00:00",
+    "teamId": "54",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20182019",
+    "sha256": "569a5f201ca1980cc827c1c2a5f49b91b585f5633fd9e9690254a239482b2f81",
+    "retrievedAtUTC": "2026-10-08T00:15:07.749420+00:00",
+    "teamId": "6",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20182019",
+    "sha256": "e0badb69aea27dd52d9307efe404d58c6df7314bb188227d2d4fcd5fe8f512bb",
+    "retrievedAtUTC": "2026-10-08T00:15:07.732479+00:00",
+    "teamId": "7",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20182019",
+    "sha256": "1aaba8709ba124a82d2bb1e06bd5fbe7f7734040f34271e4a6c569df725cbcf1",
+    "retrievedAtUTC": "2026-10-08T00:15:07.839222+00:00",
+    "teamId": "8",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20182019.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20182019",
+    "sha256": "6c72aa38c3e1ec9927d2d32203ccedc5b4c482d8de23a0a4ea15a9e0f8688c8f",
+    "retrievedAtUTC": "2026-10-08T00:15:07.852378+00:00",
+    "teamId": "9",
+    "season": 2019,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20192020",
+    "sha256": "ca54975e164597643928b64dff63cb0b5cfaa0dc1b21f887ac5e531fe534eb01",
+    "retrievedAtUTC": "2026-10-08T00:15:09.580081+00:00",
+    "teamId": "1",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20192020",
+    "sha256": "ce46e18ee6b658a6224160c143a9564efb1765c14d12bf66db50d33160570f2c",
+    "retrievedAtUTC": "2026-10-08T00:15:09.621880+00:00",
+    "teamId": "10",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20192020",
+    "sha256": "81e719a84219a554737b4bd5ae2b42e420a5ad3b3cd58120c2b0bac7ac6561ed",
+    "retrievedAtUTC": "2026-10-08T00:15:09.666052+00:00",
+    "teamId": "12",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20192020",
+    "sha256": "9378aed435e66793188f000ad9cbe6a13255aa3c3801a93d71b61aad711ddbe8",
+    "retrievedAtUTC": "2026-10-08T00:15:09.665894+00:00",
+    "teamId": "13",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20192020",
+    "sha256": "9a65f87d17cc68a9c09a605713f04b46ffdcf2564533cc44f1acee93f866fd58",
+    "retrievedAtUTC": "2026-10-08T00:15:09.911334+00:00",
+    "teamId": "14",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20192020",
+    "sha256": "b2658a835f8cc9ed1e27ce85614aa333e74e148f0abadc149039657cdfb920d8",
+    "retrievedAtUTC": "2026-10-08T00:15:09.911438+00:00",
+    "teamId": "15",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20192020",
+    "sha256": "17add238b30c35d5e0e63f71760c111c8b262dd5c1b66ee1ee3efedb4da8648f",
+    "retrievedAtUTC": "2026-10-08T00:15:09.981113+00:00",
+    "teamId": "16",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20192020",
+    "sha256": "041c23efb6e22d515ed04e5c48fe40eca0e884c2b688b4c66e89b520622de881",
+    "retrievedAtUTC": "2026-10-08T00:15:09.972998+00:00",
+    "teamId": "17",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20192020",
+    "sha256": "7e6e077fb8400076afd6996c0234af0a2dcef9bbf4b021b9868fecb57bc123fb",
+    "retrievedAtUTC": "2026-10-08T00:15:10.239713+00:00",
+    "teamId": "18",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20192020",
+    "sha256": "9b0c551aaf08deb66fb06756fce3335f1cd87defc3cc018536e3953cba331403",
+    "retrievedAtUTC": "2026-10-08T00:15:10.231327+00:00",
+    "teamId": "19",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20192020",
+    "sha256": "f8343536e200c9ac4db2898533a4468a3842993a7b9f942d0007ec10698ff55e",
+    "retrievedAtUTC": "2026-10-08T00:15:10.296492+00:00",
+    "teamId": "2",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20192020",
+    "sha256": "9d1de09e3947b7ff26de2d7f7a025b4f71db8e6d3f536b08319bd91d090fef76",
+    "retrievedAtUTC": "2026-10-08T00:15:10.286463+00:00",
+    "teamId": "20",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20192020",
+    "sha256": "ca6ee4f6e5f4a3eb9cc78899411ba85cb60c9f756e75c76b257912dc9598c003",
+    "retrievedAtUTC": "2026-10-08T00:15:10.594441+00:00",
+    "teamId": "21",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20192020",
+    "sha256": "757830ecbb45c5ef3b457c28a1fc36ba9633aa4363e8bd43ad82074dbb723740",
+    "retrievedAtUTC": "2026-10-08T00:15:10.568326+00:00",
+    "teamId": "22",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20192020",
+    "sha256": "d406e0d7b19b495f82afddeaae06fd98da2c4e0abc409c9e5059e0169e4c0fad",
+    "retrievedAtUTC": "2026-10-08T00:15:10.678237+00:00",
+    "teamId": "23",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20192020",
+    "sha256": "876e8f9146fd7d9f7258b4ea7913a48c9d35b5548f43d31e87aec0abff73ab27",
+    "retrievedAtUTC": "2026-10-08T00:15:10.637342+00:00",
+    "teamId": "24",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20192020",
+    "sha256": "3e25c59f1aafb0395ca85e129d481e7bd1872724b1487b06cb5eb046fa14652f",
+    "retrievedAtUTC": "2026-10-08T00:15:10.945544+00:00",
+    "teamId": "25",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20192020",
+    "sha256": "d728d64c7f8a3cab9e91eb9f0d30a970920f7e84ba9400fba5a03f1078b3b0a7",
+    "retrievedAtUTC": "2026-10-08T00:15:11.006991+00:00",
+    "teamId": "26",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20192020",
+    "sha256": "f1ad8eca5539a5d3e672a8c0a683d4f8a3726462c1bc5274cf69acbf0a1b95ab",
+    "retrievedAtUTC": "2026-10-08T00:15:10.996860+00:00",
+    "teamId": "28",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20192020",
+    "sha256": "3d486e0b536d4c95d3b9ad6b0955db5eb1e659f074634f81115676d948d9efbe",
+    "retrievedAtUTC": "2026-10-08T00:15:11.026061+00:00",
+    "teamId": "29",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20192020",
+    "sha256": "491a61937d213e4135463f32d0a455c92978b40e370a096ee92eba88ec4f7e80",
+    "retrievedAtUTC": "2026-10-08T00:15:11.310546+00:00",
+    "teamId": "3",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20192020",
+    "sha256": "8bad31dad85771f99c39643de662ca6e44b8e79e2f42038b8fc38c7aed40a4b1",
+    "retrievedAtUTC": "2026-10-08T00:15:11.473772+00:00",
+    "teamId": "30",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20192020",
+    "sha256": "df1a44522eec95114b8f0e3dee3865e4e7fcdda170ae993259d87fcadadd434e",
+    "retrievedAtUTC": "2026-10-08T00:15:11.487785+00:00",
+    "teamId": "4",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20192020",
+    "sha256": "7545f0dea486a2556de2b0b50c99700cab7a6eb28da6346a091f16ff4d999af5",
+    "retrievedAtUTC": "2026-10-08T00:15:11.431797+00:00",
+    "teamId": "5",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20192020",
+    "sha256": "dc933a870fa2c9a44a8c5281eba328979d93c39c59d2e84cdb5a3b121833e072",
+    "retrievedAtUTC": "2026-10-08T00:15:11.698594+00:00",
+    "teamId": "52",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ARI-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ARI/20192020",
+    "sha256": "a2ebe34da506390f1439441edfa062fa186a8cca3c10c8fd57d50ca8a51b7bdb",
+    "retrievedAtUTC": "2026-10-08T00:15:11.805229+00:00",
+    "teamId": "53",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VGK-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VGK/20192020",
+    "sha256": "923714cbc3c6bc7838edab7a16840a853c519f8e39d331b17c6255f7d7356e51",
+    "retrievedAtUTC": "2026-10-08T00:15:11.871431+00:00",
+    "teamId": "54",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20192020",
+    "sha256": "d7cdc1e8b182e50030a348c412cced6cfc1688a1b466b0bbe1b601f9f325f7d0",
+    "retrievedAtUTC": "2026-10-08T00:15:12.233729+00:00",
+    "teamId": "6",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20192020",
+    "sha256": "3d42fc71c4edd474692d6ae065fc845c70dee88feee532c710afb3f45dfa7e70",
+    "retrievedAtUTC": "2026-10-08T00:15:12.026558+00:00",
+    "teamId": "7",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20192020",
+    "sha256": "f4884a569c094deed40c9efea190987c592a09a5552465a9f94a10924619a60b",
+    "retrievedAtUTC": "2026-10-08T00:15:12.157563+00:00",
+    "teamId": "8",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20192020.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20192020",
+    "sha256": "2585ca1b0c34cc68515f799fde97cd95a426b3d46277291bde1f0d70a47630c1",
+    "retrievedAtUTC": "2026-10-08T00:15:12.225020+00:00",
+    "teamId": "9",
+    "season": 2020,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20202021",
+    "sha256": "2755aeacb2e0b940759c56880297302de7b996a4fa21f2a92ab5271c69716893",
+    "retrievedAtUTC": "2026-10-08T00:15:12.350928+00:00",
+    "teamId": "1",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20202021",
+    "sha256": "671c0952672cbe8b3bfabbb880e8b592f4d51345a206af9fca740f48eba59f4c",
+    "retrievedAtUTC": "2026-10-08T00:15:12.531739+00:00",
+    "teamId": "10",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20202021",
+    "sha256": "f14a690825179350df39f4829c9579876c4ad8ebdfa8cd575f03e122bf95ef06",
+    "retrievedAtUTC": "2026-10-08T00:15:12.558983+00:00",
+    "teamId": "12",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20202021",
+    "sha256": "3bdf1e27fbdcdee73ef4b47c2a16df801914bd1bdce5e6d35379b3c944b38d44",
+    "retrievedAtUTC": "2026-10-08T00:15:12.563544+00:00",
+    "teamId": "13",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20202021",
+    "sha256": "d988fd251ad7df4363528cff81f25d1b2c289ec4b03ad77f185e987ca812ed3b",
+    "retrievedAtUTC": "2026-10-08T00:15:12.679989+00:00",
+    "teamId": "14",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20202021",
+    "sha256": "c62451432c8de0b9823daf268731c939ad767a6173204d9af04014ef9bdafbac",
+    "retrievedAtUTC": "2026-10-08T00:15:12.876132+00:00",
+    "teamId": "15",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20202021",
+    "sha256": "5ab58d548fb125053c755bec9a72dbf749a8d72f768da0b61ea0edc990245814",
+    "retrievedAtUTC": "2026-10-08T00:15:12.876268+00:00",
+    "teamId": "16",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20202021",
+    "sha256": "9dbf1afbd0017e980d7105b270e2540ca3406756f4dfc764b36b73befe737300",
+    "retrievedAtUTC": "2026-10-08T00:15:12.859996+00:00",
+    "teamId": "17",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20202021",
+    "sha256": "1224861d816dba7c83509b67f931e928ec46343b6200fe7d42bf60058dd39d19",
+    "retrievedAtUTC": "2026-10-08T00:15:12.975051+00:00",
+    "teamId": "18",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20202021",
+    "sha256": "2f152395b038959631dbcbf1e9f84d2bc341096ccae4d8f5dc27ede6fa790ab7",
+    "retrievedAtUTC": "2026-10-08T00:15:13.178964+00:00",
+    "teamId": "19",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20202021",
+    "sha256": "720b68424803e5b4a0b46499cb79c1cfc49313b6f282174343b5c6d55e379f2c",
+    "retrievedAtUTC": "2026-10-08T00:15:13.196011+00:00",
+    "teamId": "2",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20202021",
+    "sha256": "2ae377bddff5e0e9c94717139b5331b9d1299c97f59bc5cc5b77c72282fad81c",
+    "retrievedAtUTC": "2026-10-08T00:15:13.317197+00:00",
+    "teamId": "20",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20202021",
+    "sha256": "a5888184dd43a22b7445a83a2cf9102a616b001ac7916c27cf44847448809e7a",
+    "retrievedAtUTC": "2026-10-08T00:15:13.279032+00:00",
+    "teamId": "21",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20202021",
+    "sha256": "a7944580b12e7b6ae201893f4bbceffcf5401b865e6aed1266124e90d96708e0",
+    "retrievedAtUTC": "2026-10-08T00:15:13.511991+00:00",
+    "teamId": "22",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20202021",
+    "sha256": "bdd52cd2ec800a7e17fdebb3c0ac8dd7aede4905a10a8381e7f6b9b1d8c57ef9",
+    "retrievedAtUTC": "2026-10-08T00:15:13.511821+00:00",
+    "teamId": "23",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20202021",
+    "sha256": "983991edb6fcf92f42db5e78d49e585f4471c34ad1f14d1764a5a3c50e9ae159",
+    "retrievedAtUTC": "2026-10-08T00:15:13.562468+00:00",
+    "teamId": "24",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20202021",
+    "sha256": "af5a6ba9ca6b5e6f332e7334bf97ac9abac11ea760d5a48ac835e8a3f905406d",
+    "retrievedAtUTC": "2026-10-08T00:15:13.609735+00:00",
+    "teamId": "25",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20202021",
+    "sha256": "a53a35f268f3f6a5787a53b54158d590a1cd1e115e051d6eca64310d678875dd",
+    "retrievedAtUTC": "2026-10-08T00:15:13.815273+00:00",
+    "teamId": "26",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20202021",
+    "sha256": "db08e40bf363ad9622f180b6868764bf40317b7b82031ae30082751ee06852ad",
+    "retrievedAtUTC": "2026-10-08T00:15:13.822425+00:00",
+    "teamId": "28",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20202021",
+    "sha256": "d5bfafde52bcdb4ae6f82d2f055545b2767cf575e142161d3b38a426af28389d",
+    "retrievedAtUTC": "2026-10-08T00:15:13.885395+00:00",
+    "teamId": "29",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20202021",
+    "sha256": "edf451a2406ee27040c7c79b137c931e6bfb590e0bde176d8496d02e08ab11c1",
+    "retrievedAtUTC": "2026-10-08T00:15:13.917559+00:00",
+    "teamId": "3",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20202021",
+    "sha256": "e368fdd8aa800af7b86100d3dfac1f4d9cbd690fb62d8b30e55077bc25b1fe3f",
+    "retrievedAtUTC": "2026-10-08T00:15:14.132650+00:00",
+    "teamId": "30",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20202021",
+    "sha256": "bbe9cc289492cdbd680b990c6e2f26639f11cd23eefe5d0436772eb2952acf28",
+    "retrievedAtUTC": "2026-10-08T00:15:14.141351+00:00",
+    "teamId": "4",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20202021",
+    "sha256": "e5cd4aa03a9961f004ac5f158ebaeb02f42fa9a40db39ac84d7ce320bc089d72",
+    "retrievedAtUTC": "2026-10-08T00:15:14.211483+00:00",
+    "teamId": "5",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20202021",
+    "sha256": "446edbab15a7ac4c792aa960cd5a132993c1f4053e3d02db5895d88cfd4da253",
+    "retrievedAtUTC": "2026-10-08T00:15:14.291612+00:00",
+    "teamId": "52",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ARI-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ARI/20202021",
+    "sha256": "adb9f85024024812ca6a8a92a36a4e97c83612973c1c7b68e45ccc43faf33f4b",
+    "retrievedAtUTC": "2026-10-08T00:15:14.487085+00:00",
+    "teamId": "53",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VGK-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VGK/20202021",
+    "sha256": "a3e684997cca5ac492ef5fa424b8d4af882c6cf26aabc99fbd587f5ec93d90de",
+    "retrievedAtUTC": "2026-10-08T00:15:14.538302+00:00",
+    "teamId": "54",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20202021",
+    "sha256": "6cc1e20a92228d9204298ca0705382569787a58bb45d7ade966dc3359275a8d9",
+    "retrievedAtUTC": "2026-10-08T00:15:14.568074+00:00",
+    "teamId": "6",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20202021",
+    "sha256": "41c43f380cf1052c9a555167bb2588aeae79a4519f2919a54544ea74da48b25b",
+    "retrievedAtUTC": "2026-10-08T00:15:14.628022+00:00",
+    "teamId": "7",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20202021",
+    "sha256": "1aa300b03bc95ea84f61a0c2ca377a135ff9e904161e61221d0d68f1cc310e80",
+    "retrievedAtUTC": "2026-10-08T00:15:14.861980+00:00",
+    "teamId": "8",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20202021.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20202021",
+    "sha256": "4a527e72b73ff21041cafd65fa26aa91f3ae46cd9a14af4a31689049a8aecaa8",
+    "retrievedAtUTC": "2026-10-08T00:15:14.874830+00:00",
+    "teamId": "9",
+    "season": 2021,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20212022",
+    "sha256": "f919826dabc1437350ac4d6fe63cac067666dae8148cd3650c9a574f4663501d",
+    "retrievedAtUTC": "2026-10-08T00:15:14.948605+00:00",
+    "teamId": "1",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20212022",
+    "sha256": "f66d1bcd3a6be31c9d45dc45bd57515965c754bbd8f7a3e10d4dc4139461e5e4",
+    "retrievedAtUTC": "2026-10-08T00:15:14.948858+00:00",
+    "teamId": "10",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20212022",
+    "sha256": "fee9188b999bfe0a6582796a0633072e0a670d5dfcdb051d142c6cae4c1eddb8",
+    "retrievedAtUTC": "2026-10-08T00:15:15.195967+00:00",
+    "teamId": "12",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20212022",
+    "sha256": "2bfcc69874097688217e9c4833f76bcc1faf8db75fd800f8a5543ffa7e067014",
+    "retrievedAtUTC": "2026-10-08T00:15:15.206491+00:00",
+    "teamId": "13",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20212022",
+    "sha256": "5f1695fd836969dda3761f6a36b73476aff71ef2196d2cf5c4368443ba39445e",
+    "retrievedAtUTC": "2026-10-08T00:15:15.281155+00:00",
+    "teamId": "14",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20212022",
+    "sha256": "ac8df887a7cfd5bac47631e700cc6f67e81a28afd9bf161cc76c1d7ea9980836",
+    "retrievedAtUTC": "2026-10-08T00:15:15.297682+00:00",
+    "teamId": "15",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20212022",
+    "sha256": "bbf5f75f3a21177c15461522aa1df5a8bca6c135fbe08c097d180938216598df",
+    "retrievedAtUTC": "2026-10-08T00:15:15.509234+00:00",
+    "teamId": "16",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20212022",
+    "sha256": "349011b06f9f5db651ce0a906f65d1e36a5933d21a200d203cf52697cd1ef1bc",
+    "retrievedAtUTC": "2026-10-08T00:15:15.521282+00:00",
+    "teamId": "17",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20212022",
+    "sha256": "88d030e4c8bd0d20def626cfe07acde1d73e6655cc3823fd9c0339bb72bf31fb",
+    "retrievedAtUTC": "2026-10-08T00:15:15.610998+00:00",
+    "teamId": "18",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20212022",
+    "sha256": "a8f2ca1ffea4ff7ad128aeba4c7a150d8a32c82fe23f4ce499915c4fb02ff11e",
+    "retrievedAtUTC": "2026-10-08T00:15:15.598665+00:00",
+    "teamId": "19",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20212022",
+    "sha256": "b64e73c8b4de7834f6973be8a87ce17ddc01444828daf3f554e94e3c0b6853c9",
+    "retrievedAtUTC": "2026-10-08T00:15:15.810706+00:00",
+    "teamId": "2",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20212022",
+    "sha256": "ab0d79f1bb04adbf4ab08e98c51a821121f67e20973afe2a1f2cf148da2803dc",
+    "retrievedAtUTC": "2026-10-08T00:15:15.829302+00:00",
+    "teamId": "20",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20212022",
+    "sha256": "889f075bc0d5c2fc82dc024a2c0056681fd24891d199ec3baa67c160e89dedec",
+    "retrievedAtUTC": "2026-10-08T00:15:15.894226+00:00",
+    "teamId": "21",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20212022",
+    "sha256": "e25ab3f1c271846043d81e802c9e8504688397977f8132f0b14157ee236b8f44",
+    "retrievedAtUTC": "2026-10-08T00:15:15.918508+00:00",
+    "teamId": "22",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20212022",
+    "sha256": "f09a5468d453b4fa0eeddebb3a1120713ccbd05cceb438cb32ac02930cfb067b",
+    "retrievedAtUTC": "2026-10-08T00:15:16.153079+00:00",
+    "teamId": "23",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20212022",
+    "sha256": "9aa194096b40146b48c45f287d65b3298479c04b9a6294f3786d953d04a2eab7",
+    "retrievedAtUTC": "2026-10-08T00:15:16.156067+00:00",
+    "teamId": "24",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20212022",
+    "sha256": "c0387fccaa53f8f60f45769286780287747507dc64a99ed4be9ea3e4ef5ac991",
+    "retrievedAtUTC": "2026-10-08T00:15:16.280917+00:00",
+    "teamId": "25",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20212022",
+    "sha256": "11ceb0cc2c2ba7ad5d9d27a2510d8def870eef863ad13e7392c1328d753b4f99",
+    "retrievedAtUTC": "2026-10-08T00:15:16.324526+00:00",
+    "teamId": "26",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20212022",
+    "sha256": "134498be6a5cff087bfda43680a1799dc5fd2c09f27bfda19e305c7a43d9b82b",
+    "retrievedAtUTC": "2026-10-08T00:15:16.476217+00:00",
+    "teamId": "28",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20212022",
+    "sha256": "c4443cb9e71410beefdca9e7384c6b7651f1bdd4fae1f37977a04f93809c9e51",
+    "retrievedAtUTC": "2026-10-08T00:15:16.506123+00:00",
+    "teamId": "29",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20212022",
+    "sha256": "97ff3b575049f9bb1c5b5bad069b293888b37adfdb8647a221a5b55479223e69",
+    "retrievedAtUTC": "2026-10-08T00:15:16.584653+00:00",
+    "teamId": "3",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20212022",
+    "sha256": "bd95fe60dd78acb1345a9e6dcaa082952f31c350e31c2c3a5e27851f149182cb",
+    "retrievedAtUTC": "2026-10-08T00:15:16.620249+00:00",
+    "teamId": "30",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20212022",
+    "sha256": "245babbf2c17e231f8ed2d18b6e8fc7b4fe8fd29bdca32a87013ed15ab6eae29",
+    "retrievedAtUTC": "2026-10-08T00:15:16.785982+00:00",
+    "teamId": "4",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20212022",
+    "sha256": "5ae86b185f8477879bc3ad5c065d31b286916ec7b9597d80d8e472854cd32de1",
+    "retrievedAtUTC": "2026-10-08T00:15:16.807695+00:00",
+    "teamId": "5",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20212022",
+    "sha256": "3214c30ad2256016d82755dc71ba74df9d53f6fb375ca013486edeb75294a959",
+    "retrievedAtUTC": "2026-10-08T00:15:16.862353+00:00",
+    "teamId": "52",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ARI-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ARI/20212022",
+    "sha256": "71680e57767e8791aafe2cae29556394508277fac162acf2a2fd1fa3acd87824",
+    "retrievedAtUTC": "2026-10-08T00:15:16.931494+00:00",
+    "teamId": "53",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VGK-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VGK/20212022",
+    "sha256": "09e707cab3bd3ae338a4ad7a7e0ac09081ebc3caedba32dec32dc843e10867d1",
+    "retrievedAtUTC": "2026-10-08T00:15:17.107867+00:00",
+    "teamId": "54",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SEA-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SEA/20212022",
+    "sha256": "ebf4b0f061a4bb3a2b86a204fb0615ab09901902107ad386c03b3c7c6f59f767",
+    "retrievedAtUTC": "2026-10-08T00:15:17.108474+00:00",
+    "teamId": "55",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20212022",
+    "sha256": "3a286d712e9ec2a7173b5392761b8668651104f5549091d8015cbd67f52392f3",
+    "retrievedAtUTC": "2026-10-08T00:15:17.213728+00:00",
+    "teamId": "6",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20212022",
+    "sha256": "bbded905432ed146f55e8bf7e79b2f87ca99d28a4aa4952a61fe4236d14fd3aa",
+    "retrievedAtUTC": "2026-10-08T00:15:17.221417+00:00",
+    "teamId": "7",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20212022",
+    "sha256": "72c3033ba970d0fa9cb6104b0013b0cfd89a8774a0183cf0a0bc6f92fac07dad",
+    "retrievedAtUTC": "2026-10-08T00:15:17.407113+00:00",
+    "teamId": "8",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20212022.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20212022",
+    "sha256": "5dbaebe56a914e300e4fce78e1750d4c4f0c4e07d3382c116769c4cfc38e1143",
+    "retrievedAtUTC": "2026-10-08T00:15:17.396445+00:00",
+    "teamId": "9",
+    "season": 2022,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20222023",
+    "sha256": "c42e0a9cd2c6b0ff4b89a519136c975d9b16b094db5e2d376e851c605f7092f0",
+    "retrievedAtUTC": "2026-10-08T00:15:17.517145+00:00",
+    "teamId": "1",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20222023",
+    "sha256": "972fda45b261c67d446a5e9af34488b9796bcc8f78d0644c89f3c4b4d41a28d3",
+    "retrievedAtUTC": "2026-10-08T00:15:17.542011+00:00",
+    "teamId": "10",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20222023",
+    "sha256": "c414f63a5f72a9b26e2473cdfc417b5103787212faa157078b6b68df1de7ef29",
+    "retrievedAtUTC": "2026-10-08T00:15:17.720656+00:00",
+    "teamId": "12",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20222023",
+    "sha256": "2e657f7f401dab9494f0b727875e3089e0f82b85a9629ae886f7ec04e75ffd64",
+    "retrievedAtUTC": "2026-10-08T00:15:17.730801+00:00",
+    "teamId": "13",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20222023",
+    "sha256": "52d3391cdfcacd6684f2899dae343691d435bd2ab6a149b44faeae02b5d376a3",
+    "retrievedAtUTC": "2026-10-08T00:15:17.818269+00:00",
+    "teamId": "14",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20222023",
+    "sha256": "8d863c2395aa2e620aa8cdef4b7240cae31325900e16963c1d9224b017d6fba9",
+    "retrievedAtUTC": "2026-10-08T00:15:17.881230+00:00",
+    "teamId": "15",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20222023",
+    "sha256": "6ecaeed42944c9a59bc46243742059d5702c2016b8fbbd27c411335af63b0b61",
+    "retrievedAtUTC": "2026-10-08T00:15:17.990261+00:00",
+    "teamId": "16",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20222023",
+    "sha256": "2d0989ae367de41ade57f62ac6406acc2a12fc228d9f6bef4afa259cab807209",
+    "retrievedAtUTC": "2026-10-08T00:15:18.033827+00:00",
+    "teamId": "17",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20222023",
+    "sha256": "c3dfbe8ccead60d5414657a03878b7b3c46d6949b4eefdbf92dff3ce0a28edc4",
+    "retrievedAtUTC": "2026-10-08T00:15:18.105223+00:00",
+    "teamId": "18",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20222023",
+    "sha256": "cf3e8e0dd1cb86af64a8f4d00d936bae2bdb4aa0c1f18e1bebe19db789e48607",
+    "retrievedAtUTC": "2026-10-08T00:15:18.173025+00:00",
+    "teamId": "19",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20222023",
+    "sha256": "d4a10c175a1e4d4b780012245686741ae937d603e54fd2e0941433150aa0e725",
+    "retrievedAtUTC": "2026-10-08T00:15:18.281107+00:00",
+    "teamId": "2",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20222023",
+    "sha256": "4e4523d4c921518e61aaea680ae637945afcaa4ddb33b12bb15867576a559b58",
+    "retrievedAtUTC": "2026-10-08T00:15:18.325450+00:00",
+    "teamId": "20",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20222023",
+    "sha256": "d78fd06947cf4a08d18d99a031f8ee4984a57712faf82c3faebe63057563b859",
+    "retrievedAtUTC": "2026-10-08T00:15:18.419191+00:00",
+    "teamId": "21",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20222023",
+    "sha256": "eb057c344cdbf199ee04d080f6e221dee2489817c0e71432d7fb45c234a7751c",
+    "retrievedAtUTC": "2026-10-08T00:15:18.452970+00:00",
+    "teamId": "22",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20222023",
+    "sha256": "82ab492caa5dc7270ba0764f3280c466a492a972db6a329e135e69b6def158b4",
+    "retrievedAtUTC": "2026-10-08T00:15:18.569105+00:00",
+    "teamId": "23",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20222023",
+    "sha256": "4cfd231c6a120d6ab67ba231a79ef7afb0bb18f03a995d93df9427819ceb8c96",
+    "retrievedAtUTC": "2026-10-08T00:15:18.617905+00:00",
+    "teamId": "24",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20222023",
+    "sha256": "a9995a33aa81aacf91a4017ae56ec5880276b7d80d68cb355577ee5322953636",
+    "retrievedAtUTC": "2026-10-08T00:15:18.705156+00:00",
+    "teamId": "25",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20222023",
+    "sha256": "60d63a44cbb0c9416c8a82f16e0d0c0b1b71727d43bfbacd6ca429566083d8d5",
+    "retrievedAtUTC": "2026-10-08T00:15:18.890609+00:00",
+    "teamId": "26",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20222023",
+    "sha256": "30e326fdd76dd058375fbc1d0afb248969be3ef07b35037b6a002c0e4a2a3353",
+    "retrievedAtUTC": "2026-10-08T00:15:18.870298+00:00",
+    "teamId": "28",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20222023",
+    "sha256": "52327e38835af12f29e805f942d5f64f1b1c88efedb10e9749bf763bc7f2f77b",
+    "retrievedAtUTC": "2026-10-08T00:15:18.884157+00:00",
+    "teamId": "29",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20222023",
+    "sha256": "454cc681ba808e60769084b9e02294cda03d2aedd5ce2fbbd37c3929a79d4c1d",
+    "retrievedAtUTC": "2026-10-08T00:15:18.999507+00:00",
+    "teamId": "3",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20222023",
+    "sha256": "0da574c058925922b560117c3b81a880ea680e72088284e50ff23fdb1403e9dc",
+    "retrievedAtUTC": "2026-10-08T00:15:19.179481+00:00",
+    "teamId": "30",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20222023",
+    "sha256": "6fb96f4f7cbc03b929818765ecc499df11edbb362a87f7fc9cc335305845eaa0",
+    "retrievedAtUTC": "2026-10-08T00:15:19.179538+00:00",
+    "teamId": "4",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20222023",
+    "sha256": "d59593a8d41256db26e6968cec7a64932f43d692041bede98060257f0d07030e",
+    "retrievedAtUTC": "2026-10-08T00:15:19.191402+00:00",
+    "teamId": "5",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20222023",
+    "sha256": "7d6c8420ac43f4b1f64d0ac0f5594b4118c5318a7c48d11a4f339c5ba9c79263",
+    "retrievedAtUTC": "2026-10-08T00:15:19.335619+00:00",
+    "teamId": "52",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ARI-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ARI/20222023",
+    "sha256": "96827889a8d7bc51b28d52a2bc081873b4ed8f4734704bb73678c471a309c62f",
+    "retrievedAtUTC": "2026-10-08T00:15:19.550125+00:00",
+    "teamId": "53",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VGK-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VGK/20222023",
+    "sha256": "3e82ebd7dc1bbe6a8adef1fc3e3c1a7375e456494d2b6e58063c5a5b54430ae4",
+    "retrievedAtUTC": "2026-10-08T00:15:19.534329+00:00",
+    "teamId": "54",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SEA-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SEA/20222023",
+    "sha256": "8d8cdfc04c5b6bdde0cacb83d1b840964ca4b428686f39cfd475bfcc5f8cf746",
+    "retrievedAtUTC": "2026-10-08T00:15:19.579786+00:00",
+    "teamId": "55",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20222023",
+    "sha256": "7a12707afb33ba8f9c41c29601590219e57e3368c465b3280ac11e49ab7ade17",
+    "retrievedAtUTC": "2026-10-08T00:15:19.654906+00:00",
+    "teamId": "6",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20222023",
+    "sha256": "33844f7053818f4e8870f027fa39c1e9c7f99a1839dc8ec4e1e7ec080ca2662a",
+    "retrievedAtUTC": "2026-10-08T00:15:19.876514+00:00",
+    "teamId": "7",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20222023",
+    "sha256": "78c4aff449631da5b42c49b48f6622f6695c27e4cb7e31a0ebabd8d05323e280",
+    "retrievedAtUTC": "2026-10-08T00:15:19.911034+00:00",
+    "teamId": "8",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20222023.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20222023",
+    "sha256": "8696bd8fd2c8f05337dee69bc80c52d21ff66545aed7210581599769c3e2d39b",
+    "retrievedAtUTC": "2026-10-08T00:15:19.893524+00:00",
+    "teamId": "9",
+    "season": 2023,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20232024",
+    "sha256": "2c58fa44f4e03875e4e39f849893cd82fffc05928b2d3d8db98af344489a1d55",
+    "retrievedAtUTC": "2026-10-08T00:15:20.030802+00:00",
+    "teamId": "1",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20232024",
+    "sha256": "5f801ed6240bd257b3a0a4d99122d0d0cf7248ed256fa8b274b4b2ff647bd168",
+    "retrievedAtUTC": "2026-10-08T00:15:20.311146+00:00",
+    "teamId": "10",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20232024",
+    "sha256": "3d5e2e70f0429b5c2d3c588d51e30de0cb67c0b8159ab0ec4618efee7777ce36",
+    "retrievedAtUTC": "2026-10-08T00:15:20.260027+00:00",
+    "teamId": "12",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20232024",
+    "sha256": "7a1428e74b73b1ccdc3ac15e07cf72ae99cbeb65e86eae8048b10fd97f2c47d9",
+    "retrievedAtUTC": "2026-10-08T00:15:20.338378+00:00",
+    "teamId": "13",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20232024",
+    "sha256": "6a56a17b7dfaa076876ffd2fcec709494a76711d8f5d8a2e015f61406c04a656",
+    "retrievedAtUTC": "2026-10-08T00:15:20.351246+00:00",
+    "teamId": "14",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20232024",
+    "sha256": "586876eaead233c3ca19faba39de7674ab78f84d60a0983d970b18fc3a8dee84",
+    "retrievedAtUTC": "2026-10-08T00:15:20.598152+00:00",
+    "teamId": "15",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20232024",
+    "sha256": "041a8cad77f1753ec76adc1fde6df11196153e88a6e6f31d28b055c45d820705",
+    "retrievedAtUTC": "2026-10-08T00:15:20.767372+00:00",
+    "teamId": "16",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20232024",
+    "sha256": "3ffff96ee0279f03cfd8ab83c46506ed4bc25702abc00622730a512dc0d7297e",
+    "retrievedAtUTC": "2026-10-08T00:15:20.767523+00:00",
+    "teamId": "17",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20232024",
+    "sha256": "982d5eb4b47d28b45551b0f31dc682e75dbc5ba3250597d05a664a24e64fa465",
+    "retrievedAtUTC": "2026-10-08T00:15:20.780745+00:00",
+    "teamId": "18",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20232024",
+    "sha256": "d5dfd575f0810e5984c407acc40f94cd7b44bc5ba6f8192df58e0b312b30fb80",
+    "retrievedAtUTC": "2026-10-08T00:15:20.965485+00:00",
+    "teamId": "19",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20232024",
+    "sha256": "b0443cf8e9d77af3fb99d9cccbd99ddeb927c0465acfc9931cbf2be539f09f85",
+    "retrievedAtUTC": "2026-10-08T00:15:21.160177+00:00",
+    "teamId": "2",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20232024",
+    "sha256": "d533022079bbf5dd03529e9c562647b6ba55d0def2f8fe065d91632db26108ee",
+    "retrievedAtUTC": "2026-10-08T00:15:21.115549+00:00",
+    "teamId": "20",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20232024",
+    "sha256": "98064cbf99fae62498858ce423e23bbda36a29fec45558b4d11497d166a8ed90",
+    "retrievedAtUTC": "2026-10-08T00:15:21.160048+00:00",
+    "teamId": "21",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20232024",
+    "sha256": "2ffe988c514908f0938bde1a60d1579448e77640faacabc1b16d350f8d5b7032",
+    "retrievedAtUTC": "2026-10-08T00:15:21.368549+00:00",
+    "teamId": "22",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20232024",
+    "sha256": "8e6881d5fdf1b08721a0ec2778d5b4eae10e462db09f74ebac05da0a076da3ea",
+    "retrievedAtUTC": "2026-10-08T00:15:21.477536+00:00",
+    "teamId": "23",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20232024",
+    "sha256": "fa31568def4249a4834ef76c2076f1189cb49a84cb4790498ef2b52ea0acf29a",
+    "retrievedAtUTC": "2026-10-08T00:15:21.498531+00:00",
+    "teamId": "24",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20232024",
+    "sha256": "24b7a9436ee8714f0d271fcf6ae47bab5342243eb61b7054297e291c095c63ba",
+    "retrievedAtUTC": "2026-10-08T00:15:21.525222+00:00",
+    "teamId": "25",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20232024",
+    "sha256": "9dcd2ddbed4a6f8df6a96c2f440aa0a38fbae80abb1562310e40a4b0569e6f70",
+    "retrievedAtUTC": "2026-10-08T00:15:21.761896+00:00",
+    "teamId": "26",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20232024",
+    "sha256": "e786a273d289cbd99156de0be73b9764755aa36798ee5ed36f942420e6bb967e",
+    "retrievedAtUTC": "2026-10-08T00:15:21.831550+00:00",
+    "teamId": "28",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20232024",
+    "sha256": "26f402a9cf6f00d529e46f19a66fff160e976c4045df8aa5d9dbf5b49fde6826",
+    "retrievedAtUTC": "2026-10-08T00:15:21.850614+00:00",
+    "teamId": "29",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20232024",
+    "sha256": "a1954fb8d1284696138ae9a948666c8969e7773de4821361aed1ffec68db5be9",
+    "retrievedAtUTC": "2026-10-08T00:15:21.920678+00:00",
+    "teamId": "3",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20232024",
+    "sha256": "dd3857f0dc4963223ab1b95ab730a8df865a75a9c642bb7339b369873777709c",
+    "retrievedAtUTC": "2026-10-08T00:15:22.100662+00:00",
+    "teamId": "30",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20232024",
+    "sha256": "fe2e50a72a14dc05dcf1ccc180d536ec495bbfd2cc39ac2925fb2e4a3646155f",
+    "retrievedAtUTC": "2026-10-08T00:15:22.171089+00:00",
+    "teamId": "4",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20232024",
+    "sha256": "743e474cf42ce0cf256ad81943c1a88e8fd36aa0000188548ed54dd13c41bdda",
+    "retrievedAtUTC": "2026-10-08T00:15:22.209705+00:00",
+    "teamId": "5",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20232024",
+    "sha256": "31cd75a354ebccc70a3a20d50cf2f886856a06e5cc5624531caf12cd8c1b41fc",
+    "retrievedAtUTC": "2026-10-08T00:15:22.275139+00:00",
+    "teamId": "52",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ARI-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ARI/20232024",
+    "sha256": "5dc51484ebc0b589bd3fc6719e7f1533dd7d73720c4d147b187d1cdb8da17b24",
+    "retrievedAtUTC": "2026-10-08T00:15:22.475487+00:00",
+    "teamId": "53",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VGK-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VGK/20232024",
+    "sha256": "dbe483c38075e602e96f13b556b8eb986eabf036afbb442f05360d7af7d3d066",
+    "retrievedAtUTC": "2026-10-08T00:15:22.537754+00:00",
+    "teamId": "54",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SEA-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SEA/20232024",
+    "sha256": "cf1c6bccd7886908e70e4cc6035f359fd4a0f5b1251bac3aa501242b9b1b1d37",
+    "retrievedAtUTC": "2026-10-08T00:15:22.560451+00:00",
+    "teamId": "55",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20232024",
+    "sha256": "15226f8327d4d6abbeab988f5bcc0078533f8ec78187b2007e22bfc9906e19bf",
+    "retrievedAtUTC": "2026-10-08T00:15:22.613167+00:00",
+    "teamId": "6",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20232024",
+    "sha256": "c9e2fe06cdfc7abe5017151ec59ff5ff745ee26e5842ce70f5e1287f3255e063",
+    "retrievedAtUTC": "2026-10-08T00:15:22.823827+00:00",
+    "teamId": "7",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20232024",
+    "sha256": "b933bf5ae930f8bcbcf987727ea6b8ea46ed1a07a8cfa36a08b6179e5c896d8c",
+    "retrievedAtUTC": "2026-10-08T00:15:22.867563+00:00",
+    "teamId": "8",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20232024.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20232024",
+    "sha256": "8eb2cc90f27da3928a2afca8ba88d20a19b9deebd6d2e62cb472deed2515470f",
+    "retrievedAtUTC": "2026-10-08T00:15:22.896648+00:00",
+    "teamId": "9",
+    "season": 2024,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NJD-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NJD/20242025",
+    "sha256": "5feab27e6f628a6eaff5a8e65cd8492f63e6c7f00224551831e44bd0e9a4179b",
+    "retrievedAtUTC": "2026-10-08T00:15:22.939474+00:00",
+    "teamId": "1",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TOR-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TOR/20242025",
+    "sha256": "2e28434e55fe1652c431f13197441f368e3923c7768e59c0d37039d2bc06ca25",
+    "retrievedAtUTC": "2026-10-08T00:15:23.206452+00:00",
+    "teamId": "10",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CAR-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CAR/20242025",
+    "sha256": "f8c7da6eb3738c1a54e29c60599ff8488fcad6dc807f8d6c6286a80d3e70159e",
+    "retrievedAtUTC": "2026-10-08T00:15:23.245971+00:00",
+    "teamId": "12",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/FLA-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/FLA/20242025",
+    "sha256": "346f24425ed34c1491859f1c024e96c4382d6c396f0fede19971899c726e04de",
+    "retrievedAtUTC": "2026-10-08T00:15:23.277384+00:00",
+    "teamId": "13",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/TBL-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/TBL/20242025",
+    "sha256": "48c570d23b4f5bf21ba496e9047876ec706e41bd98b87d4fe17fd4a4105d8181",
+    "retrievedAtUTC": "2026-10-08T00:15:23.309913+00:00",
+    "teamId": "14",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WSH-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WSH/20242025",
+    "sha256": "c27ac08e37c42549aa11a15065d6ae9e377217682fcf61a8a905b46b30a395c5",
+    "retrievedAtUTC": "2026-10-08T00:15:23.502467+00:00",
+    "teamId": "15",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CHI-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CHI/20242025",
+    "sha256": "75feafe6ea7cd89e72247b122d3067333f31dc2acf51b34bf350ebe35e010ade",
+    "retrievedAtUTC": "2026-10-08T00:15:23.681824+00:00",
+    "teamId": "16",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DET-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DET/20242025",
+    "sha256": "2150abfe5d8a83c81c77cfb2ae7ad33a12974e9982a248e31e23017cae3ba25e",
+    "retrievedAtUTC": "2026-10-08T00:15:23.746075+00:00",
+    "teamId": "17",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NSH-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NSH/20242025",
+    "sha256": "bbd1f42a1e12317ae13b9fdd3d5a38c4afd1320e16bf9f973bb0db9f40d7222a",
+    "retrievedAtUTC": "2026-10-08T00:15:23.514040+00:00",
+    "teamId": "18",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/STL-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/STL/20242025",
+    "sha256": "3daf57615e7321d32c7131c393759123555e9f495966e7e67d34d4b977f69b45",
+    "retrievedAtUTC": "2026-10-08T00:15:23.968796+00:00",
+    "teamId": "19",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYI-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYI/20242025",
+    "sha256": "fabe7f17916ac32ac5e66a66862fa13897ab0b36635537587bf36753a61e5d4a",
+    "retrievedAtUTC": "2026-10-08T00:15:23.968931+00:00",
+    "teamId": "2",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CGY-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CGY/20242025",
+    "sha256": "3c8815840f1d350cce42d4bab1593134b4d82817ac640a84c9917e7b0d464853",
+    "retrievedAtUTC": "2026-10-08T00:15:24.073358+00:00",
+    "teamId": "20",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/COL-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/COL/20242025",
+    "sha256": "d20101d779c10050099367d09445dc87e0e312f1cfd82198472338e19a8ebf87",
+    "retrievedAtUTC": "2026-10-08T00:15:24.196634+00:00",
+    "teamId": "21",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/EDM-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/EDM/20242025",
+    "sha256": "c13569e059d3c2d4913feb8844f93f35bf5cd21bae83be062c15a6eaffdc46a2",
+    "retrievedAtUTC": "2026-10-08T00:15:24.258842+00:00",
+    "teamId": "22",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VAN-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VAN/20242025",
+    "sha256": "43d5c703067fa3d7d2711037dd139fa56524f965fdf52ae540ac6bdba70d601b",
+    "retrievedAtUTC": "2026-10-08T00:15:24.301705+00:00",
+    "teamId": "23",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/ANA-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/ANA/20242025",
+    "sha256": "66ca94baddc3eacb7859ef0434e3565a7673adf2024e266284c09e69b807d604",
+    "retrievedAtUTC": "2026-10-08T00:15:24.450767+00:00",
+    "teamId": "24",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/DAL-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/DAL/20242025",
+    "sha256": "aeec6119c960a760ce3a12793d12b7b000bb8f5a3c15fc2d275031f0db7ae2ab",
+    "retrievedAtUTC": "2026-10-08T00:15:24.591732+00:00",
+    "teamId": "25",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/LAK-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/LAK/20242025",
+    "sha256": "82dfd814fa663537a5ac6f54f6613a8aad843f8f78a054c2ab9dd4672f326c3a",
+    "retrievedAtUTC": "2026-10-08T00:15:24.618578+00:00",
+    "teamId": "26",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SJS-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SJS/20242025",
+    "sha256": "b765895f3c4f6b01f5d4a85f7d3649f72abdbcfae4e6525d3d7503aa691f1326",
+    "retrievedAtUTC": "2026-10-08T00:15:24.652911+00:00",
+    "teamId": "28",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/CBJ-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/CBJ/20242025",
+    "sha256": "0ff86026de2c947178c4714eda0bed11e8e98a30b8f9e9f5864378095c2ea33e",
+    "retrievedAtUTC": "2026-10-08T00:15:24.875231+00:00",
+    "teamId": "29",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/NYR-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/NYR/20242025",
+    "sha256": "86657ac3ac079d114fac7fd34d02a0322351673421a0fa16e2a6c219f46770e2",
+    "retrievedAtUTC": "2026-10-08T00:15:25.037871+00:00",
+    "teamId": "3",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MIN-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MIN/20242025",
+    "sha256": "f079040cb93c67d18c4166f0c230fcd204d6e85d3a9fc3ee4934735afc4efdd9",
+    "retrievedAtUTC": "2026-10-08T00:15:25.037749+00:00",
+    "teamId": "30",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PHI-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PHI/20242025",
+    "sha256": "e8c51dfe11857e82125eb6fa3463d4aebd035ad7100446f418f4b5d2c00e2542",
+    "retrievedAtUTC": "2026-10-08T00:15:25.084544+00:00",
+    "teamId": "4",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/PIT-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/PIT/20242025",
+    "sha256": "e18babcee705982a9f8b00b286b880daef84c7abebc2d22dfd022429448a0bf4",
+    "retrievedAtUTC": "2026-10-08T00:15:25.242713+00:00",
+    "teamId": "5",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/WPG-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/WPG/20242025",
+    "sha256": "5dad0801a4f2cbf3dfae71f89f33f38e0fe85487cf8594e14f4ed0d81ffdd0a0",
+    "retrievedAtUTC": "2026-10-08T00:15:25.204238+00:00",
+    "teamId": "52",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/VGK-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/VGK/20242025",
+    "sha256": "eb2575abcbbd1d13cf4f9b00cc92948fa712f7c0f97a02da9d2e1d86fdb4da8b",
+    "retrievedAtUTC": "2026-10-08T00:15:25.414562+00:00",
+    "teamId": "54",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/SEA-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/SEA/20242025",
+    "sha256": "3519be70c9671d8097f0505a57cdb31983643cae313d7ab142a52b8678071177",
+    "retrievedAtUTC": "2026-10-08T00:15:25.430262+00:00",
+    "teamId": "55",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/UTA-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/UTA/20242025",
+    "sha256": "bd5761e42da3aa136b157c61f3532a82267637948af1c7e587ea6024865f9485",
+    "retrievedAtUTC": "2026-10-08T00:15:25.543205+00:00",
+    "teamId": "59",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BOS-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BOS/20242025",
+    "sha256": "ce2293cfc0c85d25c2601de2fd9032d1002f02c24c404acc711dff954c8a5b8c",
+    "retrievedAtUTC": "2026-10-08T00:15:25.651891+00:00",
+    "teamId": "6",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/BUF-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/BUF/20242025",
+    "sha256": "37e8f7e87e4445e81583aa269051a4d22a521e7d79d8af0cecbf127fbd7c2714",
+    "retrievedAtUTC": "2026-10-08T00:15:25.743418+00:00",
+    "teamId": "7",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/MTL-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/MTL/20242025",
+    "sha256": "be205359f3752814c8457679d351e37def722bb9d05ed25f723138ace9fb0e4b",
+    "retrievedAtUTC": "2026-10-08T00:15:25.743275+00:00",
+    "teamId": "8",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  },
+  {
+    "file": "work/regular-nhl/raw-schedules/OTT-20242025.json",
+    "url": "https://api-web.nhle.com/v1/club-schedule-season/OTT/20242025",
+    "sha256": "20a2b260e6c0608f59779f68114f6378314d32e6b7457eaecdb7f324044cf638",
+    "retrievedAtUTC": "2026-10-08T00:15:25.954464+00:00",
+    "teamId": "9",
+    "season": 2025,
+    "use": "official schedule neutral-site flag and independent score/date/decision cross-check"
+  }
+]

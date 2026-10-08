@@ -1,0 +1,163 @@
+[
+  {
+    "season": 2017,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "pointsForDifference": -2.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2017,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": -2.0
+  },
+  {
+    "season": 2019,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "pointsForDifference": -1.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2019,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": -1.0
+  },
+  {
+    "season": 2019,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "pointsForDifference": -2.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2019,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": -2.0
+  },
+  {
+    "season": 2020,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": -1.0
+  },
+  {
+    "season": 2020,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": -1.0
+  },
+  {
+    "season": 2020,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "pointsForDifference": -1.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2020,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "pointsForDifference": -1.0,
+    "pointsAgainstDifference": 1.0
+  },
+  {
+    "season": 2020,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "pointsForDifference": 1.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2021,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": 2.0
+  },
+  {
+    "season": 2021,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "pointsForDifference": 2.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2022,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "pointsForDifference": 3.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2022,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "pointsForDifference": -2.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2022,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": 3.0
+  },
+  {
+    "season": 2022,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": -2.0
+  },
+  {
+    "season": 2024,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": 2.0
+  },
+  {
+    "season": 2024,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "pointsForDifference": -1.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2024,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": -1.0
+  },
+  {
+    "season": 2024,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "pointsForDifference": 2.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2025,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "pointsForDifference": -1.0,
+    "pointsAgainstDifference": 0.0
+  },
+  {
+    "season": 2025,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "pointsForDifference": 0.0,
+    "pointsAgainstDifference": -1.0
+  }
+]

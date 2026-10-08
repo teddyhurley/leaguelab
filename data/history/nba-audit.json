@@ -1,0 +1,515 @@
+{
+  "status": "complete",
+  "allRequestedSeasonsIncluded": true,
+  "coverage": {
+    "seasonEndStart": 2016,
+    "seasonEndEnd": 2025,
+    "seasonCount": 10,
+    "covidSeasonsRetained": true
+  },
+  "regularGameCount": 11979,
+  "playoffGameCount": 834,
+  "teamSeasonCount": 300,
+  "allIncludedGamesCompleted": true,
+  "duplicateRegularGameIds": 0,
+  "missingTeamExclusions": 0,
+  "allTeamGamesWinsLossesReconcile": true,
+  "allTeamPointsAlsoReconcile": false,
+  "scoreTotalDiscrepancyTeamSeasons": 23,
+  "maximumAbsoluteSeasonScoreTotalDifference": 3.0,
+  "regularNeutralGameCount": 112,
+  "regularBubbleGames": 88,
+  "regularLasVegasOverrides": 2,
+  "playoffBubbleGames": 83,
+  "playoffNeutralOverrides": [
+    "401236280",
+    "401236261",
+    "401236268",
+    "401236273",
+    "401236254",
+    "401236315",
+    "401236294",
+    "401236287",
+    "401236262",
+    "401236281",
+    "401236269",
+    "401236274",
+    "401236316",
+    "401236295",
+    "401236255",
+    "401236288",
+    "401236263",
+    "401236282",
+    "401236270",
+    "401236275",
+    "401236256",
+    "401236317",
+    "401236296",
+    "401236289",
+    "401236271",
+    "401236276",
+    "401236264",
+    "401236283",
+    "401236257",
+    "401236297",
+    "401236318",
+    "401236290",
+    "401236284",
+    "401236277",
+    "401236260",
+    "401236300",
+    "401236293",
+    "401240076",
+    "401236279",
+    "401236286",
+    "401241760",
+    "401241638",
+    "401240077",
+    "401241818",
+    "401241766",
+    "401241819",
+    "401240078",
+    "401241853",
+    "401241767",
+    "401242801",
+    "401240079",
+    "401242795",
+    "401241769",
+    "401242802",
+    "401240080",
+    "401242796",
+    "401241770",
+    "401242803",
+    "401240081",
+    "401242797",
+    "401242804",
+    "401242798",
+    "401241765",
+    "401242805",
+    "401242799",
+    "401245393",
+    "401242800",
+    "401245394",
+    "401246234",
+    "401245395",
+    "401246235",
+    "401246236",
+    "401247145",
+    "401246237",
+    "401247146",
+    "401246238",
+    "401247147",
+    "401248433",
+    "401248434",
+    "401248435",
+    "401248436",
+    "401248437",
+    "401248438"
+  ],
+  "dateConvention": "UTC calendar date from source ESPN timestamp; UTC dates can be one day later than US local game dates.",
+  "completionRule": "Only source status_type_completed TRUE; positive unequal final scores required. Playoffs already validated from these cached completed source rows.",
+  "inclusionRule": "Completed season_type 2 NBA league games; explicitly remove exhibitions and the two NBA Cup finals. Include earlier Cup rounds and all 2020 seeding games. Never exclude a genuine missing-team game silently.",
+  "neutralTreatment": "Keep source neutral_site TRUE; override all 88 completed 2020 regular-season bubble games and both Dec 7 2023 Las Vegas semifinals to TRUE. All 83 2020 playoff games are TRUE. Nominal home/away IDs retained.",
+  "neutralEvidence": [
+    "https://www.nba.com/news/nba-schedule-release-2019-20-season-comeback-official",
+    "https://www.nba.com/news/2023-nba-in-season-tournament-tracker",
+    "https://api-hub.nba.com/news/season-restart-home-court-advantage-no-more"
+  ],
+  "sourcePublisher": "ESPN NBA APIs, collected and published by SportsDataverse",
+  "cachedSourceRetrievalDate": "2026-10-05",
+  "sourceDocumentation": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/python/espn_nba_03_standings_scrape.py",
+  "sourceManifest": [
+    {
+      "seasonEnd": 2016,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2016.json",
+        "gitBlobSha": "3fd97fd69a1479c55ccd79e4b4235f0ec53b63b0"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2016.rds",
+        "gitBlobSha": "520880df5972299713d554340ee85d74fba28cd1"
+      }
+    },
+    {
+      "seasonEnd": 2017,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2017.json",
+        "gitBlobSha": "4b02121f48725444c249166c672e7b73432d0666"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2017.rds",
+        "gitBlobSha": "90377a7d35f25762fe3d5880dbb90861e09c9fd0"
+      }
+    },
+    {
+      "seasonEnd": 2018,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2018.json",
+        "gitBlobSha": "ef2af1d05c4bf518d7c4558833c23a5ef22af49e"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2018.rds",
+        "gitBlobSha": "b35b4948e8f9b5b0a62f42f88bf5dc584cd36cb6"
+      }
+    },
+    {
+      "seasonEnd": 2019,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2019.json",
+        "gitBlobSha": "ac27ddb0f507e4b5494455f9b4ae22c82ede43ad"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2019.rds",
+        "gitBlobSha": "e4e3bbb7d63eff430996f392c61ef0704c5f7d26"
+      }
+    },
+    {
+      "seasonEnd": 2020,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2020.json",
+        "gitBlobSha": "e5b0e46e4ca7dcac1b2df3f399750efddbba5471"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2020.rds",
+        "gitBlobSha": "ef2295ad1ba7ac119bc253805d25a6fa134c71a3"
+      }
+    },
+    {
+      "seasonEnd": 2021,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2021.json",
+        "gitBlobSha": "ac3f7b146877257044bb61d65857d831499504fb"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2021.rds",
+        "gitBlobSha": "4222058e091d6e3a964f22838b07c6e3e2e6de80"
+      }
+    },
+    {
+      "seasonEnd": 2022,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2022.json",
+        "gitBlobSha": "29a1db3aa9beb1d8be06f050dc73f809cad880e6"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2022.rds",
+        "gitBlobSha": "6aca6d973a5c30502b73e4f6a8469ee73533873f"
+      }
+    },
+    {
+      "seasonEnd": 2023,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2023.json",
+        "gitBlobSha": "826b10fa07cc442d1f3094a9d8e3bf8a95b2cb12"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2023.rds",
+        "gitBlobSha": "19dfa547fdd1096a03f713ce768eb73514e25d10"
+      }
+    },
+    {
+      "seasonEnd": 2024,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2024.json",
+        "gitBlobSha": "cc916868df0d0cb06d61b61baca691149533a302"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2024.rds",
+        "gitBlobSha": "5e02f261509a0799442ac99d86cb6a647ed86a37"
+      }
+    },
+    {
+      "seasonEnd": 2025,
+      "standings": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/standings/json/2025.json",
+        "gitBlobSha": "a867aaebcefd02bff970d9e8500afddd3fcb6bc2"
+      },
+      "schedule": {
+        "url": "https://github.com/sportsdataverse/hoopR-nba-raw/blob/main/nba/schedules/rds/nba_schedule_2025.rds",
+        "gitBlobSha": "596d0866c449b0acdf20681e92eafd25428edb52"
+      }
+    }
+  ],
+  "inputFiles": [
+    {
+      "path": "outputs/leaguelab/data/history/nba-team-seasons.json",
+      "bytes": 142002,
+      "sha256": "88dff20a3469eb8cd719594c69c658867b089b8400626072334dccb76aa63efe",
+      "gitBlobSha1": "7bc6f2ea20694061670357d05585b3d740f06673"
+    },
+    {
+      "path": "work/nba-history/games-2016.csv",
+      "bytes": 168579,
+      "sha256": "0ebbf9471dc59240b70f500cda6b802305a3c18544619309e1c01f5713cfe25b",
+      "gitBlobSha1": "8e50aa1f8ac06fcc520e69c6c17972be49f87fe1"
+    },
+    {
+      "path": "work/nba-history/schedule-2016.rds",
+      "bytes": 94684,
+      "sha256": "08caabc00afca3206f297d7f1572a3e6b8e866a4241eb32826fc9135228fc92f",
+      "gitBlobSha1": "520880df5972299713d554340ee85d74fba28cd1"
+    },
+    {
+      "path": "work/nba-history/games-2017.csv",
+      "bytes": 167553,
+      "sha256": "d2ff0d80c5cfd650b90166ea7170b52c9d469a8d94b9a953e72acc5718933b29",
+      "gitBlobSha1": "ccc0fef0bc86e60d76dd2585217d47ca32bc611c"
+    },
+    {
+      "path": "work/nba-history/schedule-2017.rds",
+      "bytes": 95540,
+      "sha256": "eefed1907038a2d03c1b861f2f79d6c6646c66b242f40416138f1b6bc70000ab",
+      "gitBlobSha1": "90377a7d35f25762fe3d5880dbb90861e09c9fd0"
+    },
+    {
+      "path": "work/nba-history/games-2018.csv",
+      "bytes": 167253,
+      "sha256": "0dd35dfcc4d16172e8e2a6e3fbfa803488ebc868b76252ed3ddd76cda6b2351e",
+      "gitBlobSha1": "4c4c165e0d96c800e396bada17c0dbf5102c041b"
+    },
+    {
+      "path": "work/nba-history/schedule-2018.rds",
+      "bytes": 94905,
+      "sha256": "47d5b2005c13a02b45897986a7088711cfd78ddf22d7cc793fab18e7f52ffa96",
+      "gitBlobSha1": "b35b4948e8f9b5b0a62f42f88bf5dc584cd36cb6"
+    },
+    {
+      "path": "work/nba-history/games-2019.csv",
+      "bytes": 167511,
+      "sha256": "3389a50499106a2d4b3033792546adcbdad3e6d4af5803ba8bf2c3960283edc1",
+      "gitBlobSha1": "88d121628452477808b8d3b616a141df502a7f95"
+    },
+    {
+      "path": "work/nba-history/schedule-2019.rds",
+      "bytes": 95588,
+      "sha256": "adcfff3883f51c2a037a6ef978182a14af3459c77abb8f0f59a384e71573714d",
+      "gitBlobSha1": "e4e3bbb7d63eff430996f392c61ef0704c5f7d26"
+    },
+    {
+      "path": "work/nba-history/games-2020.csv",
+      "bytes": 147802,
+      "sha256": "e65bd203365de014e68307e93ef7f3291b2ade2f0e86192b0334f7202b1a9099",
+      "gitBlobSha1": "53b011ba440d316d657f33dcbaec0ab4e65b0e99"
+    },
+    {
+      "path": "work/nba-history/schedule-2020.rds",
+      "bytes": 128961,
+      "sha256": "de44cbd8804defda20bb45c9d6af69204aaf2f2c5d48187c2c81429908f87b1f",
+      "gitBlobSha1": "ef2295ad1ba7ac119bc253805d25a6fa134c71a3"
+    },
+    {
+      "path": "work/nba-history/games-2021.csv",
+      "bytes": 153684,
+      "sha256": "29d18c7824d56305c8e4b14fdb1ea4b77147f160854fb5bbd8c3aaf8ffaaa3e3",
+      "gitBlobSha1": "59d6ec3b132d30d159fefb9594ea8b36f3e5f10e"
+    },
+    {
+      "path": "work/nba-history/schedule-2021.rds",
+      "bytes": 123475,
+      "sha256": "8b8127c4ee5f8c70fb750c44d331af5e7bd9c05f7383d678a6b20e5298e0e534",
+      "gitBlobSha1": "4222058e091d6e3a964f22838b07c6e3e2e6de80"
+    },
+    {
+      "path": "work/nba-history/games-2022.csv",
+      "bytes": 170645,
+      "sha256": "fbafae919f2c0d10014cc381f0048d3f85fe61670aa145f6885cd8baee6ced55",
+      "gitBlobSha1": "8d90b22ec0b1b9c19d6fd16426fa4053cbd754df"
+    },
+    {
+      "path": "work/nba-history/schedule-2022.rds",
+      "bytes": 134001,
+      "sha256": "976285a4d61402b0a7acefa3f38d1ccfc26d90bfb391158046259a1b84fedc3a",
+      "gitBlobSha1": "6aca6d973a5c30502b73e4f6a8469ee73533873f"
+    },
+    {
+      "path": "work/nba-history/games-2023.csv",
+      "bytes": 168877,
+      "sha256": "1377aa406669d687a5f2c39055bf5b33b400a6558bd15b81c3358a28fc70b1bb",
+      "gitBlobSha1": "0fa8e7fbcaf7dfac1972169d59c842a08792e586"
+    },
+    {
+      "path": "work/nba-history/schedule-2023.rds",
+      "bytes": 131604,
+      "sha256": "f190422218d1f123507242babebf14b6ca96553629fd8c34e0f9426ffba7ac97",
+      "gitBlobSha1": "19dfa547fdd1096a03f713ce768eb73514e25d10"
+    },
+    {
+      "path": "work/nba-history/games-2024.csv",
+      "bytes": 171326,
+      "sha256": "893172135505f02d087b64ef41815283796bf5e176030c38e941ce3e1de7c850",
+      "gitBlobSha1": "a728f6b1282bf686073737ac2dd99a2e0d615344"
+    },
+    {
+      "path": "work/nba-history/schedule-2024.rds",
+      "bytes": 137700,
+      "sha256": "4c9098b51561c7ef953f7d4e17beedcfee8f44e1a685a4ad83cc531052f3aad6",
+      "gitBlobSha1": "5e02f261509a0799442ac99d86cb6a647ed86a37"
+    },
+    {
+      "path": "work/nba-history/games-2025.csv",
+      "bytes": 171614,
+      "sha256": "8d6100cf9f430be614697890ef89c6af0ef2aa0ea80956a2ddc991df95db5adc",
+      "gitBlobSha1": "0de5ff1412d99f152f5a2f5953daeeb2a874eb64"
+    },
+    {
+      "path": "work/nba-history/schedule-2025.rds",
+      "bytes": 147634,
+      "sha256": "126215d89328eb8bc14971fbd7c220290f63b172206fc7ac66702fd1b871e51b",
+      "gitBlobSha1": "596d0866c449b0acdf20681e92eafd25428edb52"
+    },
+    {
+      "path": "outputs/leaguelab/data/history/nba-playoff-games.json",
+      "bytes": 373260,
+      "sha256": "96403fce104fee0718f0ff14281b1a534520ac60f5dc8fe6cc2795f0f5d1396d",
+      "gitBlobSha1": "f6c43860ce77c7e9985b5a87bdbbb09d1927d5a7"
+    }
+  ],
+  "outputFiles": [
+    {
+      "path": "work/regular-nba/nba-games.json",
+      "bytes": 3030443,
+      "sha256": "e0f3a505b68f520e959be18bb9fa773be072cc9238c16236097de745879854e7",
+      "gitBlobSha1": "ca0077dedf024479f803a59b2b40e2d6465bedfd"
+    },
+    {
+      "path": "work/regular-nba/nba-playoff-games.json",
+      "bytes": 210677,
+      "sha256": "76cb5d5c92bdb9b94da6c81f94975e33a19c35d07f539d0a6268fcfde86dec2f",
+      "gitBlobSha1": "2228b652150edba472869b79b41f47a00a80d4c2"
+    },
+    {
+      "path": "work/regular-nba/nba-team-season-reconciliation.json",
+      "bytes": 160071,
+      "sha256": "ee1cdc03af29aceea6962dd9b21774ba2f92aa086b17e7d2eb78efcc03265397",
+      "gitBlobSha1": "6ece6908a80deb38b2673fe6da96fc39681896ec"
+    },
+    {
+      "path": "work/regular-nba/nba-exclusions.json",
+      "bytes": 23712,
+      "sha256": "bf9971f9e89d4a0acb0b5f1fd88fedcf1d5d9abd5c156aafdea5010c8eaba0a0",
+      "gitBlobSha1": "5e2d789c817e0f65644bb0e74b2fa9175a1dafbb"
+    },
+    {
+      "path": "work/regular-nba/nba-neutral-overrides.json",
+      "bytes": 22389,
+      "sha256": "ed6cd016a3dd8815f3f6fdf1a60574da648eeef3b4c0ab67b4f778d6f5ee51f1",
+      "gitBlobSha1": "1b0033d0607e5543f7fff97bcb11c57cdacbb15e"
+    },
+    {
+      "path": "work/regular-nba/nba-score-total-discrepancies.json",
+      "bytes": 3412,
+      "sha256": "b9cc4dcf4152739405e0be53351135ce625c0f5971550c1a743d1c9105efec46",
+      "gitBlobSha1": "627464874e95f4ae6299759e104cc1373fc7eb17"
+    }
+  ],
+  "bySeason": [
+    {
+      "season": 2016,
+      "sourceRows": 1317,
+      "includedRegularGames": 1230,
+      "neutralGames": 2,
+      "bubbleSeedingGames": 0,
+      "exhibition_all_star_or_rising_stars": 1,
+      "otherPhaseRows": 86
+    },
+    {
+      "season": 2017,
+      "sourceRows": 1310,
+      "includedRegularGames": 1230,
+      "neutralGames": 3,
+      "bubbleSeedingGames": 0,
+      "exhibition_all_star_or_rising_stars": 1,
+      "otherPhaseRows": 79
+    },
+    {
+      "season": 2018,
+      "sourceRows": 1314,
+      "includedRegularGames": 1230,
+      "neutralGames": 3,
+      "bubbleSeedingGames": 0,
+      "exhibition_all_star_or_rising_stars": 2,
+      "otherPhaseRows": 82
+    },
+    {
+      "season": 2019,
+      "sourceRows": 1314,
+      "includedRegularGames": 1230,
+      "neutralGames": 3,
+      "bubbleSeedingGames": 0,
+      "exhibition_all_star_or_rising_stars": 2,
+      "otherPhaseRows": 82
+    },
+    {
+      "season": 2020,
+      "sourceRows": 1157,
+      "includedRegularGames": 1059,
+      "neutralGames": 91,
+      "bubbleSeedingGames": 88,
+      "not_completed": 3,
+      "exhibition_all_star_or_rising_stars": 2,
+      "otherPhaseRows": 93
+    },
+    {
+      "season": 2021,
+      "sourceRows": 1204,
+      "includedRegularGames": 1080,
+      "neutralGames": 0,
+      "bubbleSeedingGames": 0,
+      "not_completed": 32,
+      "exhibition_all_star_or_rising_stars": 1,
+      "otherPhaseRows": 91
+    },
+    {
+      "season": 2022,
+      "sourceRows": 1335,
+      "includedRegularGames": 1230,
+      "neutralGames": 0,
+      "bubbleSeedingGames": 0,
+      "not_completed": 11,
+      "exhibition_all_star_or_rising_stars": 1,
+      "otherPhaseRows": 93
+    },
+    {
+      "season": 2023,
+      "sourceRows": 1322,
+      "includedRegularGames": 1230,
+      "neutralGames": 1,
+      "bubbleSeedingGames": 0,
+      "not_completed": 1,
+      "exhibition_all_star_or_rising_stars": 1,
+      "otherPhaseRows": 90
+    },
+    {
+      "season": 2024,
+      "sourceRows": 1322,
+      "includedRegularGames": 1230,
+      "neutralGames": 4,
+      "bubbleSeedingGames": 0,
+      "cup_championship_not_in_standings": 1,
+      "not_completed": 2,
+      "exhibition_all_star_or_rising_stars": 1,
+      "otherPhaseRows": 88
+    },
+    {
+      "season": 2025,
+      "sourceRows": 1329,
+      "includedRegularGames": 1230,
+      "neutralGames": 5,
+      "bubbleSeedingGames": 0,
+      "cup_championship_not_in_standings": 1,
+      "not_completed": 5,
+      "exhibition_all_star_or_rising_stars": 3,
+      "otherPhaseRows": 90
+    }
+  ],
+  "exclusionCounts": {
+    "exhibition_all_star_or_rising_stars": 15,
+    "not_completed": 54,
+    "cup_championship_not_in_standings": 2
+  },
+  "knownLimitations": [
+    "The supplied neutral-site corrections cover documented bubble/Cup cases; other games retain the cached provider classification.",
+    "23 team-seasons have 1\u20133 point differences between summed cached game scores and cached standings scoring totals. These source discrepancies are preserved and logged; every team-season win, loss and game count reconciles exactly.",
+    "Final regular-season standings must not be used as predictors for earlier games in the same regular season; use pregame estimates or held-out season methodology."
+  ]
+}

@@ -3,14 +3,14 @@ import assert from 'node:assert/strict';
 import { HISTORY } from '../dist/src/history-data.js';
 import { recordContext, recordRank, rateAtRank, matchupFor, comparisonMatchup, changeRecordSport } from '../dist/src/history.js';
 import { defaultConfig, scenario, validateConfig } from '../dist/src/presets.js';
-import { evaluate, logistic, logit, runExperiment } from '../dist/src/engine.js';
+import { evaluate, logistic, logit, historicalStrengthGap, historicalSoccerOutcome, runExperiment } from '../dist/src/engine.js';
 const close = (a, b, tolerance = 1e-8) => assert.ok(Math.abs(a - b) < tolerance, `${a} != ${b}`);
 
 test('empirical record counts reconcile and distinguish NBA and NHL tails', () => {
-  assert.deepEqual(Object.values(HISTORY).map(h => h.sampleSize), [240, 250, 270, 318, 200]);
+  assert.deepEqual(Object.values(HISTORY).map(h => h.sampleSize), [599, 612, 600, 638, 400]);
   for (const h of Object.values(HISTORY)) assert.equal(h.knots.reduce((s, p) => s + p[2], 0), h.sampleSize);
   assert.equal(recordContext('nba', 70 / 82).atLeast, 1);
-  assert.equal(recordContext('nba', 60 / 82).atLeast, 11);
+  assert.equal(recordContext('nba', 60 / 82).atLeast, 33);
   assert.equal(recordContext('nhl', 135 / 164).atLeast, 1);
   assert.equal(recordContext('nhl', 140 / 168).atLeast, 0);
   assert.equal(recordContext('soccer', 100 / 114).atLeast, 1);
@@ -55,7 +55,8 @@ test('unseen records cap the proxy but preserve the selected record and zero obs
 test('all five fitted neutral game probabilities reproduce the historical outcome model', () => {
   for (const sport of Object.keys(HISTORY)) {
     for (const [a, b] of [[75, 55], [50, 50], [30, 80], [99, 20]]) {
-      const target = logistic(HISTORY[sport].fit.slope * (logit(a / 100) - logit(b / 100)));
+      const soccer = sport === 'soccer' ? historicalSoccerOutcome(a, b) : null;
+      const target = soccer ? soccer.win + soccer.draw / 2 : logistic(HISTORY[sport].fit.slope * historicalStrengthGap(sport, a, b));
       close(evaluate(scenario(sport), a, b, 'history').single, target, 1e-6);
     }
     const base = evaluate(scenario(sport), 85, 55, 'history');
@@ -71,12 +72,12 @@ test('historical rates retain proper denominators and the validation cutoff is e
   for (const sport of ['nba', 'nhl']) {
     const v = HISTORY[sport].validation;
     assert.equal(v.trainingGames + v.model.games, HISTORY[sport].fit.games);
-    assert.equal(v.test, '2023–2025 postseasons');
+    assert.equal(v.test, '2022–23 to 2024–25 regular seasons');
     assert.ok(v.model.brier < v.homeOnly.brier);
   }
 });
 test('50 NBA wins and 10 NFL wins use separate scales and separate opponents', () => {
-  const c = { ...defaultConfig(), comparison: 'benchmark', right: scenario('nfl') };
+  const c = { ...defaultConfig(), comparison: 'benchmark', recordSportB: 'nfl', recordA: 50, recordB: 10, right: scenario('nfl') };
   const left = comparisonMatchup(c, 'nba', 'A'), right = comparisonMatchup(c, 'nfl', 'B');
   close(left.a.value, 50); close(right.a.value, 10);
   assert.equal(left.a.games, 82); assert.equal(right.a.games, 17);
@@ -88,7 +89,7 @@ test('50 NBA wins and 10 NFL wins use separate scales and separate opponents', (
   assert.doesNotThrow(() => validateConfig({ ...c, recordA: 5, recordB: 15 }));
 });
 test('changing Team B cannot change Team A odds in benchmark mode', () => {
-  const c = { ...defaultConfig(), comparison: 'benchmark', right: scenario('nfl'), trials: 1000 }, first = runExperiment(c);
+  const c = { ...defaultConfig(), comparison: 'benchmark', recordSportB: 'nfl', recordA: 50, recordB: 10, right: scenario('nfl'), trials: 1000 }, first = runExperiment(c);
   const second = runExperiment({ ...c, recordB: 14 });
   close(first.left.exact.win, second.left.exact.win);
   assert.deepEqual(first.left.simulation, second.left.simulation);
@@ -102,7 +103,7 @@ test('changing Team B cannot change Team A odds in benchmark mode', () => {
 test('v2 links retain A-vs-B meaning and unchanged NBA source strengths', () => {
   const old = { version: 2, recordSport: 'nba', winsA: 60, winsB: 45, matching: 'rarity', basis: 'history', trials: 1000, seed: 42, left: scenario('nba'), right: scenario('nhl') };
   const c = validateConfig(old);
-  assert.equal(c.version, 5); assert.equal(c.comparison, 'matchup');
+  assert.equal(c.version, 9); assert.equal(c.comparison, 'matchup');
   assert.equal(c.recordSportA, 'nba'); assert.equal(c.recordSportB, 'nba');
   for (const side of ['left', 'right']) {
     const m = comparisonMatchup(c, c[side].sport, side === 'left' ? 'A' : 'B');

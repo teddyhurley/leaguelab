@@ -7,8 +7,8 @@ import { defaultConfig, validateConfig, scenario } from '../dist/src/presets.js'
 import { configFromLink, exportCSV, exportJSON, experimentLink } from '../dist/src/exports.js';
 import { runExperiment } from '../dist/src/engine.js';
 const read = name => JSON.parse(readFileSync(new URL('../data/history/' + name, import.meta.url)));
-const hockey = read('nhl-team-seasons.json').filter(r => r.games === 82);
-const soccer = read('other-team-seasons.json').teamSeasons.filter(r => r.sport === 'soccer' && r.included);
+const hockey = read('rarity-reference.json').sports.nhl.teamSeasons;
+const soccer = read('rarity-reference.json').sports.soccer.teamSeasons;
 const close = (a,b) => assert.ok(Math.abs(a-b) < 1e-8, `${a} != ${b}`);
 
 test('point rarity matches NHL standings and EPL earned-points snapshots', () => {
@@ -24,7 +24,7 @@ test('point rarity matches NHL standings and EPL earned-points snapshots', () =>
       assert.equal(context.atLeast, expected); close(context.value, selected);
     }
   }
-  assert.ok(hockey.every(r => r.points === 2*r.wins+r.overtimeLosses));
+  assert.ok(hockey.every(r => r.points === 2*r.wins+r.overtimeLosses+(r.ties || 0)));
   assert.equal(Math.max(...soccer.map(r => 3*r.wins+r.draws)), 100);
   const games = read('nhl-playoff-games.json').filter(g => g.betterPointsWin !== null);
   assert.equal(HISTORY.nhl.playoffs.byPointsPct.games.n, games.length);
@@ -44,20 +44,20 @@ test('record-percentage translation respects wins and available-points denominat
   c = changeRecordSport(c, 'A', 'nhl'); close(c.recordA, 84);
   c = changeRecordSport(c, 'A', 'soccer'); close(c.recordA, 57);
   c = changeRecordSport(c, 'A', 'nba'); close(c.recordA, 41);
-  assert.equal(c.recordB, 10);
+  assert.equal(c.recordB, defaultConfig().recordB);
 });
 test('older point-sport links migrate wins by rarity with a notice', () => {
   const old = { ...defaultConfig(), version: 3, recordSportA: 'nhl', recordSportB: 'soccer', winsA: 50, winsB: 25, matching: 'winRate' };
   delete old.recordA; delete old.recordB;
   const messages = [], c = configFromLink('https://example.org/?experiment='+encodeURIComponent(btoa(JSON.stringify(old))), m => messages.push(m));
-  assert.equal(c.version, 5); assert.equal(c.matching, 'recordRate');
+  assert.equal(c.version, 9); assert.equal(c.matching, 'recordRate');
   assert.ok(c.recordA>100 && c.recordA<130); assert.ok(c.recordB>75 && c.recordB<95);
   assert.equal(messages.length, 1); assert.match(messages[0], /earlier odds may change/);
   assert.ok(!Object.hasOwn(c, 'winsA'));
   assert.deepEqual(configFromLink(experimentLink(c, 'https://example.org/')), c);
   for (const value of [-1, 169, NaN]) assert.throws(() => validateConfig({ ...c, recordA: value }));
   assert.throws(() => validateConfig({ ...c, recordB: 115 }));
-  assert.equal(HISTORY.nhl.fit.recordMetric, 'points percentage');
+  assert.match(HISTORY.nhl.fit.recordMetric, /points percentage/);
 });
 test('points records survive simulation, sharing and unit-explicit exports', () => {
   const c = { ...defaultConfig(), recordSportA: 'nhl', recordA: 100, recordSportB: 'soccer', recordB: 70, left: scenario('nhl'), right: scenario('soccer'), trials: 1000 };

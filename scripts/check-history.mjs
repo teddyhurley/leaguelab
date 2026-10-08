@@ -39,7 +39,8 @@ try {
   const actual = JSON.parse(await readFile(path.join(scratch, 'data/history/validation.json'), 'utf8'));
   compare(expected, actual, 'validation');
   compare(JSON.parse(await readFile(path.join(root, 'data/history/feature-audit.json'), 'utf8')), JSON.parse(await readFile(path.join(scratch, 'data/history/feature-audit.json'), 'utf8')), 'feature-audit');
-  console.log('Offline snapshots reproduce all five record scales, game fits, pregame features and holdout results. Source files unchanged.');
+  compare(JSON.parse(await readFile(path.join(root, 'data/history/mlb-model-comparison.json'), 'utf8')), JSON.parse(await readFile(path.join(scratch, 'data/history/mlb-model-comparison.json'), 'utf8')), 'mlb-model-comparison');
+  console.log('Offline snapshots reproduce all five record scales, game fits, feature audits, MLB challengers and evaluation results. Source files unchanged.');
 } finally {
   await rm(scratch, { recursive: true, force: true });
 }

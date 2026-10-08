@@ -1,26 +1,195 @@
 {
   "nba": {
-    "recordMetric": "win percentage",
-    "training": "2016\u20132022 postseasons",
-    "test": "2023\u20132025 postseasons",
-    "trainingGames": 584,
+    "recordMetric": "Other-opponent season-end win percentage",
+    "training": "2015\u201316 to 2021\u201322 regular seasons",
+    "test": "2022\u201323 to 2024\u201325 regular seasons",
+    "trainingGames": 8289,
     "trainingFit": {
-      "slope": 0.3784488364322442,
-      "homeLogOdds": 0.4357958989491094,
+      "slope": 0.34561575869261457,
+      "homeLogOdds": 0.32349903163444566,
+      "ridgePenalty": 4.0
+    },
+    "model": {
+      "games": 3690,
+      "brier": 0.2150655272070948,
+      "logLoss": 0.6187774448001067,
+      "meanPredictedHomeWinCredit": 0.5699356542399727,
+      "observedHomeWinCredit": 0.5558265582655827
+    },
+    "homeOnly": {
+      "games": 3690,
+      "brier": 0.2470340082916914,
+      "logLoss": 0.6872084398066325,
+      "meanPredictedHomeWinCredit": 0.5698446536503693,
+      "observedHomeWinCredit": 0.5558265582655827
+    },
+    "coinFlip": {
+      "games": 3690,
+      "brier": 0.25,
+      "logLoss": 0.6931471805599471,
+      "meanPredictedHomeWinCredit": 0.5,
+      "observedHomeWinCredit": 0.5558265582655827
+    },
+    "metric": "Binary Brier",
+    "calibration": [
+      {
+        "from": 0.0,
+        "to": 0.2,
+        "games": 98,
+        "predicted": 0.15730309457294506,
+        "observedWinCredit": 0.14285714285714285
+      },
+      {
+        "from": 0.2,
+        "to": 0.4,
+        "games": 583,
+        "predicted": 0.3155205897415382,
+        "observedWinCredit": 0.2967409948542024
+      },
+      {
+        "from": 0.4,
+        "to": 0.6,
+        "games": 1359,
+        "predicted": 0.5159628755478705,
+        "observedWinCredit": 0.5040470934510669
+      },
+      {
+        "from": 0.6,
+        "to": 0.8,
+        "games": 1266,
+        "predicted": 0.68985547381352,
+        "observedWinCredit": 0.6769352290679305
+      },
+      {
+        "from": 0.8,
+        "to": 1.0,
+        "games": 384,
+        "predicted": 0.8571556753660489,
+        "observedWinCredit": 0.8385416666666666
+      }
+    ],
+    "interpretation": "Retrospective association, not pregame forecasting accuracy",
+    "testStatus": "Previously inspected evaluation periods; exploratory model revision",
+    "drawGames": 0,
+    "tieScoring": "Tied MLB/NFL games stay in record denominators but are excluded as targets; other games choose a winner",
+    "subgroups": {
+      "nonPlayoffParticipants": {
+        "model": {
+          "games": 2684,
+          "brier": 0.20582011928405236,
+          "logLoss": 0.5985746513518998,
+          "meanPredictedHomeWinCredit": 0.5678501455368906,
+          "observedHomeWinCredit": 0.5465722801788375
+        },
+        "homeOnly": {
+          "games": 2684,
+          "brier": 0.24829042412984748,
+          "logLoss": 0.6897379043350174,
+          "meanPredictedHomeWinCredit": 0.5698517957221652,
+          "observedHomeWinCredit": 0.5465722801788375
+        },
+        "coinFlip": {
+          "games": 2684,
+          "brier": 0.25,
+          "logLoss": 0.6931471805599059,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5465722801788375
+        }
+      },
+      "bothMissedPlayoffs": {
+        "model": {
+          "games": 760,
+          "brier": 0.23024482699313503,
+          "logLoss": 0.6537390551536019,
+          "meanPredictedHomeWinCredit": 0.5722917617068858,
+          "observedHomeWinCredit": 0.5526315789473685
+        },
+        "homeOnly": {
+          "games": 760,
+          "brier": 0.2474341724737649,
+          "logLoss": 0.6880141100546017,
+          "meanPredictedHomeWinCredit": 0.569942298314224,
+          "observedHomeWinCredit": 0.5526315789473685
+        },
+        "coinFlip": {
+          "games": 760,
+          "brier": 0.25,
+          "logLoss": 0.6931471805599454,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5526315789473685
+        }
+      },
+      "bothReachedPlayoffs": {
+        "model": {
+          "games": 1006,
+          "brier": 0.23973220202363935,
+          "logLoss": 0.6726783370615264,
+          "meanPredictedHomeWinCredit": 0.5754997748752368,
+          "observedHomeWinCredit": 0.5805168986083499
+        },
+        "homeOnly": {
+          "games": 1006,
+          "brier": 0.24368190082686,
+          "logLoss": 0.6804598485599579,
+          "meanPredictedHomeWinCredit": 0.5698255986596399,
+          "observedHomeWinCredit": 0.5805168986083499
+        },
+        "coinFlip": {
+          "games": 1006,
+          "brier": 0.25,
+          "logLoss": 0.693147180559932,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5805168986083499
+        }
+      }
+    },
+    "subgroupDefinition": "Playoff participation means appearing in the retained main playoff bracket that season; NHL 2020 qualifiers are not retained.",
+    "rarityReference": {
+      "cutoffSeasonEnd": 2022,
+      "includedSeasonEnds": [
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2022
+      ],
+      "teamSeasons": 479,
+      "note": "Evaluation rank knots use only reference records at or before the training cutoff; production ranks use all 20 eligible seasons."
+    }
+  },
+  "nbaPlayoffs": {
+    "recordMetric": "Other-opponent season-end win percentage",
+    "training": "2015\u201316 to 2021\u201322 regular seasons",
+    "test": "2022\u201323 to 2024\u201325 playoffs",
+    "trainingGames": 8289,
+    "trainingFit": {
+      "slope": 0.34561575869261457,
+      "homeLogOdds": 0.32349903163444566,
       "ridgePenalty": 4.0
     },
     "model": {
       "games": 250,
-      "brier": 0.23135523014905243,
-      "logLoss": 0.6549550995493931,
-      "meanPredictedHomeWinCredit": 0.6104976686273934,
+      "brier": 0.23269817117184893,
+      "logLoss": 0.6581997562428732,
+      "meanPredictedHomeWinCredit": 0.5860242076112143,
       "observedHomeWinCredit": 0.584
     },
     "homeOnly": {
       "games": 250,
-      "brier": 0.24358050058458855,
-      "logLoss": 0.68029521704022,
-      "meanPredictedHomeWinCredit": 0.609228963208762,
+      "brier": 0.24313903661739034,
+      "logLoss": 0.6793670321400589,
+      "meanPredictedHomeWinCredit": 0.5700344489048819,
       "observedHomeWinCredit": 0.584
     },
     "coinFlip": {
@@ -29,30 +198,252 @@
       "logLoss": 0.6931471805599466,
       "meanPredictedHomeWinCredit": 0.5,
       "observedHomeWinCredit": 0.584
+    },
+    "metric": "Binary Brier",
+    "calibration": [
+      {
+        "from": 0.2,
+        "to": 0.4,
+        "games": 29,
+        "predicted": 0.3071309396037293,
+        "observedWinCredit": 0.3793103448275862
+      },
+      {
+        "from": 0.4,
+        "to": 0.6,
+        "games": 117,
+        "predicted": 0.5395489549431727,
+        "observedWinCredit": 0.5555555555555556
+      },
+      {
+        "from": 0.6,
+        "to": 0.8,
+        "games": 81,
+        "predicted": 0.6815264525319628,
+        "observedWinCredit": 0.6419753086419753
+      },
+      {
+        "from": 0.8,
+        "to": 1.0,
+        "games": 23,
+        "predicted": 0.8377558378632786,
+        "observedWinCredit": 0.782608695652174
+      }
+    ],
+    "interpretation": "Regular-season-trained model transferred to playoff games",
+    "testStatus": "Previously inspected evaluation periods; exploratory model revision",
+    "drawGames": 0,
+    "tieScoring": "Tied MLB/NFL games stay in record denominators but are excluded as targets; other games choose a winner",
+    "scope": "Separate playoff transfer check; regular baseline remains the app default",
+    "playoffRefit": {
+      "trainingGames": 584,
+      "trainingFit": {
+        "slope": 0.3349268569911472,
+        "homeLogOdds": 0.43611716107391924,
+        "ridgePenalty": 4.0
+      },
+      "model": {
+        "games": 250,
+        "brier": 0.2329961326026612,
+        "logLoss": 0.6590994729012051,
+        "meanPredictedHomeWinCredit": 0.6108577202832219,
+        "observedHomeWinCredit": 0.584
+      },
+      "homeOnly": {
+        "games": 250,
+        "brier": 0.24358050058458855,
+        "logLoss": 0.68029521704022,
+        "meanPredictedHomeWinCredit": 0.609228963208762,
+        "observedHomeWinCredit": 0.584
+      },
+      "usedInApp": false,
+      "note": "Separate coefficients trained on earlier playoffs. Exploratory comparison, not an automatically applied playoff adjustment."
     }
   },
   "nhl": {
-    "recordMetric": "points percentage",
-    "training": "2016\u20132022 postseasons",
-    "test": "2023\u20132025 postseasons",
-    "trainingGames": 608,
+    "recordMetric": "Other-opponent season-end points percentage",
+    "training": "2015\u201316 to 2021\u201322 regular seasons",
+    "test": "2022\u201323 to 2024\u201325 regular seasons",
+    "trainingGames": 8264,
     "trainingFit": {
-      "slope": 0.08321025285291973,
-      "homeLogOdds": 0.1204824687701893,
+      "slope": 0.14170293187116012,
+      "homeLogOdds": 0.17611248580523317,
+      "ridgePenalty": 4.0
+    },
+    "model": {
+      "games": 3936,
+      "brier": 0.23603166678725207,
+      "logLoss": 0.6644500933565606,
+      "meanPredictedHomeWinCredit": 0.5419245883809853,
+      "observedHomeWinCredit": 0.5424288617886179
+    },
+    "homeOnly": {
+      "games": 3936,
+      "brier": 0.24823368415769337,
+      "logLoss": 0.6896103559469962,
+      "meanPredictedHomeWinCredit": 0.5418365491670051,
+      "observedHomeWinCredit": 0.5424288617886179
+    },
+    "coinFlip": {
+      "games": 3936,
+      "brier": 0.25,
+      "logLoss": 0.6931471805599577,
+      "meanPredictedHomeWinCredit": 0.5,
+      "observedHomeWinCredit": 0.5424288617886179
+    },
+    "metric": "Binary Brier",
+    "calibration": [
+      {
+        "from": 0.2,
+        "to": 0.4,
+        "games": 300,
+        "predicted": 0.3482026890778983,
+        "observedWinCredit": 0.3433333333333333
+      },
+      {
+        "from": 0.4,
+        "to": 0.6,
+        "games": 2517,
+        "predicted": 0.5128899044387782,
+        "observedWinCredit": 0.5073500198649186
+      },
+      {
+        "from": 0.6,
+        "to": 0.8,
+        "games": 1109,
+        "predicted": 0.6577522571928515,
+        "observedWinCredit": 0.6717763751127142
+      },
+      {
+        "from": 0.8,
+        "to": 1.0,
+        "games": 10,
+        "predicted": 0.8163230444913963,
+        "observedWinCredit": 1.0
+      }
+    ],
+    "interpretation": "Retrospective association, not pregame forecasting accuracy",
+    "testStatus": "Previously inspected evaluation periods; exploratory model revision",
+    "drawGames": 0,
+    "tieScoring": "Tied MLB/NFL games stay in record denominators but are excluded as targets; other games choose a winner",
+    "subgroups": {
+      "nonPlayoffParticipants": {
+        "model": {
+          "games": 2991,
+          "brier": 0.23092132515420574,
+          "logLoss": 0.6539432670243976,
+          "meanPredictedHomeWinCredit": 0.5416668769935462,
+          "observedHomeWinCredit": 0.5466399197592778
+        },
+        "homeOnly": {
+          "games": 2991,
+          "brier": 0.24790602775140744,
+          "logLoss": 0.6889534890352039,
+          "meanPredictedHomeWinCredit": 0.5418112173999461,
+          "observedHomeWinCredit": 0.5466399197592778
+        },
+        "coinFlip": {
+          "games": 2991,
+          "brier": 0.25,
+          "logLoss": 0.6931471805599071,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5466399197592778
+        }
+      },
+      "bothMissedPlayoffs": {
+        "model": {
+          "games": 945,
+          "brier": 0.24388031516574565,
+          "logLoss": 0.6809741549318117,
+          "meanPredictedHomeWinCredit": 0.542640770879657,
+          "observedHomeWinCredit": 0.5365079365079365
+        },
+        "homeOnly": {
+          "games": 945,
+          "brier": 0.2488646510123384,
+          "logLoss": 0.6908752722006501,
+          "meanPredictedHomeWinCredit": 0.5417832334616025,
+          "observedHomeWinCredit": 0.5365079365079365
+        },
+        "coinFlip": {
+          "games": 945,
+          "brier": 0.25,
+          "logLoss": 0.6931471805599346,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5365079365079365
+        }
+      },
+      "bothReachedPlayoffs": {
+        "model": {
+          "games": 945,
+          "brier": 0.25220630363851265,
+          "logLoss": 0.6977050325729622,
+          "meanPredictedHomeWinCredit": 0.5427402653755157,
+          "observedHomeWinCredit": 0.5291005291005291
+        },
+        "homeOnly": {
+          "games": 945,
+          "brier": 0.24927074268806196,
+          "logLoss": 0.6916893918551227,
+          "meanPredictedHomeWinCredit": 0.5419167262202657,
+          "observedHomeWinCredit": 0.5291005291005291
+        },
+        "coinFlip": {
+          "games": 945,
+          "brier": 0.25,
+          "logLoss": 0.6931471805599346,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5291005291005291
+        }
+      }
+    },
+    "subgroupDefinition": "Playoff participation means appearing in the retained main playoff bracket that season; NHL 2020 qualifiers are not retained.",
+    "rarityReference": {
+      "cutoffSeasonEnd": 2022,
+      "includedSeasonEnds": [
+        2003,
+        2004,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2022
+      ],
+      "teamSeasons": 484,
+      "note": "Evaluation rank knots use only reference records at or before the training cutoff; production ranks use all 20 eligible seasons."
+    }
+  },
+  "nhlPlayoffs": {
+    "recordMetric": "Other-opponent season-end points percentage",
+    "training": "2015\u201316 to 2021\u201322 regular seasons",
+    "test": "2022\u201323 to 2024\u201325 playoffs",
+    "trainingGames": 8264,
+    "trainingFit": {
+      "slope": 0.14170293187116012,
+      "homeLogOdds": 0.17611248580523317,
       "ridgePenalty": 4.0
     },
     "model": {
       "games": 262,
-      "brier": 0.24850489129330253,
-      "logLoss": 0.6901839078884798,
-      "meanPredictedHomeWinCredit": 0.5329817755694921,
+      "brier": 0.24986130703930776,
+      "logLoss": 0.6933608631657695,
+      "meanPredictedHomeWinCredit": 0.548137310418556,
       "observedHomeWinCredit": 0.5152671755725191
     },
     "homeOnly": {
       "games": 262,
-      "brier": 0.25003358497802763,
-      "logLoss": 0.6932157734409383,
-      "meanPredictedHomeWinCredit": 0.5315972590992405,
+      "brier": 0.25048424476414755,
+      "logLoss": 0.6941221556954456,
+      "meanPredictedHomeWinCredit": 0.5420502189789149,
       "observedHomeWinCredit": 0.5152671755725191
     },
     "coinFlip": {
@@ -61,30 +452,237 @@
       "logLoss": 0.6931471805599466,
       "meanPredictedHomeWinCredit": 0.5,
       "observedHomeWinCredit": 0.5152671755725191
+    },
+    "metric": "Binary Brier",
+    "calibration": [
+      {
+        "from": 0.2,
+        "to": 0.4,
+        "games": 3,
+        "predicted": 0.33032274203156753,
+        "observedWinCredit": 0.3333333333333333
+      },
+      {
+        "from": 0.4,
+        "to": 0.6,
+        "games": 208,
+        "predicted": 0.5292800112312149,
+        "observedWinCredit": 0.5048076923076923
+      },
+      {
+        "from": 0.6,
+        "to": 0.8,
+        "games": 51,
+        "predicted": 0.6378581326955693,
+        "observedWinCredit": 0.5686274509803921
+      }
+    ],
+    "interpretation": "Regular-season-trained model transferred to playoff games",
+    "testStatus": "Previously inspected evaluation periods; exploratory model revision",
+    "drawGames": 0,
+    "tieScoring": "Tied MLB/NFL games stay in record denominators but are excluded as targets; other games choose a winner",
+    "scope": "Separate playoff transfer check; regular baseline remains the app default",
+    "playoffRefit": {
+      "trainingGames": 608,
+      "trainingFit": {
+        "slope": 0.07179535610127546,
+        "homeLogOdds": 0.1204314419751887,
+        "ridgePenalty": 4.0
+      },
+      "model": {
+        "games": 262,
+        "brier": 0.24853300384562216,
+        "logLoss": 0.6902526030159728,
+        "meanPredictedHomeWinCredit": 0.5325021364356701,
+        "observedHomeWinCredit": 0.5152671755725191
+      },
+      "homeOnly": {
+        "games": 262,
+        "brier": 0.2500335849780277,
+        "logLoss": 0.6932157734409385,
+        "meanPredictedHomeWinCredit": 0.5315972590992405,
+        "observedHomeWinCredit": 0.5152671755725191
+      },
+      "usedInApp": false,
+      "note": "Separate coefficients trained on earlier playoffs. Exploratory comparison, not an automatically applied playoff adjustment."
     }
   },
   "mlb": {
-    "recordMetric": "pre-playoff win percentage",
-    "training": "2015\u20132021 postseasons",
-    "test": "2022\u20132024 postseasons",
-    "trainingGames": 269,
+    "recordMetric": "Other-opponent season-end win percentage",
+    "training": "2015\u20132021 regular seasons",
+    "test": "2022\u20132024 regular seasons",
+    "trainingGames": 15473,
     "trainingFit": {
-      "slope": 0.14827776381233318,
-      "homeLogOdds": 0.1933901927853692,
+      "slope": 0.11134705063289836,
+      "homeLogOdds": 0.1464060628333481,
+      "ridgePenalty": 4.0
+    },
+    "model": {
+      "games": 7289,
+      "brier": 0.2416681136298373,
+      "logLoss": 0.6762437585273506,
+      "meanPredictedHomeWinCredit": 0.5354683620279098,
+      "observedHomeWinCredit": 0.5251749211140074
+    },
+    "homeOnly": {
+      "games": 7289,
+      "brier": 0.24947102454375775,
+      "logLoss": 0.6920895605883278,
+      "meanPredictedHomeWinCredit": 0.5354121666845413,
+      "observedHomeWinCredit": 0.5251749211140074
+    },
+    "coinFlip": {
+      "games": 7289,
+      "brier": 0.25,
+      "logLoss": 0.6931471805600312,
+      "meanPredictedHomeWinCredit": 0.5,
+      "observedHomeWinCredit": 0.5251749211140074
+    },
+    "metric": "Binary Brier",
+    "calibration": [
+      {
+        "from": 0.2,
+        "to": 0.4,
+        "games": 355,
+        "predicted": 0.36404296398336033,
+        "observedWinCredit": 0.3211267605633803
+      },
+      {
+        "from": 0.4,
+        "to": 0.6,
+        "games": 5504,
+        "predicted": 0.5176001621154229,
+        "observedWinCredit": 0.5036337209302325
+      },
+      {
+        "from": 0.6,
+        "to": 0.8,
+        "games": 1430,
+        "predicted": 0.646798843583267,
+        "observedWinCredit": 0.6587412587412588
+      }
+    ],
+    "interpretation": "Retrospective association, not pregame forecasting accuracy",
+    "testStatus": "Previously inspected evaluation periods; exploratory model revision",
+    "drawGames": 0,
+    "tieScoring": "Tied MLB/NFL games stay in record denominators but are excluded as targets; other games choose a winner",
+    "subgroups": {
+      "nonPlayoffParticipants": {
+        "model": {
+          "games": 6236,
+          "brier": 0.24030823756517988,
+          "logLoss": 0.6734701066061856,
+          "meanPredictedHomeWinCredit": 0.5352991668794732,
+          "observedHomeWinCredit": 0.5250160359204619
+        },
+        "homeOnly": {
+          "games": 6236,
+          "brier": 0.24948227748167792,
+          "logLoss": 0.6921121042082948,
+          "meanPredictedHomeWinCredit": 0.5354121666845251,
+          "observedHomeWinCredit": 0.5250160359204619
+        },
+        "coinFlip": {
+          "games": 6236,
+          "brier": 0.25,
+          "logLoss": 0.6931471805600167,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5250160359204619
+        }
+      },
+      "bothMissedPlayoffs": {
+        "model": {
+          "games": 2512,
+          "brier": 0.24524467837889605,
+          "logLoss": 0.6834937777735064,
+          "meanPredictedHomeWinCredit": 0.5361792748512313,
+          "observedHomeWinCredit": 0.5270700636942676
+        },
+        "homeOnly": {
+          "games": 2512,
+          "brier": 0.24933680233389374,
+          "logLoss": 0.6918206659660658,
+          "meanPredictedHomeWinCredit": 0.5354121666844784,
+          "observedHomeWinCredit": 0.5270700636942676
+        },
+        "coinFlip": {
+          "games": 2512,
+          "brier": 0.25,
+          "logLoss": 0.693147180559907,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5270700636942676
+        }
+      },
+      "bothReachedPlayoffs": {
+        "model": {
+          "games": 1053,
+          "brier": 0.2497214727363945,
+          "logLoss": 0.69266967816683,
+          "meanPredictedHomeWinCredit": 0.5364703572279627,
+          "observedHomeWinCredit": 0.5261158594491928
+        },
+        "homeOnly": {
+          "games": 1053,
+          "brier": 0.24940438321344086,
+          "logLoss": 0.691956054402094,
+          "meanPredictedHomeWinCredit": 0.5354121666844813,
+          "observedHomeWinCredit": 0.5261158594491928
+        },
+        "coinFlip": {
+          "games": 1053,
+          "brier": 0.25,
+          "logLoss": 0.6931471805599301,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5261158594491928
+        }
+      }
+    },
+    "subgroupDefinition": "Playoff participation means appearing in the retained main playoff bracket that season; NHL 2020 qualifiers are not retained.",
+    "rarityReference": {
+      "cutoffSeasonEnd": 2021,
+      "includedSeasonEnds": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021
+      ],
+      "teamSeasons": 450,
+      "note": "Evaluation rank knots use only reference records at or before the training cutoff; production ranks use all 20 eligible seasons."
+    }
+  },
+  "mlbPlayoffs": {
+    "recordMetric": "Other-opponent season-end win percentage",
+    "training": "2015\u20132021 regular seasons",
+    "test": "2022\u20132024 playoffs",
+    "trainingGames": 15473,
+    "trainingFit": {
+      "slope": 0.11134705063289836,
+      "homeLogOdds": 0.1464060628333481,
       "ridgePenalty": 4.0
     },
     "model": {
       "games": 124,
-      "brier": 0.2599926364385419,
-      "logLoss": 0.7134956241367865,
-      "meanPredictedHomeWinCredit": 0.5560626540827711,
+      "brier": 0.25832216327793833,
+      "logLoss": 0.7100301413352019,
+      "meanPredictedHomeWinCredit": 0.5441315844200639,
       "observedHomeWinCredit": 0.4838709677419355
     },
     "homeOnly": {
       "games": 124,
-      "brier": 0.2549402753547577,
-      "logLoss": 0.7030825675547311,
-      "meanPredictedHomeWinCredit": 0.5559849125538726,
+      "brier": 0.2523963495068537,
+      "logLoss": 0.6979500225169359,
+      "meanPredictedHomeWinCredit": 0.5354121666844818,
       "observedHomeWinCredit": 0.4838709677419355
     },
     "coinFlip": {
@@ -94,54 +692,244 @@
       "meanPredictedHomeWinCredit": 0.5,
       "observedHomeWinCredit": 0.4838709677419355
     },
+    "metric": "Binary Brier",
     "calibration": [
-      {
-        "from": 0.2,
-        "to": 0.4,
-        "games": 2,
-        "predicted": 0.3880238183531564,
-        "observedWinCredit": 1.0
-      },
       {
         "from": 0.4,
         "to": 0.6,
-        "games": 99,
-        "predicted": 0.5421425674494271,
-        "observedWinCredit": 0.48484848484848486
+        "games": 104,
+        "predicted": 0.5295614197833445,
+        "observedWinCredit": 0.5
       },
       {
         "from": 0.6,
         "to": 0.8,
-        "games": 23,
-        "predicted": 0.630591621394087,
-        "observedWinCredit": 0.43478260869565216
+        "games": 20,
+        "predicted": 0.6198964405310049,
+        "observedWinCredit": 0.4
       }
     ],
+    "interpretation": "Regular-season-trained model transferred to playoff games",
+    "testStatus": "Previously inspected evaluation periods; exploratory model revision",
     "drawGames": 0,
-    "tieScoring": "Expected binary Brier/log loss under a fair decider; not three-way soccer scoring"
+    "tieScoring": "Tied MLB/NFL games stay in record denominators but are excluded as targets; other games choose a winner",
+    "scope": "Separate playoff transfer check; regular baseline remains the app default",
+    "playoffRefit": {
+      "trainingGames": 269,
+      "trainingFit": {
+        "slope": 0.1267939323135388,
+        "homeLogOdds": 0.19019164891038198,
+        "ridgePenalty": 4.0
+      },
+      "model": {
+        "games": 124,
+        "brier": 0.26090990728665686,
+        "logLoss": 0.7154168072248122,
+        "meanPredictedHomeWinCredit": 0.5558038236019316,
+        "observedHomeWinCredit": 0.4838709677419355
+      },
+      "homeOnly": {
+        "games": 124,
+        "brier": 0.2549402753547577,
+        "logLoss": 0.7030825675547311,
+        "meanPredictedHomeWinCredit": 0.5559849125538726,
+        "observedHomeWinCredit": 0.4838709677419355
+      },
+      "usedInApp": false,
+      "note": "Separate coefficients trained on earlier playoffs. Exploratory comparison, not an automatically applied playoff adjustment."
+    }
   },
   "nfl": {
-    "recordMetric": "pre-playoff win percentage",
-    "training": "2015\u20132021 postseasons",
-    "test": "2022\u20132024 postseasons",
-    "trainingGames": 81,
+    "recordMetric": "Other-opponent season-end win percentage",
+    "training": "2015\u20132021 regular seasons",
+    "test": "2022\u20132024 regular seasons",
+    "trainingGames": 1801,
     "trainingFit": {
-      "slope": 0.18657956900249778,
-      "homeLogOdds": 0.20477876395824698,
+      "slope": 0.2848218590353538,
+      "homeLogOdds": 0.21134583708697285,
+      "ridgePenalty": 4.0
+    },
+    "model": {
+      "games": 813,
+      "brier": 0.22177916410883963,
+      "logLoss": 0.6348167480912116,
+      "meanPredictedHomeWinCredit": 0.5468517213115561,
+      "observedHomeWinCredit": 0.5498154981549815
+    },
+    "homeOnly": {
+      "games": 813,
+      "brier": 0.24760624057500308,
+      "logLoss": 0.6883519976378315,
+      "meanPredictedHomeWinCredit": 0.5448572600922379,
+      "observedHomeWinCredit": 0.5498154981549815
+    },
+    "coinFlip": {
+      "games": 813,
+      "brier": 0.25,
+      "logLoss": 0.6931471805599418,
+      "meanPredictedHomeWinCredit": 0.5,
+      "observedHomeWinCredit": 0.5498154981549815
+    },
+    "metric": "Binary Brier",
+    "calibration": [
+      {
+        "from": 0.0,
+        "to": 0.2,
+        "games": 12,
+        "predicted": 0.1809143273071704,
+        "observedWinCredit": 0.25
+      },
+      {
+        "from": 0.2,
+        "to": 0.4,
+        "games": 126,
+        "predicted": 0.3243574299717863,
+        "observedWinCredit": 0.2777777777777778
+      },
+      {
+        "from": 0.4,
+        "to": 0.6,
+        "games": 365,
+        "predicted": 0.506361312842034,
+        "observedWinCredit": 0.5068493150684932
+      },
+      {
+        "from": 0.6,
+        "to": 0.8,
+        "games": 277,
+        "predicted": 0.6833935037078074,
+        "observedWinCredit": 0.7184115523465704
+      },
+      {
+        "from": 0.8,
+        "to": 1.0,
+        "games": 33,
+        "predicted": 0.8311685335684462,
+        "observedWinCredit": 0.7575757575757576
+      }
+    ],
+    "interpretation": "Retrospective association, not pregame forecasting accuracy",
+    "testStatus": "Previously inspected evaluation periods; exploratory model revision",
+    "drawGames": 0,
+    "tieScoring": "Tied MLB/NFL games stay in record denominators but are excluded as targets; other games choose a winner",
+    "subgroups": {
+      "nonPlayoffParticipants": {
+        "model": {
+          "games": 673,
+          "brier": 0.21440702521969415,
+          "logLoss": 0.6192434089702855,
+          "meanPredictedHomeWinCredit": 0.5463688628915332,
+          "observedHomeWinCredit": 0.5408618127786032
+        },
+        "homeOnly": {
+          "games": 673,
+          "brier": 0.24824584762861654,
+          "logLoss": 0.6896348031201698,
+          "meanPredictedHomeWinCredit": 0.5448739023572698,
+          "observedHomeWinCredit": 0.5408618127786032
+        },
+        "coinFlip": {
+          "games": 673,
+          "brier": 0.25,
+          "logLoss": 0.693147180559947,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5408618127786032
+        }
+      },
+      "bothMissedPlayoffs": {
+        "model": {
+          "games": 242,
+          "brier": 0.25057922640481445,
+          "logLoss": 0.6961448458422881,
+          "meanPredictedHomeWinCredit": 0.5533576623728568,
+          "observedHomeWinCredit": 0.5371900826446281
+        },
+        "homeOnly": {
+          "games": 242,
+          "brier": 0.24921428865743994,
+          "logLoss": 0.691577111792764,
+          "meanPredictedHomeWinCredit": 0.5448123735279733,
+          "observedHomeWinCredit": 0.5371900826446281
+        },
+        "coinFlip": {
+          "games": 242,
+          "brier": 0.25,
+          "logLoss": 0.6931471805599466,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5371900826446281
+        }
+      },
+      "bothReachedPlayoffs": {
+        "model": {
+          "games": 140,
+          "brier": 0.25721808891165937,
+          "logLoss": 0.709680014008237,
+          "meanPredictedHomeWinCredit": 0.5491728907163785,
+          "observedHomeWinCredit": 0.5928571428571429
+        },
+        "homeOnly": {
+          "games": 140,
+          "brier": 0.2445315580958513,
+          "logLoss": 0.6821853684262985,
+          "meanPredictedHomeWinCredit": 0.5447772583467858,
+          "observedHomeWinCredit": 0.5928571428571429
+        },
+        "coinFlip": {
+          "games": 140,
+          "brier": 0.25,
+          "logLoss": 0.6931471805599463,
+          "meanPredictedHomeWinCredit": 0.5,
+          "observedHomeWinCredit": 0.5928571428571429
+        }
+      }
+    },
+    "subgroupDefinition": "Playoff participation means appearing in the retained main playoff bracket that season; NHL 2020 qualifiers are not retained.",
+    "rarityReference": {
+      "cutoffSeasonEnd": 2021,
+      "includedSeasonEnds": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021
+      ],
+      "teamSeasons": 512,
+      "note": "Evaluation rank knots use only reference records at or before the training cutoff; production ranks use all 20 eligible seasons."
+    }
+  },
+  "nflPlayoffs": {
+    "recordMetric": "Other-opponent season-end win percentage",
+    "training": "2015\u20132021 regular seasons",
+    "test": "2022\u20132024 playoffs",
+    "trainingGames": 1801,
+    "trainingFit": {
+      "slope": 0.2848218590353538,
+      "homeLogOdds": 0.21134583708697285,
       "ridgePenalty": 4.0
     },
     "model": {
       "games": 39,
-      "brier": 0.21083873676730647,
-      "logLoss": 0.6129898530873936,
-      "meanPredictedHomeWinCredit": 0.5851792465886162,
+      "brier": 0.20386655042202376,
+      "logLoss": 0.59796882232265,
+      "meanPredictedHomeWinCredit": 0.6013222563764444,
       "observedHomeWinCredit": 0.7692307692307693
     },
     "homeOnly": {
       "games": 39,
-      "brier": 0.21384131621851324,
-      "logLoss": 0.6201322245693569,
-      "meanPredictedHomeWinCredit": 0.5796206539643577,
+      "brier": 0.22958677562796795,
+      "logLoss": 0.6522114615257099,
+      "meanPredictedHomeWinCredit": 0.5410646763801703,
       "observedHomeWinCredit": 0.7692307692307693
     },
     "coinFlip": {
@@ -151,101 +939,236 @@
       "meanPredictedHomeWinCredit": 0.5,
       "observedHomeWinCredit": 0.7692307692307693
     },
+    "metric": "Binary Brier",
     "calibration": [
       {
         "from": 0.2,
         "to": 0.4,
-        "games": 1,
-        "predicted": 0.3886064005390245,
-        "observedWinCredit": 1.0
+        "games": 2,
+        "predicted": 0.30944804489074085,
+        "observedWinCredit": 0.5
       },
       {
         "from": 0.4,
         "to": 0.6,
-        "games": 19,
-        "predicted": 0.5390783264666649,
-        "observedWinCredit": 0.7368421052631579
+        "games": 13,
+        "predicted": 0.5115259306231554,
+        "observedWinCredit": 0.7692307692307693
       },
       {
         "from": 0.6,
         "to": 0.8,
-        "games": 19,
-        "predicted": 0.6416261059763358,
-        "observedWinCredit": 0.7894736842105263
+        "games": 24,
+        "predicted": 0.6742847837832845,
+        "observedWinCredit": 0.7916666666666666
       }
     ],
+    "interpretation": "Regular-season-trained model transferred to playoff games",
+    "testStatus": "Previously inspected evaluation periods; exploratory model revision",
     "drawGames": 0,
-    "tieScoring": "Expected binary Brier/log loss under a fair decider; not three-way soccer scoring"
+    "tieScoring": "Tied MLB/NFL games stay in record denominators but are excluded as targets; other games choose a winner",
+    "scope": "Separate playoff transfer check; regular baseline remains the app default",
+    "playoffRefit": {
+      "trainingGames": 81,
+      "trainingFit": {
+        "slope": 0.09886230265611083,
+        "homeLogOdds": 0.27672634467778645,
+        "ridgePenalty": 4.0
+      },
+      "model": {
+        "games": 39,
+        "brier": 0.21008814645281446,
+        "logLoss": 0.6120299381829272,
+        "meanPredictedHomeWinCredit": 0.5812782554301743,
+        "observedHomeWinCredit": 0.7692307692307693
+      },
+      "homeOnly": {
+        "games": 39,
+        "brier": 0.21384131621851324,
+        "logLoss": 0.6201322245693569,
+        "meanPredictedHomeWinCredit": 0.5796206539643577,
+        "observedHomeWinCredit": 0.7692307692307693
+      },
+      "usedInApp": false,
+      "note": "Separate coefficients trained on earlier playoffs. Exploratory comparison, not an automatically applied playoff adjustment."
+    }
   },
   "soccer": {
-    "recordMetric": "pre-match earned points percentage",
+    "recordMetric": "season-end earned points percentage excluding both head-to-head matches",
     "training": "2015\u201316 to 2021\u201322 league matches",
     "test": "2022\u201323 to 2024\u201325 league matches",
-    "trainingGames": 1958,
+    "trainingGames": 2660,
     "trainingFit": {
-      "slope": 0.2656932705530943,
-      "homeLogOdds": 0.33681397911587063,
-      "ridgePenalty": 4.0
+      "family": "davidson",
+      "slope": 0.4184754953464388,
+      "homeLogOdds": 0.371995328037937,
+      "drawLogWeight": -0.35111620615000755,
+      "ridgePenalty": 4.0,
+      "regularization": "Ridge on strength and home; unpenalized draw intercept"
     },
     "model": {
-      "games": 837,
-      "brier": 0.21843103272810308,
-      "logLoss": 0.6273942485274657,
-      "meanPredictedHomeWinCredit": 0.5723942112776094,
-      "observedHomeWinCredit": 0.5579450418160096
+      "games": 1140,
+      "brier": 0.5733343849096311,
+      "logLoss": 0.9651498938066851,
+      "meanPredicted": [
+        0.4421221417219153,
+        0.23286886469564344,
+        0.32500899358244156
+      ],
+      "observed": [
+        0.45087719298245615,
+        0.22982456140350876,
+        0.3192982456140351
+      ]
     },
     "homeOnly": {
-      "games": 837,
-      "brier": 0.24685240586127777,
-      "logLoss": 0.6868447241928335,
-      "meanPredictedHomeWinCredit": 0.5724375823916724,
-      "observedHomeWinCredit": 0.5579450418160096
+      "games": 1140,
+      "brier": 0.6420571788713101,
+      "logLoss": 1.061777357998647,
+      "meanPredicted": [
+        0.44201136997356766,
+        0.23458646616541085,
+        0.3234021638610171
+      ],
+      "observed": [
+        0.45087719298245615,
+        0.22982456140350876,
+        0.3192982456140351
+      ]
     },
     "coinFlip": {
-      "games": 837,
-      "brier": 0.25,
-      "logLoss": 0.6931471805599403,
-      "meanPredictedHomeWinCredit": 0.5,
-      "observedHomeWinCredit": 0.5579450418160096
+      "games": 1140,
+      "brier": 0.6666666666666594,
+      "logLoss": 1.098612288668141,
+      "meanPredicted": [
+        0.3333333333333297,
+        0.3333333333333297,
+        0.3333333333333297
+      ],
+      "observed": [
+        0.45087719298245615,
+        0.22982456140350876,
+        0.3192982456140351
+      ]
     },
-    "calibration": [
-      {
-        "from": 0.0,
-        "to": 0.2,
-        "games": 9,
-        "predicted": 0.17493033697228894,
-        "observedWinCredit": 0.16666666666666666
-      },
-      {
-        "from": 0.2,
-        "to": 0.4,
-        "games": 129,
-        "predicted": 0.3298135019431681,
-        "observedWinCredit": 0.3062015503875969
-      },
-      {
-        "from": 0.4,
-        "to": 0.6,
-        "games": 316,
-        "predicted": 0.5088116246418922,
-        "observedWinCredit": 0.49841772151898733
-      },
-      {
-        "from": 0.6,
-        "to": 0.8,
-        "games": 321,
-        "predicted": 0.6914610058839831,
-        "observedWinCredit": 0.6838006230529595
-      },
-      {
-        "from": 0.8,
-        "to": 1.0,
-        "games": 62,
-        "predicted": 0.8424223190378063,
-        "observedWinCredit": 0.7903225806451613
-      }
-    ],
-    "drawGames": 184,
-    "tieScoring": "Expected binary Brier/log loss under a fair decider; not three-way soccer scoring"
+    "metric": "Multiclass Brier (sum over win/draw/loss)",
+    "interpretation": "Retrospective association with season-end information, not forecasting accuracy",
+    "calibration": {
+      "win": [
+        {
+          "from": 0.0,
+          "to": 0.2,
+          "games": 122,
+          "predicted": 0.13229938278428707,
+          "observed": 0.12295081967213115
+        },
+        {
+          "from": 0.2,
+          "to": 0.4,
+          "games": 353,
+          "predicted": 0.3088580770532915,
+          "observed": 0.29745042492917845
+        },
+        {
+          "from": 0.4,
+          "to": 0.6,
+          "games": 422,
+          "predicted": 0.4929310034829252,
+          "observed": 0.533175355450237
+        },
+        {
+          "from": 0.6,
+          "to": 0.8,
+          "games": 213,
+          "predicted": 0.6847380651820082,
+          "observed": 0.676056338028169
+        },
+        {
+          "from": 0.8,
+          "to": 1.0,
+          "games": 30,
+          "predicted": 0.8328574769975498,
+          "observed": 0.8333333333333334
+        }
+      ],
+      "draw": [
+        {
+          "from": 0.0,
+          "to": 0.2,
+          "games": 162,
+          "predicted": 0.16586845508069037,
+          "observed": 0.20987654320987653
+        },
+        {
+          "from": 0.2,
+          "to": 0.4,
+          "games": 978,
+          "predicted": 0.24396709205517558,
+          "observed": 0.2331288343558282
+        }
+      ],
+      "loss": [
+        {
+          "from": 0.0,
+          "to": 0.2,
+          "games": 303,
+          "predicted": 0.12422832439997691,
+          "observed": 0.1353135313531353
+        },
+        {
+          "from": 0.2,
+          "to": 0.4,
+          "games": 493,
+          "predicted": 0.29725408668371595,
+          "observed": 0.26369168356997974
+        },
+        {
+          "from": 0.4,
+          "to": 0.6,
+          "games": 241,
+          "predicted": 0.48294045456702916,
+          "observed": 0.49377593360995853
+        },
+        {
+          "from": 0.6,
+          "to": 0.8,
+          "games": 100,
+          "predicted": 0.674863203391403,
+          "observed": 0.71
+        },
+        {
+          "from": 0.8,
+          "to": 1.0,
+          "games": 3,
+          "predicted": 0.8159452553078831,
+          "observed": 1.0
+        }
+      ]
+    },
+    "drawGames": 262,
+    "tieScoring": "Draw is an observed third outcome",
+    "rarityReference": {
+      "cutoffSeasonEnd": 2022,
+      "includedSeasonEnds": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2022
+      ],
+      "teamSeasons": 320,
+      "note": "Evaluation rank knots use only reference records at or before the training cutoff; production ranks use all 20 eligible seasons."
+    }
   }
 }

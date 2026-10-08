@@ -1,7 +1,7 @@
 import { SPORTS, SERIES, defaultConfig, scenario, validateConfig, updateStartingRules } from './presets.js';
 import { HISTORY } from './history-data.js';
 import { recordContext, comparisonMatchup, changeRecordSport } from './history.js';
-import { effectiveMechanics, scorePreviewGroups } from './engine.js';
+import { effectiveMechanics, scorePreviewGroups, coreComparison } from './engine.js';
 import { experimentLink, configFromLink, exportJSON, exportCSV } from './exports.js';
 
 const $ = id => document.getElementById(id);
@@ -36,6 +36,7 @@ function updateExportState() {
   updateRerunReminder();
   renderJourney();
   marginCharts();
+  renderCoreComparison();
 }
 function updateRerunReminder() {
   const visible = Boolean(result && (dirty || busy));
@@ -62,14 +63,14 @@ function rarityText(c) {
 function syncShared() {
   $('matching').value = config.matching; $('model-basis').value = config.basis;
   $('matchup-rules').hidden = config.comparison !== 'matchup';
-  $('matchup-sport').value = config.left.sport; $('matchup-series').value = config.left.series;
+  $('matchup-sport').value = config.left.sport; $('matchup-series').value = config.left.series; $('core-series').value = config.left.series;
   $('comparison-mode').value = config.comparison; $('opponent-rank').value = config.opponentRank;
   $('opponent-controls').hidden = config.comparison !== 'benchmark'; $('matching-controls').hidden = config.comparison !== 'matchup';
   for (const team of ['a', 'b']) {
     const letter = team.toUpperCase(), sport = config['recordSport' + letter], h = HISTORY[sport];
     const id = `strength-${team}`, value = config['record' + letter], c = recordContext(sport, value / h.maxRecord);
     $(`record-sport-${team}`).value = sport;
-    $(`season-note-${team}`).textContent = sport === 'nhl' ? '84-game current pace · History normalized from 82 games' : `${h.window} historical reference`;
+    $(`season-note-${team}`).textContent = `20 eligible seasons · ${h.window}${sport === 'nhl' ? ' · 82-game history scaled to 84' : ''}`;
     $(id).min = 0; $(id).max = h.maxRecord; $(id).step = 'any'; $(id).value = value;
     $(id).setAttribute('aria-label', `Season ${h.recordUnit} for Team ${letter}`);
     $(id).setAttribute('aria-valuetext', `${recordNumber(value)} ${h.recordUnit} in ${h.seasonGames} ${sport === 'soccer' ? 'matches' : 'games'}, ${SPORTS[sport].name}`);
@@ -82,7 +83,7 @@ function syncShared() {
   }
   $('matching-note').innerHTML = config.comparison === 'benchmark'
     ? `Each team plays a <b>${opponentName(config.opponentRank)} opponent in its own league</b> (${Math.round(config.opponentRank * 100)}th historical percentile). Two independent matchups at the same opponent caliber. <a href="#methodology">How this comparison works ↗</a>`
-    : `Translate both teams’ records by <b>${config.matching === 'rarity' ? 'historical rarity' : 'record percentage'}</b>, then play <b>A directly against B</b> under the rules you select. The two win chances total 100%. <a href="#methodology">How this comparison works ↗</a>`;
+    : `Translate both teams’ records by <b>${config.matching === 'rarity' ? 'historical rarity' : 'record percentage'}</b>, then play <b>A directly against B</b> under the rules you select. Premier League single games can end in a draw; other formats choose a winner. <a href="#methodology">How this comparison works ↗</a>`;
   $('trials').value = config.trials; $('seed').value = config.seed;
   for (const side of ['left', 'right']) if ($(`${side}-matchup`)) $(`${side}-matchup`).textContent = matchupLabel(previewMatchup(side), subjectFor(side));
 }
@@ -110,25 +111,71 @@ function changeTeamLeague(team, sport) {
   }
   renderEditors(); syncShared(); setDirty();
 }
+function subgroupName(key) { return ({ nonPlayoffParticipants: 'At least one team missed playoffs', bothMissedPlayoffs: 'Both teams missed playoffs', bothReachedPlayoffs: 'Both teams reached playoffs', bothBottomQuartile: 'Both teams in the bottom quarter of records' })[key]; }
+function renderObservedHistory() {
+  $('observed-records').innerHTML = ['nba', 'nhl', 'mlb'].map(sport => {
+    const h = HISTORY[sport], r = h.observedBetterRecord;
+    return `<div><span>${SPORTS[sport].name}</span><b>${pct(r.rate)}</b><small>${r.wins.toLocaleString()} of ${r.games.toLocaleString()} games<br>${h.fit.window}</small></div>`;
+  }).join('');
+}
+function renderCoreComparison() {
+  const section = $('core-comparison');
+  section.hidden = config.comparison !== 'matchup';
+  if (section.hidden) return;
+  const pending = !result || dirty || busy;
+  const c = pending ? config : result.config;
+  const ranks = ['A', 'B'].map(team => recordContext(c['recordSport' + team], c['record' + team] / HISTORY[c['recordSport' + team]].maxRecord).rank);
+  $('core-heading').innerHTML = c.matching === 'rarity' ? 'Same caliber. <em>Different chances.</em>' : 'Same record percentage. <em>Different sports.</em>';
+  $('core-context').textContent = c.matching === 'rarity'
+    ? `Team A: ${Math.round(ranks[0] * 100)}th percentile. Team B: ${Math.round(ranks[1] * 100)}th percentile. Each sport gets teams at those same places in its history.`
+    : 'Each sport gets the same two record percentages. Their historical rarity can differ by sport.';
+  const rows = pending ? ['nba', 'nhl', 'mlb'].map(sport => ({ sport, matchup: comparisonMatchup(c, sport, 'A') })) : coreComparison(result);
+  $('core-cards').innerHTML = rows.map(r => `<article class="core-card${r.sport === c.left.sport ? ' inspected' : ''}">
+    <div class="sport-label">${icon(r.sport)}<h3>${SPORTS[r.sport].name}</h3></div>
+    <p class="core-odds">${pending ? '—' : pct(r.winA)}</p><p class="core-odds-label">${pending ? (busy ? 'Updating odds…' : 'Run to update odds') : `Team A wins · Team B ${pct(r.winB)}`}</p>
+    <div class="core-prob-bar" aria-hidden="true"><span style="width:${pending ? 0 : r.winA * 100}%"></span></div>
+    <p class="core-record"><b>A</b> ${recordPace(r.matchup.a)}<br><b>B</b> ${recordPace(r.matchup.b)}</p>
+    <button type="button" data-core-sport="${r.sport}">Inspect ${SPORTS[r.sport].name} matchup <span aria-hidden="true">↓</span></button>
+  </article>`).join('');
+  const stronger = ranks[0] >= ranks[1] ? 'A' : 'B';
+  const chance = r => stronger === 'A' ? r.winA : r.winB;
+  const top = pending ? null : [...rows].sort((a, b) => chance(b) - chance(a))[0];
+  $('core-takeaway').textContent = pending ? 'Update the simulation to compare these records.'
+    : c.matching !== 'rarity' ? 'A shared record percentage can represent a different caliber of team in each sport.'
+    : Math.abs(ranks[0] - ranks[1]) < 1e-6 ? 'Equal record caliber gives either team a 50–50 chance in these neutral matchups.'
+    : `Team ${stronger} has the stronger record caliber. That advantage is most reliable under ${SPORTS[top.sport].name} rules in this comparison.`;
+  $('core-assumptions').textContent = `${c.basis === 'history' ? 'FITTED LOOKBACK ODDS' : 'ASSUMED MECHANICS'} · ${formatLabel(c.left)} in every sport · standard scoring · neutral venues · equal rest. ${c.left.series > 1 ? 'Series combine independent regular-season game odds; no playoff adjustment. MLB playoff transfer remains weak.' : 'Inspect a matchup below to change its conditions.'} Custom conditions below do not change these standard-rule cards.`;
+}
 function renderHistory() {
-  $('history-benchmarks').innerHTML = Object.entries(HISTORY).map(([sport, h]) => `<article class="history-card" style="--accent:${SPORTS[sport].color}"><div class="sport-label">${icon(sport)}<h3>${SPORTS[sport].name}</h3></div><div class="history-metrics"><p><b>${h.fit.games.toLocaleString()}</b><span>Games in the fit</span></p></div><p>${h.fit.scope} · ${h.fit.window}</p><p class="small muted">${h.fit.featureTiming}</p><a href="${h.url}" target="_blank" rel="noopener noreferrer">${h.publisher} ↗</a></article>`).join('');
-  $('history-validation').innerHTML = `<h3>Did it predict later games?</h3><p>Train on the first seven seasons; test on the final three without refitting. The historical rank scale also uses training seasons only. Brier score measures probability error: lower is better, and a 50–50 prediction scores 0.250.</p><div class="validation-grid">${Object.entries(HISTORY).map(([sport, h]) => { const v = h.validation, weak = v.model.brier >= v.homeOnly.brier; return `<div class="${weak ? 'validation-weak' : ''}"><h4>${SPORTS[sport].name} · ${v.model.games} held-out games</h4><p>Train: ${v.training}<br>Test: ${v.test}</p><p>Model: <b>${v.model.brier.toFixed(4)}</b><br>Home-only baseline: <b>${v.homeOnly.brier.toFixed(4)}</b></p><p><b>${weak ? 'Did not beat the baseline.' : 'Lower error on this holdout.'}</b> ${sport === 'mlb' ? 'The record-strength fit also lost to 50–50. Historical data does not establish useful predictive improvement here.' : sport === 'nfl' ? 'Only 39 test games; the small improvement is uncertain.' : sport === 'nhl' ? 'The improvement is small.' : ''}</p></div>`; }).join('')}</div><p>Premier League draws count as half a win: validation scores the expected outcome of a fair decider, not actual penalty shootouts or a three-way win/draw/loss forecast. Its pre-match form relationship is applied to the season-pace slider, another modeling assumption. The shipped coefficients are refit on all ten seasons after this test. No holdout was used to tune settings. Series dependence, new seasons and extreme matchups limit generalization.</p>`;
+  $('record-coverage').innerHTML = `<div class="table-scroll"><table class="method-table"><caption>Record rarity · latest 20 eligible completed regular seasons per league · snapshot October 7, 2026</caption><thead><tr><th>League</th><th>Season range</th><th>Team-seasons</th><th>Exclusions and normalization</th></tr></thead><tbody>${Object.entries(HISTORY).map(([sport, h]) => `<tr><td><a href="${h.url}" target="_blank" rel="noopener noreferrer">${SPORTS[sport].name} ↗</a></td><td>${h.window}<br><small>20 eligible seasons</small></td><td>${h.sampleSize.toLocaleString()}</td><td>${h.note}</td></tr>`).join('')}</tbody></table></div><details><summary>See the exact included seasons</summary>${Object.entries(HISTORY).map(([sport, h]) => `<p><b>${SPORTS[sport].name}:</b> ${h.reference.includedSeasonEnds.map(y => ['nba', 'nhl', 'soccer'].includes(sport) ? `${y - 1}–${String(y).slice(-2)}` : y).join(', ')}</p>`).join('')}</details>`;
+  $('history-benchmarks').innerHTML = Object.entries(HISTORY).map(([sport, h]) => `<article class="history-card" style="--accent:${SPORTS[sport].color}"><div class="sport-label">${icon(sport)}<h3>${SPORTS[sport].name}</h3></div><div class="history-metrics"><p><b>${h.fit.games.toLocaleString()}</b><span>Games in the fit</span></p></div><p>${h.fit.scope} · ${h.fit.window}</p><p class="small muted">${h.fit.featureTiming}</p><a href="${h.url}" target="_blank" rel="noopener noreferrer">Record source: ${h.publisher} ↗</a></article>`).join('');
+  $('history-validation').innerHTML = `<h3>Does the relationship hold across the standings?</h3><p>Fit the first seven outcome seasons, then evaluate the final three. Lower error is better. All five leagues use season-end information: these are lookback checks, not pregame forecasts. Premier League’s three-outcome error cannot be compared with the binary scores. These revised evaluation periods are exploratory.</p><div class="validation-grid">${Object.entries(HISTORY).map(([sport, h]) => {
+    const v = h.validation, weak = v.model.brier >= v.homeOnly.brier, sub = v.subgroups, playoff = h.playoffValidation;
+    return `<div class="${weak ? 'validation-weak' : ''}"><h4>${SPORTS[sport].name} · ${v.model.games.toLocaleString()} evaluated games</h4><p>Train: ${v.training}<br>Evaluate: ${v.test}</p><p>${sport === 'soccer' ? 'Three-outcome Brier' : 'Binary Brier'}${h.fit.retrospective ? ' · retrospective' : ''}<br>Model: <b>${v.model.brier.toFixed(4)}</b><br>Home-only baseline: <b>${v.homeOnly.brier.toFixed(4)}</b></p><p><b>${weak ? 'Did not beat the baseline.' : 'Lower average error in these seasons.'}</b> ${h.fit.retrospective ? 'Season-end strength uses results against other opponents and includes hindsight.' : 'Pregame regular-season records; no pitcher or lineup inputs.'}</p>${sub ? `<details><summary>Check teams that missed the playoffs</summary><p>Each subgroup uses that season’s retained playoff bracket. Lower is better; small differences are uncertain.</p><div class="table-scroll"><table class="method-table subgroup-table"><thead><tr><th>Matchups</th><th>Games</th><th>Model</th><th>Home only</th></tr></thead><tbody>${Object.entries(sub).map(([key, row]) => `<tr><td>${subgroupName(key)}</td><td>${row.model.games}</td><td>${row.model.brier.toFixed(4)}</td><td>${row.homeOnly.brier.toFixed(4)}</td></tr>`).join('')}</tbody></table></div></details>${Object.entries(sub).filter(([, row]) => row.model.brier >= row.homeOnly.brier).map(([key, row]) => `<p class="evidence-caution"><b>${subgroupName(key)}:</b> did not beat the home-only baseline on ${row.model.games} games.</p>`).join('')}` : ''}${h.additionalEvidence ? `<p class="evidence-caution"><b>Broader weak-record check:</b> In five rolling season checks, both teams in the bottom quarter produced ${h.additionalEvidence.bothBottomQuartile.model.brier.toFixed(4)} error versus ${h.additionalEvidence.bothBottomQuartile.homeOnly.brier.toFixed(4)} for home only (${h.additionalEvidence.bothBottomQuartile.model.games} games). This exploratory subgroup did not beat the baseline.</p>` : ''}${playoff ? `<details><summary>Separate playoff check · ${playoff.model.games} games</summary><p>Regular-season-trained model: <b>${playoff.model.brier.toFixed(4)}</b><br>Transferred home-only baseline: ${playoff.homeOnly.brier.toFixed(4)}<br>50–50 baseline: ${playoff.coinFlip.brier.toFixed(4)}</p>${playoff.playoffRefit ? `<p>A separate fit trained on ${playoff.playoffRefit.trainingGames} earlier playoff games scores ${playoff.playoffRefit.model.brier.toFixed(4)}; its playoff-trained home-only baseline scores ${playoff.playoffRefit.homeOnly.brier.toFixed(4)}. This comparison is exploratory; <b>no playoff adjustment is applied.</b></p>` : '<p>MLB still did not beat either playoff baseline. Starting pitchers and rotations are absent.</p>'}<p>Series odds combine regular-season game probabilities with independent games. They are not directly validated series predictions.</p></details>` : ''}</div>`;
+  }).join('')}</div><p>The final coefficients refit on all ten outcome seasons; rarity uses 20 eligible seasons. These are point estimates without a claim of statistical significance. More games do not validate every strength range, playoff setting or rule change.</p>`;
+
 }
 function renderNumberGuide() {
   $('number-presets').innerHTML = `<div class="table-scroll"><table class="method-table"><caption>Historical mean scoring anchors the event model; opportunity counts and reward mixes remain assumptions</caption><thead><tr><th>Sport</th><th>Opportunities</th><th>Scoring-event chance</th><th>Reward when an event occurs</th><th>Mean score</th></tr></thead><tbody>${Object.entries(SPORTS).map(([id, s]) => {
     const mean = s.n * s.p * s.rewards.reduce((sum, [r, p]) => sum + r * p, 0);
     return `<tr><td>${s.name}</td><td>${s.n} ${s.opportunity} · assumed</td><td>${pct(s.p)} · derived from mean</td><td>${s.rewards.map(([r, p]) => `${r} ${r === 1 ? s.unit.slice(0, -1) : s.unit}: ${Number((100 * p).toFixed(2))}%`).join('<br>')}</td><td>${mean.toFixed(2)} ${s.unit}<br>Historical mean</td></tr>`;
   }).join('')}</tbody></table></div>`;
-  $('number-fits').innerHTML = `<div class="table-scroll"><table class="method-table"><caption>Five historical game models; a separate home term is removed for neutral simulation</caption><thead><tr><th>League / outcomes</th><th>Games fitted</th><th>Strength coefficient</th><th>Home coefficient</th><th>Regularization</th></tr></thead><tbody>${Object.entries(HISTORY).map(([id, h]) => { const f = h.fit; return `<tr><td>${SPORTS[id].name}<br>${f.scope}</td><td>${f.games}</td><td>${f.slope.toFixed(4)}</td><td>${f.homeLogOdds.toFixed(4)}</td><td>${f.ridgePenalty} · chosen</td></tr>`; }).join('')}</tbody></table></div><p>These coefficients are learned from historical outcomes. The logistic model, regularization of 4 and nonnegative strength coefficient are modeling choices. The fitted home term separates venue from record strength; the app’s home/rest sliders remain hypothetical adjustments. For Premier League, the target gives half-win credit to draws. See the held-out checks below before interpreting a fitted coefficient as useful predictive evidence.</p>`;
+  $('number-fits').innerHTML = `<div class="table-scroll"><table class="method-table"><caption>Five historical game models; a separate home term is removed for neutral simulation</caption><thead><tr><th>League / outcomes</th><th>Games fitted</th><th>Strength coefficient</th><th>Home coefficient</th><th>Regularization</th></tr></thead><tbody>${Object.entries(HISTORY).map(([id, h]) => { const f = h.fit; return `<tr><td>${SPORTS[id].name}<br>${f.scope}</td><td>${f.games}</td><td>${f.slope.toFixed(4)}</td><td>${f.homeLogOdds.toFixed(4)}</td><td>${f.ridgePenalty} · chosen${id === 'soccer' ? `<br>Draw log weight: ${f.drawLogWeight.toFixed(4)}` : ''}</td></tr>`; }).join('')}</tbody></table></div><p>These coefficients are learned from historical outcomes. The logistic model, regularization of 4 and nonnegative strength coefficient are modeling choices. The fitted home term separates venue from record strength; the app’s home/rest sliders remain hypothetical adjustments. Premier League uses a symmetric three-outcome Davidson model with a fitted draw weight. NBA, NHL, MLB and NFL use a rarity-logit strength gap. Coefficients across these families are not directly comparable. See the held-out checks below before interpreting a fitted coefficient as useful predictive evidence.</p>`;
 }
 function renderEvidence() {
   for (const [side, id] of [['left', 'starting-evidence'], ['right', 'experiment-evidence']]) {
-    const r = result[side], s = result.config[side], e = r.evidence;
-    const base = `${SPORTS[s.sport].name} · ${e.fitGames.toLocaleString()} historical ${s.sport === 'soccer' ? 'league matches' : 'playoff games'}`;
-    $(id).classList.toggle('evidence-weak', e.weakValidation && e.kind !== 'controlled');
-    $(id).innerHTML = `<b>${e.kind === 'historical' ? 'Game odds fitted to history' : e.kind === 'counterfactual' ? 'What-if built from a historical baseline' : 'Controlled mechanics · assumed skill response'}</b><p>${e.kind === 'controlled' ? 'This optional mode uses a shared assumed coefficient instead of the fitted game odds.' : `${base}. ${e.counterfactual ? 'The effect of changing these conditions is modeled, not measured.' : e.seriesDerived ? 'Series odds are calculated from those game odds; independent games are assumed.' : 'Neutral venue; season records supply the strength proxy.'}`}${s.sport === 'soccer' ? ' Soccer draws use a hypothetical fair decider.' : ''}</p>${e.weakValidation && e.kind !== 'controlled' ? '<p class="evidence-caution"><b>MLB evidence is weak:</b> this fit did not beat the simple baseline on later games.</p>' : ''}${e.outsideFit && e.kind !== 'controlled' ? '<p class="evidence-caution">This strength gap exceeds the matchups used to fit the model.</p>' : ''}<a href="#methodology">Sources & accuracy checks ↗</a>`;
+    const r = result[side], s = result.config[side], e = r.evidence, empirical = e.kind !== 'controlled';
+    const base = `${SPORTS[s.sport].name} · ${e.fitGames.toLocaleString()} regular-season ${s.sport === 'soccer' ? 'matches' : 'games'}`;
+    $(id).classList.toggle('evidence-weak', empirical && (e.weakValidation || e.playoffWeak && s.series > 1 || e.outsideFit || e.subgroupWarnings.length > 0));
+    const title = e.kind === 'historical' ? (e.retrospective ? `Season-end lookback · ${s.sport === 'soccer' ? 'win / draw / loss' : 'all teams'}` : 'Game odds fitted to history') : e.kind === 'counterfactual' ? 'What-if built from a historical baseline' : 'Controlled mechanics · assumed skill response';
+    const timing = e.retrospective && empirical ? ' Strength comes from season-end results against other opponents, with all head-to-head meetings removed. This uses hindsight, not a pregame forecast.' : '';
+    const context = !empirical ? 'This optional mode uses a shared assumed coefficient instead of fitted game odds.' : `${base}. ${e.counterfactual ? 'The effect of changing these conditions is modeled, not measured.' : e.seriesDerived ? 'Series odds use regular-season game probabilities with independent games; no playoff adjustment is applied.' : 'Neutral venue; season records supply the strength proxy.'}${timing}`;
+    const soccer = s.sport === 'soccer' ? ` ${r.threeWay ? 'Draws stay draws after 90 minutes.' : 'This hypothetical series uses fair deciders for drawn games.'}` : '';
+    const nfl = s.sport === 'nfl' && empirical ? ' Nine historical NFL ties are excluded from the binary fit; these odds select a winner with hypothetical fair deciders.' : '';
+    $(id).innerHTML = `<b>${title}</b><p>${context}${soccer}${nfl}</p>${empirical && e.playoffWeak ? `<p class="evidence-caution"><b>Playoff transfer remains weak.</b> The regular-season model did not beat all simple baselines on ${e.playoffGames} later playoff games.${s.sport === 'mlb' ? ' No starting pitchers or rotations are modeled.' : ''}</p>` : empirical && e.weakValidation ? '<p class="evidence-caution">This fit did not beat the simple baseline in the evaluation seasons.</p>' : ''}${empirical ? e.subgroupWarnings.map(w => `<p class="evidence-caution"><b>${SPORTS[s.sport].name} historical evidence limit:</b> The “${subgroupName(w.group).toLowerCase()}” subgroup did not beat the home-only baseline on ${w.games} evaluated games.${w.scope ? ` ${w.scope}.` : ''}</p>`).join('') : ''}${empirical && e.outsideFit ? `<p class="evidence-caution"><b>Beyond the fitted evidence:</b> ${e.outsideTeam.some(Boolean) ? 'One or both team strengths fall outside the observed training range. ' : ''}${e.outsideGap ? 'The strength gap is larger than any fitted matchup. ' : ''}Treat these odds as an extrapolation.</p>` : ''}<a href="#methodology">Sources & accuracy checks ↗</a>`;
   }
 }
+
 const controlSpecs = {
   scoring: { label: 'Scoring rate', min: .5, max: 3, step: .1, unit: '×', help: 'Multiply the baseline event probability.' },
   opportunities: { label: 'Opportunities', min: .5, max: 2, step: .1, unit: '×', help: 'More chances, same conversion mechanics.' },
@@ -160,10 +207,11 @@ function updateEffective(side) {
   const s = config[side], m = effectiveMechanics(s), sport = SPORTS[s.sport];
   const meanReward = m.rewards.reduce((sum, [value, weight]) => sum + value * weight, 0);
   $(`${side}-effective`).textContent = `${m.n} ${sport.opportunity} per team · ${(m.p * 100).toFixed(1)}% baseline event rate · ${(m.n * m.p * meanReward).toFixed(1)} expected ${sport.unit} per team at equal strength, before form noise.${m.capped ? ' Rate capped at 95%.' : ''}`;
-  $(`${side}-context`).textContent = `${s.home ? `${s.host === 'a' ? 'Selected team' : 'Opponent'} has the home seed · ${s.home.toFixed(2)} home edge` : 'Neutral venues'} · ${s.rest ? `${s.rest > 0 ? '+' : ''}${s.rest.toFixed(2)} rest edge for selected team` : 'Equal rest'} · Fair tie decider`;
+  $(`${side}-context`).textContent = `${s.home ? `${s.host === 'a' ? 'Selected team' : 'Opponent'} has the home seed · ${s.home.toFixed(2)} home edge` : 'Neutral venues'} · ${s.rest ? `${s.rest > 0 ? '+' : ''}${s.rest.toFixed(2)} rest edge for selected team` : 'Equal rest'} · ${s.sport === 'soccer' && s.series === 1 ? 'Draws allowed after 90 minutes' : 'Hypothetical fair tie decider'}`;
 }
 
 function card(side, r, s) {
+  if (r.threeWay) return `<article class="result-card" style="--accent:${SPORTS[s.sport].color}"><div class="result-top"><h3>Team ${r.subject} · Premier League</h3><span class="format-tag">90 minutes</span></div><p class="card-matchup">${matchupLabel(r.matchup, r.subject)}</p><div class="result-percent">${(r.outcome.win * 100).toFixed(1)}<small>%</small></div><p class="result-label">Chance to beat the benchmark</p><div class="draw-result"><b>${pct(r.outcome.draw)} draw</b><span>${pct(r.outcome.loss)} loss</span></div><p class="result-ci">${r.simulation.wins.toLocaleString()} wins · ${r.simulation.draws.toLocaleString()} draws · ${r.simulation.losses.toLocaleString()} losses in ${r.simulation.trials.toLocaleString()} runs.<br>95% simulation interval for wins: ${r.simulation.interval.map(pct).join('–')}</p></article>`;
   const sport = SPORTS[s.sport], sim = r.simulation;
   return `<article class="result-card ${s.sport}" style="--accent:${sport.color}"><div class="result-top"><div class="sport-label">${icon(s.sport)}<h3>${sport.name}<small class="card-team">Team ${r.subject}</small></h3></div><span class="format-tag">${s.series === 1 ? 'Single game' : 'Best of ' + s.series}</span></div><p class="card-matchup">${matchupLabel(r.matchup, r.subject)}<span>${r.baseline}${r.matchup.a.referenceOutside || r.matchup.b.referenceOutside || r.matchup.a.outside || r.matchup.b.outside ? ' · Record beyond sample; strength capped' : ''}</span></p><div class="result-percent">${(sim.p * 100).toFixed(1)}<small>%</small></div><p class="result-label">Team ${r.subject} ${s.series === 1 ? 'advances after a decider if tied' : 'wins the series'}</p><div class="outcome-grid" role="img" aria-label="First 100 simulated outcomes: ${sim.samples.filter(Boolean).length} selected-team wins and ${sim.samples.filter(x => !x).length} losses">${sim.samples.map(won => `<span class="outcome-dot${won ? '' : ' loss'}"></span>`).join('')}</div><p class="grid-caption"><i></i>Team ${r.subject} wins<i class="outline"></i>Opponent wins <span>· First 100 runs</span></p><div class="result-stats"><p>Game-one advancement<b>${pct(r.single)}</b></p><p>${s.series === 1 ? 'Game' : 'Series'} loss rate<b>${pct(1 - sim.p)}</b></p></div><p class="result-ci">95% simulation interval <b>${pct(sim.interval[0])}–${pct(sim.interval[1])}</b><br>Exact model: ${pct(r.exact.win)} · Mean games: ${r.exact.expectedGames.toFixed(2)}<br>Model ties in game one: ${pct(r.draw)}</p></article>`;
 }
@@ -172,21 +220,22 @@ function sourceRecord(c, team) {
   const sport = c['recordSport' + team];
   return `${recordNumber(c['record' + team])} ${HISTORY[sport].recordUnit} / ${HISTORY[sport].seasonGames} ${sport === 'soccer' ? 'matches' : 'games'}`;
 }
-function pairedPercent(p) { const a = Math.round(p * 1000); return { a: (a / 10).toFixed(1), b: ((1000 - a) / 10).toFixed(1) }; }
 function duelCard() {
   const c = result.config, r = result.left, odds = result.headToHead, s = c.left;
-  const format = s.series === 1 ? 'One game' : 'Best of ' + s.series, display = pairedPercent(odds.exact.a);
+  const format = s.series === 1 ? (r.threeWay ? '90 minutes · draw allowed' : 'One game') : 'Best of ' + s.series;
+  const aTenths = Math.round(odds.exact.a * 1000), dTenths = Math.round(odds.exact.draw * 1000);
+  const display = { a: (aTenths / 10).toFixed(1), b: ((1000 - aTenths - dTenths) / 10).toFixed(1) };
   const teamCard = team => {
     const key = team.toLowerCase(), sport = c['recordSport' + team], m = r.matchup[key];
-    return `<section class="duel-team team-${key}"><div class="duel-team-title">${icon(sport)}<h3>Team ${team}<small>${SPORTS[sport].name} record</small></h3></div><p class="duel-record">${sourceRecord(c, team)}</p><div class="duel-percent" data-team="${team}">${display[key]}<small>%</small></div><p class="duel-win">chance to beat Team ${team === 'A' ? 'B' : 'A'}</p><p class="duel-loss">${display[key === 'a' ? 'b' : 'a']}% chance to lose</p><p class="duel-translation">${ordinal(Math.round(m.strength))} strength percentile${sport !== s.sport ? `<br>${recordPace(m)} under ${SPORTS[s.sport].name} rules` : ''}</p></section>`;
+    return `<section class="duel-team team-${key}"><div class="duel-team-title">${icon(sport)}<h3>Team ${team}<small>${SPORTS[sport].name} record</small></h3></div><p class="duel-record">${sourceRecord(c, team)}</p><div class="duel-percent" data-team="${team}">${display[key]}<small>%</small></div><p class="duel-win">chance to beat Team ${team === 'A' ? 'B' : 'A'}</p><p class="duel-loss">${display[key === 'a' ? 'b' : 'a']}% chance to lose${r.threeWay ? ` · ${(dTenths / 10).toFixed(1)}% draw` : ''}</p><p class="duel-translation">${ordinal(Math.round(m.strength))} strength percentile${sport !== s.sport ? `<br>${recordPace(m)} under ${SPORTS[s.sport].name} rules` : ''}</p></section>`;
   };
-  return `<article class="duel-card"><div class="duel-context"><span>${SPORTS[s.sport].name} rules · ${format}</span><span>EXACT MODEL ODDS</span></div><div class="duel-teams">${teamCard('A')}<span class="duel-vs" aria-hidden="true">VS</span>${teamCard('B')}</div><div class="duel-bar" role="img" aria-label="Team A ${pct(odds.exact.a)}, Team B ${pct(odds.exact.b)}"><span style="width:${100 * odds.exact.a}%"></span></div><div class="duel-simulation"><div><p class="eyebrow">${odds.simulation.trials.toLocaleString()} SIMULATED MATCHUPS</p><p class="simulation-counts"><b class="team-a">A won ${odds.simulation.winsA.toLocaleString()}</b><span> / </span><b class="team-b">B won ${odds.simulation.winsB.toLocaleString()}</b></p><p class="small muted">One matchup per square · first 100 runs</p></div><div class="duel-grid" role="img" aria-label="First 100 matchups: ${odds.simulation.winners.filter(x => x === 'A').length} Team A wins, ${odds.simulation.winners.filter(x => x === 'B').length} Team B wins">${odds.simulation.winners.map(winner => `<span class="winner-${winner.toLowerCase()}"></span>`).join('')}</div></div><details class="duel-details"><summary>Simulation detail & assumptions</summary><p>${SPORTS[s.sport].name} baseline: ${r.baseline}. ${s.home ? 'Home advantage enabled' : 'Neutral venues'} · ${s.rest ? 'Rest adjustment enabled' : 'Equal rest'}.</p><p>Simulated wins: A ${pct(odds.simulation.pA)} / B ${pct(odds.simulation.pB)}. 95% simulation intervals: A ${odds.simulation.intervalA.map(pct).join('–')}; B ${odds.simulation.intervalB.map(pct).join('–')}. These measure sampling error only.</p><p>Model ties in game one: ${pct(r.draw)}. A fair decider always chooses a winner. Mean games played: ${r.exact.expectedGames.toFixed(2)}.</p>${r.matchup.a.referenceOutside || r.matchup.b.referenceOutside || r.matchup.a.outside || r.matchup.b.outside ? '<p>At least one record is beyond the historical sample. Its modeled strength is capped.</p>' : ''}</details></article>`;
+  return `<article class="duel-card"><div class="duel-context"><span>${SPORTS[s.sport].name} rules · ${format}</span><span>EXACT MODEL ODDS</span></div><div class="duel-teams">${teamCard('A')}<span class="duel-vs" aria-hidden="true">VS</span>${teamCard('B')}</div>${r.threeWay ? `<div class="draw-result"><b>${(dTenths / 10).toFixed(1)}% draw</b><span>Neither team wins. Each earns one league point.</span></div>` : ''}<div class="duel-bar" role="img" aria-label="Team A ${pct(odds.exact.a)}, draw ${pct(odds.exact.draw)}, Team B ${pct(odds.exact.b)}"><span style="width:${100 * odds.exact.a}%"></span>${r.threeWay ? `<span class="draw-segment" style="width:${100 * odds.exact.draw}%"></span>` : ''}</div><div class="duel-simulation"><div><p class="eyebrow">${odds.simulation.trials.toLocaleString()} SIMULATED MATCHUPS</p><p class="simulation-counts"><b class="team-a">A won ${odds.simulation.winsA.toLocaleString()}</b>${r.threeWay ? `<span> / </span><b class="team-d">Drew ${odds.simulation.draws.toLocaleString()}</b>` : ''}<span> / </span><b class="team-b">B won ${odds.simulation.winsB.toLocaleString()}</b></p><p class="small muted">One matchup per square · first 100 runs${r.threeWay ? ' · Green = draw' : ''}</p></div><div class="duel-grid" role="img" aria-label="First 100 simulated matchups; orange A wins, blue B wins${r.threeWay ? ', green draws' : ''}">${odds.simulation.winners.map(winner => `<span class="winner-${winner.toLowerCase()}"></span>`).join('')}</div></div><details class="duel-details"><summary>Simulation detail & assumptions</summary><p>${SPORTS[s.sport].name} baseline: ${r.baseline}. ${s.home ? 'Home advantage enabled' : 'Neutral venues'} · ${s.rest ? 'Rest adjustment enabled' : 'Equal rest'}.</p><p>Simulated wins: A ${pct(odds.simulation.pA)} / B ${pct(odds.simulation.pB)}${r.threeWay ? ` / draw ${pct(odds.simulation.pDraw)}` : ''}. 95% simulation intervals: A ${odds.simulation.intervalA.map(pct).join('–')}; B ${odds.simulation.intervalB.map(pct).join('–')}. These measure sampling error only.</p><p>${r.threeWay ? 'Draws remain draws after 90 minutes; there is no decider.' : `Model ties in game one: ${pct(r.draw)}. A hypothetical fair decider chooses a winner.`} Mean games played: ${r.exact.expectedGames.toFixed(2)}.</p>${r.matchup.a.referenceOutside || r.matchup.b.referenceOutside || r.matchup.a.outside || r.matchup.b.outside ? '<p>At least one record is beyond the historical sample. Its modeled strength is capped.</p>' : ''}</details></article>`;
 }
 function renderCards() {
   const c = result.config, direct = c.comparison === 'matchup';
   $('comparison-cards').classList.toggle('head-to-head', direct);
   $('comparison-heading').textContent = direct ? `A vs B under ${SPORTS[c.left.sport].name} rules` : 'Two separate benchmark matchups';
-  $('series-note').textContent = direct ? `${recordPair(c)}. Both play under your starting ${SPORTS[c.left.sport].name} rules. Only series length changes in this chart.` : 'Chance each team beats its separate benchmark opponent.';
+  $('series-note').textContent = direct ? `${recordPair(c)}. Both play under your starting ${SPORTS[c.left.sport].name} rules. ${c.left.sport === 'soccer' ? `This chart uses hypothetical fair deciders, even for its one-game reference.${result.left.threeWay ? ' The match headline above retains draws.' : ''}` : 'Only series length changes in this chart.'}` : `Chance each team beats its separate benchmark opponent.${[c.left.sport, c.right.sport].includes('soccer') ? ' Every point here chooses a winner with a hypothetical fair decider, including one game. Single-match Premier League cards instead retain draws.' : ''}`;
   $('series-summary').textContent = `Explore series length under ${SPORTS[c.left.sport].name} rules`;
   $('starting-result-caption').textContent = direct ? `${recordPair(c)}. Both play ${SPORTS[c.left.sport].sport.toLowerCase()} · ${formatLabel(c.left)}.` : 'Each selected record faces its own league benchmark.';
   $('experiment-result-heading').textContent = direct ? `The same A vs B under ${SPORTS[c.right.sport].name} rules` : `Team B under ${SPORTS[c.right.sport].name} rules`;
@@ -195,13 +244,14 @@ function renderCards() {
   $('alternate-result').hidden = false;
   if (direct) {
     $('comparison-cards').innerHTML = duelCard();
-    const gap = result.left.exact.win - .5, favorite = gap >= 0 ? 'A' : 'B', alternative = pairedPercent(result.right.exact.win);
+    const gap = (result.left.outcome.win - result.left.outcome.loss) / 2, favorite = gap >= 0 ? 'A' : 'B';
     $('insight-strip').innerHTML = `<span aria-hidden="true">↗</span><p><b>${Math.abs(gap) < .0005 ? 'An evenly matched contest.' : `Team ${favorite} is favored under ${SPORTS[c.left.sport].name} rules.`}</b> ${c.recordSportA !== c.recordSportB ? 'Cross-sport records are translated into relative strengths; these are hypothetical odds.' : 'The selected records set relative strength; these are hypothetical odds.'}</p>`;
-    $('alternate-result').innerHTML = `<div class="experiment-odds-pair"><div><span>Starting · ${SPORTS[c.left.sport].name}</span><b>${pct(result.left.exact.win)}</b><small>Team A wins · ${formatLabel(c.left)}</small><small>Team B wins: ${pct(1 - result.left.exact.win)}</small></div><span class="odds-arrow" aria-hidden="true">→</span><div><span>Experiment · ${SPORTS[c.right.sport].name}</span><b>${alternative.a}%</b><small>Team A wins · ${formatLabel(c.right)}</small><small>Team B wins: ${alternative.b}%</small></div></div>`;
+    const summary = side => { const r = result[side]; return `<div><span>${side === 'left' ? 'Starting' : 'Experiment'} · ${SPORTS[c[side].sport].name}</span><b>${pct(r.outcome.win)}</b><small>Team A wins · ${formatLabel(c[side])}</small><small>Team B wins: ${pct(r.outcome.loss)}</small>${r.threeWay ? `<small class="team-d">Draw: ${pct(r.outcome.draw)} · 90 minutes</small>` : c[side].sport === 'soccer' ? '<small>Hypothetical series · fair deciders</small>' : ''}</div>`; };
+    $('alternate-result').innerHTML = `<div class="experiment-odds-pair">${summary('left')}<span class="odds-arrow" aria-hidden="true">→</span>${summary('right')}</div>`;
     return;
   }
   $('comparison-cards').innerHTML = card('left', result.left, c.left) + card('right', result.right, c.right);
-  $('alternate-result').innerHTML = `<p>Team B beats its benchmark: <b>${pct(result.right.exact.win)}</b> · ${formatLabel(c.right)}</p>`;
+  $('alternate-result').innerHTML = `<p>Team B beats its benchmark: <b>${pct(result.right.outcome.win)}</b> · ${formatLabel(c.right)}${result.right.threeWay ? ` · Draw ${pct(result.right.outcome.draw)} · Loss ${pct(result.right.outcome.loss)}` : ''}</p>`;
   $('insight-strip').innerHTML = `<span aria-hidden="true">↗</span><p>Each team faces a ${opponentName(c.opponentRank)} opponent in its own sport. These are separate matchups. Choose “Head to head” in Comparison options for A vs B.</p>`;
 }
 function seriesChart() {
@@ -217,7 +267,7 @@ function seriesChart() {
     return `<polyline points="${points}" fill="none" stroke="${color}" stroke-width="2.5" ${sideIndex ? 'stroke-dasharray="6 4"' : ''}/>${result[side].curve.map((c, i) => `<circle cx="${x(i)}" cy="${mapY(c.win)}" r="4" fill="${color}" stroke="#f5f3ec" stroke-width="2"><title>${side} ${SPORTS[result.config[side].sport].name}: best of ${c.series}, ${pct(c.win)}</title></circle>`).join('')}<text x="755" y="${mapY(result[side].curve[3].win) + (sideIndex ? 12 : -7)}" text-anchor="end" fill="${color}" font-size="10" font-weight="600">${pct(result[side].curve[3].win)}</text>`;
   }).join('');
   const desc = ['left', 'right'].map(side => `${SPORTS[result.config[side].sport].name} ${side}: ${result[side].curve.map(c => `best of ${c.series}: ${pct(c.win)}`).join(', ')}`).join('. ');
-  $('series-chart').innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="series-title series-description"><title id="series-title">Effect of series length on advancement</title><desc id="series-description">${desc}</desc>${axes}${paths}${SERIES.map((n, i) => `<text x="${x(i)}" y="165" text-anchor="middle" fill="#68745f" font-size="10">${n === 1 ? 'Single game' : 'Best of ' + n}</text>`).join('')}</svg><div class="chart-legend">${['left', 'right'].map(side => `<span><i class="legend-dot" style="--color:${SPORTS[result.config[side].sport].color}"></i>${SPORTS[result.config[side].sport].name} · ${side} ${side === 'right' ? '(dashed)' : '(solid)'}</span>`).join('')}</div>`;
+  $('series-chart').innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="series-title series-description"><title id="series-title">Effect of series length on advancement</title><desc id="series-description">${desc}</desc>${axes}${paths}${SERIES.map((n, i) => `<text x="${x(i)}" y="165" text-anchor="middle" fill="#68745f" font-size="10">${n === 1 ? ([result.config.left.sport, result.config.right.sport].includes('soccer') ? '1 game + decider' : 'Single game') : 'Best of ' + n}</text>`).join('')}</svg><div class="chart-legend">${['left', 'right'].map(side => `<span><i class="legend-dot" style="--color:${SPORTS[result.config[side].sport].color}"></i>${SPORTS[result.config[side].sport].name} · ${side} ${side === 'right' ? '(dashed)' : '(solid)'}</span>`).join('')}</div>`;
 }
 function duelSeriesChart() {
   const x = i => 47 + i * 227, y = p => 136 - p * 118;
@@ -226,7 +276,7 @@ function duelSeriesChart() {
     const color = team === 'A' ? '#c8542c' : '#397c92', curve = result.left.curve.map(c => ({ ...c, win: team === 'A' ? c.win : 1 - c.win }));
     return `<polyline points="${curve.map((c, i) => `${x(i)},${y(c.win)}`).join(' ')}" fill="none" stroke="${color}" stroke-width="2.5" ${team === 'B' ? 'stroke-dasharray="6 4"' : ''}/>${curve.map((c, i) => `<circle cx="${x(i)}" cy="${y(c.win)}" r="4" fill="${color}"><title>Team ${team}, best of ${c.series}: ${pct(c.win)}</title></circle>`).join('')}`;
   }).join('');
-  $('series-chart').innerHTML = `<svg viewBox="0 0 780 174" role="img" aria-label="Team A and Team B win probabilities by series length under ${SPORTS[result.config.left.sport].name} rules"><desc>${result.left.curve.map(c => `Best of ${c.series}: A ${pct(c.win)}, B ${pct(1 - c.win)}`).join('. ')}</desc>${axes}${paths}${SERIES.map((n, i) => `<text x="${x(i)}" y="165" text-anchor="middle" fill="#68745f" font-size="10">${n === 1 ? 'Single game' : 'Best of ' + n}</text>`).join('')}</svg><div class="chart-legend"><span><i class="legend-dot" style="--color:#c8542c"></i>Team A wins (solid)</span><span><i class="legend-dot" style="--color:#397c92"></i>Team B wins (dashed)</span></div>`;
+  $('series-chart').innerHTML = `<svg viewBox="0 0 780 174" role="img" aria-label="Team A and Team B win probabilities by series length under ${SPORTS[result.config.left.sport].name} rules"><desc>${result.left.curve.map(c => `Best of ${c.series}: A ${pct(c.win)}, B ${pct(1 - c.win)}`).join('. ')}</desc>${axes}${paths}${SERIES.map((n, i) => `<text x="${x(i)}" y="165" text-anchor="middle" fill="#68745f" font-size="10">${n === 1 ? (result.config.left.sport === 'soccer' ? '1 game + decider' : 'Single game') : 'Best of ' + n}</text>`).join('')}</svg><div class="chart-legend"><span><i class="legend-dot" style="--color:#c8542c"></i>Team A wins (solid)</span><span><i class="legend-dot" style="--color:#397c92"></i>Team B wins (dashed)</span></div>`;
 }
 function describeChanges(a, b, keys) {
   const names = { sport: 'Sport', scoring: 'Scoring rate', opportunities: 'Opportunities', sensitivity: 'Skill sensitivity', volatility: 'Event volatility', noise: 'Game-day form', series: 'Format', home: 'Home edge', host: 'Home seed', rest: 'Rest edge' };
@@ -241,7 +291,7 @@ function bridgeChart() {
   const delta = (ticks(end) - ticks(start)) / 100;
   const action = delta === 0 ? 'leaves the chance unchanged at this precision' : `${delta > 0 ? 'raises' : 'lowers'} the chance by ${Math.abs(delta).toFixed(2)} percentage points`;
   $('bridge-heading').textContent = benchmark ? 'Why do these win chances differ?' : 'Why did Team A’s chance change?';
-  $('bridge-intro').textContent = benchmark ? 'These are separate benchmark matchups. First change the selected team, then the rules. Each row shows that selected team’s win chance.' : 'Keep A and B fixed. Each row shows Team A’s win chance after one group of settings changes; the next row builds on it.';
+  $('bridge-intro').textContent = benchmark ? 'These are separate benchmark matchups. First change the selected team, then the rules. Each row shows that selected team’s win chance.' : 'Keep A and B fixed. Each row shows Team A’s win chance after one group of settings changes. Premier League single games retain draws; changing to a series introduces hypothetical fair deciders.';
   const steps = [
     ...(benchmark ? [{ title: 'Change the selected team', detail: `Team A (${sourceRecord(c, 'A')}, ${SPORTS[c.recordSportA].name}) → Team B (${sourceRecord(c, 'B')}, ${SPORTS[c.recordSportB].name}). Keep the main rules and opponent caliber.` }] : []),
     { title: 'Change the sport & scoring', detail: describeChanges(c.left, c.right, ['sport', 'scoring', 'opportunities', 'sensitivity', 'volatility', 'noise']) + (c.left.sport !== c.right.sport ? ' This also changes the league baseline and record translation.' : '') },
@@ -300,8 +350,9 @@ function outcomeComparison() {
   $('outcome-comparison-note').textContent = direct ? recordPair(c) + '. These are the two completed scenarios above.' : 'Starting column: Team A vs its benchmark. Experiment column: Team B vs its benchmark.';
   const heading = side => `<b>${side === 'left' ? 'Starting · step 01' : 'Experiment · step 02'}</b><span>${SPORTS[c[side].sport].name} · ${formatLabel(c[side])}</span><small>${c[side].scoring.toFixed(1)}× scoring · ${c[side].opportunities.toFixed(1)}× opportunities</small>`;
   const rows = [
-    [direct ? 'Team A wins' : 'Selected team wins', side => pct(result[side].exact.win)],
-    [direct ? 'Team B wins' : 'Opponent wins', side => pct(1 - result[side].exact.win)],
+    [direct ? 'Team A wins' : 'Selected team wins', side => pct(result[side].outcome.win)],
+    [direct ? 'Team B wins' : 'Opponent wins', side => pct(result[side].outcome.loss)],
+    ['Match draw (single-game soccer)', side => result[side].threeWay ? pct(result[side].outcome.draw) : 'Winner decided'],
     [direct ? 'Average score · A–B' : 'Average score · selected–opponent', side => `${result[side].scoreA.toFixed(1)}–${result[side].scoreB.toFixed(1)} ${SPORTS[c[side].sport].unit}`],
     ['Model ties · game one', side => pct(result[side].draw)],
     ['Average games played', side => result[side].exact.expectedGames.toFixed(2)]
@@ -314,9 +365,9 @@ function leagueTable() {
   $('league-comparison-note').textContent = direct ? `${recordPair(c)}. Replay this same matchup under five standard rule sets.` : 'Replay Team A against its benchmark under five standard rule sets.';
   $('league-scope').innerHTML = `<span>EVERY ROW BELOW</span><b>${direct ? 'The same A vs B' : 'Team A vs its benchmark'} · ${leagueFormat === 'single' ? 'one game' : 'best of 7'} · neutral venues · equal rest</b><p>Each row changes the sport. Your starting game is ${SPORTS[c.left.sport].name}; your experiment is ${SPORTS[c.right.sport].name}. Their custom settings belong to steps 01 and 02.</p>`;
   const sorted = [...result.leagues].sort((a, b) => b[leagueFormat] - a[leagueFormat]);
-  $('league-table').innerHTML = `<div class="league-head"><span>REPLAY UNDER</span><span>TEAM A WINS · 50% REFERENCE</span><span>WIN CHANCE</span><span>GAME-ONE TIES</span></div>${sorted.map(r => { const s = SPORTS[r.sport]; return `<div class="league-row" style="--accent:${s.color}"><div class="sport-label">${icon(r.sport)}<div><h3>${s.name} rules</h3><span>${s.sport} · standard scoring<br>${r.baseline}</span></div></div><div class="league-bar" aria-hidden="true"><span style="width:${r[leagueFormat] * 100}%"></span></div><span class="league-prob">${pct(r[leagueFormat])}</span><span class="league-draw">${pct(r.draw)}</span></div>`; }).join('')}`;
+  $('league-table').innerHTML = `<div class="league-head"><span>REPLAY UNDER</span><span>TEAM A WINS</span><span>WIN CHANCE</span><span>GAME-ONE TIES</span></div>${sorted.map(r => { const s = SPORTS[r.sport]; return `<div class="league-row" style="--accent:${s.color}"><div class="sport-label">${icon(r.sport)}<div><h3>${s.name} rules</h3><span>${s.sport} · standard scoring<br>${r.baseline}${r.sport === 'soccer' ? (leagueFormat === 'single' ? ' · Draw allowed' : ' · Fair deciders') : ''}</span></div></div><div class="league-bar" aria-hidden="true"><span style="width:${r[leagueFormat] * 100}%"></span></div><span class="league-prob">${pct(r[leagueFormat])}</span><span class="league-draw">${pct(r.draw)}</span></div>`; }).join('')}`;
 }
-function renderResults() { renderEvidence(); $('league-comparison-note').textContent = result.config.comparison === 'benchmark' ? 'Team A translated into each league. Same opponent caliber, neutral venues and equal rest.' : 'A vs B translated into each league. Neutral venues and equal rest.'; $('model-badge').textContent = result.left.evidence.kind === 'historical' ? 'HISTORICAL GAME MODEL' : result.left.evidence.kind === 'counterfactual' ? 'RULE-CHANGE MODEL' : 'CONTROLLED MECHANICS'; renderCards(); seriesChart(); bridgeChart(); outcomeComparison(); marginCharts(); leagueTable(); }
+function renderResults() { renderCoreComparison(); renderEvidence(); $('league-comparison-note').textContent = result.config.comparison === 'benchmark' ? 'Team A translated into each league. Same opponent caliber, neutral venues and equal rest.' : 'A vs B translated into each league. Neutral venues and equal rest.'; $('model-badge').textContent = result.left.evidence.kind === 'historical' ? (result.left.evidence.retrospective ? 'SEASON-END LOOKBACK' : 'HISTORICAL GAME MODEL') : result.left.evidence.kind === 'counterfactual' ? 'RULE-CHANGE MODEL' : 'CONTROLLED MECHANICS'; renderCards(); seriesChart(); bridgeChart(); outcomeComparison(); marginCharts(); leagueTable(); }
 
 function setBusy(value) {
   busy = value; $('run-button').disabled = value; $('cancel-button').hidden = !value; $('progress-track').hidden = !value;
@@ -431,11 +482,21 @@ function changeScenarioSport(side, sport) {
   }
   setDirty(); run();
 }
+$('core-series').addEventListener('change', event => {
+  config = updateStartingRules(config, { ...config.left, series: Number(event.target.value) });
+  syncShared(); renderEditors(); setDirty(); run();
+});
+$('core-cards').addEventListener('click', event => {
+  const button = event.target.closest('[data-core-sport]'); if (!button) return;
+  config = updateStartingRules(config, { ...scenario(button.dataset.coreSport), series: config.left.series });
+  syncShared(); renderEditors(); setDirty(); run();
+  document.querySelector('.results-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
 $('matchup-sport').addEventListener('change', event => changeScenarioSport('left', event.target.value));
 $('matchup-series').addEventListener('change', event => {
   config = updateStartingRules(config, { ...config.left, series: Number(event.target.value) }); renderEditors(); syncShared(); setDirty();
 });
-$('reset-button').addEventListener('click', () => { config = defaultConfig(); syncShared(); renderEditors(); run(); toast('50 NBA wins vs 10 NFL wins, head to head under NBA rules.'); });
+$('reset-button').addEventListener('click', () => { config = defaultConfig(); syncShared(); renderEditors(); run(); toast('75th vs 25th percentile. Compare NBA, NHL and MLB with the same format.'); });
 $('league-format').addEventListener('click', event => { const button = event.target.closest('button'); if (!button) return; leagueFormat = button.dataset.format; $('league-format').querySelectorAll('button').forEach(b => { b.classList.toggle('selected', b === button); b.setAttribute('aria-pressed', String(b === button)); }); leagueTable(); });
 
 $('share-button').addEventListener('click', async () => {
@@ -469,6 +530,6 @@ function navigate() {
   if (page !== 'simulator') window.scrollTo({ top: 0 });
 }
 window.addEventListener('hashchange', navigate);
-syncShared(); renderEditors(); renderHistory(); renderNumberGuide(); navigate(); updateExportState();
+syncShared(); renderEditors(); renderObservedHistory(); renderHistory(); renderNumberGuide(); navigate(); updateExportState();
 $('comparison-cards').innerHTML = '<div class="result-card loading-card loading-pulse">Calculating Team A vs Team B…</div>';
 setTimeout(run, 30);

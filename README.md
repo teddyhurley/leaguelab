@@ -6,9 +6,9 @@ An interactive sports-variance simulator built by Teddy Hurley. Choose two teams
 
 Compare NBA, NHL, MLB, NFL and Premier League soccer. Explore questions such as **“What if hockey had more scoring?”** and **“What if the NBA were single elimination?”** through exact probabilities, seeded simulation and scoring-margin charts.
 
-![LeagueLab showing independent NBA and NFL season records and hypothetical head-to-head odds](docs/preview.jpg)
+![LeagueLab comparing the same team caliber across NBA, NHL and MLB](docs/preview.png)
 
-**Status:** working local prototype, prepared for GitHub. No public launch or completed independent usability study is claimed. Historical records ground all five input scales; All five sports have historical game fits, with a held-out test for each. MLB did not beat the simple baseline. Cross-sport matchups and rule changes are explanatory experiments, not forecasts of real teams.
+**Status:** working local prototype, prepared for GitHub. No public launch or completed independent usability study is claimed. Historical records ground all five input scales; all five sports have regular-season game fits and separate-season evaluations. All five models use season-end hindsight. MLB playoff transfer and some NBA/NHL/MLB/NFL subgroups still fail simple baselines. Cross-sport matchups and rule changes are explanatory experiments, not forecasts of real teams.
 
 ## Run locally
 
@@ -30,11 +30,13 @@ Open the generated `LeagueLab.html` in your browser. It embeds the interface, pr
 
 ## Two-minute walkthrough
 
-1. **Choose your teams.** Start with a 50-win NBA Team A against a 10-win NFL Team B. Each record has its own league and scale. NHL and Premier League use points, matching how fans read standings.
-2. **Choose their common rules.** Both teams play a hypothetical matchup under the selected sport. A and B odds describe the same contest and sum to 100%. The starting scoring-margin chart sits beside that result.
+1. **Choose your teams.** Start with 75th- versus 25th-percentile NBA season caliber (about 50.1 vs 32.3 wins). Each record has its own league and scale. NHL and Premier League use points, matching how fans read standings.
+2. **Compare the same caliber across NBA, NHL and MLB.** The opening cards use the same format, standard scoring and neutral venues. Change one game to best of seven for all three, then inspect a sport’s matchup. A and B odds describe the same contest; a single Premier League match also includes a draw probability. The possible outcomes sum to 100%. The starting scoring-margin chart sits beside that result.
 3. **Change the conditions.** Keep those teams and build an experiment from the starting matchup. Try more hockey scoring or a shorter NBA series through **Try a guided experiment**.
 4. **Understand the difference.** Compare the starting and experiment results, then inspect the ordered changes behind the modeled gap. Each result identifies its rules and format. Identical game conditions share a scoring chart; modified rules retain their own chart.
 5. Optionally replay the same strengths under five standard sports, inspect **The model**, or export a completed run as JSON/CSV. A floating reminder flags edits that require a rerun.
+
+The expandable historical check shows the observed better-record win rates (NBA 65.1%, NHL 58.6%, MLB 57.2%). Those are fixed sample summaries with unequal other-opponent records, not the selected matchup’s fitted odds. Standardized 75th-versus-25th-percentile one-game estimates are 67.9%, 58.2% and 56.5%. These comparisons do not identify the causal share due to scoring.
 
 The displayed win odds and analytical charts come from exact calculations. Simulation separately shows repeated outcomes, convergence and sampling intervals. The 100 outcome squares are the first 100 actual sampled trials. More trials reduce simulation noise; they do not validate the assumptions.
 
@@ -65,15 +67,17 @@ The engine has no DOM or network dependencies. Dynamic programming computes scor
 
 ## Evidence and boundaries
 
-The fixed reference includes **1,278 team-seasons** and **5,012 games used in outcome fits** from 2015–16 through 2024–25, or 2015–2024 for MLB/NFL. NBA uses the SportsDataverse ESPN collection; NHL/MLB use official APIs; NFL uses nflverse; Premier League uses OpenFootball. [Historical evidence and provenance](docs/HISTORY.md) documents exact sources, exclusions and normalization.
+The record-rarity reference contains **2,849 team-seasons across the latest 20 eligible completed regular seasons per league**, as of October 7, 2026. Selected COVID seasons and shortened lockout seasons are excluded, with older seasons backfilled. **2021 MLB and NFL are included.** NBA uses ESPN standings; NHL/MLB use official APIs; NFL uses nflverse; Premier League uses OpenFootball. The separate outcome models fit **53,355 regular-season games** from 2015–16 through 2024–25, or 2015–2024 for MLB/NFL; those game samples include COVID years. [Historical evidence and provenance](docs/HISTORY.md) documents exact sources, exclusions and normalization.
 
 - **Familiar inputs:** NBA 0–82 wins, NHL 0–168 points over the current 84-game schedule, MLB 0–162 wins, NFL 0–17 wins, Premier League 0–114 earned points. Premier League points exclude administrative deductions. Historical NHL records are normalized from 82-game seasons.
 - **Disclosed translation:** historical rarity supplies a latent strength proxy. It is not true ability or a next-game probability. Records beyond the reference range are flagged and capped for modeling.
-- **Five fitted baselines:** NBA/NHL/MLB/NFL use playoff games; Premier League uses pre-match records after both clubs have played ten matches. Each model trains on the first seven seasons and tests on the last three. **MLB failed to beat the home-only and 50–50 baselines**; the app flags this alongside its odds. NFL has only 39 held-out games. [Evidence and validation report](docs/EVIDENCE.md).
-- **Simplified competition:** ties use a fair decider; soccer regulation draws are also reported. The model does not recreate athletes changing sports, detailed tactics or full playoff brackets.
+- **Five fitted baselines:** NBA/NHL/NFL use 11,979 / 12,200 / 2,614 regular-season games across all teams. Season-end records exclude every head-to-head meeting, but still use hindsight. Games involving non-playoff teams and playoff transfer are checked separately; no playoff adjustment is applied. MLB now uses 22,762 decisive completed-season observations with all head-to-head meetings removed, and checks playoff transfer separately. Premier League uses all 3,800 matches with season-end points excluding both head-to-head meetings, fitting win/draw/loss. All five leagues’ evaluation is retrospective, not forecasting accuracy. The five-rolling-season NBA bottom-quarter-pair check narrowly fails home-only. The NFL subset where both teams missed the playoffs still fails the home-only baseline, as do NFL/NHL/MLB games between two playoff teams. **MLB improves regular-season error but still fails playoff baselines.** [Evidence and validation report](docs/EVIDENCE.md).
+- **Simplified competition:** single-game soccer keeps draws. Hypothetical soccer series and the other sports use fair deciders. Pitchers, rotations and lineups are not modeled.
 - **Model uncertainty:** the ordered explanation depends on the order of changes. It is not a measured causal decomposition of real league differences. Sampling intervals cover Monte Carlo error only.
 
-The in-app methodology explains the starting numbers. [MODEL.md](docs/MODEL.md) gives the equations, coefficients and limitations. Model v4 uses configuration schema v5. Older win-based NHL/Premier League links migrate to points by historical rarity with a visible notice; old NHL odds are not guaranteed to stay unchanged. Version 4 links preserve records/settings and show a notice that the new MLB/NFL/Premier League fits can change the odds.
+The in-app methodology explains the starting numbers. [MODEL.md](docs/MODEL.md) gives the equations, coefficients and limitations. Model v8.0.0 uses configuration schema v9. Older win-based NHL/Premier League links migrate to points by historical rarity with a visible notice; old NHL odds are not guaranteed to stay unchanged. Version 4/5 links preserve records/settings and show a notice about revised models. Version 6 links also disclose the expanded rarity reference. All older supported links disclose the completed-season MLB change and hindsight; records/settings are preserved, but prior odds can change.
+
+Read the [release model review](docs/RELEASE-MODEL-REVIEW.md) for the NBA/NHL/MLB core comparison, five rolling-season evaluations, candidate tradeoffs and the completed-season MLB release decision. Version 8 implements the core NBA/NHL/MLB recommendation; the separate NFL challenger remains deferred.
 
 ## Verify and reproduce
 
@@ -81,9 +85,10 @@ The in-app methodology explains the starting numbers. [MODEL.md](docs/MODEL.md) 
 npm test
 npm run check
 npm run check:history
+python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
-The historical check additionally requires **Python 3**. It rebuilds the five record distributions and all five game fits and pre-match features in a temporary directory, compares them with the shipped evidence, and leaves source files unchanged. No network is required.
+The historical check additionally requires **Python 3**. It rebuilds the five record distributions and all five game fits and feature audits and the MLB model comparison in a temporary directory, compares them with the shipped evidence, and leaves source files unchanged. No network is required.
 
 To intentionally regenerate the evidence after reviewing source changes:
 

@@ -29,7 +29,7 @@ test('changed starting and experiment rules do not erase the standard league cha
   assert.deepEqual(scorePreviewGroups(c).map(p => p.roles), [['teamA', 'teamB'], ['matchup'], ['experiment']]);
 });
 test('two source leagues plus two distinct hockey scenarios produce four charts', () => {
-  const c = { ...defaultConfig(), left: scenario('nhl'), right: { ...scenario('nhl'), scoring: 3 } };
+  const c = { ...defaultConfig(), recordSportB: 'nfl', recordB: 10, left: scenario('nhl'), right: { ...scenario('nhl'), scoring: 3 } };
   assert.deepEqual(scorePreviewGroups(c).map(p => p.sport), ['nba', 'nfl', 'nhl', 'nhl']);
 });
 test('series-only changes share a score chart while series odds differ', () => {
@@ -50,7 +50,7 @@ test('game mechanics and active home/rest effects distinguish charts', () => {
   assert.equal(scorePreviewGroups(venues).length, 3);
 });
 test('an experiment matching another source league merges with its chart', () => {
-  const c = { ...defaultConfig(), right: scenario('nfl') };
+  const c = { ...defaultConfig(), recordSportB: 'nfl', recordB: 10, right: scenario('nfl') };
   assert.deepEqual(scorePreviewGroups(c).map(p => p.roles), [['teamA', 'matchup'], ['teamB', 'experiment']]);
 });
 test('equal-record benchmark subjects retain separate charts in the same league', () => {

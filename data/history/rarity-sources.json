@@ -1,0 +1,3259 @@
+{
+  "nbaNhlSeasons": {
+    "asOfDate": "2026-10-07",
+    "requestedSeasonsPerLeague": 20,
+    "leagues": {
+      "nba": {
+        "includedSeasonEnds": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "includedSeasonCount": 20,
+        "rowPolicy": "Include completed team records from eligible full-schedule seasons, including the documented Boston/Indiana 81-game 2012\u201313 cancellation; normalize wins by actual games played.",
+        "excludedTeamSeasons": [],
+        "excludedSeasons": [
+          {
+            "seasonEnd": 2012,
+            "season": "2011-12",
+            "reason": "Lockout-shortened 66-game season"
+          },
+          {
+            "seasonEnd": 2020,
+            "season": "2019-20",
+            "reason": "COVID-interrupted season"
+          },
+          {
+            "seasonEnd": 2021,
+            "season": "2020-21",
+            "reason": "COVID-shortened 72-game season"
+          }
+        ],
+        "teamSeasons": 599,
+        "allFetchedTeamSeasons": 599,
+        "full82TeamSeasons": 597,
+        "seasons": [
+          {
+            "seasonEnd": 2004,
+            "season": "2003-04",
+            "teams": 29,
+            "teamGames": 2378,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2004&type=0&level=2",
+            "sha256": "44da10f7472f03dc76f784809e9b6d7c10c98ffed3eb40f05602811a3c86905d",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2005,
+            "season": "2004-05",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2005&type=0&level=2",
+            "sha256": "e0cbc0e30ae099d9d5cc273951b50e882015f0d89fd32a8ce890bc909c4a0f9b",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2006,
+            "season": "2005-06",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2006&type=0&level=2",
+            "sha256": "b74a358bbe42be5bb82c6808ad11f44816bbeb8bb0906a6002e0688a4923b5d7",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2007,
+            "season": "2006-07",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2007&type=0&level=2",
+            "sha256": "a21fbdb62ea5561d7e02190b59abf13b6b8f06245b01ebc5f46a5c1f772a8a71",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2008,
+            "season": "2007-08",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2008&type=0&level=2",
+            "sha256": "f351376e734282909e15da92030795191a0830d7bc5eff238a81b8ae141a247b",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2009,
+            "season": "2008-09",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2009&type=0&level=2",
+            "sha256": "c9e3be7f61b0c3e0a2a951df9701f1505693267d9f44c42c8fdbd4017eccd17d",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2010,
+            "season": "2009-10",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2010&type=0&level=2",
+            "sha256": "8f57968c86bd6314eb138ed3ae7c7e93c92bd57d08d8861150597f0e30747438",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2011,
+            "season": "2010-11",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2011&type=0&level=2",
+            "sha256": "21b5c55e7b98ce10cb046a9aafbcddb2f3fcf5d8c465286b217053ff7d956f58",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2013,
+            "season": "2012-13",
+            "teams": 30,
+            "teamGames": 2458,
+            "allTeams82Games": false,
+            "not82": [
+              {
+                "team": "Indiana Pacers",
+                "games": 81
+              },
+              {
+                "team": "Boston Celtics",
+                "games": 81
+              }
+            ],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2013&type=0&level=2",
+            "sha256": "5e6f00e5c8c3435c25315337fa05389c807cbc5dd453031647d5aa3f7089e9f6",
+            "completionEvidence": "Full-length scheduled season with documented unplayed/canceled game exceptions; see not82."
+          },
+          {
+            "seasonEnd": 2014,
+            "season": "2013-14",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2014&type=0&level=2",
+            "sha256": "6c8f27fa3f865b24c83ea11b79ba4194a49b7438d73d84ddfa31b8e988e52b8b",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2015,
+            "season": "2014-15",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2015&type=0&level=2",
+            "sha256": "bcd15e559c56790f72e9755a6785b1535d2b82a948bfec2f09fe49c639a66ca0",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2016,
+            "season": "2015-16",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2016&type=0&level=2",
+            "sha256": "6fc56cee034d9603bd175ea1e16e536dc1ca15bb85fc3614e368a6222affbc46",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2017,
+            "season": "2016-17",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2017&type=0&level=2",
+            "sha256": "219a47ec24d1dea71c218ce74c49e6dfb1199df7a3034967ad4fa77249516444",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2018,
+            "season": "2017-18",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2018&type=0&level=2",
+            "sha256": "3e7e80b3a0449272700eba452245f7eb0400f05bbc83538a0ae41e9ede0f1c1d",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2019,
+            "season": "2018-19",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2019&type=0&level=2",
+            "sha256": "04345d3f9a09c96d8fc406a680fea9a75b3215afe45bae13e25a064696a0c00f",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2022,
+            "season": "2021-22",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2022&type=0&level=2",
+            "sha256": "b0139dae78e493c08c622d6b384928ffc8b73086f7a9bb895922c31784373adf",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2023,
+            "season": "2022-23",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2023&type=0&level=2",
+            "sha256": "8dd00620930312ab90a8660fae0453edae28fd519ee594f54d92a5405d271be4",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2024,
+            "season": "2023-24",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2024&type=0&level=2",
+            "sha256": "801d06c5024140cb1d74cae6d46929611e01713c1fc2152ef581dd5e8e6d7941",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2025,
+            "season": "2024-25",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2025&type=0&level=2",
+            "sha256": "bedd4e4269be0f4307f13e8e7d4298e0b5387c95521d2088ce996f4513b50d86",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2026,
+            "season": "2025-26",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2026&type=0&level=2",
+            "sha256": "168585d4d254323a1bdf1ab62a0ff8ac9e2973dad955182d8404af63b3df5500",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          }
+        ],
+        "latestSeasonAudit": {
+          "seasonEnd": 2026,
+          "season": "2025-26",
+          "teams": 30,
+          "teamGames": 2460,
+          "allTeams82Games": true,
+          "not82": [],
+          "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2026&type=0&level=2",
+          "sha256": "168585d4d254323a1bdf1ab62a0ff8ac9e2973dad955182d8404af63b3df5500",
+          "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+        },
+        "includedTeamExceptions": [
+          {
+            "sport": "nba",
+            "seasonEnd": 2013,
+            "season": "2012-13",
+            "teamId": "11",
+            "team": "Indiana Pacers",
+            "abbreviation": "IND",
+            "wins": 49,
+            "losses": 32,
+            "games": 81,
+            "winPct": 0.6049382716049383,
+            "wins82": 49.60493827160494,
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2013&type=0&level=2",
+            "pointsFor": 7674.0,
+            "pointsAgainst": 7348.0,
+            "home": "30-11",
+            "road": "19-21",
+            "inclusionReason": "Completed record in an otherwise full-schedule season; one canceled game. Normalize wins / 81, then display at an 82-game pace.",
+            "cancellationEvidence": "https://pr.nba.com/pacers-celtics-game-canceled/"
+          },
+          {
+            "sport": "nba",
+            "seasonEnd": 2013,
+            "season": "2012-13",
+            "teamId": "2",
+            "team": "Boston Celtics",
+            "abbreviation": "BOS",
+            "wins": 41,
+            "losses": 40,
+            "games": 81,
+            "winPct": 0.5061728395061729,
+            "wins82": 41.50617283950618,
+            "source": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2013&type=0&level=2",
+            "pointsFor": 7818.0,
+            "pointsAgainst": 7836.0,
+            "home": "27-13",
+            "road": "14-27",
+            "inclusionReason": "Completed record in an otherwise full-schedule season; one canceled game. Normalize wins / 81, then display at an 82-game pace.",
+            "cancellationEvidence": "https://pr.nba.com/pacers-celtics-game-canceled/"
+          }
+        ]
+      },
+      "nhl": {
+        "includedSeasonEnds": [
+          2003,
+          2004,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "includedSeasonCount": 20,
+        "rowPolicy": "Include only teams that completed 82 games; retain any omitted rows in the excluded-team-seasons audit.",
+        "excludedTeamSeasons": [],
+        "excludedSeasons": [
+          {
+            "seasonEnd": 2005,
+            "season": "2004-05",
+            "reason": "Lockout canceled entire season"
+          },
+          {
+            "seasonEnd": 2013,
+            "season": "2012-13",
+            "reason": "Lockout-shortened 48-game season"
+          },
+          {
+            "seasonEnd": 2020,
+            "season": "2019-20",
+            "reason": "COVID-interrupted season"
+          },
+          {
+            "seasonEnd": 2021,
+            "season": "2020-21",
+            "reason": "COVID-shortened 56-game season"
+          }
+        ],
+        "teamSeasons": 612,
+        "allFetchedTeamSeasons": 612,
+        "full82TeamSeasons": 612,
+        "seasons": [
+          {
+            "seasonEnd": 2003,
+            "season": "2002-03",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20022003+and+gameTypeId%3D2",
+            "sha256": "8af9455f431238ca403cf9e481fe684e96b677d89431ebd33f5c85f2a641a884",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2004,
+            "season": "2003-04",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20032004+and+gameTypeId%3D2",
+            "sha256": "2128261e0dfee1331baf3c1c85fef35feb3559d421e98d031f62b04f1545a44f",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2006,
+            "season": "2005-06",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20052006+and+gameTypeId%3D2",
+            "sha256": "9b3fc113b3c9838cef8a409608dfa36dab47e884fc5ca62e72fecfb235032484",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2007,
+            "season": "2006-07",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20062007+and+gameTypeId%3D2",
+            "sha256": "1cc3958244521ebb1f43bd5725212e40fc5952052d6cd427edc1dbdb471d4d88",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2008,
+            "season": "2007-08",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20072008+and+gameTypeId%3D2",
+            "sha256": "0088a0ebf63a74efbacd72ef7f77965202ae5c090224f395db5c631fb488de9c",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2009,
+            "season": "2008-09",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20082009+and+gameTypeId%3D2",
+            "sha256": "acccac458428584de0dca075c4c6686b0cf4d0f569b2866ce8ccf2f0b4d99703",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2010,
+            "season": "2009-10",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20092010+and+gameTypeId%3D2",
+            "sha256": "4faed1646235106d03a6d4f9fd06ff8333336f973cce100c0e6e410083a9faa9",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2011,
+            "season": "2010-11",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20102011+and+gameTypeId%3D2",
+            "sha256": "b5c7367c85ef504c62a82c884ab1310ab5b1e08c60ed5a26af0de2f689ee3719",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2012,
+            "season": "2011-12",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20112012+and+gameTypeId%3D2",
+            "sha256": "4be59df88cb6f464fdb5a11a7233c4e5e9f0b96e6831ebb473c3162586a4f1a7",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2014,
+            "season": "2013-14",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20132014+and+gameTypeId%3D2",
+            "sha256": "59e06927cdaf8a346db751595a70cd4dd6828e09e4c1829f77046b7119b84351",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2015,
+            "season": "2014-15",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20142015+and+gameTypeId%3D2",
+            "sha256": "ca37a98b1fb5f5f98f1c249e828faf5a3b40ddc56d3502a1418573b1d2527ad1",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2016,
+            "season": "2015-16",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20152016+and+gameTypeId%3D2",
+            "sha256": "8217cf8ee757699d4c4f68f366db05576a9520c7561a0892562130d202e41cc3",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2017,
+            "season": "2016-17",
+            "teams": 30,
+            "teamGames": 2460,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20162017+and+gameTypeId%3D2",
+            "sha256": "7847e39e6e4dedcd2a525d6d5046b4b82d7f00e36de87c4d488e3d3bef6c60ef",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2018,
+            "season": "2017-18",
+            "teams": 31,
+            "teamGames": 2542,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20172018+and+gameTypeId%3D2",
+            "sha256": "644f0575f57f08c531027bee1a95f2982d5cedf8aa0a338e267bb4ef940910bd",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2019,
+            "season": "2018-19",
+            "teams": 31,
+            "teamGames": 2542,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20182019+and+gameTypeId%3D2",
+            "sha256": "2db87722b71256e38968a67e58920576c0cf73818cc348f83ff781d6c55400f6",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2022,
+            "season": "2021-22",
+            "teams": 32,
+            "teamGames": 2624,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20212022+and+gameTypeId%3D2",
+            "sha256": "6e659799c9cbb57a560003a93adb6323abcfae90d95469b340169b6236a08ce9",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2023,
+            "season": "2022-23",
+            "teams": 32,
+            "teamGames": 2624,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20222023+and+gameTypeId%3D2",
+            "sha256": "274e2b9e73bc651708a087ac309e9d8a3794304cd4ab829e4804d17b2fe04bac",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2024,
+            "season": "2023-24",
+            "teams": 32,
+            "teamGames": 2624,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20232024+and+gameTypeId%3D2",
+            "sha256": "af8159c9bd910a366c6d6fce2099065f2f481753fb989600c34f87f73126b92c",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2025,
+            "season": "2024-25",
+            "teams": 32,
+            "teamGames": 2624,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20242025+and+gameTypeId%3D2",
+            "sha256": "11d7729e88ec215dec00d17445c720950ffddb01184aed8a0624f1ed31b52389",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          },
+          {
+            "seasonEnd": 2026,
+            "season": "2025-26",
+            "teams": 32,
+            "teamGames": 2624,
+            "allTeams82Games": true,
+            "not82": [],
+            "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20252026+and+gameTypeId%3D2",
+            "sha256": "51560606ad41c4aa7de3345b607b1f7460de9829832ce41ce0721e2356695846",
+            "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+          }
+        ],
+        "latestSeasonAudit": {
+          "seasonEnd": 2026,
+          "season": "2025-26",
+          "teams": 32,
+          "teamGames": 2624,
+          "allTeams82Games": true,
+          "not82": [],
+          "source": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20252026+and+gameTypeId%3D2",
+          "sha256": "51560606ad41c4aa7de3345b607b1f7460de9829832ce41ce0721e2356695846",
+          "completionEvidence": "Regular-season standings list every expected franchise; every team has 82 games."
+        }
+      }
+    }
+  },
+  "nbaNhlSources": {
+    "asOfDate": "2026-10-07",
+    "sources": [
+      {
+        "sport": "nba",
+        "seasonEnd": 2004,
+        "file": "raw/nba-2004.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2004&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:40.271290+00:00",
+        "sha256": "44da10f7472f03dc76f784809e9b6d7c10c98ffed3eb40f05602811a3c86905d",
+        "bytes": 163319
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2005,
+        "file": "raw/nba-2005.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2005&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:41.230129+00:00",
+        "sha256": "e0cbc0e30ae099d9d5cc273951b50e882015f0d89fd32a8ce890bc909c4a0f9b",
+        "bytes": 167880
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2006,
+        "file": "raw/nba-2006.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2006&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:40.386756+00:00",
+        "sha256": "b74a358bbe42be5bb82c6808ad11f44816bbeb8bb0906a6002e0688a4923b5d7",
+        "bytes": 167903
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2007,
+        "file": "raw/nba-2007.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2007&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:40.827238+00:00",
+        "sha256": "a21fbdb62ea5561d7e02190b59abf13b6b8f06245b01ebc5f46a5c1f772a8a71",
+        "bytes": 167987
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2008,
+        "file": "raw/nba-2008.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2008&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:42.142938+00:00",
+        "sha256": "f351376e734282909e15da92030795191a0830d7bc5eff238a81b8ae141a247b",
+        "bytes": 167990
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2009,
+        "file": "raw/nba-2009.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2009&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:41.568886+00:00",
+        "sha256": "c9e3be7f61b0c3e0a2a951df9701f1505693267d9f44c42c8fdbd4017eccd17d",
+        "bytes": 168126
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2010,
+        "file": "raw/nba-2010.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2010&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:42.592085+00:00",
+        "sha256": "8f57968c86bd6314eb138ed3ae7c7e93c92bd57d08d8861150597f0e30747438",
+        "bytes": 168063
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2011,
+        "file": "raw/nba-2011.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2011&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:41.886732+00:00",
+        "sha256": "21b5c55e7b98ce10cb046a9aafbcddb2f3fcf5d8c465286b217053ff7d956f58",
+        "bytes": 168083
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2013,
+        "file": "raw/nba-2013.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2013&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:42.702613+00:00",
+        "sha256": "5e6f00e5c8c3435c25315337fa05389c807cbc5dd453031647d5aa3f7089e9f6",
+        "bytes": 168213
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2014,
+        "file": "raw/nba-2014.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2014&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:47.361811+00:00",
+        "sha256": "6c8f27fa3f865b24c83ea11b79ba4194a49b7438d73d84ddfa31b8e988e52b8b",
+        "bytes": 168408
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2015,
+        "file": "raw/nba-2015.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2015&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:43.911428+00:00",
+        "sha256": "bcd15e559c56790f72e9755a6785b1535d2b82a948bfec2f09fe49c639a66ca0",
+        "bytes": 168564
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2016,
+        "file": "raw/nba-2016.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2016&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:44.605728+00:00",
+        "sha256": "6fc56cee034d9603bd175ea1e16e536dc1ca15bb85fc3614e368a6222affbc46",
+        "bytes": 171148
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2017,
+        "file": "raw/nba-2017.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2017&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:44.891952+00:00",
+        "sha256": "219a47ec24d1dea71c218ce74c49e6dfb1199df7a3034967ad4fa77249516444",
+        "bytes": 171207
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2018,
+        "file": "raw/nba-2018.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2018&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:46.234762+00:00",
+        "sha256": "3e7e80b3a0449272700eba452245f7eb0400f05bbc83538a0ae41e9ede0f1c1d",
+        "bytes": 171148
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2019,
+        "file": "raw/nba-2019.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2019&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:46.406432+00:00",
+        "sha256": "04345d3f9a09c96d8fc406a680fea9a75b3215afe45bae13e25a064696a0c00f",
+        "bytes": 171202
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2022,
+        "file": "raw/nba-2022.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2022&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:47.458574+00:00",
+        "sha256": "b0139dae78e493c08c622d6b384928ffc8b73086f7a9bb895922c31784373adf",
+        "bytes": 171200
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2023,
+        "file": "raw/nba-2023.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2023&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:48.563077+00:00",
+        "sha256": "8dd00620930312ab90a8660fae0453edae28fd519ee594f54d92a5405d271be4",
+        "bytes": 171180
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2024,
+        "file": "raw/nba-2024.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2024&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:48.036916+00:00",
+        "sha256": "801d06c5024140cb1d74cae6d46929611e01713c1fc2152ef581dd5e8e6d7941",
+        "bytes": 171269
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2025,
+        "file": "raw/nba-2025.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2025&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:50.818265+00:00",
+        "sha256": "bedd4e4269be0f4307f13e8e7d4298e0b5387c95521d2088ce996f4513b50d86",
+        "bytes": 171217
+      },
+      {
+        "sport": "nba",
+        "seasonEnd": 2026,
+        "file": "raw/nba-2026.json",
+        "url": "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/standings?season=2026&type=0&level=2",
+        "retrievedAtUTC": "2026-10-07T23:47:49.175898+00:00",
+        "sha256": "168585d4d254323a1bdf1ab62a0ff8ac9e2973dad955182d8404af63b3df5500",
+        "bytes": 171279
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2003,
+        "file": "raw/nhl-2003.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20022003+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:48.634825+00:00",
+        "sha256": "8af9455f431238ca403cf9e481fe684e96b677d89431ebd33f5c85f2a641a884",
+        "bytes": 15720
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2004,
+        "file": "raw/nhl-2004.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20032004+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:48.846398+00:00",
+        "sha256": "2128261e0dfee1331baf3c1c85fef35feb3559d421e98d031f62b04f1545a44f",
+        "bytes": 15728
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2006,
+        "file": "raw/nhl-2006.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20052006+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:49.195933+00:00",
+        "sha256": "9b3fc113b3c9838cef8a409608dfa36dab47e884fc5ca62e72fecfb235032484",
+        "bytes": 15805
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2007,
+        "file": "raw/nhl-2007.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20062007+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:49.119120+00:00",
+        "sha256": "1cc3958244521ebb1f43bd5725212e40fc5952052d6cd427edc1dbdb471d4d88",
+        "bytes": 15813
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2008,
+        "file": "raw/nhl-2008.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20072008+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:49.384922+00:00",
+        "sha256": "0088a0ebf63a74efbacd72ef7f77965202ae5c090224f395db5c631fb488de9c",
+        "bytes": 15802
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2009,
+        "file": "raw/nhl-2009.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20082009+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:49.490953+00:00",
+        "sha256": "acccac458428584de0dca075c4c6686b0cf4d0f569b2866ce8ccf2f0b4d99703",
+        "bytes": 15807
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2010,
+        "file": "raw/nhl-2010.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20092010+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:49.759159+00:00",
+        "sha256": "4faed1646235106d03a6d4f9fd06ff8333336f973cce100c0e6e410083a9faa9",
+        "bytes": 15815
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2011,
+        "file": "raw/nhl-2011.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20102011+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:49.664502+00:00",
+        "sha256": "b5c7367c85ef504c62a82c884ab1310ab5b1e08c60ed5a26af0de2f689ee3719",
+        "bytes": 15813
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2012,
+        "file": "raw/nhl-2012.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20112012+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:50.764443+00:00",
+        "sha256": "4be59df88cb6f464fdb5a11a7233c4e5e9f0b96e6831ebb473c3162586a4f1a7",
+        "bytes": 15809
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2014,
+        "file": "raw/nhl-2014.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20132014+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:49.989038+00:00",
+        "sha256": "59e06927cdaf8a346db751595a70cd4dd6828e09e4c1829f77046b7119b84351",
+        "bytes": 15805
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2015,
+        "file": "raw/nhl-2015.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20142015+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:50.418439+00:00",
+        "sha256": "ca37a98b1fb5f5f98f1c249e828faf5a3b40ddc56d3502a1418573b1d2527ad1",
+        "bytes": 15809
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2016,
+        "file": "raw/nhl-2016.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20152016+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:50.592348+00:00",
+        "sha256": "8217cf8ee757699d4c4f68f366db05576a9520c7561a0892562130d202e41cc3",
+        "bytes": 15798
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2017,
+        "file": "raw/nhl-2017.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20162017+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:51.688493+00:00",
+        "sha256": "7847e39e6e4dedcd2a525d6d5046b4b82d7f00e36de87c4d488e3d3bef6c60ef",
+        "bytes": 15803
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2018,
+        "file": "raw/nhl-2018.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20172018+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:50.868066+00:00",
+        "sha256": "644f0575f57f08c531027bee1a95f2982d5cedf8aa0a338e267bb4ef940910bd",
+        "bytes": 16335
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2019,
+        "file": "raw/nhl-2019.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20182019+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:51.111165+00:00",
+        "sha256": "2db87722b71256e38968a67e58920576c0cf73818cc348f83ff781d6c55400f6",
+        "bytes": 16327
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2022,
+        "file": "raw/nhl-2022.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20212022+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:51.090130+00:00",
+        "sha256": "6e659799c9cbb57a560003a93adb6323abcfae90d95469b340169b6236a08ce9",
+        "bytes": 16858
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2023,
+        "file": "raw/nhl-2023.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20222023+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:51.136688+00:00",
+        "sha256": "274e2b9e73bc651708a087ac309e9d8a3794304cd4ab829e4804d17b2fe04bac",
+        "bytes": 16854
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2024,
+        "file": "raw/nhl-2024.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20232024+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:51.435716+00:00",
+        "sha256": "af8159c9bd910a366c6d6fce2099065f2f481753fb989600c34f87f73126b92c",
+        "bytes": 16849
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2025,
+        "file": "raw/nhl-2025.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20242025+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:51.344417+00:00",
+        "sha256": "11d7729e88ec215dec00d17445c720950ffddb01184aed8a0624f1ed31b52389",
+        "bytes": 16853
+      },
+      {
+        "sport": "nhl",
+        "seasonEnd": 2026,
+        "file": "raw/nhl-2026.json",
+        "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&start=0&limit=100&cayenneExp=seasonId%3D20252026+and+gameTypeId%3D2",
+        "retrievedAtUTC": "2026-10-07T23:47:51.367379+00:00",
+        "sha256": "51560606ad41c4aa7de3345b607b1f7460de9829832ce41ce0721e2356695846",
+        "bytes": 16854
+      }
+    ]
+  },
+  "mlb": {
+    "schemaVersion": 1,
+    "sport": "mlb",
+    "asOf": "2026-10-07",
+    "latestCompletedSeason": 2026,
+    "selectedSeasons": [
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "seasonCount": 20,
+    "allTeamSeasonCount": 630,
+    "includedTeamSeasonCount": 600,
+    "excludedTeamSeasonCount": 30,
+    "gamesDistribution": {
+      "161": 28,
+      "162": 560,
+      "163": 12
+    },
+    "normalization": "wins / actual completed games; displayed on current 162-game MLB or 17-game NFL schedule",
+    "bySeason": [
+      {
+        "season": 2006,
+        "seasonEnd": 2006,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2429,
+        "teamGamesDistribution": {
+          "161": 2,
+          "162": 28
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2007,
+        "seasonEnd": 2007,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2431,
+        "teamGamesDistribution": {
+          "162": 28,
+          "163": 2
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2008,
+        "seasonEnd": 2008,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2428,
+        "teamGamesDistribution": {
+          "161": 6,
+          "162": 22,
+          "163": 2
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2009,
+        "seasonEnd": 2009,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2430,
+        "teamGamesDistribution": {
+          "161": 2,
+          "162": 26,
+          "163": 2
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2010,
+        "seasonEnd": 2010,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2430,
+        "teamGamesDistribution": {
+          "162": 30
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2011,
+        "seasonEnd": 2011,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2429,
+        "teamGamesDistribution": {
+          "161": 2,
+          "162": 28
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2012,
+        "seasonEnd": 2012,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2430,
+        "teamGamesDistribution": {
+          "162": 30
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2013,
+        "seasonEnd": 2013,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2431,
+        "teamGamesDistribution": {
+          "162": 28,
+          "163": 2
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2014,
+        "seasonEnd": 2014,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2430,
+        "teamGamesDistribution": {
+          "162": 30
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2015,
+        "seasonEnd": 2015,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2429,
+        "teamGamesDistribution": {
+          "161": 2,
+          "162": 28
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2016,
+        "seasonEnd": 2016,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2428,
+        "teamGamesDistribution": {
+          "161": 4,
+          "162": 26
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2017,
+        "seasonEnd": 2017,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2430,
+        "teamGamesDistribution": {
+          "162": 30
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2018,
+        "seasonEnd": 2018,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2431,
+        "teamGamesDistribution": {
+          "161": 2,
+          "162": 24,
+          "163": 4
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2019,
+        "seasonEnd": 2019,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2429,
+        "teamGamesDistribution": {
+          "161": 2,
+          "162": 28
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2020,
+        "seasonEnd": 2020,
+        "included": false,
+        "teams": 30,
+        "includedTeams": 0,
+        "completedRegularGames": 898,
+        "teamGamesDistribution": {
+          "58": 2,
+          "60": 28
+        },
+        "exclusionReason": "COVID-shortened season"
+      },
+      {
+        "season": 2021,
+        "seasonEnd": 2021,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2429,
+        "teamGamesDistribution": {
+          "161": 2,
+          "162": 28
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2022,
+        "seasonEnd": 2022,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2430,
+        "teamGamesDistribution": {
+          "162": 30
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2023,
+        "seasonEnd": 2023,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2430,
+        "teamGamesDistribution": {
+          "162": 30
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2024,
+        "seasonEnd": 2024,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2429,
+        "teamGamesDistribution": {
+          "161": 2,
+          "162": 28
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2025,
+        "seasonEnd": 2025,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2430,
+        "teamGamesDistribution": {
+          "162": 30
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2026,
+        "seasonEnd": 2026,
+        "included": true,
+        "teams": 30,
+        "includedTeams": 30,
+        "completedRegularGames": 2429,
+        "teamGamesDistribution": {
+          "161": 2,
+          "162": 28
+        },
+        "exclusionReason": null
+      }
+    ],
+    "completionEvidence": {
+      "latestCompletedRegularSeason": 2026,
+      "asOf": "2026-10-07",
+      "standingsTeams": 30,
+      "evidence": "All 30 clubs have final records after the official regular-season end date.",
+      "finalCanceledGame": {
+        "date": "2026-09-27",
+        "teams": [
+          "110",
+          "147"
+        ],
+        "reason": "Orioles\u2013Yankees finale canceled for weather; both finish with 161 games.",
+        "officialUrl": "https://www.mlb.com/orioles/news/orioles-yankees-september-27-game-canceled-due-to-weather",
+        "verifiedOn": "2026-10-07"
+      },
+      "seasonMetadataUrl": "https://statsapi.mlb.com/api/v1/seasons/2026?sportId=1",
+      "regularSeasonStartDate": "2026-03-25",
+      "regularSeasonEndDate": "2026-09-27"
+    },
+    "sources": [
+      {
+        "file": "raw/mlb-2006.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2006&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "0cf5923b82fa55c1a1884b8e55db235aaf0ae5239c48e2306b04e1d61d35b940",
+        "bytes": 80758
+      },
+      {
+        "file": "raw/mlb-2007.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2007&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "dc95bee53a0d9bb997bab191ed434d832f8d68acf55967d69b4140b22e5c5314",
+        "bytes": 80753
+      },
+      {
+        "file": "raw/mlb-2008.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2008&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "f731854859543d594f9d9188276fdc8f8d8879daf00d4d86082715eebcffca5e",
+        "bytes": 80768
+      },
+      {
+        "file": "raw/mlb-2009.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2009&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "6883ef0c991604c3d69722c10ae6408a3e093c2d828a0b880b9d7a0335c15440",
+        "bytes": 80765
+      },
+      {
+        "file": "raw/mlb-2010.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2010&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "03f4993850aed0cc0a844d919ea668f64c91cc8980c9bc893cbf2a973b1bc01e",
+        "bytes": 80764
+      },
+      {
+        "file": "raw/mlb-2011.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2011&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "e6b78b4395ebccf92cb661fff48ce236a485eb10373278acbe0659b9f054cbb5",
+        "bytes": 80785
+      },
+      {
+        "file": "raw/mlb-2012.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2012&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "055434a5e5b7dcc5444815854ba7b8303123c8fc5dd66ac13d601c08038326e2",
+        "bytes": 80828
+      },
+      {
+        "file": "raw/mlb-2013.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2013&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "16a8d476885fc2052eba3de6ce1ab5daa0505c6a7ddde75b640cd4c426927235",
+        "bytes": 80877
+      },
+      {
+        "file": "raw/mlb-2014.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2014&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "09edaedb1af5c6acebbd8f5db655cd557932179d628be9fc26e32df0b8d44dac",
+        "bytes": 80846
+      },
+      {
+        "file": "raw/mlb-2015.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2015&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "b8ab04de82e5717ed5c37b76532575f71e90d3cc27841baa4f51e65b451bb3ec",
+        "bytes": 80845
+      },
+      {
+        "file": "raw/mlb-2016.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2016&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "b327b2b7f7689638da375ee1eb9419e6f8261cb61970ef7dc69f527de287d922",
+        "bytes": 80827
+      },
+      {
+        "file": "raw/mlb-2017.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2017&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "f538ee40639e71bb8b611db59c9a6f72043889d1cb4fdc119391d34473b315c9",
+        "bytes": 80870
+      },
+      {
+        "file": "raw/mlb-2018.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2018&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "ee8d20a69546566428caa1c5236030bbba2d1f3595bffb5ca4eb7b5371d1a7fc",
+        "bytes": 80893
+      },
+      {
+        "file": "raw/mlb-2019.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2019&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "b16791b9627b51c55327aea5ccb74a530c349782f745f49fc0064cb0d63df33e",
+        "bytes": 80901
+      },
+      {
+        "file": "raw/mlb-2020.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2020&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "b855f8ff07e7615402f00883b9f3610c003c5b05aafa321b55031fac186f4235",
+        "bytes": 80341
+      },
+      {
+        "file": "raw/mlb-2021.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2021&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "1ae6054e7d1469f716d7b2adf98fef4b246c81c34fd0b2f7a9916c12049bcee7",
+        "bytes": 80920
+      },
+      {
+        "file": "raw/mlb-2022.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2022&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "19d34e37df6ff9662773f5b16e8048e1e07e57a07196c32be1109d668cce37e3",
+        "bytes": 81000
+      },
+      {
+        "file": "raw/mlb-2023.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2023&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "c2163f0d48c48d670d89b441dea4e58e2a03fbe07ba312921ef3627401693eda",
+        "bytes": 81010
+      },
+      {
+        "file": "raw/mlb-2024.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2024&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "1e70de5f50c3a3372b9dd4f059db204d962196dbca2148617f5584c48b50f624",
+        "bytes": 80962
+      },
+      {
+        "file": "raw/mlb-2025.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2025&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "683532be80205de76678c5c3e76aa54df86ba9d6401fed3815ca634fd85c84e7",
+        "bytes": 80947
+      },
+      {
+        "file": "raw/mlb-2026.json",
+        "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "6666ea8c4715dc090a3aef3f78df1524cb151cb84ac02bf4f6e5b0cbcba43e13",
+        "bytes": 80986
+      },
+      {
+        "file": "raw/mlb-season-2026.json",
+        "url": "https://statsapi.mlb.com/api/v1/seasons/2026?sportId=1",
+        "publisher": "Major League Baseball StatsAPI",
+        "retrievedOn": "2026-10-07",
+        "sha256": "86b6a157a6ff38761eb2e4df0edb10ab9209689a430a92ec902c584a1eb2d510",
+        "bytes": 830
+      }
+    ],
+    "exclusions": [
+      {
+        "season": 2020,
+        "teamId": "108",
+        "team": "Angels",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "109",
+        "team": "D-backs",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "110",
+        "team": "Orioles",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "111",
+        "team": "Red Sox",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "112",
+        "team": "Cubs",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "113",
+        "team": "Reds",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "114",
+        "team": "Indians",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "115",
+        "team": "Rockies",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "116",
+        "team": "Tigers",
+        "games": 58,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "117",
+        "team": "Astros",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "118",
+        "team": "Royals",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "119",
+        "team": "Dodgers",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "120",
+        "team": "Nationals",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "121",
+        "team": "Mets",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "133",
+        "team": "Athletics",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "134",
+        "team": "Pirates",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "135",
+        "team": "Padres",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "136",
+        "team": "Mariners",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "137",
+        "team": "Giants",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "138",
+        "team": "Cardinals",
+        "games": 58,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "139",
+        "team": "Rays",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "140",
+        "team": "Rangers",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "141",
+        "team": "Blue Jays",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "142",
+        "team": "Twins",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "143",
+        "team": "Phillies",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "144",
+        "team": "Braves",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "145",
+        "team": "White Sox",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "146",
+        "team": "Marlins",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "147",
+        "team": "Yankees",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "158",
+        "team": "Brewers",
+        "games": 60,
+        "exclusionReason": "COVID-shortened season 2020 excluded by user selection"
+      }
+    ],
+    "non162TeamSeasons": [
+      {
+        "season": 2006,
+        "teamId": "137",
+        "team": "Giants",
+        "games": 161,
+        "wins": 76,
+        "losses": 85,
+        "ties": 0
+      },
+      {
+        "season": 2006,
+        "teamId": "138",
+        "team": "Cardinals",
+        "games": 161,
+        "wins": 83,
+        "losses": 78,
+        "ties": 0
+      },
+      {
+        "season": 2007,
+        "teamId": "115",
+        "team": "Rockies",
+        "games": 163,
+        "wins": 90,
+        "losses": 73,
+        "ties": 0
+      },
+      {
+        "season": 2007,
+        "teamId": "135",
+        "team": "Padres",
+        "games": 163,
+        "wins": 89,
+        "losses": 74,
+        "ties": 0
+      },
+      {
+        "season": 2008,
+        "teamId": "110",
+        "team": "Orioles",
+        "games": 161,
+        "wins": 68,
+        "losses": 93,
+        "ties": 0
+      },
+      {
+        "season": 2008,
+        "teamId": "112",
+        "team": "Cubs",
+        "games": 161,
+        "wins": 97,
+        "losses": 64,
+        "ties": 0
+      },
+      {
+        "season": 2008,
+        "teamId": "117",
+        "team": "Astros",
+        "games": 161,
+        "wins": 86,
+        "losses": 75,
+        "ties": 0
+      },
+      {
+        "season": 2008,
+        "teamId": "120",
+        "team": "Nationals",
+        "games": 161,
+        "wins": 59,
+        "losses": 102,
+        "ties": 0
+      },
+      {
+        "season": 2008,
+        "teamId": "133",
+        "team": "Athletics",
+        "games": 161,
+        "wins": 75,
+        "losses": 86,
+        "ties": 0
+      },
+      {
+        "season": 2008,
+        "teamId": "142",
+        "team": "Twins",
+        "games": 163,
+        "wins": 88,
+        "losses": 75,
+        "ties": 0
+      },
+      {
+        "season": 2008,
+        "teamId": "145",
+        "team": "White Sox",
+        "games": 163,
+        "wins": 89,
+        "losses": 74,
+        "ties": 0
+      },
+      {
+        "season": 2008,
+        "teamId": "146",
+        "team": "Marlins",
+        "games": 161,
+        "wins": 84,
+        "losses": 77,
+        "ties": 0
+      },
+      {
+        "season": 2009,
+        "teamId": "112",
+        "team": "Cubs",
+        "games": 161,
+        "wins": 83,
+        "losses": 78,
+        "ties": 0
+      },
+      {
+        "season": 2009,
+        "teamId": "116",
+        "team": "Tigers",
+        "games": 163,
+        "wins": 86,
+        "losses": 77,
+        "ties": 0
+      },
+      {
+        "season": 2009,
+        "teamId": "134",
+        "team": "Pirates",
+        "games": 161,
+        "wins": 62,
+        "losses": 99,
+        "ties": 0
+      },
+      {
+        "season": 2009,
+        "teamId": "142",
+        "team": "Twins",
+        "games": 163,
+        "wins": 87,
+        "losses": 76,
+        "ties": 0
+      },
+      {
+        "season": 2011,
+        "teamId": "119",
+        "team": "Dodgers",
+        "games": 161,
+        "wins": 82,
+        "losses": 79,
+        "ties": 0
+      },
+      {
+        "season": 2011,
+        "teamId": "120",
+        "team": "Nationals",
+        "games": 161,
+        "wins": 80,
+        "losses": 81,
+        "ties": 0
+      },
+      {
+        "season": 2013,
+        "teamId": "139",
+        "team": "Rays",
+        "games": 163,
+        "wins": 92,
+        "losses": 71,
+        "ties": 0
+      },
+      {
+        "season": 2013,
+        "teamId": "140",
+        "team": "Rangers",
+        "games": 163,
+        "wins": 91,
+        "losses": 72,
+        "ties": 0
+      },
+      {
+        "season": 2015,
+        "teamId": "114",
+        "team": "Indians",
+        "games": 161,
+        "wins": 81,
+        "losses": 80,
+        "ties": 0
+      },
+      {
+        "season": 2015,
+        "teamId": "116",
+        "team": "Tigers",
+        "games": 161,
+        "wins": 74,
+        "losses": 87,
+        "ties": 0
+      },
+      {
+        "season": 2016,
+        "teamId": "114",
+        "team": "Indians",
+        "games": 161,
+        "wins": 94,
+        "losses": 67,
+        "ties": 0
+      },
+      {
+        "season": 2016,
+        "teamId": "116",
+        "team": "Tigers",
+        "games": 161,
+        "wins": 86,
+        "losses": 75,
+        "ties": 0
+      },
+      {
+        "season": 2016,
+        "teamId": "144",
+        "team": "Braves",
+        "games": 161,
+        "wins": 68,
+        "losses": 93,
+        "ties": 0
+      },
+      {
+        "season": 2016,
+        "teamId": "146",
+        "team": "Marlins",
+        "games": 161,
+        "wins": 79,
+        "losses": 82,
+        "ties": 0
+      },
+      {
+        "season": 2018,
+        "teamId": "112",
+        "team": "Cubs",
+        "games": 163,
+        "wins": 95,
+        "losses": 68,
+        "ties": 0
+      },
+      {
+        "season": 2018,
+        "teamId": "115",
+        "team": "Rockies",
+        "games": 163,
+        "wins": 91,
+        "losses": 72,
+        "ties": 0
+      },
+      {
+        "season": 2018,
+        "teamId": "119",
+        "team": "Dodgers",
+        "games": 163,
+        "wins": 92,
+        "losses": 71,
+        "ties": 0
+      },
+      {
+        "season": 2018,
+        "teamId": "134",
+        "team": "Pirates",
+        "games": 161,
+        "wins": 82,
+        "losses": 79,
+        "ties": 0
+      },
+      {
+        "season": 2018,
+        "teamId": "146",
+        "team": "Marlins",
+        "games": 161,
+        "wins": 63,
+        "losses": 98,
+        "ties": 0
+      },
+      {
+        "season": 2018,
+        "teamId": "158",
+        "team": "Brewers",
+        "games": 163,
+        "wins": 96,
+        "losses": 67,
+        "ties": 0
+      },
+      {
+        "season": 2019,
+        "teamId": "116",
+        "team": "Tigers",
+        "games": 161,
+        "wins": 47,
+        "losses": 114,
+        "ties": 0
+      },
+      {
+        "season": 2019,
+        "teamId": "145",
+        "team": "White Sox",
+        "games": 161,
+        "wins": 72,
+        "losses": 89,
+        "ties": 0
+      },
+      {
+        "season": 2021,
+        "teamId": "115",
+        "team": "Rockies",
+        "games": 161,
+        "wins": 74,
+        "losses": 87,
+        "ties": 0
+      },
+      {
+        "season": 2021,
+        "teamId": "144",
+        "team": "Braves",
+        "games": 161,
+        "wins": 88,
+        "losses": 73,
+        "ties": 0
+      },
+      {
+        "season": 2024,
+        "teamId": "114",
+        "team": "Guardians",
+        "games": 161,
+        "wins": 92,
+        "losses": 69,
+        "ties": 0
+      },
+      {
+        "season": 2024,
+        "teamId": "117",
+        "team": "Astros",
+        "games": 161,
+        "wins": 88,
+        "losses": 73,
+        "ties": 0
+      },
+      {
+        "season": 2026,
+        "teamId": "110",
+        "team": "Orioles",
+        "games": 161,
+        "wins": 79,
+        "losses": 82,
+        "ties": 0
+      },
+      {
+        "season": 2026,
+        "teamId": "147",
+        "team": "Yankees",
+        "games": 161,
+        "wins": 93,
+        "losses": 68,
+        "ties": 0
+      }
+    ]
+  },
+  "nfl": {
+    "schemaVersion": 1,
+    "sport": "nfl",
+    "asOf": "2026-10-07",
+    "latestCompletedSeason": 2025,
+    "selectedSeasons": [
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "seasonCount": 20,
+    "allTeamSeasonCount": 672,
+    "includedTeamSeasonCount": 638,
+    "excludedTeamSeasonCount": 34,
+    "gamesDistribution": {
+      "16": 480,
+      "17": 158
+    },
+    "normalization": "wins / actual completed games; displayed on current 162-game MLB or 17-game NFL schedule",
+    "bySeason": [
+      {
+        "season": 2005,
+        "seasonEnd": 2005,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2005-09-08",
+        "lastCompletedGameDate": "2006-01-01",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2006,
+        "seasonEnd": 2006,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2006-09-07",
+        "lastCompletedGameDate": "2006-12-31",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2007,
+        "seasonEnd": 2007,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2007-09-06",
+        "lastCompletedGameDate": "2007-12-30",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2008,
+        "seasonEnd": 2008,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2008-09-04",
+        "lastCompletedGameDate": "2008-12-28",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2009,
+        "seasonEnd": 2009,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2009-09-10",
+        "lastCompletedGameDate": "2010-01-03",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2010,
+        "seasonEnd": 2010,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2010-09-09",
+        "lastCompletedGameDate": "2011-01-02",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2011,
+        "seasonEnd": 2011,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2011-09-08",
+        "lastCompletedGameDate": "2012-01-01",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2012,
+        "seasonEnd": 2012,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2012-09-05",
+        "lastCompletedGameDate": "2012-12-30",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2013,
+        "seasonEnd": 2013,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2013-09-05",
+        "lastCompletedGameDate": "2013-12-29",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2014,
+        "seasonEnd": 2014,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2014-09-04",
+        "lastCompletedGameDate": "2014-12-28",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2015,
+        "seasonEnd": 2015,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2015-09-10",
+        "lastCompletedGameDate": "2016-01-03",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2016,
+        "seasonEnd": 2016,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2016-09-08",
+        "lastCompletedGameDate": "2017-01-01",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2017,
+        "seasonEnd": 2017,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2017-09-07",
+        "lastCompletedGameDate": "2017-12-31",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2018,
+        "seasonEnd": 2018,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2018-09-06",
+        "lastCompletedGameDate": "2018-12-30",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2019,
+        "seasonEnd": 2019,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2019-09-05",
+        "lastCompletedGameDate": "2019-12-29",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2020,
+        "seasonEnd": 2020,
+        "included": false,
+        "teams": 32,
+        "includedTeams": 0,
+        "completedRegularGames": 256,
+        "expectedRegularGames": 256,
+        "firstCompletedGameDate": "2020-09-10",
+        "lastCompletedGameDate": "2021-01-03",
+        "teamGamesDistribution": {
+          "16": 32
+        },
+        "exclusionReason": "COVID-affected season"
+      },
+      {
+        "season": 2021,
+        "seasonEnd": 2021,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 272,
+        "expectedRegularGames": 272,
+        "firstCompletedGameDate": "2021-09-09",
+        "lastCompletedGameDate": "2022-01-09",
+        "teamGamesDistribution": {
+          "17": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2022,
+        "seasonEnd": 2022,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 30,
+        "completedRegularGames": 271,
+        "expectedRegularGames": 272,
+        "firstCompletedGameDate": "2022-09-08",
+        "lastCompletedGameDate": "2023-01-08",
+        "teamGamesDistribution": {
+          "16": 2,
+          "17": 30
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2023,
+        "seasonEnd": 2023,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 272,
+        "expectedRegularGames": 272,
+        "firstCompletedGameDate": "2023-09-07",
+        "lastCompletedGameDate": "2024-01-07",
+        "teamGamesDistribution": {
+          "17": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2024,
+        "seasonEnd": 2024,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 272,
+        "expectedRegularGames": 272,
+        "firstCompletedGameDate": "2024-09-05",
+        "lastCompletedGameDate": "2025-01-05",
+        "teamGamesDistribution": {
+          "17": 32
+        },
+        "exclusionReason": null
+      },
+      {
+        "season": 2025,
+        "seasonEnd": 2025,
+        "included": true,
+        "teams": 32,
+        "includedTeams": 32,
+        "completedRegularGames": 272,
+        "expectedRegularGames": 272,
+        "firstCompletedGameDate": "2025-09-04",
+        "lastCompletedGameDate": "2026-01-04",
+        "teamGamesDistribution": {
+          "17": 32
+        },
+        "exclusionReason": null
+      }
+    ],
+    "completionEvidence": {
+      "latestCompletedRegularSeason": 2025,
+      "lastCompletedGameDate": "2026-01-04",
+      "scoredRegularGames": 272,
+      "expectedRegularGames": 272,
+      "officialFinalWeekReport": "https://www.nfl.com/news/nfl-week-18-takeaways-what-we-learned-from-sunday-s-14-games",
+      "officialWeek18Results": "https://www.nfl.com/schedules/2025/by-week/week-18",
+      "asOf": "2026-10-07"
+    },
+    "sources": [
+      {
+        "sport": "nfl",
+        "schemaVersion": 1,
+        "sourceSnapshotRetrievedOn": "2026-10-05",
+        "verifiedOn": "2026-10-07",
+        "seasons": [
+          2005,
+          2025
+        ],
+        "publisher": "nflverse / Lee Sharpe; community-maintained game data",
+        "url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+        "repositoryPath": "nflverse/nfldata:data/games.csv",
+        "blobSha1": "b12039baced608536036a307343706293a2b7ecd",
+        "immutableBlobUrl": "https://api.github.com/repos/nflverse/nfldata/git/blobs/b12039baced608536036a307343706293a2b7ecd",
+        "sha256": "55fba77115761381052fd7aa0218294a31596c3e476744c24074ba52367ccf17",
+        "bytes": 2182715,
+        "blobVerification": "GitHub blob API bytes decoded from base64 match cached CSV exactly; normal TLS.",
+        "selection": "Completed scored REG games in NFL seasons 2005 through 2025. COVID season 2020 is excluded from rarity; 2021 retained. Incomplete BUF/CIN 2022 team records excluded. 2026 ongoing omitted.",
+        "neutralDefinition": "Source location Neutral, or source game_type SB. Designated home is retained.",
+        "documentation": {
+          "dictionaryUrl": "https://raw.githubusercontent.com/nflverse/nflreadr/main/data-raw/dictionary_schedules.csv",
+          "dictionarySha256": "f07a07a0b569b2526c2e3944d6da4f0d0b479cd1ead22fcff7a2fc164e0cf0f4",
+          "dictionaryBlobSha1": "42d1f5c4fe3485d3ee0910be1db51f168d3e179f",
+          "loaderUrl": "https://nflreadr.nflverse.com/reference/load_schedules.html",
+          "cancellationUrl": "https://www.nfl.com/news/week-17-buffalo-cincinnati-game-will-not-be-resumed-neutral-afc-championship-gam"
+        },
+        "completionEvidence": {
+          "latestCompletedRegularSeason": 2025,
+          "lastCompletedGameDate": "2026-01-04",
+          "scoredRegularGames": 272,
+          "expectedRegularGames": 272,
+          "officialFinalWeekReport": "https://www.nfl.com/news/nfl-week-18-takeaways-what-we-learned-from-sunday-s-14-games",
+          "officialWeek18Results": "https://www.nfl.com/schedules/2025/by-week/week-18",
+          "asOf": "2026-10-07"
+        }
+      }
+    ],
+    "exclusions": [
+      {
+        "season": 2020,
+        "teamId": "ARI",
+        "team": "ARI",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "ATL",
+        "team": "ATL",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "BAL",
+        "team": "BAL",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "BUF",
+        "team": "BUF",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "CAR",
+        "team": "CAR",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "CHI",
+        "team": "CHI",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "CIN",
+        "team": "CIN",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "CLE",
+        "team": "CLE",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "DAL",
+        "team": "DAL",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "DEN",
+        "team": "DEN",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "DET",
+        "team": "DET",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "GB",
+        "team": "GB",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "HOU",
+        "team": "HOU",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "IND",
+        "team": "IND",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "JAX",
+        "team": "JAX",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "KC",
+        "team": "KC",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "LA",
+        "team": "LA",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "LAC",
+        "team": "LAC",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "LV",
+        "team": "LV",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "MIA",
+        "team": "MIA",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "MIN",
+        "team": "MIN",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "NE",
+        "team": "NE",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "NO",
+        "team": "NO",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "NYG",
+        "team": "NYG",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "NYJ",
+        "team": "NYJ",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "PHI",
+        "team": "PHI",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "PIT",
+        "team": "PIT",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "SEA",
+        "team": "SEA",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "SF",
+        "team": "SF",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "TB",
+        "team": "TB",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "TEN",
+        "team": "TEN",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2020,
+        "teamId": "WAS",
+        "team": "WAS",
+        "games": 16,
+        "exclusionReason": "COVID-affected season 2020 excluded by user selection"
+      },
+      {
+        "season": 2022,
+        "teamId": "BUF",
+        "team": "BUF",
+        "games": 16,
+        "exclusionReason": "2022 Buffalo-Cincinnati canceled game: incomplete scheduled team season"
+      },
+      {
+        "season": 2022,
+        "teamId": "CIN",
+        "team": "CIN",
+        "games": 16,
+        "exclusionReason": "2022 Buffalo-Cincinnati canceled game: incomplete scheduled team season"
+      }
+    ],
+    "franchiseAliases": {
+      "STL": "LA",
+      "SD": "LAC",
+      "OAK": "LV"
+    },
+    "ongoing2026": {
+      "totalRegularGames": 272,
+      "completedAtSnapshot": 64,
+      "included": false
+    }
+  },
+  "soccer": {
+    "asOf": "2026-10-07",
+    "sport": "soccer",
+    "referenceSeasons": [
+      "2004-05",
+      "2005-06",
+      "2006-07",
+      "2007-08",
+      "2008-09",
+      "2009-10",
+      "2010-11",
+      "2011-12",
+      "2012-13",
+      "2013-14",
+      "2014-15",
+      "2015-16",
+      "2016-17",
+      "2017-18",
+      "2018-19",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26"
+    ],
+    "seasonCount": 20,
+    "teamSeasons": 400,
+    "policy": "Most recent 20 completed 38-match seasons, excluding 2019-20 and 2020-21 at user request. 2026-27 is in progress and excluded.",
+    "metric": "Earned points = 3*wins + draws, before disciplinary deductions.",
+    "excluded": [
+      {
+        "season": "2019-20",
+        "reason": "COVID exclusion requested by user"
+      },
+      {
+        "season": "2020-21",
+        "reason": "COVID exclusion requested by user"
+      },
+      {
+        "season": "2026-27",
+        "reason": "In progress as of 2026-10-07"
+      }
+    ],
+    "seasons": [
+      {
+        "season": "2004-05",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 95
+      },
+      {
+        "season": "2005-06",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 91
+      },
+      {
+        "season": "2006-07",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 89
+      },
+      {
+        "season": "2007-08",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 87
+      },
+      {
+        "season": "2008-09",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 90
+      },
+      {
+        "season": "2009-10",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 86
+      },
+      {
+        "season": "2010-11",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 80
+      },
+      {
+        "season": "2011-12",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 89
+      },
+      {
+        "season": "2012-13",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 89
+      },
+      {
+        "season": "2013-14",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 86
+      },
+      {
+        "season": "2014-15",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 87
+      },
+      {
+        "season": "2015-16",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 81
+      },
+      {
+        "season": "2016-17",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 93
+      },
+      {
+        "season": "2017-18",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 100
+      },
+      {
+        "season": "2018-19",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 98
+      },
+      {
+        "season": "2021-22",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 93
+      },
+      {
+        "season": "2022-23",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 89
+      },
+      {
+        "season": "2023-24",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 91
+      },
+      {
+        "season": "2024-25",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 84
+      },
+      {
+        "season": "2025-26",
+        "matches": 380,
+        "teams": 20,
+        "gamesPerTeam": 38,
+        "winsEqualLosses": true,
+        "drawsPaired": true,
+        "goalsForEqualAgainst": true,
+        "allOrderedPairsUnique": true,
+        "maxPoints": 85
+      }
+    ],
+    "overlapAudit": [
+      {
+        "season": "2015-16",
+        "teamRecordsMatched": 20,
+        "gameSource": "Existing canonical soccer-games.json"
+      },
+      {
+        "season": "2016-17",
+        "teamRecordsMatched": 20,
+        "gameSource": "Existing canonical soccer-games.json"
+      },
+      {
+        "season": "2017-18",
+        "teamRecordsMatched": 20,
+        "gameSource": "Existing canonical soccer-games.json"
+      },
+      {
+        "season": "2018-19",
+        "teamRecordsMatched": 20,
+        "gameSource": "Existing canonical soccer-games.json"
+      },
+      {
+        "season": "2021-22",
+        "teamRecordsMatched": 20,
+        "gameSource": "Existing canonical soccer-games.json"
+      },
+      {
+        "season": "2022-23",
+        "teamRecordsMatched": 20,
+        "gameSource": "Existing canonical soccer-games.json"
+      },
+      {
+        "season": "2023-24",
+        "teamRecordsMatched": 20,
+        "gameSource": "Existing canonical soccer-games.json"
+      },
+      {
+        "season": "2024-25",
+        "teamRecordsMatched": 20,
+        "gameSource": "Existing canonical soccer-games.json"
+      }
+    ],
+    "latestSeasonAll20OfficialTableMatched": true,
+    "latestSeasonOfficialTableUrl": "https://www.premierleague.com/en/tables/premier-league/2025-26",
+    "latestSeasonOfficialCrossCheck": {
+      "team": "Arsenal",
+      "games": 38,
+      "wins": 26,
+      "draws": 7,
+      "losses": 5,
+      "points": 85,
+      "goalsFor": 71,
+      "goalsAgainst": 27,
+      "url": "https://www.arsenal.com/news/how-the-class-of-2026-compares-to-our-title-winners-aLJ4o6u833EP"
+    },
+    "completionEvidence": {
+      "season": "2025-26",
+      "lastDay": "2026-05-24",
+      "url": "https://www.premierleague.com/en/news/4668605",
+      "claim": "Official league recap confirms season ended and Arsenal finished on 85 points."
+    },
+    "sources": [
+      {
+        "url": "https://api.github.com/repos/openfootball/england/commits/master",
+        "file": "raw/upstream-commit.json",
+        "sha256": "25a0b6fd95dc27b565feb955d5e0849376dada3bcb6d26bb9bdd0850d7af5d38",
+        "retrieved": "2026-10-07"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2004-05/1-premierleague.txt",
+        "file": "raw/2004-05.txt",
+        "sha256": "5724e7a31ba269c36f45f0c67f530c01141bac4ee43f5789db75ef52f343a15d",
+        "retrieved": "2026-10-07",
+        "season": "2004-05",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2005-06/1-premierleague.txt",
+        "file": "raw/2005-06.txt",
+        "sha256": "683bbd0f431ad91486de7dd3992d0ca4d0de7fd9a8d4517ede86e817eefd5529",
+        "retrieved": "2026-10-07",
+        "season": "2005-06",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2006-07/1-premierleague.txt",
+        "file": "raw/2006-07.txt",
+        "sha256": "db307a3f9b85d3f8c99c7e9a5b8d9ecb255669384b6a23580336b5e8d7e58ea5",
+        "retrieved": "2026-10-07",
+        "season": "2006-07",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2007-08/1-premierleague.txt",
+        "file": "raw/2007-08.txt",
+        "sha256": "0f29f3e359d0e7516a40f37511e245e4839a5a6698900cf0d7ad663d26dd4096",
+        "retrieved": "2026-10-07",
+        "season": "2007-08",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2008-09/1-premierleague.txt",
+        "file": "raw/2008-09.txt",
+        "sha256": "08577f5944dffe384f7b0b53e70bf145fbffa9889ffee31f75995a24f849637b",
+        "retrieved": "2026-10-07",
+        "season": "2008-09",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2009-10/1-premierleague.txt",
+        "file": "raw/2009-10.txt",
+        "sha256": "266457c9d957da4ceccd79c406e20018b99b1d1e702c14c5a20b92cfb8ba29ae",
+        "retrieved": "2026-10-07",
+        "season": "2009-10",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2010-11/1-premierleague.txt",
+        "file": "raw/2010-11.txt",
+        "sha256": "676573313526484ccfa63da2c618a3c1c4e87f4f1870f66294c06845d4192f3b",
+        "retrieved": "2026-10-07",
+        "season": "2010-11",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2011-12/1-premierleague.txt",
+        "file": "raw/2011-12.txt",
+        "sha256": "fcd336da7961ac675639b35df9354351e591747ee16f375fe2008b2423bc0bb5",
+        "retrieved": "2026-10-07",
+        "season": "2011-12",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2012-13/1-premierleague.txt",
+        "file": "raw/2012-13.txt",
+        "sha256": "6751b13d79d21f887a60b1d3ffee765c40382c4366a39229cecc4f05ce351198",
+        "retrieved": "2026-10-07",
+        "season": "2012-13",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2013-14/1-premierleague.txt",
+        "file": "raw/2013-14.txt",
+        "sha256": "331824e65125a38d9f7818308fdef6e665329ff3cff692b6290b0087c1a6d0de",
+        "retrieved": "2026-10-07",
+        "season": "2013-14",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2014-15/1-premierleague.txt",
+        "file": "raw/2014-15.txt",
+        "sha256": "94114132eb20e9affe1645906e19dc6ddb58681945abc0f80fe3e8aa32ba5824",
+        "retrieved": "2026-10-07",
+        "season": "2014-15",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2015-16/1-premierleague.txt",
+        "file": "raw/2015-16.txt",
+        "sha256": "5f150bc89de4bf39527716999396994d02f0ac1d8fa8978b3d513e7e3262a27a",
+        "retrieved": "2026-10-07",
+        "season": "2015-16",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2016-17/1-premierleague.txt",
+        "file": "raw/2016-17.txt",
+        "sha256": "6d66020cb09c03c15abdc005e8832c83ca89697ae0dfa3b44859369fdf2883af",
+        "retrieved": "2026-10-07",
+        "season": "2016-17",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2017-18/1-premierleague.txt",
+        "file": "raw/2017-18.txt",
+        "sha256": "c20171e80a6dd35d1177c11166a7be402daa58bfa3fd5689f76e2705ecfb74b7",
+        "retrieved": "2026-10-07",
+        "season": "2017-18",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2018-19/1-premierleague.txt",
+        "file": "raw/2018-19.txt",
+        "sha256": "58db3b0250ae01086f0f1df7a38e1315fc933423da53de94fdd36c7b977ca877",
+        "retrieved": "2026-10-07",
+        "season": "2018-19",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2021-22/1-premierleague.txt",
+        "file": "raw/2021-22.txt",
+        "sha256": "592df232fbc7c2f36ec3e643eef608f77fcbf7d8da0706c94c99248d60b932b3",
+        "retrieved": "2026-10-07",
+        "season": "2021-22",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2022-23/1-premierleague.txt",
+        "file": "raw/2022-23.txt",
+        "sha256": "c85a2f8ac64975435b8359eb923eaa09e48f33d47672c8b32d2c6e99a8cec5f0",
+        "retrieved": "2026-10-07",
+        "season": "2022-23",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2023-24/1-premierleague.txt",
+        "file": "raw/2023-24.txt",
+        "sha256": "0bfb4a7fffe0b1bf7318955686eafeb28fc9676346ae433259e7409d69551450",
+        "retrieved": "2026-10-07",
+        "season": "2023-24",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2024-25/1-premierleague.txt",
+        "file": "raw/2024-25.txt",
+        "sha256": "e39716b01af0c8654a9fae7b5555e6b02f506ea05239e0d0eef41936ba80e1e3",
+        "retrieved": "2026-10-07",
+        "season": "2024-25",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/2025-26/1-premierleague.txt",
+        "file": "raw/2025-26.txt",
+        "sha256": "38c1de56c9e9b6662c7efc1420b7e1fe00dddbb502fe72d8f759e773ba3c093b",
+        "retrieved": "2026-10-07",
+        "season": "2025-26",
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/LICENSE.md",
+        "file": "raw/openfootball-LICENSE.md",
+        "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+        "retrieved": "2026-10-07",
+        "season": null,
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/b17e8f01707d83d2ce1790c14d4a5eeb35987825/README.md",
+        "file": "raw/openfootball-README.md",
+        "sha256": "0c96048220f1b1c57031d1d0a7f2fbdd970a85410f93c6bc214f84a1d7836c40",
+        "retrieved": "2026-10-07",
+        "season": null,
+        "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825"
+      },
+      {
+        "url": "https://www.premierleague.com/en/news/4668605",
+        "file": "raw/premierleague-2025-26-completed.html",
+        "sha256": "fed890b0da290a63fe5b0847158e7734a5ba4201419feab2acb4cd2c6f7a01a4",
+        "retrieved": "2026-10-07",
+        "season": null,
+        "commit": null
+      },
+      {
+        "url": "https://www.arsenal.com/news/how-the-class-of-2026-compares-to-our-title-winners-aLJ4o6u833EP",
+        "file": "raw/arsenal-2025-26-final-record.html",
+        "sha256": "70b42906ca380b511bc210da2c88a9789ad04f1eacf268d599adad8bbe692da7",
+        "retrieved": "2026-10-07",
+        "season": null,
+        "commit": null
+      },
+      {
+        "url": "https://www.premierleague.com/en/tables/premier-league/2025-26",
+        "file": "raw/premierleague-2025-26-official-table-extract.json",
+        "sha256": "04d42bfdfa7f8c0b1e562bafb413837ce4064d8d21a8140b265b8035944032c1",
+        "retrieved": "2026-10-07",
+        "purpose": "Independent all20-club latest-season record reconciliation",
+        "retrievalMethod": "Official table content returned by web search; numeric table transcribed for reconciliation. Direct page renders a client shell."
+      }
+    ],
+    "commit": "b17e8f01707d83d2ce1790c14d4a5eeb35987825",
+    "dataLicense": "OpenFootball CC0-1.0. Official club/league snapshots are corroborating evidence, not the redistributed match dataset.",
+    "outputSha256": "f3119a06d2d7d7d6778b24446ac0feb0c6fe01254638677d960f567059607f97"
+  }
+}

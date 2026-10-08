@@ -1,0 +1,9002 @@
+[
+  {
+    "season": 2016,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8433.0,
+      "actual": 8433,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8137.0,
+      "actual": 8137,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8737.0,
+      "actual": 8737,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8721.0,
+      "actual": 8721,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "losses": {
+      "expected": 37,
+      "actual": 37,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8377.0,
+      "actual": 8377,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8237.0,
+      "actual": 8237,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "losses": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8569.0,
+      "actual": 8569,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8218.0,
+      "actual": 8218,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 17,
+      "actual": 17,
+      "matches": true
+    },
+    "losses": {
+      "expected": 65,
+      "actual": 65,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7982.0,
+      "actual": 7982,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8766.0,
+      "actual": 8766,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8204.0,
+      "actual": 8204,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8069.0,
+      "actual": 8069,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8122.0,
+      "actual": 8122,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8465.0,
+      "actual": 8465,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "losses": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8398.0,
+      "actual": 8398,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8688.0,
+      "actual": 8688,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "losses": {
+      "expected": 61,
+      "actual": 61,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8089.0,
+      "actual": 8089,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8692.0,
+      "actual": 8692,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "losses": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8065.0,
+      "actual": 8065,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8289.0,
+      "actual": 8289,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "losses": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8369.0,
+      "actual": 8369,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8502.0,
+      "actual": 8502,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8669.0,
+      "actual": 8669,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8406.0,
+      "actual": 8406,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 10,
+      "actual": 10,
+      "matches": true
+    },
+    "losses": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7988.0,
+      "actual": 7988,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8827.0,
+      "actual": 8827,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 23,
+      "actual": 23,
+      "matches": true
+    },
+    "losses": {
+      "expected": 59,
+      "actual": 59,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8271.0,
+      "actual": 8271,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8817.0,
+      "actual": 8817,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8622.0,
+      "actual": 8622,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8554.0,
+      "actual": 8554,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8740.0,
+      "actual": 8740,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8943.0,
+      "actual": 8943,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 67,
+      "actual": 67,
+      "matches": true
+    },
+    "losses": {
+      "expected": 15,
+      "actual": 15,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8490.0,
+      "actual": 8490,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7618.0,
+      "actual": 7618,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 55,
+      "actual": 55,
+      "matches": true
+    },
+    "losses": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9038.0,
+      "actual": 9038,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8441.0,
+      "actual": 8441,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "losses": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8010.0,
+      "actual": 8010,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7863.0,
+      "actual": 7863,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8534.0,
+      "actual": 8534,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8575.0,
+      "actual": 8575,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 56,
+      "actual": 56,
+      "matches": true
+    },
+    "losses": {
+      "expected": 26,
+      "actual": 26,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8422.0,
+      "actual": 8422,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8053.0,
+      "actual": 8053,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8126.0,
+      "actual": 8126,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8310.0,
+      "actual": 8310,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "losses": {
+      "expected": 52,
+      "actual": 52,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8423.0,
+      "actual": 8423,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8734.0,
+      "actual": 8734,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8479.0,
+      "actual": 8479,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8256.0,
+      "actual": 8256,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8335.0,
+      "actual": 8335,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8456.0,
+      "actual": 8456,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 57,
+      "actual": 57,
+      "matches": true
+    },
+    "losses": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8555.0,
+      "actual": 8555,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8063.0,
+      "actual": 8063,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8388.0,
+      "actual": 8388,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8413.0,
+      "actual": 8413,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8355.0,
+      "actual": 8355,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8609.0,
+      "actual": 8609,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8361.0,
+      "actual": 8361,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8311.0,
+      "actual": 8311,
+      "matches": true
+    }
+  },
+  {
+    "season": 2016,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 73,
+      "actual": 73,
+      "matches": true
+    },
+    "losses": {
+      "expected": 9,
+      "actual": 9,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9421.0,
+      "actual": 9421,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8539.0,
+      "actual": 8539,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8459.0,
+      "actual": 8459,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8529.0,
+      "actual": 8529,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 55,
+      "actual": 55,
+      "matches": true
+    },
+    "losses": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9458.0,
+      "actual": 9458,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8985.0,
+      "actual": 8985,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8618.0,
+      "actual": 8618,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8636.0,
+      "actual": 8636,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8911.0,
+      "actual": 8911,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8559.0,
+      "actual": 8559,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 26,
+      "actual": 26,
+      "matches": true
+    },
+    "losses": {
+      "expected": 56,
+      "actual": 56,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8575.0,
+      "actual": 8575,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9139.0,
+      "actual": 9139,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8460.0,
+      "actual": 8460,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8373.0,
+      "actual": 8373,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8497.0,
+      "actual": 8497,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8512.0,
+      "actual": 8512,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "losses": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8657.0,
+      "actual": 8657,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8748.0,
+      "actual": 8748,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 20,
+      "actual": 20,
+      "matches": true
+    },
+    "losses": {
+      "expected": 62,
+      "actual": 62,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8673.0,
+      "actual": 8673,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9225.0,
+      "actual": 9225,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "losses": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8556.0,
+      "actual": 8556,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8857.0,
+      "actual": 8857,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "losses": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8288.0,
+      "actual": 8288,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8827.0,
+      "actual": 8827,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "losses": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8859.0,
+      "actual": 8857,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 8641.0,
+      "actual": 8641,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 28,
+      "actual": 28,
+      "matches": true
+    },
+    "losses": {
+      "expected": 54,
+      "actual": 54,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8400.0,
+      "actual": 8400,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8867.0,
+      "actual": 8867,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "losses": {
+      "expected": 58,
+      "actual": 58,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8831.0,
+      "actual": 8831,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9293.0,
+      "actual": 9293,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8851.0,
+      "actual": 8851,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8894.0,
+      "actual": 8894,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "losses": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8430.0,
+      "actual": 8430,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8748.0,
+      "actual": 8748,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 61,
+      "actual": 61,
+      "matches": true
+    },
+    "losses": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8637.0,
+      "actual": 8637,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8047.0,
+      "actual": 8047,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8741.0,
+      "actual": 8741,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8679.0,
+      "actual": 8679,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8258.0,
+      "actual": 8258,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7935.0,
+      "actual": 7935,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8953.0,
+      "actual": 8953,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8805.0,
+      "actual": 8805,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8762.0,
+      "actual": 8762,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8417.0,
+      "actual": 8417,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8239.0,
+      "actual": 8239,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8199.0,
+      "actual": 8199,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "losses": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8556.0,
+      "actual": 8556,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8728.0,
+      "actual": 8728,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "losses": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8601.0,
+      "actual": 8601,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8587.0,
+      "actual": 8585,
+      "matches": false
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8435.0,
+      "actual": 8435,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8400.0,
+      "actual": 8400,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9048.0,
+      "actual": 9048,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8787.0,
+      "actual": 8787,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8029.0,
+      "actual": 8029,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8269.0,
+      "actual": 8269,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "losses": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9161.0,
+      "actual": 9161,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9119.0,
+      "actual": 9119,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 37,
+      "actual": 37,
+      "matches": true
+    },
+    "losses": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8309.0,
+      "actual": 8309,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8401.0,
+      "actual": 8401,
+      "matches": true
+    }
+  },
+  {
+    "season": 2017,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 67,
+      "actual": 67,
+      "matches": true
+    },
+    "losses": {
+      "expected": 15,
+      "actual": 15,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9503.0,
+      "actual": 9503,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8549.0,
+      "actual": 8549,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "losses": {
+      "expected": 58,
+      "actual": 58,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8475.0,
+      "actual": 8475,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8922.0,
+      "actual": 8922,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 65,
+      "actual": 65,
+      "matches": true
+    },
+    "losses": {
+      "expected": 17,
+      "actual": 17,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9213.0,
+      "actual": 9213,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8518.0,
+      "actual": 8518,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8656.0,
+      "actual": 8656,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8543.0,
+      "actual": 8543,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8937.0,
+      "actual": 8937,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8934.0,
+      "actual": 8934,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "losses": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8862.0,
+      "actual": 8862,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8989.0,
+      "actual": 8989,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8480.0,
+      "actual": 8480,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8441.0,
+      "actual": 8441,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8731.0,
+      "actual": 8731,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8756.0,
+      "actual": 8756,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8980.0,
+      "actual": 8980,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8797.0,
+      "actual": 8797,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 28,
+      "actual": 28,
+      "matches": true
+    },
+    "losses": {
+      "expected": 54,
+      "actual": 54,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8741.0,
+      "actual": 8741,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9048.0,
+      "actual": 9048,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "losses": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8566.0,
+      "actual": 8566,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8858.0,
+      "actual": 8858,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "losses": {
+      "expected": 57,
+      "actual": 57,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8479.0,
+      "actual": 8479,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8874.0,
+      "actual": 8874,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 55,
+      "actual": 55,
+      "matches": true
+    },
+    "losses": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8529.0,
+      "actual": 8529,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8235.0,
+      "actual": 8235,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 52,
+      "actual": 52,
+      "matches": true
+    },
+    "losses": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9004.0,
+      "actual": 9004,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8635.0,
+      "actual": 8635,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "losses": {
+      "expected": 61,
+      "actual": 61,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8522.0,
+      "actual": 8522,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9290.0,
+      "actual": 9290,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8661.0,
+      "actual": 8661,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8448.0,
+      "actual": 8448,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "losses": {
+      "expected": 55,
+      "actual": 55,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8104.0,
+      "actual": 8104,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8677.0,
+      "actual": 8677,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8424.0,
+      "actual": 8424,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8187.0,
+      "actual": 8187,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8844.0,
+      "actual": 8844,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8564.0,
+      "actual": 8564,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8540.0,
+      "actual": 8540,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8187.0,
+      "actual": 8187,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8742.0,
+      "actual": 8742,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8694.0,
+      "actual": 8694,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 59,
+      "actual": 59,
+      "matches": true
+    },
+    "losses": {
+      "expected": 23,
+      "actual": 23,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9156.0,
+      "actual": 9156,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8518.0,
+      "actual": 8518,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "losses": {
+      "expected": 60,
+      "actual": 60,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8145.0,
+      "actual": 8145,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8654.0,
+      "actual": 8654,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9161.0,
+      "actual": 9161,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9054.0,
+      "actual": 9054,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "losses": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8874.0,
+      "actual": 8874,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8853.0,
+      "actual": 8853,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "losses": {
+      "expected": 55,
+      "actual": 55,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8440.0,
+      "actual": 8440,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9017.0,
+      "actual": 9017,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9091.0,
+      "actual": 9091,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9014.0,
+      "actual": 9014,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "losses": {
+      "expected": 58,
+      "actual": 58,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8390.0,
+      "actual": 8390,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8639.0,
+      "actual": 8639,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "losses": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9020.0,
+      "actual": 9020,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8899.0,
+      "actual": 8899,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "losses": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8509.0,
+      "actual": 8509,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8521.0,
+      "actual": 8521,
+      "matches": true
+    }
+  },
+  {
+    "season": 2018,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 58,
+      "actual": 58,
+      "matches": true
+    },
+    "losses": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9304.0,
+      "actual": 9304,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8814.0,
+      "actual": 8814,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "losses": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9294.0,
+      "actual": 9294,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9788.0,
+      "actual": 9788,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "losses": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9342.0,
+      "actual": 9341,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 8950.0,
+      "actual": 8950,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8857.0,
+      "actual": 8857,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8584.0,
+      "actual": 8584,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9442.0,
+      "actual": 9442,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9372.0,
+      "actual": 9372,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 37,
+      "actual": 37,
+      "matches": true
+    },
+    "losses": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9165.0,
+      "actual": 9165,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9307.0,
+      "actual": 9306,
+      "matches": false
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "losses": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8668.0,
+      "actual": 8668,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8687.0,
+      "actual": 8687,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 60,
+      "actual": 60,
+      "matches": true
+    },
+    "losses": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9686.0,
+      "actual": 9686,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8959.0,
+      "actual": 8959,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "losses": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9223.0,
+      "actual": 9223,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9346.0,
+      "actual": 9346,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9204.0,
+      "actual": 9204,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9210.0,
+      "actual": 9210,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 17,
+      "actual": 17,
+      "matches": true
+    },
+    "losses": {
+      "expected": 65,
+      "actual": 65,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8575.0,
+      "actual": 8575,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9330.0,
+      "actual": 9330,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8800.0,
+      "actual": 8800,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8742.0,
+      "actual": 8742,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9218.0,
+      "actual": 9216,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 8852.0,
+      "actual": 8852,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9445.0,
+      "actual": 9445,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9224.0,
+      "actual": 9224,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 19,
+      "actual": 19,
+      "matches": true
+    },
+    "losses": {
+      "expected": 63,
+      "actual": 63,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8815.0,
+      "actual": 8815,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9581.0,
+      "actual": 9581,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "losses": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9402.0,
+      "actual": 9402,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9058.0,
+      "actual": 9058,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "losses": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9363.0,
+      "actual": 9363,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9455.0,
+      "actual": 9455,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9156.0,
+      "actual": 9156,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9018.0,
+      "actual": 9018,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9387.0,
+      "actual": 9387,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9108.0,
+      "actual": 9108,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9161.0,
+      "actual": 9161,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8730.0,
+      "actual": 8730,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "losses": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9350.0,
+      "actual": 9350,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9588.0,
+      "actual": 9588,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 58,
+      "actual": 58,
+      "matches": true
+    },
+    "losses": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9384.0,
+      "actual": 9384,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8885.0,
+      "actual": 8885,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8490.0,
+      "actual": 8490,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8703.0,
+      "actual": 8703,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9466.0,
+      "actual": 9466,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9575.0,
+      "actual": 9575,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "losses": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9081.0,
+      "actual": 9081,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9171.0,
+      "actual": 9171,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "losses": {
+      "expected": 60,
+      "actual": 60,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8605.0,
+      "actual": 8605,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9295.0,
+      "actual": 9295,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 19,
+      "actual": 19,
+      "matches": true
+    },
+    "losses": {
+      "expected": 63,
+      "actual": 63,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8567.0,
+      "actual": 8567,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9357.0,
+      "actual": 9355,
+      "matches": false
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8927.0,
+      "actual": 8927,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9032.0,
+      "actual": 9032,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 54,
+      "actual": 54,
+      "matches": true
+    },
+    "losses": {
+      "expected": 28,
+      "actual": 28,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9075.0,
+      "actual": 9075,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8751.0,
+      "actual": 8751,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8778.0,
+      "actual": 8778,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8798.0,
+      "actual": 8798,
+      "matches": true
+    }
+  },
+  {
+    "season": 2019,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 57,
+      "actual": 57,
+      "matches": true
+    },
+    "losses": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9650.0,
+      "actual": 9650,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9120.0,
+      "actual": 9120,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 67,
+      "actual": 67,
+      "matches": true
+    },
+    "wins": {
+      "expected": 20,
+      "actual": 20,
+      "matches": true
+    },
+    "losses": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7488.0,
+      "actual": 7488,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8022.0,
+      "actual": 8022,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 28,
+      "actual": 28,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8482.0,
+      "actual": 8482,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8269.0,
+      "actual": 8269,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 73,
+      "actual": 73,
+      "matches": true
+    },
+    "wins": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "losses": {
+      "expected": 28,
+      "actual": 28,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7989.0,
+      "actual": 7989,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7846.0,
+      "actual": 7846,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 23,
+      "actual": 23,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8377.0,
+      "actual": 8377,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7913.0,
+      "actual": 7913,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 71,
+      "actual": 71,
+      "matches": true
+    },
+    "wins": {
+      "expected": 52,
+      "actual": 52,
+      "matches": true
+    },
+    "losses": {
+      "expected": 19,
+      "actual": 19,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8054.0,
+      "actual": 8054,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7643.0,
+      "actual": 7643,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 73,
+      "actual": 73,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8179.0,
+      "actual": 8179,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7964.0,
+      "actual": 7964,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 73,
+      "actual": 73,
+      "matches": true
+    },
+    "wins": {
+      "expected": 56,
+      "actual": 56,
+      "matches": true
+    },
+    "losses": {
+      "expected": 17,
+      "actual": 17,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8663.0,
+      "actual": 8663,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7927.0,
+      "actual": 7927,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 64,
+      "actual": 64,
+      "matches": true
+    },
+    "wins": {
+      "expected": 19,
+      "actual": 19,
+      "matches": true
+    },
+    "losses": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7248.0,
+      "actual": 7248,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7523.0,
+      "actual": 7523,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "losses": {
+      "expected": 37,
+      "actual": 37,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8048.0,
+      "actual": 8048,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8090.0,
+      "actual": 8089,
+      "matches": false
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 66,
+      "actual": 66,
+      "matches": true
+    },
+    "wins": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "losses": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 6983.0,
+      "actual": 6983,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7409.0,
+      "actual": 7409,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 73,
+      "actual": 73,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7831.0,
+      "actual": 7831,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7905.0,
+      "actual": 7905,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8183.0,
+      "actual": 8183,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7729.0,
+      "actual": 7729,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 73,
+      "actual": 73,
+      "matches": true
+    },
+    "wins": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "losses": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8084.0,
+      "actual": 8084,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7910.0,
+      "actual": 7910,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 73,
+      "actual": 73,
+      "matches": true
+    },
+    "wins": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8294.0,
+      "actual": 8294,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8278.0,
+      "actual": 8278,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 74,
+      "actual": 74,
+      "matches": true
+    },
+    "wins": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8508.0,
+      "actual": 8508,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8594.0,
+      "actual": 8593,
+      "matches": false
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7927.0,
+      "actual": 7927,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8074.0,
+      "actual": 8074,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 71,
+      "actual": 71,
+      "matches": true
+    },
+    "wins": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8099.0,
+      "actual": 8098,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 8177.0,
+      "actual": 8177,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 28,
+      "actual": 28,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7950.0,
+      "actual": 7950,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7807.0,
+      "actual": 7807,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 28,
+      "actual": 28,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8013.0,
+      "actual": 8013,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7835.0,
+      "actual": 7835,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "losses": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8239.0,
+      "actual": 8238,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 8573.0,
+      "actual": 8574,
+      "matches": false
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "losses": {
+      "expected": 19,
+      "actual": 19,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8118.0,
+      "actual": 8118,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7669.0,
+      "actual": 7669,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 73,
+      "actual": 73,
+      "matches": true
+    },
+    "wins": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8222.0,
+      "actual": 8222,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8300.0,
+      "actual": 8300,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "losses": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8341.0,
+      "actual": 8341,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8434.0,
+      "actual": 8434,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 65,
+      "actual": 65,
+      "matches": true
+    },
+    "wins": {
+      "expected": 23,
+      "actual": 23,
+      "matches": true
+    },
+    "losses": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 6687.0,
+      "actual": 6687,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7126.0,
+      "actual": 7126,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 65,
+      "actual": 65,
+      "matches": true
+    },
+    "wins": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "losses": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 6945.0,
+      "actual": 6945,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7145.0,
+      "actual": 7145,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 65,
+      "actual": 65,
+      "matches": true
+    },
+    "wins": {
+      "expected": 19,
+      "actual": 19,
+      "matches": true
+    },
+    "losses": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 6947.0,
+      "actual": 6948,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 7461.0,
+      "actual": 7461,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 75,
+      "actual": 75,
+      "matches": true
+    },
+    "wins": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8776.0,
+      "actual": 8776,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8405.0,
+      "actual": 8405,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 73,
+      "actual": 73,
+      "matches": true
+    },
+    "wins": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "losses": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8124.0,
+      "actual": 8124,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7970.0,
+      "actual": 7970,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 66,
+      "actual": 66,
+      "matches": true
+    },
+    "wins": {
+      "expected": 20,
+      "actual": 20,
+      "matches": true
+    },
+    "losses": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7078.0,
+      "actual": 7078,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7313.0,
+      "actual": 7313,
+      "matches": true
+    }
+  },
+  {
+    "season": 2020,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 65,
+      "actual": 65,
+      "matches": true
+    },
+    "wins": {
+      "expected": 15,
+      "actual": 15,
+      "matches": true
+    },
+    "losses": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 6912.0,
+      "actual": 6912,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7478.0,
+      "actual": 7478,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8186.0,
+      "actual": 8186,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8019.0,
+      "actual": 8019,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 17,
+      "actual": 17,
+      "matches": true
+    },
+    "losses": {
+      "expected": 55,
+      "actual": 55,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7833.0,
+      "actual": 7833,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8402.0,
+      "actual": 8402,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8302.0,
+      "actual": 8302,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8303.0,
+      "actual": 8305,
+      "matches": false
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8209.0,
+      "actual": 8209,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7764.0,
+      "actual": 7764,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7887.0,
+      "actual": 7887,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7686.0,
+      "actual": 7686,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7781.0,
+      "actual": 7781,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7779.0,
+      "actual": 7779,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "losses": {
+      "expected": 26,
+      "actual": 26,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8649.0,
+      "actual": 8649,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8225.0,
+      "actual": 8225,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 23,
+      "actual": 23,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8073.0,
+      "actual": 8073,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8473.0,
+      "actual": 8473,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8537.0,
+      "actual": 8537,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8213.0,
+      "actual": 8213,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7706.0,
+      "actual": 7706,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7540.0,
+      "actual": 7540,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "losses": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7488.0,
+      "actual": 7488,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8158.0,
+      "actual": 8158,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "losses": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8109.0,
+      "actual": 8109,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8004.0,
+      "actual": 8004,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 23,
+      "actual": 23,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8182.0,
+      "actual": 8182,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7780.0,
+      "actual": 7780,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8300.0,
+      "actual": 8300,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7881.0,
+      "actual": 7881,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8360.0,
+      "actual": 8360,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8231.0,
+      "actual": 8231,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8189.0,
+      "actual": 8189,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8454.0,
+      "actual": 8454,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7998.0,
+      "actual": 7998,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8123.0,
+      "actual": 8123,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "losses": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7560.0,
+      "actual": 7560,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8326.0,
+      "actual": 8326,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 52,
+      "actual": 52,
+      "matches": true
+    },
+    "losses": {
+      "expected": 20,
+      "actual": 20,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8382.0,
+      "actual": 8382,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7716.0,
+      "actual": 7716,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8398.0,
+      "actual": 8398,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8530.0,
+      "actual": 8530,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "losses": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8011.0,
+      "actual": 8011,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8045.0,
+      "actual": 8045,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8157.0,
+      "actual": 8157,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8083.0,
+      "actual": 8083,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8251.0,
+      "actual": 8251,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8272.0,
+      "actual": 8272,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7881.0,
+      "actual": 7881,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8020.0,
+      "actual": 8020,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7969.0,
+      "actual": 7969,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8033.0,
+      "actual": 8033,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "losses": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7476.0,
+      "actual": 7476,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8084.0,
+      "actual": 8084,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8094.0,
+      "actual": 8096,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 7933.0,
+      "actual": 7933,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8284.0,
+      "actual": 8284,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7929.0,
+      "actual": 7929,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 20,
+      "actual": 20,
+      "matches": true
+    },
+    "losses": {
+      "expected": 52,
+      "actual": 52,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 7676.0,
+      "actual": 7676,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 7998.0,
+      "actual": 7998,
+      "matches": true
+    }
+  },
+  {
+    "season": 2021,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 72,
+      "actual": 72,
+      "matches": true
+    },
+    "wins": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8187.0,
+      "actual": 8187,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8111.0,
+      "actual": 8111,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9343.0,
+      "actual": 9343,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9215.0,
+      "actual": 9215,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 20,
+      "actual": 20,
+      "matches": true
+    },
+    "losses": {
+      "expected": 62,
+      "actual": 62,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8997.0,
+      "actual": 8997,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9692.0,
+      "actual": 9692,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "losses": {
+      "expected": 57,
+      "actual": 57,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9140.0,
+      "actual": 9140,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9425.0,
+      "actual": 9425,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8890.0,
+      "actual": 8890,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8888.0,
+      "actual": 8888,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9192.0,
+      "actual": 9192,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9442.0,
+      "actual": 9442,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "losses": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9019.0,
+      "actual": 9022,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 8657.0,
+      "actual": 8657,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9470.0,
+      "actual": 9470,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9195.0,
+      "actual": 9195,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "losses": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9509.0,
+      "actual": 9507,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 9291.0,
+      "actual": 9291,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9258.0,
+      "actual": 9258,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9191.0,
+      "actual": 9194,
+      "matches": false
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 37,
+      "actual": 37,
+      "matches": true
+    },
+    "losses": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8731.0,
+      "actual": 8731,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8741.0,
+      "actual": 8741,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "losses": {
+      "expected": 60,
+      "actual": 60,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8547.0,
+      "actual": 8547,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9203.0,
+      "actual": 9203,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9164.0,
+      "actual": 9164,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8567.0,
+      "actual": 8567,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9015.0,
+      "actual": 9015,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8801.0,
+      "actual": 8801,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 64,
+      "actual": 64,
+      "matches": true
+    },
+    "losses": {
+      "expected": 18,
+      "actual": 18,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9416.0,
+      "actual": 9416,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8803.0,
+      "actual": 8801,
+      "matches": false
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "losses": {
+      "expected": 55,
+      "actual": 55,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8711.0,
+      "actual": 8711,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9439.0,
+      "actual": 9439,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "losses": {
+      "expected": 52,
+      "actual": 52,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9045.0,
+      "actual": 9045,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9493.0,
+      "actual": 9493,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "losses": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9279.0,
+      "actual": 9279,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9269.0,
+      "actual": 9269,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "losses": {
+      "expected": 58,
+      "actual": 58,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8506.0,
+      "actual": 8506,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9170.0,
+      "actual": 9170,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9316.0,
+      "actual": 9316,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8821.0,
+      "actual": 8821,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "losses": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8907.0,
+      "actual": 8907,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9184.0,
+      "actual": 9184,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8970.0,
+      "actual": 8970,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8782.0,
+      "actual": 8782,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 56,
+      "actual": 56,
+      "matches": true
+    },
+    "losses": {
+      "expected": 26,
+      "actual": 26,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9480.0,
+      "actual": 9480,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9014.0,
+      "actual": 9014,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "losses": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8962.0,
+      "actual": 8962,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9043.0,
+      "actual": 9043,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9457.0,
+      "actual": 9457,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9421.0,
+      "actual": 9421,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "losses": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9152.0,
+      "actual": 9152,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9184.0,
+      "actual": 9184,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8839.0,
+      "actual": 8839,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8665.0,
+      "actual": 8665,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 52,
+      "actual": 52,
+      "matches": true
+    },
+    "losses": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8858.0,
+      "actual": 8858,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8587.0,
+      "actual": 8587,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9243.0,
+      "actual": 9243,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9054.0,
+      "actual": 9054,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 23,
+      "actual": 23,
+      "matches": true
+    },
+    "losses": {
+      "expected": 59,
+      "actual": 59,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8596.0,
+      "actual": 8596,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9229.0,
+      "actual": 9229,
+      "matches": true
+    }
+  },
+  {
+    "season": 2022,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "losses": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9102.0,
+      "actual": 9102,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8648.0,
+      "actual": 8648,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9711.0,
+      "actual": 9711,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9687.0,
+      "actual": 9687,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "losses": {
+      "expected": 60,
+      "actual": 60,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9081.0,
+      "actual": 9081,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9725.0,
+      "actual": 9725,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "losses": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9535.0,
+      "actual": 9535,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9796.0,
+      "actual": 9796,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9314.0,
+      "actual": 9314,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9273.0,
+      "actual": 9273,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "losses": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9608.0,
+      "actual": 9608,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9561.0,
+      "actual": 9561,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8977.0,
+      "actual": 8977,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9003.0,
+      "actual": 9003,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 58,
+      "actual": 58,
+      "matches": true
+    },
+    "losses": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9589.0,
+      "actual": 9589,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9291.0,
+      "actual": 9291,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9494.0,
+      "actual": 9494,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9497.0,
+      "actual": 9497,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "losses": {
+      "expected": 37,
+      "actual": 37,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9295.0,
+      "actual": 9295,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9225.0,
+      "actual": 9225,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9514.0,
+      "actual": 9514,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9274.0,
+      "actual": 9274,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "losses": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9136.0,
+      "actual": 9136,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9346.0,
+      "actual": 9346,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 57,
+      "actual": 57,
+      "matches": true
+    },
+    "losses": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9671.0,
+      "actual": 9671,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9136.0,
+      "actual": 9136,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 54,
+      "actual": 54,
+      "matches": true
+    },
+    "losses": {
+      "expected": 28,
+      "actual": 28,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9448.0,
+      "actual": 9448,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9094.0,
+      "actual": 9094,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "losses": {
+      "expected": 37,
+      "actual": 37,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9319.0,
+      "actual": 9319,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9149.0,
+      "actual": 9149,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "losses": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9299.0,
+      "actual": 9299,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9628.0,
+      "actual": 9628,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9898.0,
+      "actual": 9898,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9681.0,
+      "actual": 9681,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "losses": {
+      "expected": 60,
+      "actual": 60,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9269.0,
+      "actual": 9269,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 10092.0,
+      "actual": 10092,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "losses": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9633.0,
+      "actual": 9633,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9544.0,
+      "actual": 9544,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 37,
+      "actual": 37,
+      "matches": true
+    },
+    "losses": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9600.0,
+      "actual": 9600,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9677.0,
+      "actual": 9677,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "losses": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9279.0,
+      "actual": 9279,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9378.0,
+      "actual": 9378,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9254.0,
+      "actual": 9254,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9133.0,
+      "actual": 9133,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9587.0,
+      "actual": 9587,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9264.0,
+      "actual": 9264,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "losses": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9378.0,
+      "actual": 9378,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9223.0,
+      "actual": 9223,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "losses": {
+      "expected": 55,
+      "actual": 55,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9098.0,
+      "actual": 9098,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9610.0,
+      "actual": 9610,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "losses": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9276.0,
+      "actual": 9276,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9170.0,
+      "actual": 9170,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9205.0,
+      "actual": 9205,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8764.0,
+      "actual": 8764,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "losses": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9366.0,
+      "actual": 9366,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9360.0,
+      "actual": 9360,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 53,
+      "actual": 53,
+      "matches": true
+    },
+    "losses": {
+      "expected": 29,
+      "actual": 29,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9495.0,
+      "actual": 9495,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9222.0,
+      "actual": 9222,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 17,
+      "actual": 17,
+      "matches": true
+    },
+    "losses": {
+      "expected": 65,
+      "actual": 65,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9045.0,
+      "actual": 9045,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9719.0,
+      "actual": 9719,
+      "matches": true
+    }
+  },
+  {
+    "season": 2023,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9753.0,
+      "actual": 9753,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9605.0,
+      "actual": 9605,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "losses": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9703.0,
+      "actual": 9703,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9880.0,
+      "actual": 9882,
+      "matches": false
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9375.0,
+      "actual": 9375,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9283.0,
+      "actual": 9283,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 10110.0,
+      "actual": 10110,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9860.0,
+      "actual": 9860,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9481.0,
+      "actual": 9481,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9212.0,
+      "actual": 9212,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9679.0,
+      "actual": 9679,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9630.0,
+      "actual": 9630,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "losses": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9032.0,
+      "actual": 9032,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8888.0,
+      "actual": 8888,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9756.0,
+      "actual": 9756,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9541.0,
+      "actual": 9541,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 56,
+      "actual": 56,
+      "matches": true
+    },
+    "losses": {
+      "expected": 26,
+      "actual": 26,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9264.0,
+      "actual": 9264,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8735.0,
+      "actual": 8735,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "losses": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9051.0,
+      "actual": 9050,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 9287.0,
+      "actual": 9287,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9249.0,
+      "actual": 9249,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8873.0,
+      "actual": 8873,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9058.0,
+      "actual": 9058,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8893.0,
+      "actual": 8892,
+      "matches": false
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 64,
+      "actual": 64,
+      "matches": true
+    },
+    "losses": {
+      "expected": 18,
+      "actual": 18,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9887.0,
+      "actual": 9887,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8957.0,
+      "actual": 8957,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 47,
+      "actual": 47,
+      "matches": true
+    },
+    "losses": {
+      "expected": 35,
+      "actual": 35,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9395.0,
+      "actual": 9397,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 9147.0,
+      "actual": 9147,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9532.0,
+      "actual": 9532,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9281.0,
+      "actual": 9281,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "losses": {
+      "expected": 61,
+      "actual": 61,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8722.0,
+      "actual": 8722,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9462.0,
+      "actual": 9462,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "losses": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9558.0,
+      "actual": 9558,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9415.0,
+      "actual": 9415,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 22,
+      "actual": 22,
+      "matches": true
+    },
+    "losses": {
+      "expected": 60,
+      "actual": 60,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9192.0,
+      "actual": 9192,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9724.0,
+      "actual": 9724,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 57,
+      "actual": 57,
+      "matches": true
+    },
+    "losses": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9847.0,
+      "actual": 9847,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9239.0,
+      "actual": 9239,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "losses": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9484.0,
+      "actual": 9484,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9885.0,
+      "actual": 9885,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 15,
+      "actual": 15,
+      "matches": true
+    },
+    "losses": {
+      "expected": 67,
+      "actual": 67,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9327.0,
+      "actual": 9327,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 10089.0,
+      "actual": 10089,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "losses": {
+      "expected": 57,
+      "actual": 57,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9213.0,
+      "actual": 9213,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9741.0,
+      "actual": 9741,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 27,
+      "actual": 27,
+      "matches": true
+    },
+    "losses": {
+      "expected": 55,
+      "actual": 55,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8677.0,
+      "actual": 8677,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9251.0,
+      "actual": 9251,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9436.0,
+      "actual": 9436,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9074.0,
+      "actual": 9074,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "losses": {
+      "expected": 61,
+      "actual": 61,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8740.0,
+      "actual": 8740,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9580.0,
+      "actual": 9580,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "losses": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9206.0,
+      "actual": 9206,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9324.0,
+      "actual": 9324,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9236.0,
+      "actual": 9236,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9038.0,
+      "actual": 9038,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9664.0,
+      "actual": 9664,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9483.0,
+      "actual": 9483,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 57,
+      "actual": 57,
+      "matches": true
+    },
+    "losses": {
+      "expected": 25,
+      "actual": 25,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9418.0,
+      "actual": 9418,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8987.0,
+      "actual": 8987,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 14,
+      "actual": 14,
+      "matches": true
+    },
+    "losses": {
+      "expected": 68,
+      "actual": 68,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9010.0,
+      "actual": 9010,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9757.0,
+      "actual": 9757,
+      "matches": true
+    }
+  },
+  {
+    "season": 2024,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "losses": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9657.0,
+      "actual": 9657,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9443.0,
+      "actual": 9443,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "1",
+    "team": "Atlanta Hawks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "losses": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9691.0,
+      "actual": 9691,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9784.0,
+      "actual": 9784,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "10",
+    "team": "Houston Rockets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 52,
+      "actual": 52,
+      "matches": true
+    },
+    "losses": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9372.0,
+      "actual": 9372,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9002.0,
+      "actual": 9002,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "11",
+    "team": "Indiana Pacers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9624.0,
+      "actual": 9624,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9441.0,
+      "actual": 9441,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "12",
+    "team": "LA Clippers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9256.0,
+      "actual": 9256,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8874.0,
+      "actual": 8874,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "13",
+    "team": "Los Angeles Lakers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9298.0,
+      "actual": 9298,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9198.0,
+      "actual": 9198,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "14",
+    "team": "Miami Heat",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 37,
+      "actual": 37,
+      "matches": true
+    },
+    "losses": {
+      "expected": 45,
+      "actual": 45,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9069.0,
+      "actual": 9069,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9023.0,
+      "actual": 9023,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "15",
+    "team": "Milwaukee Bucks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9472.0,
+      "actual": 9472,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9269.0,
+      "actual": 9269,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "16",
+    "team": "Minnesota Timberwolves",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 49,
+      "actual": 49,
+      "matches": true
+    },
+    "losses": {
+      "expected": 33,
+      "actual": 33,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9372.0,
+      "actual": 9372,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8962.0,
+      "actual": 8962,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "17",
+    "team": "Brooklyn Nets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 26,
+      "actual": 26,
+      "matches": true
+    },
+    "losses": {
+      "expected": 56,
+      "actual": 56,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8619.0,
+      "actual": 8619,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9202.0,
+      "actual": 9202,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "18",
+    "team": "New York Knicks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 51,
+      "actual": 51,
+      "matches": true
+    },
+    "losses": {
+      "expected": 31,
+      "actual": 31,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9495.0,
+      "actual": 9494,
+      "matches": false
+    },
+    "pointsAgainst": {
+      "expected": 9158.0,
+      "actual": 9158,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "19",
+    "team": "Orlando Magic",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "losses": {
+      "expected": 41,
+      "actual": 41,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8645.0,
+      "actual": 8645,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8655.0,
+      "actual": 8655,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "2",
+    "team": "Boston Celtics",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 61,
+      "actual": 61,
+      "matches": true
+    },
+    "losses": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9534.0,
+      "actual": 9534,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8787.0,
+      "actual": 8787,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "20",
+    "team": "Philadelphia 76ers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 24,
+      "actual": 24,
+      "matches": true
+    },
+    "losses": {
+      "expected": 58,
+      "actual": 58,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8988.0,
+      "actual": 8988,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9499.0,
+      "actual": 9499,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "21",
+    "team": "Phoenix Suns",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "losses": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9317.0,
+      "actual": 9317,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9563.0,
+      "actual": 9563,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "22",
+    "team": "Portland Trail Blazers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 36,
+      "actual": 36,
+      "matches": true
+    },
+    "losses": {
+      "expected": 46,
+      "actual": 46,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9093.0,
+      "actual": 9093,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9337.0,
+      "actual": 9337,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "23",
+    "team": "Sacramento Kings",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 40,
+      "actual": 40,
+      "matches": true
+    },
+    "losses": {
+      "expected": 42,
+      "actual": 42,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9490.0,
+      "actual": 9490,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9451.0,
+      "actual": 9451,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "24",
+    "team": "San Antonio Spurs",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "losses": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9342.0,
+      "actual": 9342,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9568.0,
+      "actual": 9568,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "25",
+    "team": "Oklahoma City Thunder",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 68,
+      "actual": 68,
+      "matches": true
+    },
+    "losses": {
+      "expected": 14,
+      "actual": 14,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9881.0,
+      "actual": 9881,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 8826.0,
+      "actual": 8826,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "26",
+    "team": "Utah Jazz",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 17,
+      "actual": 17,
+      "matches": true
+    },
+    "losses": {
+      "expected": 65,
+      "actual": 65,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9175.0,
+      "actual": 9175,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9941.0,
+      "actual": 9941,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "27",
+    "team": "Washington Wizards",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 18,
+      "actual": 18,
+      "matches": true
+    },
+    "losses": {
+      "expected": 64,
+      "actual": 64,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8856.0,
+      "actual": 8856,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9876.0,
+      "actual": 9876,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "28",
+    "team": "Toronto Raptors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "losses": {
+      "expected": 52,
+      "actual": 52,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9091.0,
+      "actual": 9091,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9443.0,
+      "actual": 9443,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "29",
+    "team": "Memphis Grizzlies",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9980.0,
+      "actual": 9980,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9582.0,
+      "actual": 9582,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "3",
+    "team": "New Orleans Pelicans",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 21,
+      "actual": 21,
+      "matches": true
+    },
+    "losses": {
+      "expected": 61,
+      "actual": 61,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9006.0,
+      "actual": 9006,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9779.0,
+      "actual": 9779,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "30",
+    "team": "Charlotte Hornets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 19,
+      "actual": 19,
+      "matches": true
+    },
+    "losses": {
+      "expected": 63,
+      "actual": 63,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 8618.0,
+      "actual": 8618,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9365.0,
+      "actual": 9365,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "4",
+    "team": "Chicago Bulls",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "losses": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9660.0,
+      "actual": 9660,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9788.0,
+      "actual": 9788,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "5",
+    "team": "Cleveland Cavaliers",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 64,
+      "actual": 64,
+      "matches": true
+    },
+    "losses": {
+      "expected": 18,
+      "actual": 18,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9999.0,
+      "actual": 9999,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9218.0,
+      "actual": 9217,
+      "matches": false
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "6",
+    "team": "Dallas Mavericks",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 39,
+      "actual": 39,
+      "matches": true
+    },
+    "losses": {
+      "expected": 43,
+      "actual": 43,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9364.0,
+      "actual": 9364,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9462.0,
+      "actual": 9462,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "7",
+    "team": "Denver Nuggets",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 50,
+      "actual": 50,
+      "matches": true
+    },
+    "losses": {
+      "expected": 32,
+      "actual": 32,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9902.0,
+      "actual": 9902,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9583.0,
+      "actual": 9583,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "8",
+    "team": "Detroit Pistons",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 44,
+      "actual": 44,
+      "matches": true
+    },
+    "losses": {
+      "expected": 38,
+      "actual": 38,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9471.0,
+      "actual": 9471,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9315.0,
+      "actual": 9315,
+      "matches": true
+    }
+  },
+  {
+    "season": 2025,
+    "teamId": "9",
+    "team": "Golden State Warriors",
+    "games": {
+      "expected": 82,
+      "actual": 82,
+      "matches": true
+    },
+    "wins": {
+      "expected": 48,
+      "actual": 48,
+      "matches": true
+    },
+    "losses": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "pointsFor": {
+      "expected": 9331.0,
+      "actual": 9331,
+      "matches": true
+    },
+    "pointsAgainst": {
+      "expected": 9060.0,
+      "actual": 9060,
+      "matches": true
+    }
+  }
+]

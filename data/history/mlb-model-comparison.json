@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "selected": "completedSeasonRarity",
+  "preferredPregameCandidate": "wins",
+  "rationale": "The v8 app uses completed-season other-opponent rarity from regular.py. These pregame candidates are retained as separate research comparisons. Runs require actual run totals, not an inferred wins-only input.",
+  "training": "2015\u20132021",
+  "test": "2022\u20132024",
+  "holdoutCaveat": "These seasons were previously examined. This comparison is exploratory and does not establish untouched future-season performance.",
+  "fixedChoices": {
+    "minimumPriorGames": 20,
+    "priorGames": 20,
+    "runExponent": 1.83,
+    "ridgePenalty": 4.0,
+    "trainingMeanRunsPerTeam": 4.537417603722373,
+    "selection": "The wins model is the retained pregame reference; none of these pregame candidates is used by the current app."
+  },
+  "candidates": {
+    "wins": {
+      "trainingGames": 13286,
+      "trainingFit": {
+        "slope": 0.7496324131730197,
+        "homeLogOdds": 0.1642402807476408,
+        "ridgePenalty": 4.0
+      },
+      "regularSeason": {
+        "games": 6365,
+        "brier": 0.24341488663273764,
+        "logLoss": 0.6798004487980815,
+        "meanPredictedHomeWinCredit": 0.5398799423862373,
+        "observedHomeWinCredit": 0.5305577376276512
+      },
+      "postseason": {
+        "games": 124,
+        "brier": 0.25677678304789375,
+        "logLoss": 0.7068212428277169,
+        "meanPredictedHomeWinCredit": 0.5472550816942489,
+        "observedHomeWinCredit": 0.4838709677419355
+      },
+      "usedInApp": false
+    },
+    "runs": {
+      "trainingGames": 13286,
+      "trainingFit": {
+        "slope": 0.810183132421935,
+        "homeLogOdds": 0.16347837442679533,
+        "ridgePenalty": 4.0
+      },
+      "regularSeason": {
+        "games": 6365,
+        "brier": 0.24318248156772074,
+        "logLoss": 0.6793193836650743,
+        "meanPredictedHomeWinCredit": 0.5397004634896196,
+        "observedHomeWinCredit": 0.5305577376276512
+      },
+      "postseason": {
+        "games": 124,
+        "brier": 0.2561966784940854,
+        "logLoss": 0.7057545790297505,
+        "meanPredictedHomeWinCredit": 0.5476132727273676,
+        "observedHomeWinCredit": 0.4838709677419355
+      },
+      "usedInApp": false
+    },
+    "regularRarity": {
+      "trainingGames": 13286,
+      "trainingFit": {
+        "slope": 0.12315270074993452,
+        "homeLogOdds": 0.1643501808581296,
+        "ridgePenalty": 4.0
+      },
+      "regularSeason": {
+        "games": 6365,
+        "brier": 0.2435516550692299,
+        "logLoss": 0.6801075922207455,
+        "meanPredictedHomeWinCredit": 0.5398020069525757,
+        "observedHomeWinCredit": 0.5305577376276512
+      },
+      "postseason": {
+        "games": 124,
+        "brier": 0.2592567551076596,
+        "logLoss": 0.7119734598237948,
+        "meanPredictedHomeWinCredit": 0.5485629282203632,
+        "observedHomeWinCredit": 0.4838709677419355
+      },
+      "usedInApp": false
+    },
+    "legacyPlayoffRarity": {
+      "trainingGames": 269,
+      "trainingFit": {
+        "slope": 0.11599580388182061,
+        "homeLogOdds": 0.1935310625889535,
+        "ridgePenalty": 4.0
+      },
+      "regularSeason": {
+        "games": 6365,
+        "brier": 0.2448420815443156,
+        "logLoss": 0.683048119586155,
+        "meanPredictedHomeWinCredit": 0.5463805872754145,
+        "observedHomeWinCredit": 0.5305577376276512
+      },
+      "postseason": {
+        "games": 124,
+        "brier": 0.26003980283632094,
+        "logLoss": 0.7135832140420768,
+        "meanPredictedHomeWinCredit": 0.5560253628701805,
+        "observedHomeWinCredit": 0.4838709677419355
+      },
+      "usedInApp": false
+    }
+  },
+  "baselines": {
+    "homeOnly": {
+      "trainingFit": {
+        "slope": 0,
+        "homeLogOdds": 0.15941013494691122,
+        "ridgePenalty": 4.0
+      },
+      "regularSeason": {
+        "games": 6365,
+        "brier": 0.24915106013642938,
+        "logLoss": 0.6914490587824716,
+        "meanPredictedHomeWinCredit": 0.5397683546184388,
+        "observedHomeWinCredit": 0.5305577376276512
+      },
+      "postseason": {
+        "games": 124,
+        "brier": 0.25286437217803626,
+        "logLoss": 0.6988914030701697,
+        "meanPredictedHomeWinCredit": 0.5397683546184106,
+        "observedHomeWinCredit": 0.4838709677419355
+      }
+    },
+    "coinFlip": {
+      "regularSeason": {
+        "games": 6365,
+        "brier": 0.25,
+        "logLoss": 0.6931471805600187,
+        "meanPredictedHomeWinCredit": 0.5,
+        "observedHomeWinCredit": 0.5305577376276512
+      },
+      "postseason": {
+        "games": 124,
+        "brier": 0.25,
+        "logLoss": 0.6931471805599462,
+        "meanPredictedHomeWinCredit": 0.5,
+        "observedHomeWinCredit": 0.4838709677419355
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "MLB Pythagorean winning percentage",
+      "url": "https://www.mlb.com/glossary/advanced-stats/pythagorean-winning-percentage",
+      "use": "Runs scored and allowed supply expected-win strength; benchmark exponent is 1.83."
+    },
+    {
+      "title": "FanGraphs game odds methodology",
+      "url": "https://blogs.fangraphs.com/home-field-advantage-and-our-new-game-odds/",
+      "use": "Motivates pitcher and lineup inputs for a future matchup model; neither is present here."
+    }
+  ],
+  "limitations": [
+    "No pitcher, lineup, bullpen, park, schedule-strength, or injury inputs.",
+    "The 20-game .500 prior and minimum sample size are explicit fixed modeling choices, not measured facts.",
+    "Generic 162-game win pace uses 162 games of evidence; actual validation uses the record length available before each game.",
+    "Postseason series still compose game probabilities with independence assumptions; not directly validated series predictions."
+  ]
+}

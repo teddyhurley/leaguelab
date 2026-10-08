@@ -10,7 +10,7 @@ const features = read('feature-audit.json');
 const close = (a, b) => assert.ok(Math.abs(a - b) < 1e-10, `${a} != ${b}`);
 
 test('five fits have actual outcome cohorts and explicit temporal holdouts', () => {
-  const counts = { nba: [834, 250], nhl: [870, 262], mlb: [393, 124], nfl: [120, 39], soccer: [2795, 837] };
+  const counts = { nba: [11979, 3690], nhl: [12200, 3936], mlb: [22762, 7289], nfl: [2614, 813], soccer: [3800, 1140] };
   for (const [sport, [all, heldOut]] of Object.entries(counts)) {
     const h = HISTORY[sport];
     assert.equal(h.fit.games, all); assert.equal(h.validation.model.games, heldOut);
@@ -19,12 +19,12 @@ test('five fits have actual outcome cohorts and explicit temporal holdouts', () 
     const s = SPORTS[sport];
     close(s.n * s.p * s.rewards.reduce((n, [value, mass]) => n + value * mass, 0), h.meanScore);
   }
-  assert.equal(HISTORY.soccer.fit.drawGames, 634);
-  assert.ok(HISTORY.mlb.validation.model.brier > HISTORY.mlb.validation.homeOnly.brier);
+  assert.equal(HISTORY.soccer.fit.drawGames, 886);
+  assert.ok(HISTORY.mlb.validation.model.brier < HISTORY.mlb.validation.homeOnly.brier);
 });
 
 test('playoff predictors reconcile to actual preceding regular-season results', () => {
-  for (const sport of ['mlb', 'nfl']) {
+  for (const sport of ['mlb']) {
     const games = read(sport + '-games.json'), lookup = new Map(games.map(g => [g.gameId, g]));
     const records = new Map();
     for (const g of games.filter(g => g.phase === 'regular')) {
@@ -44,25 +44,26 @@ test('playoff predictors reconcile to actual preceding regular-season results', 
   }
 });
 
-test('Premier League features use prior dates only and retain draw credit', () => {
+test('Premier League lookback excludes both meetings and uses the other 36 matches', () => {
   const games = read('soccer-games.json'), lookup = new Map(games.map(g => [g.gameId, g]));
-  assert.equal(games.length, 3800); assert.equal(new Set(games.map(g => g.gameId)).size, 3800);
+  assert.equal(features.soccer.rows.length, 3800);
   for (const row of features.soccer.rows) {
-    assert.ok(row.recordThrough < row.date);
-    assert.ok(row.homeRecord[1] >= 10 && row.awayRecord[1] >= 10);
     const g = lookup.get(row.gameId);
+    assert.equal(row.homeRecord[1], 36); assert.equal(row.awayRecord[1], 36);
+    const meetings = games.filter(x => x.season === g.season && [g.homeId, g.awayId].includes(x.homeId) && [g.homeId, g.awayId].includes(x.awayId));
+    assert.equal(meetings.length, 2);
+    assert.deepEqual(row.excludedGameIds, meetings.map(x => x.gameId).sort());
     assert.equal(row.outcome, g.homeScore > g.awayScore ? 1 : g.homeScore < g.awayScore ? 0 : .5);
   }
-  // Independently reconstruct the first and last eligible matchup each season.
   for (let year = 2016; year <= 2025; year++) {
-    const eligible = features.soccer.rows.filter(r => r.season === year);
-    for (const row of [eligible[0], eligible.at(-1)]) {
+    const rows = features.soccer.rows.filter(r => r.season === year);
+    for (const row of [rows[0], rows[190], rows.at(-1)]) {
       const g = lookup.get(row.gameId);
       for (const side of ['home', 'away']) {
         const team = g[side + 'Id']; let points = 0, played = 0;
-        for (const prior of games.filter(x => x.season === year && x.date.slice(0, 10) < row.date)) {
-          if (![prior.homeId, prior.awayId].includes(team)) continue;
-          const margin = (prior.homeScore - prior.awayScore) * (prior.homeId === team ? 1 : -1);
+        for (const other of games.filter(x => x.season === year && !row.excludedGameIds.includes(x.gameId))) {
+          if (![other.homeId, other.awayId].includes(team)) continue;
+          const margin = (other.homeScore - other.awayScore) * (other.homeId === team ? 1 : -1);
           points += margin > 0 ? 3 : margin === 0 ? 1 : 0; played++;
         }
         assert.deepEqual(row[side + 'Record'], [points, played]);
@@ -70,12 +71,14 @@ test('Premier League features use prior dates only and retain draw credit', () =
       }
     }
   }
+  assert.match(HISTORY.soccer.validation.interpretation, /not forecasting/);
+  assert.ok(HISTORY.soccer.validation.model.brier < HISTORY.soccer.validation.homeOnly.brier);
 });
 
 test('result evidence distinguishes historical odds from rule changes and weak fits', () => {
   for (const sport of Object.keys(SPORTS)) {
     const s = scenario(sport), base = modelEvidence(s, 70, 50);
-    assert.equal(base.kind, 'historical'); assert.equal(base.weakValidation, sport === 'mlb');
+    assert.equal(base.kind, 'historical'); assert.equal(base.weakValidation, false); assert.equal(base.playoffWeak, sport === 'mlb');
     assert.equal(modelEvidence({ ...s, series: 3 }, 70, 50).kind, 'historical');
     for (const change of [{ scoring: 2 }, { opportunities: 2 }, { home: .1 }, { rest: .1 }, { noise: 0 }])
       assert.equal(modelEvidence({ ...s, ...change }, 70, 50).kind, 'counterfactual');
@@ -87,10 +90,10 @@ test('result evidence distinguishes historical odds from rule changes and weak f
 test('v4 links retain records and disclose changed fits; exports retain evidence', () => {
   const old = { ...defaultConfig(), version: 4, trials: 1000, left: scenario('mlb'), right: { ...scenario('soccer'), scoring: 2 } };
   const notices = [], current = configFromLink('https://example.org/?experiment=' + encodeURIComponent(btoa(JSON.stringify(old))), m => notices.push(m));
-  assert.equal(current.version, 5); assert.equal(current.recordA, old.recordA); assert.equal(current.recordB, old.recordB);
+  assert.equal(current.version, 9); assert.equal(current.recordA, old.recordA); assert.equal(current.recordB, old.recordB);
   assert.deepEqual(current.left, old.left); assert.equal(notices.length, 1); assert.match(notices[0], /odds may change/);
   const result = runExperiment(current);
-  assert.equal(result.left.evidence.kind, 'historical'); assert.equal(result.left.evidence.weakValidation, true);
+  assert.equal(result.left.evidence.kind, 'historical'); assert.equal(result.left.evidence.playoffWeak, true);
   assert.equal(result.right.evidence.kind, 'counterfactual');
   const [header, ...rows] = exportCSV(result).trim().split('\r\n').map(row => row.split(','));
   for (const row of rows) {

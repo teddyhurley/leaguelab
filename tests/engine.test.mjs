@@ -62,7 +62,7 @@ test('counterfactuals distinguish opportunities, conversion rate, variance and f
 test('seeded RNG covers [0, 1), including a valid zero seed', () => { for (const seed of [0, 42, 4294967295]) { const r = rng(seed); for (let i = 0; i < 100; i++) { const v = r(); assert.ok(v >= 0 && v < 1); } } });
 test('configuration validation rejects malformed and excessive shared input', () => {
   assert.deepEqual(validateConfig(defaultConfig()), defaultConfig());
-  for (const patch of [{ trials: 1000000000 }, { seed: -1 }, { recordA: NaN }, { recordB: 79 }, { version: 1 }, { recordSportA: "__proto__" }, { recordA: 83 }, { matching: "raw" }, { seed: 1.2 }]) assert.throws(() => validateConfig({ ...defaultConfig(), ...patch }));
+  for (const patch of [{ trials: 1000000000 }, { seed: -1 }, { recordA: NaN }, { recordB: 83 }, { version: 1 }, { recordSportA: "__proto__" }, { recordA: 83 }, { matching: "raw" }, { seed: 1.2 }]) assert.throws(() => validateConfig({ ...defaultConfig(), ...patch }));
   for (const patch of [{ sport: '__proto__' }, { opportunities: Infinity }, { series: 8 }, { volatility: -1 }, { home: 100 }]) assert.throws(() => validateConfig({ ...defaultConfig(), left: { ...scenario('nba'), ...patch } }));
 });
 test('full experiment keeps a reproducible snapshot and the ordered bridge reconciles', () => {

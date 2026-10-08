@@ -13,3 +13,4 @@ jobs:
       - run: npm test
       - run: npm run check
       - run: npm run check:history
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'

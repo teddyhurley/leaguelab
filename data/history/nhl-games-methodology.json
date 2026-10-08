@@ -1,0 +1,23 @@
+{
+  "cohort": "season-end 2016\u20132025, including COVID-shortened regular seasons",
+  "regularGames": "All completed gameType=2 records with gameStateId 6 or 7. Never filter COVID seasons or normalize away real games.",
+  "playoffGames": "Completed gameType=3 rounds 1\u20134 only; exactly 870 games matched to the previously bracket-verified 150 best-of-seven series. 44 games from 2020 preliminary qualifiers/round robin omitted.",
+  "identifiers": "Stringified official NHL team IDs, exact match to canonical LeagueLab NHL standings. season is ending year integer; source season 20232024 maps to 2024.",
+  "decision": "For regular season period 3 = REG, 4 = OT, 5 = SO. In playoffs every period > 3 is OT, never SO. Decisions validated against all 312 official team-season regulation/shootout/ROW counts.",
+  "standingsPoints": "Winner 2; regulation loser 0; OT/SO loser 1, except official goalie-pull point-forfeiture exception. Playoff points and standingsResult are null because playoffs do not award standings points.",
+  "lossMeaning": "Official NHL losses means zero-point losses, not strictly regulation losses. The 2024 Minnesota exception is an OT game classified L rather than OTL.",
+  "scores": "homeScore/awayScore preserve official final score, which awards the shootout winner one artificial goal. homeGoals/awayGoals remove only that shootout marker; sums exactly reproduce every official team goalsFor/goalsAgainst total. Actual OT goals are retained.",
+  "neutrality": "Official API schedule neutralSite is present for all 13,070 retained games, including 48 neutral-site regular-season games. All 86 games in the 2020 Stanley Cup main playoff bracket are explicitly treated as neutral bubble games. Outdoor and international games follow the official schedule flag; no regular game is assumed non-neutral by default.",
+  "sources": "Cached unmodified official NHL API responses, exact URLs and SHA256 values in nhl-game-sources.json. No external writes or canonical file edits.",
+  "validation": "312 team-seasons \u00d7 10 official standings fields matched exactly; all 12,200 regular games retained; duplicate IDs prohibited; games/teams/scores reconciled.",
+  "covid": "2019-20 and2020-21 retained; model weighting or exclusions are downstream choices. 2020 playoff bubble override must not leak to 2019-20 regular games.",
+  "exception": [
+    {
+      "gameId": "2023021166",
+      "teamId": "30",
+      "points": 0,
+      "source": "https://www.nhl.com/news/vegas-golden-knights-minnesota-wild-game-recap-march-30-x7051",
+      "reason": "Minnesota pulled its goalie and conceded an empty-net overtime goal; official standings record a loss without the overtime point."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "cohort": "season-end 2016\u20132025, including COVID-shortened regular seasons",
+  "regularGames": 12200,
+  "playoffGames": 870,
+  "teamSeasons": 312,
+  "standingsFieldsChecked": [
+    "gamesPlayed",
+    "wins",
+    "losses",
+    "otLosses",
+    "points",
+    "winsInRegulation",
+    "winsInShootout",
+    "regulationAndOtWins",
+    "goalsFor",
+    "goalsAgainst"
+  ],
+  "teamSeasonMismatches": 0,
+  "gameIdsUnique": true,
+  "canonicalTeamIdsAndStandingsMatch": true,
+  "regularBySeason": {
+    "2016": 1230,
+    "2017": 1230,
+    "2018": 1271,
+    "2019": 1271,
+    "2020": 1082,
+    "2021": 868,
+    "2022": 1312,
+    "2023": 1312,
+    "2024": 1312,
+    "2025": 1312
+  },
+  "regularDecisionCounts": {
+    "REG": 9491,
+    "OT": 1806,
+    "SO": 903
+  },
+  "playoffDecisionCounts": {
+    "REG": 674,
+    "OT": 196
+  },
+  "regularNeutralGames": 48,
+  "playoffNeutralGames": 86,
+  "unknownNeutralGames": 0,
+  "excluded": {
+    "not_regular_or_playoff": 1035,
+    "2020_qualifying_and_round_robin": 44,
+    "not_completed": 94
+  },
+  "standingsPointExceptions": [
+    {
+      "gameId": "2023021166",
+      "teamId": "30",
+      "points": 0,
+      "source": "https://www.nhl.com/news/vegas-golden-knights-minnesota-wild-game-recap-march-30-x7051",
+      "reason": "Minnesota pulled its goalie and conceded an empty-net overtime goal; official standings record a loss without the overtime point."
+    }
+  ],
+  "matchesPreviouslyAuditedPlayoffSet": true,
+  "officialScheduleScoresDecisionsDatesAndIdsMatch": true,
+  "outputSha256": "aa269ac497368d28cd44c98a34ac63e23095480e0aa8a38c7cb573dec8304993"
+}

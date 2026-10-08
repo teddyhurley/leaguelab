@@ -1,0 +1,1898 @@
+{
+  "question": "How much more often does a team with a better completed-season record win in NBA than NHL or MLB?",
+  "observedDefinition": "Use regular-season game outcomes. Compare final season rates after excluding every regular-season meeting between the pair. Remove equal record rates and ties as targets. NHL uses standings points percentage, NBA/MLB win percentage.",
+  "standardizedDefinition": "Fit the same retrospective rarity-logit family separately in each sport. Compare 75th vs 50th and 75th vs 25th percentile records, neutral venue. Bo7 holds p fixed and assumes independent games.",
+  "caveats": [
+    "Observed averages mix record gaps, schedules and venues; not a controlled comparison.",
+    "Standardized odds are model estimates, not observed match frequencies or causal sport effects.",
+    "Matching record rarity is a comparison convention, not equal true skill.",
+    "The season cohorts differ slightly by calendar; all are ten-season snapshots, with a separate COVID sensitivity.",
+    "A series calculation is not a directly fitted playoff or series forecast."
+  ],
+  "sports": {
+    "nba": {
+      "seasonEnds": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "observed": {
+        "games": 11691,
+        "betterRecordWins": 7610,
+        "rate": 0.6509280643229834,
+        "equalRecordGamesExcluded": 288,
+        "perSeason": {
+          "2016": {
+            "games": 1205,
+            "betterRecordWins": 826,
+            "rate": 0.6854771784232365,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2016": null
+            }
+          },
+          "2017": {
+            "games": 1202,
+            "betterRecordWins": 752,
+            "rate": 0.6256239600665557,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2017": null
+            }
+          },
+          "2018": {
+            "games": 1215,
+            "betterRecordWins": 786,
+            "rate": 0.6469135802469136,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2018": null
+            }
+          },
+          "2019": {
+            "games": 1199,
+            "betterRecordWins": 781,
+            "rate": 0.6513761467889908,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2019": null
+            }
+          },
+          "2020": {
+            "games": 1049,
+            "betterRecordWins": 679,
+            "rate": 0.6472831267874166,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2020": null
+            }
+          },
+          "2021": {
+            "games": 1052,
+            "betterRecordWins": 683,
+            "rate": 0.6492395437262357,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2021": null
+            }
+          },
+          "2022": {
+            "games": 1202,
+            "betterRecordWins": 782,
+            "rate": 0.6505823627287853,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2022": null
+            }
+          },
+          "2023": {
+            "games": 1187,
+            "betterRecordWins": 734,
+            "rate": 0.6183656276326874,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2023": null
+            }
+          },
+          "2024": {
+            "games": 1192,
+            "betterRecordWins": 785,
+            "rate": 0.6585570469798657,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2024": null
+            }
+          },
+          "2025": {
+            "games": 1188,
+            "betterRecordWins": 802,
+            "rate": 0.6750841750841751,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2025": null
+            }
+          }
+        }
+      },
+      "observedExcludingCovid": {
+        "games": 9590,
+        "betterRecordWins": 6248,
+        "rate": 0.651511991657977,
+        "equalRecordGamesExcluded": 250,
+        "perSeason": {
+          "2016": {
+            "games": 1205,
+            "betterRecordWins": 826,
+            "rate": 0.6854771784232365,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2016": null
+            }
+          },
+          "2017": {
+            "games": 1202,
+            "betterRecordWins": 752,
+            "rate": 0.6256239600665557,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2017": null
+            }
+          },
+          "2018": {
+            "games": 1215,
+            "betterRecordWins": 786,
+            "rate": 0.6469135802469136,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2018": null
+            }
+          },
+          "2019": {
+            "games": 1199,
+            "betterRecordWins": 781,
+            "rate": 0.6513761467889908,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2019": null
+            }
+          },
+          "2022": {
+            "games": 1202,
+            "betterRecordWins": 782,
+            "rate": 0.6505823627287853,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2022": null
+            }
+          },
+          "2023": {
+            "games": 1187,
+            "betterRecordWins": 734,
+            "rate": 0.6183656276326874,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2023": null
+            }
+          },
+          "2024": {
+            "games": 1192,
+            "betterRecordWins": 785,
+            "rate": 0.6585570469798657,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2024": null
+            }
+          },
+          "2025": {
+            "games": 1188,
+            "betterRecordWins": 802,
+            "rate": 0.6750841750841751,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2025": null
+            }
+          }
+        }
+      },
+      "percentileGapBands": [
+        {
+          "minPercentileGap": 0,
+          "maxPercentileGap": 0.25,
+          "games": 5216,
+          "betterRecordWins": 2985,
+          "rate": 0.5722776073619632,
+          "equalRecordGamesExcluded": 288,
+          "perSeason": {
+            "2016": {
+              "games": 536,
+              "betterRecordWins": 329,
+              "rate": 0.6138059701492538,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 552,
+              "betterRecordWins": 312,
+              "rate": 0.5652173913043478,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 544,
+              "betterRecordWins": 298,
+              "rate": 0.5477941176470589,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 512,
+              "betterRecordWins": 286,
+              "rate": 0.55859375,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 452,
+              "betterRecordWins": 249,
+              "rate": 0.5508849557522124,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 489,
+              "betterRecordWins": 288,
+              "rate": 0.588957055214724,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 550,
+              "betterRecordWins": 318,
+              "rate": 0.5781818181818181,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 599,
+              "betterRecordWins": 345,
+              "rate": 0.5759599332220368,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 518,
+              "betterRecordWins": 281,
+              "rate": 0.5424710424710425,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            },
+            "2025": {
+              "games": 464,
+              "betterRecordWins": 279,
+              "rate": 0.6012931034482759,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2025": null
+              }
+            }
+          }
+        },
+        {
+          "minPercentileGap": 0.25,
+          "maxPercentileGap": 0.5,
+          "games": 3725,
+          "betterRecordWins": 2470,
+          "rate": 0.6630872483221476,
+          "equalRecordGamesExcluded": 0,
+          "perSeason": {
+            "2016": {
+              "games": 406,
+              "betterRecordWins": 283,
+              "rate": 0.6970443349753694,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 395,
+              "betterRecordWins": 237,
+              "rate": 0.6,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 368,
+              "betterRecordWins": 257,
+              "rate": 0.6983695652173914,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 398,
+              "betterRecordWins": 273,
+              "rate": 0.6859296482412061,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 287,
+              "betterRecordWins": 182,
+              "rate": 0.6341463414634146,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 339,
+              "betterRecordWins": 228,
+              "rate": 0.672566371681416,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 384,
+              "betterRecordWins": 260,
+              "rate": 0.6770833333333334,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 430,
+              "betterRecordWins": 270,
+              "rate": 0.627906976744186,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 309,
+              "betterRecordWins": 208,
+              "rate": 0.6731391585760518,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            },
+            "2025": {
+              "games": 409,
+              "betterRecordWins": 272,
+              "rate": 0.6650366748166259,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2025": null
+              }
+            }
+          }
+        },
+        {
+          "minPercentileGap": 0.5,
+          "maxPercentileGap": 0.75,
+          "games": 2202,
+          "betterRecordWins": 1685,
+          "rate": 0.765213442325159,
+          "equalRecordGamesExcluded": 0,
+          "perSeason": {
+            "2016": {
+              "games": 184,
+              "betterRecordWins": 143,
+              "rate": 0.7771739130434783,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 220,
+              "betterRecordWins": 173,
+              "rate": 0.7863636363636364,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 240,
+              "betterRecordWins": 175,
+              "rate": 0.7291666666666666,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 235,
+              "betterRecordWins": 176,
+              "rate": 0.7489361702127659,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 248,
+              "betterRecordWins": 190,
+              "rate": 0.7661290322580645,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 170,
+              "betterRecordWins": 128,
+              "rate": 0.7529411764705882,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 229,
+              "betterRecordWins": 175,
+              "rate": 0.7641921397379913,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 130,
+              "betterRecordWins": 98,
+              "rate": 0.7538461538461538,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 297,
+              "betterRecordWins": 235,
+              "rate": 0.7912457912457912,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            },
+            "2025": {
+              "games": 249,
+              "betterRecordWins": 192,
+              "rate": 0.7710843373493976,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2025": null
+              }
+            }
+          }
+        },
+        {
+          "minPercentileGap": 0.75,
+          "maxPercentileGap": 1,
+          "games": 548,
+          "betterRecordWins": 470,
+          "rate": 0.8576642335766423,
+          "equalRecordGamesExcluded": 0,
+          "perSeason": {
+            "2016": {
+              "games": 79,
+              "betterRecordWins": 71,
+              "rate": 0.8987341772151899,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 35,
+              "betterRecordWins": 30,
+              "rate": 0.8571428571428571,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 63,
+              "betterRecordWins": 56,
+              "rate": 0.8888888888888888,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 54,
+              "betterRecordWins": 46,
+              "rate": 0.8518518518518519,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 62,
+              "betterRecordWins": 58,
+              "rate": 0.9354838709677419,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 54,
+              "betterRecordWins": 39,
+              "rate": 0.7222222222222222,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 39,
+              "betterRecordWins": 29,
+              "rate": 0.7435897435897436,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 28,
+              "betterRecordWins": 21,
+              "rate": 0.75,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 68,
+              "betterRecordWins": 61,
+              "rate": 0.8970588235294118,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            },
+            "2025": {
+              "games": 66,
+              "betterRecordWins": 59,
+              "rate": 0.8939393939393939,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2025": null
+              }
+            }
+          }
+        }
+      ],
+      "completedSeasonRarityFit": {
+        "slope": 0.3414468957564108,
+        "homeLogOdds": 0.3025669547920184,
+        "ridgePenalty": 4.0
+      },
+      "standardizedMatchups": [
+        {
+          "rankA": 0.75,
+          "rankB": 0.5,
+          "recordRateA": 0.6113195747342052,
+          "recordRateB": 0.5114096068494783,
+          "singleGame": 0.5926950273662166,
+          "independentBo7": 0.6959438003953712
+        },
+        {
+          "rankA": 0.75,
+          "rankB": 0.25,
+          "recordRateA": 0.6113195747342052,
+          "recordRateB": 0.39407665505217143,
+          "singleGame": 0.6792300137236371,
+          "independentBo7": 0.8454528509462129
+        },
+        {
+          "rankA": 0.9,
+          "rankB": 0.5,
+          "recordRateA": 0.68975609756112,
+          "recordRateB": 0.5114096068494783,
+          "singleGame": 0.6792300137236371,
+          "independentBo7": 0.8454528509462129
+        }
+      ]
+    },
+    "nhl": {
+      "seasonEnds": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "observed": {
+        "games": 12012,
+        "betterRecordWins": 7035,
+        "rate": 0.5856643356643356,
+        "equalRecordGamesExcluded": 188,
+        "perSeason": {
+          "2016": {
+            "games": 1204,
+            "betterRecordWins": 672,
+            "rate": 0.5581395348837209,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2016": null
+            }
+          },
+          "2017": {
+            "games": 1218,
+            "betterRecordWins": 711,
+            "rate": 0.583743842364532,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2017": null
+            }
+          },
+          "2018": {
+            "games": 1237,
+            "betterRecordWins": 717,
+            "rate": 0.5796281325788197,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2018": null
+            }
+          },
+          "2019": {
+            "games": 1242,
+            "betterRecordWins": 702,
+            "rate": 0.5652173913043478,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2019": null
+            }
+          },
+          "2020": {
+            "games": 1073,
+            "betterRecordWins": 574,
+            "rate": 0.5349487418452936,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2020": null
+            }
+          },
+          "2021": {
+            "games": 852,
+            "betterRecordWins": 516,
+            "rate": 0.6056338028169014,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2021": null
+            }
+          },
+          "2022": {
+            "games": 1301,
+            "betterRecordWins": 828,
+            "rate": 0.6364335126825519,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2022": null
+            }
+          },
+          "2023": {
+            "games": 1304,
+            "betterRecordWins": 798,
+            "rate": 0.6119631901840491,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2023": null
+            }
+          },
+          "2024": {
+            "games": 1299,
+            "betterRecordWins": 772,
+            "rate": 0.5943033102386451,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2024": null
+            }
+          },
+          "2025": {
+            "games": 1282,
+            "betterRecordWins": 745,
+            "rate": 0.5811232449297972,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2025": null
+            }
+          }
+        }
+      },
+      "observedExcludingCovid": {
+        "games": 10087,
+        "betterRecordWins": 5945,
+        "rate": 0.5893724596014672,
+        "equalRecordGamesExcluded": 163,
+        "perSeason": {
+          "2016": {
+            "games": 1204,
+            "betterRecordWins": 672,
+            "rate": 0.5581395348837209,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2016": null
+            }
+          },
+          "2017": {
+            "games": 1218,
+            "betterRecordWins": 711,
+            "rate": 0.583743842364532,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2017": null
+            }
+          },
+          "2018": {
+            "games": 1237,
+            "betterRecordWins": 717,
+            "rate": 0.5796281325788197,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2018": null
+            }
+          },
+          "2019": {
+            "games": 1242,
+            "betterRecordWins": 702,
+            "rate": 0.5652173913043478,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2019": null
+            }
+          },
+          "2022": {
+            "games": 1301,
+            "betterRecordWins": 828,
+            "rate": 0.6364335126825519,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2022": null
+            }
+          },
+          "2023": {
+            "games": 1304,
+            "betterRecordWins": 798,
+            "rate": 0.6119631901840491,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2023": null
+            }
+          },
+          "2024": {
+            "games": 1299,
+            "betterRecordWins": 772,
+            "rate": 0.5943033102386451,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2024": null
+            }
+          },
+          "2025": {
+            "games": 1282,
+            "betterRecordWins": 745,
+            "rate": 0.5811232449297972,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2025": null
+            }
+          }
+        }
+      },
+      "percentileGapBands": [
+        {
+          "minPercentileGap": 0,
+          "maxPercentileGap": 0.25,
+          "games": 5058,
+          "betterRecordWins": 2696,
+          "rate": 0.5330170027678924,
+          "equalRecordGamesExcluded": 188,
+          "perSeason": {
+            "2016": {
+              "games": 563,
+              "betterRecordWins": 297,
+              "rate": 0.5275310834813499,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 535,
+              "betterRecordWins": 304,
+              "rate": 0.5682242990654206,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 488,
+              "betterRecordWins": 241,
+              "rate": 0.49385245901639346,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 582,
+              "betterRecordWins": 307,
+              "rate": 0.5274914089347079,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 507,
+              "betterRecordWins": 252,
+              "rate": 0.4970414201183432,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 314,
+              "betterRecordWins": 159,
+              "rate": 0.5063694267515924,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 504,
+              "betterRecordWins": 283,
+              "rate": 0.5615079365079365,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 523,
+              "betterRecordWins": 287,
+              "rate": 0.5487571701720841,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 492,
+              "betterRecordWins": 269,
+              "rate": 0.5467479674796748,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            },
+            "2025": {
+              "games": 550,
+              "betterRecordWins": 297,
+              "rate": 0.54,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2025": null
+              }
+            }
+          }
+        },
+        {
+          "minPercentileGap": 0.25,
+          "maxPercentileGap": 0.5,
+          "games": 3707,
+          "betterRecordWins": 2236,
+          "rate": 0.6031831669813865,
+          "equalRecordGamesExcluded": 0,
+          "perSeason": {
+            "2016": {
+              "games": 377,
+              "betterRecordWins": 231,
+              "rate": 0.6127320954907162,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 399,
+              "betterRecordWins": 230,
+              "rate": 0.5764411027568922,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 389,
+              "betterRecordWins": 244,
+              "rate": 0.6272493573264781,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 394,
+              "betterRecordWins": 239,
+              "rate": 0.6065989847715736,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 396,
+              "betterRecordWins": 221,
+              "rate": 0.5580808080808081,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 226,
+              "betterRecordWins": 145,
+              "rate": 0.6415929203539823,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 274,
+              "betterRecordWins": 175,
+              "rate": 0.6386861313868614,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 396,
+              "betterRecordWins": 248,
+              "rate": 0.6262626262626263,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 421,
+              "betterRecordWins": 246,
+              "rate": 0.5843230403800475,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            },
+            "2025": {
+              "games": 435,
+              "betterRecordWins": 257,
+              "rate": 0.5908045977011495,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2025": null
+              }
+            }
+          }
+        },
+        {
+          "minPercentileGap": 0.5,
+          "maxPercentileGap": 0.75,
+          "games": 2281,
+          "betterRecordWins": 1433,
+          "rate": 0.628233231039018,
+          "equalRecordGamesExcluded": 0,
+          "perSeason": {
+            "2016": {
+              "games": 237,
+              "betterRecordWins": 128,
+              "rate": 0.540084388185654,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 234,
+              "betterRecordWins": 146,
+              "rate": 0.6239316239316239,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 242,
+              "betterRecordWins": 156,
+              "rate": 0.6446280991735537,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 238,
+              "betterRecordWins": 134,
+              "rate": 0.5630252100840336,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 147,
+              "betterRecordWins": 86,
+              "rate": 0.5850340136054422,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 182,
+              "betterRecordWins": 125,
+              "rate": 0.6868131868131868,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 247,
+              "betterRecordWins": 169,
+              "rate": 0.6842105263157895,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 238,
+              "betterRecordWins": 159,
+              "rate": 0.6680672268907563,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 282,
+              "betterRecordWins": 181,
+              "rate": 0.6418439716312057,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            },
+            "2025": {
+              "games": 234,
+              "betterRecordWins": 149,
+              "rate": 0.6367521367521367,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2025": null
+              }
+            }
+          }
+        },
+        {
+          "minPercentileGap": 0.75,
+          "maxPercentileGap": 1,
+          "games": 966,
+          "betterRecordWins": 670,
+          "rate": 0.6935817805383023,
+          "equalRecordGamesExcluded": 0,
+          "perSeason": {
+            "2016": {
+              "games": 27,
+              "betterRecordWins": 16,
+              "rate": 0.5925925925925926,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 50,
+              "betterRecordWins": 31,
+              "rate": 0.62,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 118,
+              "betterRecordWins": 76,
+              "rate": 0.6440677966101694,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 28,
+              "betterRecordWins": 22,
+              "rate": 0.7857142857142857,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 23,
+              "betterRecordWins": 15,
+              "rate": 0.6521739130434783,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 130,
+              "betterRecordWins": 87,
+              "rate": 0.6692307692307692,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 276,
+              "betterRecordWins": 201,
+              "rate": 0.7282608695652174,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 147,
+              "betterRecordWins": 104,
+              "rate": 0.7074829931972789,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 104,
+              "betterRecordWins": 76,
+              "rate": 0.7307692307692307,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            },
+            "2025": {
+              "games": 63,
+              "betterRecordWins": 42,
+              "rate": 0.6666666666666666,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2025": null
+              }
+            }
+          }
+        }
+      ],
+      "completedSeasonRarityFit": {
+        "slope": 0.15023629532815014,
+        "homeLogOdds": 0.17658336346965847,
+        "ridgePenalty": 4.0
+      },
+      "standardizedMatchups": [
+        {
+          "rankA": 0.75,
+          "rankB": 0.5,
+          "recordRateA": 0.6210050462572587,
+          "recordRateB": 0.5650406504066667,
+          "singleGame": 0.5411694410528856,
+          "independentBo7": 0.5894500654752286
+        },
+        {
+          "rankA": 0.75,
+          "rankB": 0.25,
+          "recordRateA": 0.6210050462572587,
+          "recordRateB": 0.48949864498650003,
+          "singleGame": 0.5817844090424279,
+          "independentBo7": 0.6741932255000297
+        },
+        {
+          "rankA": 0.9,
+          "rankB": 0.5,
+          "recordRateA": 0.667902439024136,
+          "recordRateB": 0.5650406504066667,
+          "singleGame": 0.5817844090424279,
+          "independentBo7": 0.6741932255000297
+        }
+      ]
+    },
+    "mlb": {
+      "seasonEnds": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "observed": {
+        "games": 22106,
+        "betterRecordWins": 12640,
+        "rate": 0.5717904641273862,
+        "equalRecordGamesExcluded": 656,
+        "perSeason": {
+          "2015": {
+            "games": 2281,
+            "betterRecordWins": 1269,
+            "rate": 0.5563349408154318,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2015": null
+            }
+          },
+          "2016": {
+            "games": 2330,
+            "betterRecordWins": 1285,
+            "rate": 0.5515021459227468,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2016": null
+            }
+          },
+          "2017": {
+            "games": 2329,
+            "betterRecordWins": 1300,
+            "rate": 0.55817947617003,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2017": null
+            }
+          },
+          "2018": {
+            "games": 2415,
+            "betterRecordWins": 1410,
+            "rate": 0.5838509316770186,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2018": null
+            }
+          },
+          "2019": {
+            "games": 2396,
+            "betterRecordWins": 1426,
+            "rate": 0.5951585976627712,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2019": null
+            }
+          },
+          "2020": {
+            "games": 872,
+            "betterRecordWins": 487,
+            "rate": 0.5584862385321101,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2020": null
+            }
+          },
+          "2021": {
+            "games": 2355,
+            "betterRecordWins": 1349,
+            "rate": 0.5728237791932059,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2021": null
+            }
+          },
+          "2022": {
+            "games": 2411,
+            "betterRecordWins": 1429,
+            "rate": 0.5927001244296972,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2022": null
+            }
+          },
+          "2023": {
+            "games": 2347,
+            "betterRecordWins": 1333,
+            "rate": 0.5679590967192161,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2023": null
+            }
+          },
+          "2024": {
+            "games": 2370,
+            "betterRecordWins": 1352,
+            "rate": 0.570464135021097,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2024": null
+            }
+          }
+        }
+      },
+      "observedExcludingCovid": {
+        "games": 21234,
+        "betterRecordWins": 12153,
+        "rate": 0.5723368183102572,
+        "equalRecordGamesExcluded": 630,
+        "perSeason": {
+          "2015": {
+            "games": 2281,
+            "betterRecordWins": 1269,
+            "rate": 0.5563349408154318,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2015": null
+            }
+          },
+          "2016": {
+            "games": 2330,
+            "betterRecordWins": 1285,
+            "rate": 0.5515021459227468,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2016": null
+            }
+          },
+          "2017": {
+            "games": 2329,
+            "betterRecordWins": 1300,
+            "rate": 0.55817947617003,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2017": null
+            }
+          },
+          "2018": {
+            "games": 2415,
+            "betterRecordWins": 1410,
+            "rate": 0.5838509316770186,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2018": null
+            }
+          },
+          "2019": {
+            "games": 2396,
+            "betterRecordWins": 1426,
+            "rate": 0.5951585976627712,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2019": null
+            }
+          },
+          "2021": {
+            "games": 2355,
+            "betterRecordWins": 1349,
+            "rate": 0.5728237791932059,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2021": null
+            }
+          },
+          "2022": {
+            "games": 2411,
+            "betterRecordWins": 1429,
+            "rate": 0.5927001244296972,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2022": null
+            }
+          },
+          "2023": {
+            "games": 2347,
+            "betterRecordWins": 1333,
+            "rate": 0.5679590967192161,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2023": null
+            }
+          },
+          "2024": {
+            "games": 2370,
+            "betterRecordWins": 1352,
+            "rate": 0.570464135021097,
+            "equalRecordGamesExcluded": 0,
+            "perSeason": {
+              "2024": null
+            }
+          }
+        }
+      },
+      "percentileGapBands": [
+        {
+          "minPercentileGap": 0,
+          "maxPercentileGap": 0.25,
+          "games": 9313,
+          "betterRecordWins": 4961,
+          "rate": 0.5326962310748417,
+          "equalRecordGamesExcluded": 656,
+          "perSeason": {
+            "2015": {
+              "games": 1100,
+              "betterRecordWins": 600,
+              "rate": 0.5454545454545454,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2015": null
+              }
+            },
+            "2016": {
+              "games": 1032,
+              "betterRecordWins": 540,
+              "rate": 0.5232558139534884,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 966,
+              "betterRecordWins": 497,
+              "rate": 0.5144927536231884,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 1047,
+              "betterRecordWins": 555,
+              "rate": 0.5300859598853869,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 889,
+              "betterRecordWins": 478,
+              "rate": 0.5376827896512936,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 359,
+              "betterRecordWins": 190,
+              "rate": 0.5292479108635098,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 872,
+              "betterRecordWins": 438,
+              "rate": 0.5022935779816514,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 1016,
+              "betterRecordWins": 566,
+              "rate": 0.5570866141732284,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 897,
+              "betterRecordWins": 475,
+              "rate": 0.5295429208472687,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 1135,
+              "betterRecordWins": 622,
+              "rate": 0.5480176211453744,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            }
+          }
+        },
+        {
+          "minPercentileGap": 0.25,
+          "maxPercentileGap": 0.5,
+          "games": 6742,
+          "betterRecordWins": 3874,
+          "rate": 0.5746069415603678,
+          "equalRecordGamesExcluded": 0,
+          "perSeason": {
+            "2015": {
+              "games": 636,
+              "betterRecordWins": 352,
+              "rate": 0.5534591194968553,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2015": null
+              }
+            },
+            "2016": {
+              "games": 806,
+              "betterRecordWins": 458,
+              "rate": 0.5682382133995038,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 751,
+              "betterRecordWins": 429,
+              "rate": 0.5712383488681758,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 581,
+              "betterRecordWins": 347,
+              "rate": 0.5972461273666093,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 705,
+              "betterRecordWins": 412,
+              "rate": 0.5843971631205673,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 229,
+              "betterRecordWins": 125,
+              "rate": 0.5458515283842795,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 787,
+              "betterRecordWins": 465,
+              "rate": 0.590851334180432,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 619,
+              "betterRecordWins": 366,
+              "rate": 0.5912762520193862,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 905,
+              "betterRecordWins": 496,
+              "rate": 0.5480662983425414,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 723,
+              "betterRecordWins": 424,
+              "rate": 0.5864453665283541,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            }
+          }
+        },
+        {
+          "minPercentileGap": 0.5,
+          "maxPercentileGap": 0.75,
+          "games": 4261,
+          "betterRecordWins": 2648,
+          "rate": 0.6214503637643746,
+          "equalRecordGamesExcluded": 0,
+          "perSeason": {
+            "2015": {
+              "games": 400,
+              "betterRecordWins": 234,
+              "rate": 0.585,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2015": null
+              }
+            },
+            "2016": {
+              "games": 398,
+              "betterRecordWins": 236,
+              "rate": 0.592964824120603,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 470,
+              "betterRecordWins": 286,
+              "rate": 0.6085106382978723,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 551,
+              "betterRecordWins": 347,
+              "rate": 0.6297640653357531,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 451,
+              "betterRecordWins": 302,
+              "rate": 0.6696230598669624,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 164,
+              "betterRecordWins": 104,
+              "rate": 0.6341463414634146,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 515,
+              "betterRecordWins": 319,
+              "rate": 0.6194174757281553,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 524,
+              "betterRecordWins": 321,
+              "rate": 0.6125954198473282,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 411,
+              "betterRecordWins": 275,
+              "rate": 0.6690997566909975,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 377,
+              "betterRecordWins": 224,
+              "rate": 0.5941644562334217,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            }
+          }
+        },
+        {
+          "minPercentileGap": 0.75,
+          "maxPercentileGap": 1,
+          "games": 1790,
+          "betterRecordWins": 1157,
+          "rate": 0.6463687150837989,
+          "equalRecordGamesExcluded": 0,
+          "perSeason": {
+            "2015": {
+              "games": 145,
+              "betterRecordWins": 83,
+              "rate": 0.5724137931034483,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2015": null
+              }
+            },
+            "2016": {
+              "games": 94,
+              "betterRecordWins": 51,
+              "rate": 0.5425531914893617,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2016": null
+              }
+            },
+            "2017": {
+              "games": 142,
+              "betterRecordWins": 88,
+              "rate": 0.6197183098591549,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2017": null
+              }
+            },
+            "2018": {
+              "games": 236,
+              "betterRecordWins": 161,
+              "rate": 0.6822033898305084,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2018": null
+              }
+            },
+            "2019": {
+              "games": 351,
+              "betterRecordWins": 234,
+              "rate": 0.6666666666666666,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2019": null
+              }
+            },
+            "2020": {
+              "games": 120,
+              "betterRecordWins": 68,
+              "rate": 0.5666666666666667,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2020": null
+              }
+            },
+            "2021": {
+              "games": 181,
+              "betterRecordWins": 127,
+              "rate": 0.7016574585635359,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2021": null
+              }
+            },
+            "2022": {
+              "games": 252,
+              "betterRecordWins": 176,
+              "rate": 0.6984126984126984,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2022": null
+              }
+            },
+            "2023": {
+              "games": 134,
+              "betterRecordWins": 87,
+              "rate": 0.6492537313432836,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2023": null
+              }
+            },
+            "2024": {
+              "games": 135,
+              "betterRecordWins": 82,
+              "rate": 0.6074074074074074,
+              "equalRecordGamesExcluded": 0,
+              "perSeason": {
+                "2024": null
+              }
+            }
+          }
+        }
+      ],
+      "completedSeasonRarityFit": {
+        "slope": 0.11846374044990564,
+        "homeLogOdds": 0.13311294874687268,
+        "ridgePenalty": 4.0
+      },
+      "standardizedMatchups": [
+        {
+          "rankA": 0.75,
+          "rankB": 0.5,
+          "recordRateA": 0.5550368987289566,
+          "recordRateB": 0.5021921812202352,
+          "singleGame": 0.5324905829853288,
+          "independentBo7": 0.5707737997862419
+        },
+        {
+          "rankA": 0.75,
+          "rankB": 0.25,
+          "recordRateA": 0.5550368987289566,
+          "recordRateB": 0.4495935894489,
+          "singleGame": 0.5647079333616962,
+          "independentBo7": 0.6392016107377462
+        },
+        {
+          "rankA": 0.9,
+          "rankB": 0.5,
+          "recordRateA": 0.5905790641990307,
+          "recordRateB": 0.5021921812202352,
+          "singleGame": 0.5647079333616962,
+          "independentBo7": 0.6392016107377462
+        }
+      ]
+    }
+  }
+}

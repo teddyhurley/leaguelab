@@ -3,7 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 const root = fileURLToPath(new URL('../', import.meta.url));
-for (const file of ['dist/index.html', 'dist/style.css', 'dist/favicon.svg', 'dist/src/worker.js', 'README.md', 'LICENSE', 'docs/MODEL.md', 'docs/PRODUCT.md', 'docs/HISTORY.md', 'docs/ARCHITECTURE.md', 'docs/VERIFICATION.md', 'docs/preview.jpg', 'docs/EVIDENCE.md']) await access(path.join(root, file));
+for (const file of ['dist/index.html', 'dist/style.css', 'dist/favicon.svg', 'dist/src/worker.js', 'README.md', 'LICENSE', 'docs/MODEL.md', 'docs/PRODUCT.md', 'docs/HISTORY.md', 'docs/ARCHITECTURE.md', 'docs/VERIFICATION.md', 'docs/preview.png', 'docs/EVIDENCE.md']) await access(path.join(root, file));
 for (const dir of ['dist/src', 'scripts', 'tests']) for (const name of await readdir(path.join(root, dir))) {
   if (!/\.(m?js)$/.test(name)) continue;
   const file = path.join(root, dir, name), check = spawnSync(process.execPath, ['--check', file], { stdio: 'inherit' });

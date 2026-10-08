@@ -17,7 +17,7 @@ test('default is one head-to-head with complementary odds, counts and outcomes',
   close(h.simulation.intervalA[1], 1 - h.simulation.intervalB[0]);
 });
 test('stronger B lowers A odds; swapping teams reverses exact odds', () => {
-  const strongerB = runExperiment({ ...config, recordB: 14 });
+  const strongerB = runExperiment({ ...config, recordB: 60 });
   assert.ok(strongerB.headToHead.exact.a < result.headToHead.exact.a);
   assert.ok(strongerB.headToHead.exact.b > result.headToHead.exact.b);
   const swapped = runExperiment({ ...config, recordSportA: config.recordSportB, recordSportB: config.recordSportA, recordA: config.recordB, recordB: config.recordA });
@@ -28,6 +28,6 @@ test('stronger B lowers A odds; swapping teams reverses exact odds', () => {
 test('alternate rules are separate from the primary matchup; benchmark links retain old meaning', () => {
   const alternate = runExperiment({ ...config, right: { ...config.right, series: 7, rest: .2 } });
   assert.deepEqual(alternate.headToHead, result.headToHead);
-  const benchmark = runExperiment({ ...config, comparison: 'benchmark', right: scenario('nfl') });
+  const benchmark = runExperiment({ ...config, comparison: 'benchmark', recordSportB: 'nfl', recordB: 10, right: scenario('nfl') });
   assert.equal(benchmark.headToHead, null);
 });
