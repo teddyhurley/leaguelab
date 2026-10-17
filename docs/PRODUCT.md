@@ -1,6 +1,8 @@
 # LeagueLab — product case study
 
-**Author:** Teddy Hurley · **Release:** v8.0 · **Stage:** local prototype prepared for GitHub
+**Author:** Teddy Hurley · **Release:** v8.0 · **Stage:** hosted portfolio demo
+
+[Open interactive demo](https://teddyhurley.github.io/leaguelab/) · [Code](https://github.com/teddyhurley/leaguelab)
 
 ## Problem and audience
 
