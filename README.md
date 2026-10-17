@@ -1,5 +1,7 @@
 # LeagueLab
 
+**[Open interactive demo](https://teddyhurley.github.io/leaguelab/)** · [Product notes](docs/PRODUCT.md) · [How it works](docs/ARCHITECTURE.md)
+
 **The better team doesn't always win. Explore why.**
 
 An interactive sports-variance simulator built by Teddy Hurley. Choose two teams by their season records, translate those records into a shared strength scale, then change the sport or format and see how the odds move.
@@ -8,7 +10,7 @@ Compare NBA, NHL, MLB, NFL and Premier League soccer. Explore questions such as 
 
 ![LeagueLab comparing the same team caliber across NBA, NHL and MLB](docs/preview.png)
 
-**Status:** working local prototype, prepared for GitHub. No public launch or completed independent usability study is claimed. Historical records ground all five input scales; all five sports have regular-season game fits and separate-season evaluations. All five models use season-end hindsight. MLB playoff transfer and some NBA/NHL/MLB/NFL subgroups still fail simple baselines. Cross-sport matchups and rule changes are explanatory experiments, not forecasts of real teams.
+**Status:** hosted interactive portfolio demo. An independent usability study and learning outcomes have not yet been measured. Historical records ground all five input scales; all five sports have regular-season game fits and separate-season evaluations. All five models use season-end hindsight. MLB playoff transfer and some NBA/NHL/MLB/NFL subgroups still fail simple baselines. Cross-sport matchups and rule changes are explanatory experiments, not forecasts of real teams.
 
 ## Run locally
 
@@ -102,7 +104,7 @@ GitHub Actions is configured to run tests, source checks and historical reproduc
 
 `dist/` is ready for a static host; `npm run build` validates it without bundling. Serve this directory over HTTP/HTTPS rather than opening its `index.html` directly. Relative asset paths support repository subpaths.
 
-A **manually triggered** GitHub Pages workflow is included. After adding the project to your chosen repository, select GitHub Actions as the Pages source and run **Deploy to GitHub Pages** when you want to publish. Pushing code alone does not trigger that deployment workflow. Hosting remains optional; the current demo stays local.
+The [public interactive demo](https://teddyhurley.github.io/leaguelab/) is hosted on GitHub Pages. The **Deploy to GitHub Pages** workflow is manually triggered; pushing code alone does not publish a new build.
 
 The app has no accounts or installed analytics and does not send simulation inputs to an API. Google Fonts is optional. Shared links contain the full experiment in the URL, which a hosting service can receive. Local hosting bindings, environment files and generated copies are excluded from Git.
 
