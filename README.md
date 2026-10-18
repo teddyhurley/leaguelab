@@ -1,6 +1,6 @@
 # LeagueLab
 
-**[Open interactive demo](https://teddyhurley.github.io/leaguelab/)** · [Product notes](docs/PRODUCT.md) · [How it works](docs/ARCHITECTURE.md)
+**[Open interactive demo](https://teddyhurley.github.io/leaguelab/)** · [PRD](docs/PRD.md) · [Product notes](docs/PRODUCT.md) · [How it works](docs/ARCHITECTURE.md)
 
 **The better team doesn't always win. Explore why.**
 
